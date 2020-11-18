@@ -1,0 +1,61 @@
+
+#include "imports.hpp"
+
+onLoadName = "";
+overviewTextLocked = "";
+author="Mysterfreez / AureProd";
+dev = "Mysterfreez / AureProd";
+overviewText="";
+loadScreen="";
+onLoadIntro = "";
+respawnOnStart = -1;
+
+// réapparition
+respawn = "INSTANT";
+respawnDelay = 0;
+respawnDialog = false;
+
+// ignorer l'écran de sélection de rôle
+skipLobby = 1;
+
+// désactiver iA
+disabledAI = 1;
+
+ // desactive les cannaux vocaux
+disableChannels[] = { 0, 1, 2, 4};
+
+// affichage des HUD
+showHUD[] = {1, 1, 1, 1, 1, 0, 0, 1, 1, 1};
+
+class Header
+{
+	gameType = RPG; // Game type
+	minPlayers =  0; // minimum number of players
+	maxPlayers = 14; // maximum number of players
+};
+
+class CfgDebriefing 
+{
+    class NotWhitelist
+    {
+        title = "Mission echouée";
+        subtitle = "WhiteList du serveur";
+        description = "Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+};
+
+class CfgServer 
+{
+    DebugMode = 0; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
+    HeadlessSupport = 0; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
+};
+
+class RscTitles
+{
+    #include "dialog\black_background.hpp"
+    #include "dialogues\interface_fps.hpp"
+    #include "dialog\menu_chargement.hpp"
+};

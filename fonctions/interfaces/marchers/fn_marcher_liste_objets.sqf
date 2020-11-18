@@ -1,0 +1,176 @@
+
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif]
+private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
+
+// { id / level / nom / lien image / type objets / poid / is militaire (1 = militaire / 0 = pas militaire) / prix / is tauri }
+private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
+
+private _liste_objets = (findDisplay 6000) displayCtrl 6005;
+private _bouton_acheter = (findDisplay 6000) displayCtrl 6003;
+private _index = lbCurSel _liste_objets;
+
+private _tab = [];
+
+{
+	if ((_playerBdd select 1) == 2) then 
+	{
+		if (((_x select 8) == 1) or ((_x select 8) == 2)) then 
+		{
+			if (isMilitaire) then 
+			{
+				if (bouton_A_OK) then 
+				{
+					if ((_x select 4) == 1) then 
+					{
+						_tab pushBack _x;
+					}
+					else
+					{
+						if (((_x select 4) == 6)) then 
+						{
+							_tab pushBack _x;
+						};
+					};
+				} 
+				else 
+				{
+					if ((_x select 4) == 2) then 
+					{
+						_tab pushBack _x;
+					}
+					else
+					{
+						if (((_x select 0) == 2) or ((_x select 4) == 6)) then 
+						{
+							_tab pushBack _x;
+						};
+					};
+				};
+			}
+			else 
+			{
+				if ((_x select 6) == 0) then 
+				{
+					if (bouton_A_OK) then 
+					{
+						if ((_x select 4) == 1) then 
+						{
+							_tab pushBack _x;
+						}
+						else
+						{
+							if (((_x select 4) == 6)) then 
+							{
+								_tab pushBack _x;
+							};
+						};
+					} 
+					else 
+					{
+						if ((_x select 4) == 2) then 
+						{
+							_tab pushBack _x;
+						}
+						else
+						{
+							if (((_x select 0) == 2) or ((_x select 4) == 6)) then 
+							{
+								_tab pushBack _x;
+							};
+						};
+					};
+				};
+			};
+		};
+	}
+	else
+	{
+		if (((_x select 8) == 0) or ((_x select 8) == 2)) then 
+		{
+			if (isMilitaire) then 
+			{
+				if (bouton_A_OK) then 
+				{
+					if ((_x select 4) == 1) then 
+					{
+						_tab pushBack _x;
+					}
+					else
+					{
+						if (((_x select 4) == 6)) then 
+						{
+							_tab pushBack _x;
+						};
+					};
+				} 
+				else 
+				{
+					if ((_x select 4) == 2) then 
+					{
+						_tab pushBack _x;
+					}
+					else
+					{
+						if (((_x select 0) == 2) or ((_x select 4) == 6)) then 
+						{
+							_tab pushBack _x;
+						};
+					};
+				};
+			}
+			else 
+			{
+				if ((_x select 6) == 0) then 
+				{
+					if (bouton_A_OK) then 
+					{
+						if ((_x select 4) == 1) then 
+						{
+							_tab pushBack _x;
+						}
+						else
+						{
+							if (((_x select 4) == 6)) then 
+							{
+								_tab pushBack _x;
+							};
+						};
+					} 
+					else 
+					{
+						if ((_x select 4) == 2) then 
+						{
+							_tab pushBack _x;
+						}
+						else
+						{
+							if (((_x select 0) == 2) or ((_x select 4) == 6)) then 
+							{
+								_tab pushBack _x;
+							};
+						};
+					};
+				};
+			};
+		};
+	};
+} forEach _liste_objets_config;
+
+if (_index != -1) then 
+{
+	private _objet = _tab select _index;
+
+	if ((_objet select 1) <= (_playerBdd select 4)) then 
+	{
+		_bouton_acheter ctrlEnable true;
+	}
+	else
+	{
+		_bouton_acheter ctrlEnable false;
+		_liste_objets lbSetCurSel -1;
+	};
+}
+else
+{
+	_bouton_acheter ctrlEnable false;
+};
