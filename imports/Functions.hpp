@@ -1,30 +1,6 @@
 
 class CfgFunctions 
 {
-    class player
-    {
-        tag = "player";
-        
-        class variable_player
-        {
-            file = "fonctions\client\variable_player";
-            class getClasse {};
-            class getRace {};
-            class getXP {};
-            class setClasse {};
-            class setRace {};
-            class setXP {};
-            class getLicences {};
-            class getLevel {};
-            class getVie {};
-            class setVie {};
-            class getFaim {};
-            class setFaim {};
-            class getSoif {};
-            class setSoif {};
-            class setLevel {};
-        };
-    };
     class mission 
     {
         tag = "mission";
@@ -43,6 +19,13 @@ class CfgFunctions
             class add_licence {};
             class has_licence {};
             class is_tauri {};
+            class getBDD {}; 
+            class setBDD {};
+            class add_quetes_dispo {};
+            class add_quetes_faites {};
+            class has_quetes_dispo {};
+            class has_quetes_faites {};
+            class remove_quetes_dispo {};
         };
         class journal_quetes
         {
