@@ -11,7 +11,6 @@ class CfgFunctions
             class getClasse {};
             class getRace {};
             class getXP {};
-            class isTauri {};
             class setClasse {};
             class setRace {};
             class setXP {};
@@ -30,6 +29,21 @@ class CfgFunctions
     {
         tag = "mission";
         
+        class client_bdd
+        {
+            file = "fonctions\client\bdd";
+            class add_xp {};
+            class survival {};
+            class not_whitelist {};
+            class modif_var_bdd {};
+            class remove_xp {};
+            class syns_data {};
+            class reset_bdd {};
+            class remove_licence {};
+            class add_licence {};
+            class has_licence {};
+            class is_tauri {};
+        };
         class journal_quetes
         {
             file = "fonctions\interfaces\journal_quetes";
@@ -189,20 +203,6 @@ class CfgFunctions
             class depeucer {};
             class pecher {};
             class fonction_kill_animal {};
-        };
-        class client_bdd
-        {
-            file = "fonctions\client\bdd";
-            class add_xp {};
-            class survival {};
-            class not_whitelist {};
-            class modif_var_bdd {};
-            class remove_xp {};
-            class syns_data {};
-            class reset_bdd {};
-            class remove_licence {};
-            class add_licence {};
-            class has_licence {};
         };
         class serveur
         {
