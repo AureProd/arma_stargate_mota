@@ -16,6 +16,14 @@ class CfgFunctions
             class setRace {};
             class setXP {};
             class getLicences {};
+            class getLevel {};
+            class getVie {};
+            class setVie {};
+            class getFaim {};
+            class setFaim {};
+            class getSoif {};
+            class setSoif {};
+            class setLevel {};
         };
     };
     class mission 
