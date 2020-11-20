@@ -26,6 +26,8 @@ class CfgFunctions
             class has_quetes_dispo {};
             class has_quetes_faites {};
             class remove_quetes_dispo {};
+            class get_team {};
+            class is_in_team {};
         };
         class journal_quetes
         {
