@@ -14,7 +14,7 @@ if (isNil "_steamUID") exitWith
 private _queryWhiteListe = format["SELECT * FROM whitelist WHERE wl_uid = '%1'",_steamUID];
 private _queryResultWhiteListe = [_queryWhiteListe, 2] call db_fnc_asyncCall;
 
-diag_log format ["VALEUR : %1", _queryResultWhiteListe];
+//diag_log format ["VALEUR : %1", _queryResultWhiteListe];
 
 if ((count _queryResultWhiteListe) < 1) then 
 {
