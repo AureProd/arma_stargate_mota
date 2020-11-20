@@ -26,8 +26,7 @@ if ((_objet == 2) or (_objet == 4) or ((_newObjet select 4) == 7)) then
 			// objet RATION --> id / count / pourcentage utilistations
 			_invVirtuelPlayer pushBack [_objet, 1, 100];
 		};
-		default : 
-		{ 
+		default { 
 			// objet couteau --> id / count
 			_invVirtuelPlayer pushBack [_objet, 1];
 		};

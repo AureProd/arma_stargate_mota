@@ -54,8 +54,7 @@ lbClear _liste_objets;
 					{ 
 						_index = _liste_objets lbAdd (format ["%1 (%2 %3)", (_x select 2), (_tab select 2), "%"]);
 					};
-					default : 
-					{ 
+					default { 
 						_index = _liste_objets lbAdd (format ["%1", (_x select 2)]);
 					};
 				};
