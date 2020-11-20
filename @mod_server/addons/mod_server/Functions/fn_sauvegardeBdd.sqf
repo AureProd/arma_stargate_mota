@@ -1,5 +1,5 @@
 
-// UID player / name player / classes [classe, race] / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / liste quetes dispo / liste planetes visités / liste quetes actives
+// UID player / name player / classes [classe, race] / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / liste quetes dispo / liste planetes visités / liste quetes actives / garage
 
 private _steamUID = param[0];
 private _namePlayer = param[1];
@@ -20,6 +20,7 @@ private _quetes_faites = param[12];
 private _quetes_dispo = param[13];
 private _planete_visite = param[14];
 private _quetes_actives = param [15];
+private _garage = param [16];
 
 _licences = [_licences] call db_fnc_mresArray;
 _inv_reel = [_inv_reel] call db_fnc_mresArray;
@@ -30,6 +31,7 @@ _quetes_faites = [_quetes_faites] call db_fnc_mresArray;
 _quetes_dispo = [_quetes_dispo] call db_fnc_mresArray;
 _planete_visite = [_planete_visite] call db_fnc_mresArray;
 _quetes_actives = [_quetes_actives] call db_fnc_mresArray;
+_garage = [_garage] call db_fnc_mresArray;
 
 diag_log format ["ENVOIE DE REQUETE BDD deconnexion : %1 .. %2", _namePlayer, _steamUID];
 if (isNil "_steamUID") exitWith
