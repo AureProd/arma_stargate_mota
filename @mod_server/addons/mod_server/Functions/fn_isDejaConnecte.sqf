@@ -14,6 +14,8 @@ if (isNil "_steamUID") exitWith
 private _query = format["SELECT * FROM whitelist WHERE wl_uid = '%1'",_steamUID];
 private _queryResultWhiteListe = [_query, 2] call db_fnc_asyncCall;
 
+diag_log format ["VALEUR : %1", _queryResultWhiteListe];
+
 if ((count _queryResultWhiteListe) < 1) then 
 {
 	[] remoteExec ["mission_fnc_not_whitelist", _client];

@@ -34,7 +34,7 @@ _planete_visite = [_planete_visite] call db_fnc_mresArray;
 _quetes_actives = [_quetes_actives] call db_fnc_mresArray;
 _garage = [_garage] call db_fnc_mresArray;
 
-diag_log format ["ENVOIE DE REQUETE BDD deconnexion : %1 .. %2", _namePlayer, _steamUID];
+diag_log format ["ENVOIE DE REQUETE BDD : %1 .. %2", _namePlayer, _steamUID];
 if (isNil "_steamUID") exitWith
 {
 	diag_log format ["Erreur BDD avec %1", _namePlayer];
