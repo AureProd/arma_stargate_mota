@@ -23,7 +23,7 @@ CREATE TABLE player
    p_planete_visite TEXT NOT NULL,
    p_quetes_actives TEXT NOT NULL,
    p_garage TEXT NOT NULL,
-   p_white_liste_soldat TEXT NOT NULL,
+   p_white_liste_soldat INTEGER(10) NOT NULL,
    PRIMARY KEY (p_id)
 ) ENGINE=InnoDB CHARSET=utf8;
 
