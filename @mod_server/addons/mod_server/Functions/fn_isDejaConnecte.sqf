@@ -12,9 +12,9 @@ if (isNil "_steamUID") exitWith
 };
 
 private _query = format["SELECT * FROM whitelist WHERE wl_uid = '%1'",_steamUID];
-private _queryResult = [_query, 2] call db_fnc_asyncCall;
+private _queryResultWhiteListe = [_query, 2] call db_fnc_asyncCall;
 
-if ((count _queryResult) < 1) then 
+if ((count _queryResultWhiteListe) < 1) then 
 {
 	[] remoteExec ["mission_fnc_not_whitelist", _client];
 	diag_log format ["Le joueur %1 n'est pas white list (UID: %2)", _namePlayer, _steamUID];
@@ -31,8 +31,10 @@ else
 	}
 	else
 	{
-		// nom joueur / classe / race / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / liste quetes dispo / planete visite / liste quetes actives
-		diag_log format ["Le joueur %1 / %2 / %3 / %4 / %5 / %6 / %7 / %8 / %9 / %10 / %11 / %12 / %13 / %14 / %15 / %16", _namePlayer, _queryResult select 3, _queryResult select 4, _queryResult select 5, _queryResult select 6, _queryResult select 7, _queryResult select 8, _queryResult select 9, _queryResult select 10, _queryResult select 11, _queryResult select 12, _queryResult select 13, _queryResult select 14, _queryResult select 15, _queryResult select 16, _queryResult select 17];
+		diag_log format ["Le joueur %1 s'est deja connecter (UID: %2)", _namePlayer, _steamUID];
+
+		// nom joueur / classe / race / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / liste quetes dispo / planete visite / liste quetes actives / garage / white liste soldat
+		//diag_log format ["Le joueur %1 / %2 / %3 / %4 / %5 / %6 / %7 / %8 / %9 / %10 / %11 / %12 / %13 / %14 / %15 / %16", _namePlayer, _queryResult select 3, _queryResult select 4, _queryResult select 5, _queryResult select 6, _queryResult select 7, _queryResult select 8, _queryResult select 9, _queryResult select 10, _queryResult select 11, _queryResult select 12, _queryResult select 13, _queryResult select 14, _queryResult select 15, _queryResult select 16, _queryResult select 17];
 
 		private _licences = _queryResult select 6;
 		private _inv_reel = _queryResult select 11;
@@ -56,7 +58,7 @@ else
 		_quetes_actives = [_quetes_actives] call db_fnc_mresToArray;
 		_garage = [_garage] call db_fnc_mresToArray;
 
-		// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, liste quetes actives, garage
-		[false, _queryResult select 3, _queryResult select 4, _queryResult select 5,  _licences, _queryResult select 7, _queryResult select 8, _queryResult select 9, _queryResult select 10, _inv_reel, _inv_virtuel, _pos_player, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage] remoteExec ["mission_fnc_intro_stargate", _client];
+		// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, liste quetes actives, garage, white liste soldat, level admin
+		[false, _queryResult select 3, _queryResult select 4, _queryResult select 5,  _licences, _queryResult select 7, _queryResult select 8, _queryResult select 9, _queryResult select 10, _inv_reel, _inv_virtuel, _pos_player, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage, _queryResult select 19, _queryResultWhiteListe select 3] remoteExec ["mission_fnc_intro_stargate", _client];
 	};
 };
