@@ -25,6 +25,8 @@ player addAction ["Dépecer l'animal ...", {
     deleteVehicle _animal;
 
 	private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
+
+	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
     
 	if (_race == "Sheep_random_F") then {
 		hint "Voilà votre viande de mouton !!!"; // id 22
