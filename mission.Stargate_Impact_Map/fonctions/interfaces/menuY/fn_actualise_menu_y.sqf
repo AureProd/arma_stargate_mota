@@ -21,7 +21,7 @@ private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >>
 	{
 		if ((_tab select 0) == (_x select 0)) then
 		{
-			if (((_x select 0) == 2) or ((_x select 0) == 4)) then 
+			if (((_x select 0) == 2) or ((_x select 0) == 4) or ((_x select 4) == 7)) then 
 			{
 				private _index = nil;
 
@@ -48,6 +48,10 @@ private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >>
 					case 4: 
 					{ 
 						_index = _listbox_objets lbAdd (format ["%1 (%2 %3)", (_x select 2), (_tab select 2), "%"]);
+					};
+					default : 
+					{ 
+						_index = _listbox_objets lbAdd (format ["%1", (_x select 2)]);
 					};
 				};
 				

@@ -38,7 +38,14 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
     
 	private _poisson = (selectRandom _poissons);
 
-	[(_poisson select 0)] call mission_fnc_add_item;
+	private _return = [_invVirtuelPlayer, (_poisson select 5)] call mission_fnc_calcul_poid;
+
+	if (_return) then 
+	{
+		[(_poisson select 0)] call mission_fnc_add_item;
+	} else {
+		hint "Votre inventaire est plein, vous ne pouvez pas prendre ce poisson";
+	};
 
 	hint format ["Vous avez pecher : %1 !!!", (_poisson select 2)];
 
