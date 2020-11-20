@@ -11,8 +11,10 @@ if (isNil "_steamUID") exitWith
 	diag_log format ["Erreur BDD avec %1 (%2)",_client, _namePlayer];
 };
 
-private _query = format["SELECT * FROM whitelist WHERE wl_uid = '%1'",_steamUID];
-private _queryResultWhiteListe = [_query, 2] call db_fnc_asyncCall;
+private _queryWhiteListe = format["SELECT * FROM whitelist WHERE wl_uid = '%1'",_steamUID];
+private _queryResultWhiteListe = [_queryWhiteListe, 2] call db_fnc_asyncCall;
+
+//diag_log format ["VALEUR : %1", _queryResultWhiteListe];
 
 if ((count _queryResultWhiteListe) < 1) then 
 {

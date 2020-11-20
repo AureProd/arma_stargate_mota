@@ -29,8 +29,9 @@ enableEnvironment [true, false];
 	TEST MISSION LOCAL :
 	
 	parametres pour fonction "mission_fnc_intro_stargate" 
-	|--> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, quetes actives 
+	|--> params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, quetes actives, garage, white liste soldat, admin level
+	|--> params --> s'est deja connecte, admin level
 */
-//[true] call mission_fnc_intro_stargate; // <-- test local nouveaux sur serveur
-[false, 1, 2, 0, [], 1, 100, 100, 100, [[],[],[],["U_C_Man_casual_1_F",[]],[],[],"","",[],["","","ItemRadio","ItemCompass","ItemWatch",""]], [], [38144.555, 3127.349, 0.5], [], [1], [], []] call mission_fnc_intro_stargate; // <-- test local tauri
-//[false, 1, 1, 2500, [], 5, 100, 100, 100, [], [], [38869.605, 38965.328, 0.5], [], [1], [], []] call mission_fnc_intro_stargate; // <-- test local goauld
+//[true, 0] call mission_fnc_intro_stargate; // <-- test local nouveaux sur serveur
+//[false, 1, 2, 0, [], 1, 100, 100, 100, [[],[],[],["U_C_Man_casual_1_F",[]],[],[],"","",[],["","","ItemRadio","ItemCompass","ItemWatch",""]], [], [38144.555, 3127.349, 0.5], [], [1], [], [], [], 0, 0] call mission_fnc_intro_stargate; // <-- test local tauri
+//[false, 1, 1, 2500, [], 5, 100, 100, 100, [], [], [38869.605, 38965.328, 0.5], [], [1], [], [], [], 0, 0] call mission_fnc_intro_stargate; // <-- test local goauld
