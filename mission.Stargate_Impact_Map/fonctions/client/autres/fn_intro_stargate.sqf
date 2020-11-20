@@ -1,6 +1,6 @@
 
-// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, quetes actives, garage
-
+// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, quetes actives, garage, white liste soldat, admin level
+// params --> s'est deja connecte, admin level
 private _isDejaConnecte = param [0];
 
 if (!_isDejaConnecte) then 
