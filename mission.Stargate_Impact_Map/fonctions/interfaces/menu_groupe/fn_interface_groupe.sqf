@@ -41,7 +41,7 @@ private _isChef = false;
 				_isChef = true;
 			};
 
-			player setVariable ["inTeam", true, true];
+			//player setVariable ["inTeam", true, true];
 			_team = _tableau;
 		};
 	} forEach _tableau;
@@ -100,7 +100,7 @@ _bouton_inviter ctrlEnable false;
 _bouton_quitter ctrlEnable false;
 _bouton_rejoindre ctrlEnable false;
 
-if (player getVariable ["inTeam", false]) then 
+if ([] call mission_fnc_is_in_team) then 
 {
 	if (_isChef) then 
 	{

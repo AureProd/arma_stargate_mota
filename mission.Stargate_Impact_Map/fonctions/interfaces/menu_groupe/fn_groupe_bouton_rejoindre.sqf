@@ -20,7 +20,7 @@ private _team = nil;
 private _hasTeam = false;
 private _teams = [];
 
-if (player getVariable ["inTeam", false]) then 
+if ([] call mission_fnc_is_in_team) then 
 {
 	private _teams_bis = [];
 
@@ -58,7 +58,7 @@ if (player getVariable ["inTeam", false]) then
 		} forEach _teams;
 	};
 	
-	player setVariable ["inTeam", false, true];
+	//player setVariable ["inTeam", false, true];
 	missionNamespace setVariable ["team", _teams_bis, true];
 };
 
@@ -101,7 +101,7 @@ if ((getPlayerUID _joueur) in _invitePar) then
 			} forEach allPlayers;
 		};
 
-		player setVariable ["inTeam", true, true];
+		//player setVariable ["inTeam", true, true];
 		missionNamespace setVariable ["team", _teams, true];
 	}
 	else
@@ -109,7 +109,7 @@ if ((getPlayerUID _joueur) in _invitePar) then
 		_team = [(getPlayerUID _joueur), (getPlayerUID player)];
 		_teams pushBack _team;
 
-		player setVariable ["inTeam", true, true];
+		//player setVariable ["inTeam", true, true];
 		_joueur setVariable ["inTeam", true, true];
 		missionNamespace setVariable ["team", _teams, true];
 	};

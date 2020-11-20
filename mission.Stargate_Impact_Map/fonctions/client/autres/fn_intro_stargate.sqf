@@ -22,6 +22,9 @@ if (!_isDejaConnecte) then
 	private _planete_visite = param [14];
 	private _quetes_actives = param [15];
 	private _garage = param [16];
+	private _levelAdmin = param [17];
+
+	LEVELADMIN = _levelAdmin;
 
 	// liste vies : [ % maladie tete, % maladie ventre, % hit tete, % hit ventre, % hit bras droit, % hit bras gauche, % hit jambe droit, % hit jambe gauche ]
 	private _liste_vies = [100, 100, 100, 100, 100, 100, 100, 100];
@@ -57,6 +60,10 @@ if (!_isDejaConnecte) then
 }
 else
 {
+	private _levelAdmin = param [1];
+
+	LEVELADMIN = _levelAdmin;
+
 	[] call mission_fnc_reset_bdd;
 };
 

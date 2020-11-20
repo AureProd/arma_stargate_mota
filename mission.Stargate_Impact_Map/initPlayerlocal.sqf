@@ -4,6 +4,8 @@
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
 nomVarPlayerUID = format ["variable_%1", getPlayerUID player]; // BDD player
 
+LEVELADMIN = 0;
+
 [] spawn mission_fnc_boules_caisses;
 [] spawn mission_fnc_jump;
 

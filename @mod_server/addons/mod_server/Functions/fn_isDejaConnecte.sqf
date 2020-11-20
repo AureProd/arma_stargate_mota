@@ -27,7 +27,7 @@ else
 	if ((count _queryResult) < 1) then
 	{
 		diag_log format ["Le joueur %1 est connecte pour la premiere fois (UID: %2)", _namePlayer, _steamUID];
-		[true] remoteExec ["mission_fnc_intro_stargate", _client];
+		[true, _queryResultWhiteListe select 3] remoteExec ["mission_fnc_intro_stargate", _client];
 	}
 	else
 	{
