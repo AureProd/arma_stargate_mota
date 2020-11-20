@@ -44,5 +44,5 @@ else
 	} forEach _teams;
 };
 
-player setVariable ["inTeam", false, true];
+//player setVariable ["inTeam", false, true];
 missionNamespace setVariable ["team", _teams_bis, true];
