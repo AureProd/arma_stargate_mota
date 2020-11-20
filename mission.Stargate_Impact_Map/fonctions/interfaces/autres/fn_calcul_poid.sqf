@@ -17,7 +17,7 @@ private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >>
 	{
 		if ((_tab select 0) == (_x select 0)) then 
 		{
-			_poid_perso = _poid_perso + (_x select 5);
+			_poid_perso = _poid_perso + ((_x select 5) * (_tab select 1));
 		};
 	} forEach _liste_objets_config;
 } forEach _inventaire_virtuel;
