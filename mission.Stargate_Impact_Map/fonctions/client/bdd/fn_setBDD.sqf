@@ -5,7 +5,7 @@
 
 private _valeurs = [
     "classe", "race", "xp", "licences", "level", "vie", "faim", "soif", "inventaire virtuel",
-    "liste vies", "quetes faites", "quetes dispo", "planete visite", "quetes actives", "garage"
+    "liste vies", "quetes faites", "quetes dispo", "planete visite", "quetes actives", "garage", "wl soldat"
 ];
 
 private _choix = param [0, "rien"];
