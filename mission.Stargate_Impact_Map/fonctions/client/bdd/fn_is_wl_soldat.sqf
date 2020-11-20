@@ -6,7 +6,7 @@ private _retour = ["wl soldat"] call mission_fnc_getBDD;
 
 private _return = false;
 
-if ((count _retour) == 1) then {
+if (_retour == 1) then {
 	_return = true;
 };
 
