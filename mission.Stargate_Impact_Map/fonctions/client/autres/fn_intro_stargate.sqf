@@ -22,7 +22,8 @@ if (!_isDejaConnecte) then
 	private _planete_visite = param [14];
 	private _quetes_actives = param [15];
 	private _garage = param [16];
-	private _levelAdmin = param [17];
+	private _whiteListeSoldat = param [17];
+	private _levelAdmin = param [18];
 
 	LEVELADMIN = _levelAdmin;
 
@@ -34,11 +35,11 @@ if (!_isDejaConnecte) then
 		_liste_vies set [0, _vie];
 	};
 
-	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, garage]
+	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, garage, white liste soldat]
 	missionNamespace setVariable 
 	[
 		nomVarPlayerUID, 
-		[_classe, _race, _exp, _licences, _level, _vie, _faim, _soif, _inv_virtuel, _liste_vies, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage], 
+		[_classe, _race, _exp, _licences, _level, _vie, _faim, _soif, _inv_virtuel, _liste_vies, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage, _whiteListeSoldat], 
 		true
 	];
 
