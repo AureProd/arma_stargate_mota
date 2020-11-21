@@ -1,4 +1,7 @@
 
+// nom fichier : mission_fnc_add_xp
+// paramettres : [valeur xp]
+
 private _valeur = param [0];
 
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel]

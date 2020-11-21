@@ -23,15 +23,44 @@ player addAction ["Dépecer l'animal ...", {
 	missionNamespace setVariable ["animaux_morts", _animalsMorts, true];
 
     deleteVehicle _animal;
+
+	private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
+
+	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
     
 	if (_race == "Sheep_random_F") then {
 		hint "Voilà votre viande de mouton !!!"; // id 22
-		
-		[22] call mission_fnc_add_item;
+
+		private _indexViande = _liste_objets_config findIf {
+			(_x select 0) == 22
+		};
+
+		private _viande = _liste_objets_config select _indexViande;
+
+		private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
+
+		if (_return) then {
+			[_viande select 0] call mission_fnc_add_item;
+		} else {
+			hint "Votre inventaire est plein, vous ne pouvez pas prendre cette viande";
+		};
 	} else {
 		hint "Voilà votre viande de chevre !!!"; // id 24
 
-		[24] call mission_fnc_add_item;
+		private _indexViande = _liste_objets_config findIf {
+			(_x select 0) == 24
+		};
+
+		private _viande = _liste_objets_config select _indexViande;
+
+		private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
+
+		if (_return) then 
+		{
+			[_viande select 0] call mission_fnc_add_item;
+		} else {
+			hint "Votre inventaire est plein, vous ne pouvez pas prendre cette viande";
+		};
 	};
 
 	sleep 1;

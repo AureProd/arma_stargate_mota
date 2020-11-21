@@ -6,7 +6,13 @@ private _objet = param [0];
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 private _invVirtuelPlayer = _playerBdd select 8;
 
-if ((_objet == 2) or (_objet == 4) or (_objet == 30) or (_objet == 31)) then 
+private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
+
+private _newObjet = _liste_objets_config select (_liste_objets_config findIf {
+	(_x select 0) == _objet
+});
+
+if ((_objet == 2) or (_objet == 4) or ((_newObjet select 4) == 7)) then 
 {
 	switch (_objet) do 
 	{
@@ -20,13 +26,7 @@ if ((_objet == 2) or (_objet == 4) or (_objet == 30) or (_objet == 31)) then
 			// objet RATION --> id / count / pourcentage utilistations
 			_invVirtuelPlayer pushBack [_objet, 1, 100];
 		};
-		case 30: 
-		{ 
-			// objet couteau --> id / count
-			_invVirtuelPlayer pushBack [_objet, 1];
-		};
-		case 31: 
-		{ 
+		default { 
 			// objet couteau --> id / count
 			_invVirtuelPlayer pushBack [_objet, 1];
 		};

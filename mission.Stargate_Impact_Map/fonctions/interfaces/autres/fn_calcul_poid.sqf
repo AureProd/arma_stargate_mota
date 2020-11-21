@@ -1,8 +1,14 @@
 
-private _inventaire_virtuel =  param [0]; 
-private _poid_objet =  param [1];
+// fonction name : mission_fnc_calcul_poid
+// parmettres : [player, poid]
 
-private _poid_total_inventaire = 100;
+private _player = param [0, player]; 
+private _poid_objet =  param [1, 0];
+
+private _inventaire_virtuel = ["inventaire virtuel", _player] call mission_fnc_getBDD;
+
+private _levelPlayer = ["level", _player] call mission_fnc_getBDD;
+private _poid_total_inventaire = 40 + _levelPlayer;
 
 private _poid_perso = 0;
 
@@ -17,7 +23,7 @@ private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >>
 	{
 		if ((_tab select 0) == (_x select 0)) then 
 		{
-			_poid_perso = _poid_perso + (_x select 5);
+			_poid_perso = _poid_perso + ((_x select 5) * (_tab select 1));
 		};
 	} forEach _liste_objets_config;
 } forEach _inventaire_virtuel;

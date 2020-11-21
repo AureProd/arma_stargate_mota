@@ -28,6 +28,10 @@ class CfgFunctions
             class remove_quetes_dispo {};
             class get_team {};
             class is_in_team {};
+            class is_wl_soldat {};
+            class add_quetes_actives {};
+            class has_quetes_actives {};
+            class remove_quetes_actives {};
         };
         class journal_quetes
         {
@@ -46,10 +50,9 @@ class CfgFunctions
         {
             file = "fonctions\client\quetes";
             class affichage_icons {};
-            class quete_bienvenue {};
-            class quete_specialite {};
-            class quete_cyber_cafe {};
+            class quete_type_1 {};
             class quetesActives {};
+            class get_config_quetes {};
         };
         class interfaces_autres
         {
@@ -204,7 +207,7 @@ class CfgFunctions
             file = "fonctions\fps\fonctions_capture";
             class capture_drapeau {};
             class change_flag_color {};
-            class add_fps_mode {};
+            class add_fps_mode {}; // demarre le mode fps coté client --> fn_intro_stargate.sqf
             class set_logo_flag {};
             class son_notif {};
             class interface_fps {};
@@ -218,7 +221,7 @@ class CfgFunctions
         class serveur_fps
         {
             file = "fonctions\fps\serveur";
-            class demarage_fps {};
+            class demarage_fps {}; // demarre le mode fps coté serveur --> initServer.sqf
         };
     };
 };

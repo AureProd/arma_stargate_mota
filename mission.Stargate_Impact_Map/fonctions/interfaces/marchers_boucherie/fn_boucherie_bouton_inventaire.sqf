@@ -26,7 +26,7 @@ lbClear _liste_objets;
 	{
 		if ((_tab select 0) == (_x select 0)) then
 		{
-			if (((_x select 0) == 2) or ((_x select 0) == 4)) then 
+			if (((_x select 0) == 2) or ((_x select 0) == 4) or ((_x select 4) == 7)) then 
 			{
 				private _index = nil;
 
@@ -53,6 +53,9 @@ lbClear _liste_objets;
 					case 4: 
 					{ 
 						_index = _liste_objets lbAdd (format ["%1 (%2 %3)", (_x select 2), (_tab select 2), "%"]);
+					};
+					default { 
+						_index = _liste_objets lbAdd (format ["%1", (_x select 2)]);
 					};
 				};
 				
