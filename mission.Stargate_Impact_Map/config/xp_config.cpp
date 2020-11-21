@@ -1,6 +1,13 @@
 
 class stargate_xp
 {
+	class ajout_xp
+	{
+		gourde_purification = 2;
+		gourde_remplissage = 2;
+		elimination_mode_fps = 50;
+		capture_drapeau_mode_fps = 100;
+	};
 	class xp
     {
         level_max = 60;

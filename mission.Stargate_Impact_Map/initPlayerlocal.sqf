@@ -1,6 +1,4 @@
 
-// level 3 --> tauri est militaire
-
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
 nomVarPlayerUID = format ["variable_%1", getPlayerUID player]; // BDD player
 

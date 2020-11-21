@@ -4,7 +4,9 @@
 private _etat_id = param [0];
 private _id_drapeau = param [1];
 
-[100] call mission_fnc_add_xp;
+private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "capture_drapeau_mode_fps");
+
+[_gainXP] call mission_fnc_add_xp;
 
 _id_drapeau setVariable ["etat_drapeau", _etat_id, true];
 

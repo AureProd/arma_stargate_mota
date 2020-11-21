@@ -188,7 +188,9 @@ switch (_objet select 4) do
 
 						_objetGourde set [3, 100];
 
-						[2] call mission_fnc_add_xp;
+						private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "gourde_remplissage");
+
+						[_gainXP] call mission_fnc_add_xp;
 					}
 					else
 					{
@@ -261,7 +263,9 @@ switch (_objet select 4) do
 
 				[(_objet select 0)] call mission_fnc_supprime_item;
 
-				[2] call mission_fnc_add_xp;
+				private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "gourde_purification");
+
+				[_gainXP] call mission_fnc_add_xp;
 			};
 		};
 	};

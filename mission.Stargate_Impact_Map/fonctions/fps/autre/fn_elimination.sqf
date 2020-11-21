@@ -17,5 +17,7 @@ if(player == _killer) then
 		0.25
 	];
 
-	[50] call mission_fnc_add_xp;
+	private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "elimination_mode_fps");
+
+	[_gainXP] call mission_fnc_add_xp;
 };
