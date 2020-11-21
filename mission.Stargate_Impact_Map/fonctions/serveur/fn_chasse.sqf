@@ -12,22 +12,22 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
     private _maxAnimals = _x select 1;
     private _zone = _x select 0;
 
-    diag_log "rien";
+    //diag_log "rien";
 
     [_maxAnimals, _zone, _animalList] spawn {
         private _maxAnimals = param [0];
         private _zone = param [1];
         private _animalList = param [2];
 
-        diag_log format ["%1 rien", _zone];
+        //diag_log format ["%1 rien", _zone];
 
         while { true } do {
             waitUntil { (count ((missionNamespace getVariable _zone) select 0)) <= _maxAnimals }; 
 
-            diag_log "initialisation";
+            //diag_log "initialisation";
 
             while { (count ((missionNamespace getVariable _zone) select 0)) <= _maxAnimals} do {
-                diag_log format ["%1 : %2", _zone, (count ((missionNamespace getVariable _zone) select 0))];
+                //diag_log format ["%1 : %2", _zone, (count ((missionNamespace getVariable _zone) select 0))];
 
                 private _animalClass = selectRandom _animalList;
                 private _animal = createAgent [_animalClass, ((missionNamespace getVariable _zone) select 2), [], ((missionNamespace getVariable _zone) select 3), "NONE"];
@@ -52,7 +52,7 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
                     private _zone = (_animal getVariable "zone");
                     private _animals = (missionNamespace getVariable _zone);
                     
-                    diag_log "mort";
+                    //diag_log "mort";
 
                     private _listeAnimaux = (_animals select 0);
                     private _listeRaces = (_animals select 1);
