@@ -30,7 +30,7 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
                 //diag_log format ["%1 : %2", _zone, (count ((missionNamespace getVariable _zone) select 0))];
 
                 private _animalClass = selectRandom _animalList;
-                private _animal = createAgent [_animalClass, ((missionNamespace getVariable _zone) select 2), [], ((missionNamespace getVariable _zone) select 3), "NONE"];
+                private _animal = createAgent [_animalClass, ((missionNamespace getVariable _zone) select 2), [], ((missionNamespace getVariable _zone) select 3), "FORM"];
 
                 private _animals = (missionNamespace getVariable _zone);
                 private _listeAnimaux = (_animals select 0);
