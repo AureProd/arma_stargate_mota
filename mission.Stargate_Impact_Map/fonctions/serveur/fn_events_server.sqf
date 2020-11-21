@@ -57,12 +57,6 @@ addMissionEventHandler ["HandleDisconnect",
 		if ((count _teams) > 1) then 
 		{
 			_teams_bis pushBack _teams;
-		}
-		else
-		{
-			{
-				_x setVariable ["inTeam", false, true];
-			} forEach _teams;
 		};
 		
 		missionNamespace setVariable ["team", _teams_bis, true];

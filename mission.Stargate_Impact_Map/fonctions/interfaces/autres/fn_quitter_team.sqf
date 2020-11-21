@@ -39,7 +39,7 @@ else
 			};
 		} forEach allPlayers;
 
-		_joueur setVariable ["inTeam", false, true];
+		//_joueur setVariable ["inTeam", false, true];
 		[_joueur] join grpNull;
 	} forEach _teams;
 };
