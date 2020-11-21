@@ -22,7 +22,7 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
 
             while { (count ((missionNamespace getVariable _zone) select 0)) < _maxAnimals} do {
                 private _animalClass = selectRandom _animalList;
-                private _animal = createAgent [_animalClass, ((missionNamespace getVariable _zone) select 2), [], ((missionNamespace getVariable _zone) select 3), "FORM"];
+                private _animal = createAgent [_animalClass, ((missionNamespace getVariable _zone) select 2), [], ((missionNamespace getVariable _zone) select 3), "NONE"];
 
                 private _animals = (missionNamespace getVariable _zone);
                 private _listeAnimaux = (_animals select 0);
