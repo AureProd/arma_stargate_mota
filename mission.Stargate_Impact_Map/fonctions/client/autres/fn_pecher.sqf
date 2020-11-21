@@ -35,25 +35,34 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
 			};
 		};
 	} forEach _liste_objets_config;
+
+	private _tabbleau_aleatoire = [[nil, _poissons, _poissons], [nil, _poissons]]
     
-	private _poisson = (selectRandom _poissons);
+	private _tableau_bis = (selectRandom(selectRandom _tabbleau_aleatoire));
 
-	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
-
-	private _return = [player, (_poisson select 5)] call mission_fnc_calcul_poid;
-
-	if (_return) then 
-	{
-		[(_poisson select 0)] call mission_fnc_add_item;
+	if (_tableau_bis == nil) then {
+		hint "Vous n'avez rien pêché !!!";
 	} else {
-		hint "Votre inventaire est plein, vous ne pouvez pas prendre ce poisson";
-	};
+		private _poisson = (selectRandom _tableau_bis);
 
-	hint format ["Vous avez pecher : %1 !!!", (_poisson select 2)];
+		private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
+
+		private _return = [player, (_poisson select 5)] call mission_fnc_calcul_poid;
+
+		if (_return) then 
+		{
+			[(_poisson select 0)] call mission_fnc_add_item;
+		} else {
+			hint "Votre inventaire est plein, vous ne pouvez pas prendre ce poisson";
+		};
+
+		hint format ["Vous avez peché : %1 !!!", (_poisson select 2)];
+	};
 
 	sleep 3;
 
 	peche_ON = false;
+
 }, nil, 6, true, true, "", "
 	(surfaceIsWater (position _this)) && 
 	([position _this] call returnIfInPecheZone) && 
