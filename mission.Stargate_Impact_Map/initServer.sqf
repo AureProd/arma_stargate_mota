@@ -2,7 +2,7 @@
 diag_log "Lancement de la connection a la BDD";
 [] remoteExec ["db_fnc_init", 2];
 
-sleep 2;
+//sleep 2;
 
 [] call mission_fnc_events_server;
 

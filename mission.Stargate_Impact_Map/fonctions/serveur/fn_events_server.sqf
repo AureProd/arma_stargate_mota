@@ -1,7 +1,6 @@
 
-addMissionEventHandler ["HandleDisconnect", 
-{
-	params [ "_unit" ,  "_id" ,  "_uid" ,  "_name" ];
+addMissionEventHandler ["HandleDisconnect", {
+	params [ "_unit",  "_id",  "_uid",  "_name" ];
 
 	private _inventaire_reel = getUnitLoadout _unit;
 
@@ -17,71 +16,69 @@ addMissionEventHandler ["HandleDisconnect",
 	else 
 	{
 		// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
-		private _variable = missionNamespace getVariable [(format ["variable_%1", _uid]), nil];
+		private _variable = missionNamespace getVariable (format ["variable_%1", _uid]);
 
-		if (!(_variable == nil)) then {
-			private _inventaire_virtuel = _variable select 8;
+		private _inventaire_virtuel = _variable select 8;
 
-			private _classes = [_variable select 0, _variable select 1];
+		private _classes = [_variable select 0, _variable select 1];
 
-			private _team = [];
-			private _teams = [];
-			private _teams_bis = [];
+		private _team = [];
+		private _teams = [];
+		private _teams_bis = [];
 
+		{
+			private _tab = _x;
+			private _ok = false;
 			{
-				private _tab = _x;
-				private _ok = false;
+				if ((getPlayerUID _x) == _uid) then 
 				{
-					if ((getPlayerUID _x) == _uid) then 
-					{
-						_ok = true;
-					};
-				} forEach _tab;
-
-				if (_ok) then 
-				{
-					_team = _tab;
-				}
-				else
-				{
-					_teams_bis pushBack _tab;
+					_ok = true;
 				};
-			} forEach (missionNamespace getVariable ["team", []]);
+			} forEach _tab;
 
+			if (_ok) then 
 			{
-				if ((getPlayerUID _x) != _uid) then 
-				{
-					_teams pushBack _x;
-				};
-			} forEach _team;
-
-			if ((count _teams) > 1) then 
+				_team = _tab;
+			}
+			else
 			{
-				_teams_bis pushBack _teams;
+				_teams_bis pushBack _tab;
 			};
-			
-			missionNamespace setVariable ["team", _teams_bis, true];
+		} forEach (missionNamespace getVariable ["team", []]);
 
+		{
+			if ((getPlayerUID _x) != _uid) then 
 			{
-				if ((getPlayerUID _x) != _uid) then 
-				{
-					private _invitJoueur = _x getVariable ["invitePar", []];
+				_teams pushBack _x;
+			};
+		} forEach _team;
 
-					private _newTeam = [];
-					{
-						if (_x != _uid) then 
-						{
-							_newTeam pushBack _x;
-						};
-					} forEach _invitJoueur;
-
-					_x setVariable ["invitePar", _newTeam, true];
-				};
-			} forEach allPlayers;
-
-			// UID player / name player / classes [classe, race] / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / liste quetes dispo / planetes visités / quetes actives / garage / white liste soldat
-			[_uid, _name, _classes, (_variable select 2), (_variable select 3), (_variable select 4), (_variable select 5), (_variable select 6), (_variable select 7), _inventaire_reel, _inventaire_virtuel, (getPos _unit), (_variable select 10), (_variable select 11), (_variable select 12), (_variable select 13), (_variable select 14), (_variable select 15)] remoteExec ["db_fnc_sauvegardeBdd", 2];	
+		if ((count _teams) > 1) then 
+		{
+			_teams_bis pushBack _teams;
 		};
+		
+		missionNamespace setVariable ["team", _teams_bis, true];
+
+		{
+			if ((getPlayerUID _x) != _uid) then 
+			{
+				private _invitJoueur = _x getVariable ["invitePar", []];
+
+				private _newTeam = [];
+				{
+					if (_x != _uid) then 
+					{
+						_newTeam pushBack _x;
+					};
+				} forEach _invitJoueur;
+
+				_x setVariable ["invitePar", _newTeam, true];
+			};
+		} forEach allPlayers;
+
+		// UID player / name player / classes [classe, race] / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / liste quetes dispo / planetes visités / quetes actives / garage / white liste soldat
+		[_uid, _name, _classes, (_variable select 2), (_variable select 3), (_variable select 4), (_variable select 5), (_variable select 6), (_variable select 7), _inventaire_reel, _inventaire_virtuel, (getPos _unit), (_variable select 10), (_variable select 11), (_variable select 12), (_variable select 13), (_variable select 14), (_variable select 15)] remoteExec ["db_fnc_sauvegardeBdd", 2];	
 	};
 	
 	//false;		
