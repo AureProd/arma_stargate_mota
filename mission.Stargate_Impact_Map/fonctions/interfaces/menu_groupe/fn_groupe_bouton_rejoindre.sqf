@@ -45,17 +45,6 @@ if ([] call mission_fnc_is_in_team) then
 	if ((count _teams) > 1) then 
 	{
 		_teams_bis pushBack _teams;
-	}
-	else
-	{
-		{
-			private _p = _x;
-			{
-				if ((getPlayerUID _p) == _x) then {
-					_p setVariable ["inTeam", false, true];
-				};
-			} forEach allPlayers;
-		} forEach _teams;
 	};
 	
 	//player setVariable ["inTeam", false, true];
@@ -110,7 +99,7 @@ if ((getPlayerUID _joueur) in _invitePar) then
 		_teams pushBack _team;
 
 		//player setVariable ["inTeam", true, true];
-		_joueur setVariable ["inTeam", true, true];
+		//_joueur setVariable ["inTeam", true, true];
 		missionNamespace setVariable ["team", _teams, true];
 	};
 
