@@ -18,8 +18,6 @@ else
 
 liste_joueurs_groupe = [];
 
-private _liste_quetes = _playerBdd select 13;
-
 private _config_quetes = nil;
 
 /*	
@@ -37,15 +35,15 @@ if ((_playerBdd select 1) == 2) then
 	{
 		case 1: 
 		{ 
-			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "tableau_quetes_tauri_archeologue");
+			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "archeologue_tauri");
 		};
 		case 2: 
 		{ 
-			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "tableau_quetes_tauri_scientifique");
+			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "scientifique_tauri");
 		};
 		case 3: 
 		{ 
-			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "tableau_quetes_tauri_soldat");
+			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "soldat_tauri");
 		};
 	};
 } 
@@ -55,21 +53,21 @@ else
 	{
 		case 1: 
 		{ 
-			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "tableau_quetes_goauld_archeologue");
+			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "archeologue_goauld");
 		};
 		case 2: 
 		{ 
-			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "tableau_quetes_goauld_scientifique");
+			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "scientifique_goauld");
 		};
 		case 3: 
 		{ 
-			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "tableau_quetes_goauld_soldat");
+			_config_quetes = getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "soldat_goauld");
 		};
 	};
 };
 
 {
-	if ((_x select 0) in _liste_quetes) then 
+	if ([(_x select 0)] call mission_fnc_has_quetes_actives) then 
 	{
 		liste_joueurs_groupe pushBack _x;
 	};
@@ -78,17 +76,10 @@ else
 private _listeBox = (findDisplay 10000) displayCtrl 10003;
 
 {
-	if ((_x select 0) in (_playerBdd select 13)) then 
-	{
-		if ((_x select 5) == 0) then 
-		{
-			private _index = _listeBox lbAdd format ["%1", (_x select 1)];
-			_listeBox lbsetColor [_index, [1, 1, 0, 1]]; // jaune
-		} 
-		else 
-		{
-			private _index = _listeBox lbAdd format ["%1", (_x select 1)];
-			_listeBox lbsetColor [_index, [0.5873, 0, 1, 1]]; // violet
+	switch (_x select 1) do {
+		case 1: { 
+			private _index = _listeBox lbAdd format ["%1", (_x select 3)];
+			_listeBox lbsetColor [_index, [1, 1, 1, 1]]; // blanc
 		};
 	};
 } forEach liste_joueurs_groupe;

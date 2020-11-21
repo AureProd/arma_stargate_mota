@@ -29,6 +29,9 @@ class CfgFunctions
             class get_team {};
             class is_in_team {};
             class is_wl_soldat {};
+            class add_quetes_actives {};
+            class has_quetes_actives {};
+            class remove_quetes_actives {};
         };
         class journal_quetes
         {
@@ -47,10 +50,9 @@ class CfgFunctions
         {
             file = "fonctions\client\quetes";
             class affichage_icons {};
-            class quete_bienvenue {};
-            class quete_specialite {};
-            class quete_cyber_cafe {};
+            class quete_type_1 {};
             class quetesActives {};
+            class get_config_quetes {};
         };
         class interfaces_autres
         {

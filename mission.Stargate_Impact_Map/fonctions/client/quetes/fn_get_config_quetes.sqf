@@ -1,13 +1,9 @@
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
+// nom fichier : mission_fnc_get_config_quetes
+
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 
-private _tab_quetes_deja_faite = _playerBdd select 10;
-private _tab_quetes_dispo = _playerBdd select 11;
-private _tab_quetes_active = _playerBdd select 13;
-
-private _config_quetes = nil; 
-private _tab_quetes = [];
+private _config_quetes = nil;
 
 /*	
 	classes :
@@ -55,18 +51,4 @@ else
 	};
 };
 
-{
-	if ((_x select 0) in _tab_quetes_active) then 
-	{
-		_tab_quetes pushBack _x;
-	};
-} forEach _config_quetes;
-
-{
-	switch (_x select 1) do {
-		case 1: { 
-			call compile (_x select 7);	
-		};
-	};
-} forEach _tab_quetes;
-
+_config_quetes;

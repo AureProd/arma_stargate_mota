@@ -11,7 +11,11 @@ if (_index != -1) then
 	// { id / nom / description / objectif / points XP gagnés / is secondaire (0 si principale / 1 si secondaire) / fonction }
 	private _quete = liste_joueurs_groupe select _index;
 
-	_description ctrlSetText (_quete select 2);
-	_recompence ctrlSetText format ["Récompence : %1XP", (_quete select 4)];
-	_objectif ctrlSetText format ["Objectif : %1", (_quete select 3)];
+	switch (_quete select 1) do {
+		case 1: { 
+			_description ctrlSetText (_liste_quete select 4);
+			_recompence ctrlSetText format ["Récompence : %1XP", (_liste_quete select 6)];
+			_objectif ctrlSetText format ["Objectif : %1", (_liste_quete select 5)];
+		};
+	};
 };

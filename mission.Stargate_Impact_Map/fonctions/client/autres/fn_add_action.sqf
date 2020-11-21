@@ -1,6 +1,7 @@
 
 //archeologue_1 / archeologue_2
 
+// params -> [id, image, code, condition, param]
 private _fn_addActions = 
 {
 	private _id = param [0];
@@ -22,38 +23,6 @@ private _fn_addActions =
 	1 = goauld
 	2 = tauri	
 */
-// { id / { id quete / id quete } } 
-{
-	[(call compile (_x select 0)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), "tableau_quetes_tauri_archeologue"] call mission_fnc_interface_journal_quetes}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (((missionNamespace getVariable nomVarPlayerUID) select 0) == 1) and (alive player)", (_x select 1)] call _fn_addActions;
-	(call compile (_x select 0)) allowDamage false;
-} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "id_pnj" >> "tableau_id_pnj_tauri_archeologue"));
-
-{
-	[(call compile (_x select 0)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), "tableau_quetes_tauri_scientifique"] call mission_fnc_interface_journal_quetes}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (((missionNamespace getVariable nomVarPlayerUID) select 0) == 2) and (alive player)", (_x select 1)] call _fn_addActions;
-	(call compile (_x select 0)) allowDamage false;
-} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "id_pnj" >> "tableau_id_pnj_tauri_scientifique"));
-
-{
-	[(call compile (_x select 0)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), "tableau_quetes_tauri_soldat"] call mission_fnc_interface_journal_quetes}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (((missionNamespace getVariable nomVarPlayerUID) select 0) == 3) and (alive player)", (_x select 1)] call _fn_addActions;
-	(call compile (_x select 0)) allowDamage false;
-} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "id_pnj" >> "tableau_id_pnj_tauri_soldat"));
-
-{
-	[(call compile (_x select 0)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), "tableau_quetes_goauld_archeologue"] call mission_fnc_interface_journal_quetes}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (((missionNamespace getVariable nomVarPlayerUID) select 0) == 1) and (alive player)", (_x select 1)] call _fn_addActions;
-	(call compile (_x select 0)) allowDamage false;
-} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "id_pnj" >> "tableau_id_pnj_goauld_archeologue"));
-
-{
-	[(call compile (_x select 0)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), "tableau_quetes_goauld_scientifique"] call mission_fnc_interface_journal_quetes}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (((missionNamespace getVariable nomVarPlayerUID) select 0) == 2) and (alive player)", (_x select 1)] call _fn_addActions;
-	(call compile (_x select 0)) allowDamage false;
-} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "id_pnj" >> "tableau_id_pnj_goauld_scientifique"));
-
-{
-	[(call compile (_x select 0)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), "tableau_quetes_goauld_soldat"] call mission_fnc_interface_journal_quetes}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (((missionNamespace getVariable nomVarPlayerUID) select 0) == 3) and (alive player)", (_x select 1)] call _fn_addActions;
-	(call compile (_x select 0)) allowDamage false;
-} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "id_pnj" >> "tableau_id_pnj_goauld_soldat"));
-
-// -------------------
 
 {
 	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_marcher}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;
@@ -139,3 +108,103 @@ private _fn_addActions =
 	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_poissonerie}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "poissonerie_tauri"));
+
+// ----------------------------------------------------------------
+
+{
+	switch (_x select 1) do {
+		case 1: { 
+			[
+				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
+			] call _fn_addActions;
+			[
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+			] call _fn_addActions;
+
+			(call compile (_x select 2)) allowDamage false;
+			(call compile (_x select 8)) allowDamage false;
+		};		
+	};
+} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "archeologue_tauri"));
+
+{
+	switch (_x select 1) do {
+		case 1: { 
+			[
+				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
+			] call _fn_addActions;
+			[
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+			] call _fn_addActions;
+
+			(call compile (_x select 2)) allowDamage false;
+			(call compile (_x select 8)) allowDamage false;
+		};		
+	};
+} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "scientifique_tauri"));
+
+{
+	switch (_x select 1) do {
+		case 1: { 
+			[
+				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
+			] call _fn_addActions;
+			[
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+			] call _fn_addActions;
+
+			(call compile (_x select 2)) allowDamage false;
+			(call compile (_x select 8)) allowDamage false;
+		};		
+	};
+} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "soldat_tauri"));
+
+{
+	switch (_x select 1) do {
+		case 1: { 
+			[
+				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
+			] call _fn_addActions;
+			[
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+			] call _fn_addActions;
+
+			(call compile (_x select 2)) allowDamage false;
+			(call compile (_x select 8)) allowDamage false;
+		};		
+	};
+} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "archeologue_goauld"));
+
+{
+	switch (_x select 1) do {
+		case 1: { 
+			[
+				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
+			] call _fn_addActions;
+			[
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+			] call _fn_addActions;
+
+			(call compile (_x select 2)) allowDamage false;
+			(call compile (_x select 8)) allowDamage false;
+		};		
+	};
+} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "scientifique_goauld"));
+
+{
+	switch (_x select 1) do {
+		case 1: { 
+			[
+				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
+			] call _fn_addActions;
+			[
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+			] call _fn_addActions;
+
+			(call compile (_x select 2)) allowDamage false;
+			(call compile (_x select 8)) allowDamage false;
+		};		
+	};
+} forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "soldat_goauld"));
+
+

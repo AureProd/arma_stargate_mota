@@ -17,4 +17,4 @@ private _num_quetes_dispo = _this;
 	};
 } forEach _num_quetes_dispo;
 
-[[3, _quetes_dispo]] call mission_fnc_modif_var_bdd;
+[[11, _quetes_dispo]] call mission_fnc_modif_var_bdd;
