@@ -216,6 +216,6 @@ class stargate_quetes
                 "[true, true] call mission_fnc_quete_bienvenue"
             }
         };
-    };
-}; */
+    };*/
+}; 
 
