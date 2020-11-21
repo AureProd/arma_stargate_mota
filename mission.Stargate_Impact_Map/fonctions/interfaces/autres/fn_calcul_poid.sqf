@@ -1,8 +1,14 @@
 
-private _inventaire_virtuel =  param [0]; 
-private _poid_objet =  param [1];
+// fonction name : mission_fnc_calcul_poid
+// parmettres : [player, poid]
 
-private _poid_total_inventaire = 100;
+private _player = param [0, player]; 
+private _poid_objet =  param [1, 0];
+
+private _inventaire_virtuel = ["inventaire virtuel", _player] call mission_fnc_getBDD;
+
+private _levelPlayer = ["level", _player] call mission_fnc_getBDD;
+private _poid_total_inventaire = 40 + _levelPlayer;
 
 private _poid_perso = 0;
 

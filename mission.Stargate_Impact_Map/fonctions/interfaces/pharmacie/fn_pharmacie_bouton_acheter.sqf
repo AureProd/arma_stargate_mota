@@ -132,7 +132,7 @@ if (_index != -1) then
 
 	private _objet = _tab select _index;
 
-	private _return = [_invVirtuelPlayer, (_objet select 5)] call mission_fnc_calcul_poid;
+	private _return = [player, (_objet select 5)] call mission_fnc_calcul_poid;
 
 	if (_return) then 
 	{

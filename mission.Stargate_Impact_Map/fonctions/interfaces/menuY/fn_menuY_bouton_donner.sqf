@@ -32,7 +32,7 @@ if ((player distance2D _joueur_distant) < 10) then {
 		{
 			if ((_tab select 0) == (_x select 0)) then
 			{
-				private _return = [_inventaire_virtuel_joueur_distant, ((_x select 5) * _nb_item)] call mission_fnc_calcul_poid;
+				private _return = [_joueur_distant, ((_x select 5) * _nb_item)] call mission_fnc_calcul_poid;
 
 				if (_return) then 
 				{

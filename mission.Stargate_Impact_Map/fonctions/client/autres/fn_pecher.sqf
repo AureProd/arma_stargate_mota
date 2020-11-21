@@ -40,7 +40,7 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
 
 	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
 
-	private _return = [_invVirtuelPlayer, (_poisson select 5)] call mission_fnc_calcul_poid;
+	private _return = [player, (_poisson select 5)] call mission_fnc_calcul_poid;
 
 	if (_return) then 
 	{

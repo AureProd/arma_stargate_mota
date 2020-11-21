@@ -37,7 +37,7 @@ player addAction ["Dépecer l'animal ...", {
 
 		private _viande = _liste_objets_config select _indexViande;
 
-		private _return = [_invVirtuelPlayer, (_viande select 5)] call mission_fnc_calcul_poid;
+		private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
 
 		if (_return) then {
 			[_viande select 0] call mission_fnc_add_item;
@@ -53,7 +53,7 @@ player addAction ["Dépecer l'animal ...", {
 
 		private _viande = _liste_objets_config select _indexViande;
 
-		private _return = [_invVirtuelPlayer, (_viande select 5)] call mission_fnc_calcul_poid;
+		private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
 
 		if (_return) then 
 		{
