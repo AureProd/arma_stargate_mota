@@ -20,6 +20,7 @@ switch (_version_code) do {
 	case 2: { 
 		hint format ["%1", (_quete select 9)];
 		[(_quete select 6)] call mission_fnc_add_xp;
+		player linkItem "ItemMap";
 
 		[_id_quete] call mission_fnc_remove_quetes_actives;
 		[_id_quete] call mission_fnc_add_quetes_faites;

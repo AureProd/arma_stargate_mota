@@ -74,13 +74,13 @@ class stargate_quetes
             {
                 1, 
                 1, 
-                "quete_tauri_1", 
+                "quete_tauri_1", // à modifier pour les goauld
                 "Bienvenue sur StarGate", 
                 "Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous donnerons une carte qui vous sera utile pour vous orientez !",
                 "Trouvez l'office du tourisme !",
                 5,
                 "[1, 1] call mission_fnc_quete_type_1",
-                "office_tourisme",
+                "office_tourisme", // à modifier pour les goauld
                 "Voilà votre carte...",
                 "[1, 2] call mission_fnc_quete_type_1",
                 2
@@ -90,13 +90,13 @@ class stargate_quetes
             {
                 1, 
                 1, 
-                "quete_tauri_1", 
+                "quete_tauri_1", // à modifier pour les goauld
                 "Bienvenue sur StarGate", 
                 "Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous donnerons une carte qui vous sera utile pour vous orientez !",
                 "Trouvez l'office du tourisme !",
                 5,
                 "[1, 1] call mission_fnc_quete_type_1",
-                "office_tourisme",
+                "office_tourisme", // à modifier pour les goauld
                 "Voilà votre carte...",
                 "[1, 2] call mission_fnc_quete_type_1",
                 2
@@ -106,13 +106,13 @@ class stargate_quetes
             {
                 1, 
                 1, 
-                "quete_tauri_1", 
+                "quete_tauri_1", // à modifier pour les goauld
                 "Bienvenue sur StarGate", 
                 "Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous donnerons une carte qui vous sera utile pour vous orientez !",
                 "Trouvez l'office du tourisme !",
                 5,
                 "[1, 1] call mission_fnc_quete_type_1",
-                "office_tourisme",
+                "office_tourisme", // à modifier pour les goauld
                 "Voilà votre carte...",
                 "[1, 2] call mission_fnc_quete_type_1",
                 2

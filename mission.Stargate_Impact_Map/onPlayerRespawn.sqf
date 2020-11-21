@@ -28,12 +28,12 @@ if ((_variable select 1) == 1) then
 else 
 {
 	player setPos [_spawnTauri select 0, _spawnTauri select 1, _spawnTauri select 2];
+	
+	player setUnitLoadout (missionConfigFile >> "stargate_items" >> "loadout_tauri");
+};
 
-	if (1 in (_variable select 10)) then {
-		player setUnitLoadout (missionConfigFile >> "stargate_items" >> "loadout_tauri_bis");
-	} else {
-		player setUnitLoadout (missionConfigFile >> "stargate_items" >> "loadout_tauri");
-	};
+if (1 in (_variable select 10)) then {
+	player linkItem "ItemMap";
 };
 
 [] call mission_fnc_syns_data;

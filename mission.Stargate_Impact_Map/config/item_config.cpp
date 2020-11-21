@@ -89,20 +89,11 @@ class stargate_items
         items[] = {};
         magazines[] = {};
     };
-    class loadout_tauri_bis
-    {
-        uniformClass = "U_C_Man_casual_1_F";
-        backpack = "";
-        linkedItems[] = { "ItemMap", "ItemCompass", "ItemWatch", "ItemRadio" };
-        weapons[] = {};
-        items[] = {};
-        magazines[] = {};
-    };
     class loadout_goauld
     {
         uniformClass = "sga_jaffa_free";
         backpack = "";
-        linkedItems[] = { "ItemMap", "ItemCompass", "ItemRadio" };
+        linkedItems[] = { "ItemCompass", "ItemRadio" };
         weapons[] = {};
         items[] = {};
         magazines[] = {};
