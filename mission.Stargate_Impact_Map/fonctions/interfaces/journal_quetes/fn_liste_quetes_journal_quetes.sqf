@@ -14,9 +14,9 @@ if (_index != -1) then
 	{
 		switch (_quete select 1) do {
 			case 1: { 
-				_description ctrlSetText (_liste_quete select 4);
-				_recompence ctrlSetText format ["Récompence : %1XP", (_liste_quete select 6)];
-				_objectif ctrlSetText format ["Objectif : %1", (_liste_quete select 5)];
+				_description ctrlSetText (_quete select 4);
+				_recompence ctrlSetText format ["Récompence : %1XP", (_quete select 6)];
+				_objectif ctrlSetText format ["Objectif : %1", (_quete select 5)];
 			};
 		};
 	}
