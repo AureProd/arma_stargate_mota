@@ -7,7 +7,7 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
 
 {
     // variable "nom_zone" --> [animaux_vivants, races, pos, radius]
-    missionNamespace setVariable [_x, [[], [], (getMarkerPos _x), ((getMarkerSize _x) select 0)], true];
+    missionNamespace setVariable [(_x select 0), [[], [], (getMarkerPos (_x select 0)), ((getMarkerSize (_x select 0)) select 0)], true];
 
     [_x, _animalList] spawn {
         //private _maxAnimals = param [0];

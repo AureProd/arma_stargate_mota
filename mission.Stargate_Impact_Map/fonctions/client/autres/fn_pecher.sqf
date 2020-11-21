@@ -36,9 +36,9 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
 		};
 	} forEach _liste_objets_config;
 
-	private _tabbleau_aleatoire = [[nil, _poissons, _poissons], [nil, _poissons]]
+	private _tabbleau_aleatoire = [[nil, _poissons, _poissons], [nil, _poissons]];
     
-	private _tableau_bis = (selectRandom(selectRandom _tabbleau_aleatoire));
+	private _tableau_bis = (selectRandom (selectRandom _tabbleau_aleatoire));
 
 	if (_tableau_bis == nil) then {
 		hint "Vous n'avez rien pêché !!!";
