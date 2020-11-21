@@ -18,8 +18,8 @@ class stargate
 	class chasse
 	{
 		zones[] = { // id de zone / nb d'annimaux
-			{"zone_chasse_1", 10},
-			{"zone_chasse_2", 20}
+			{"zone_chasse_1", 20},
+			{"zone_chasse_2", 10}
 		};
 	};
 	class peche

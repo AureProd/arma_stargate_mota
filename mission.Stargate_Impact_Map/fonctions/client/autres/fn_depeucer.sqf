@@ -20,8 +20,6 @@ player addAction ["Dépecer l'animal ...", {
 
     [] call mission_fnc_chargement;
 
-    deleteVehicle _animal;
-
 	private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
 
 	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
@@ -62,6 +60,8 @@ player addAction ["Dépecer l'animal ...", {
 	};
 
 	sleep 1;
+
+	deleteVehicle _animal;
 
 	depeucage_ON = false;
 }, nil, 1.5, true, true, "", "
