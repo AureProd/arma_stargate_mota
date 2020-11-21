@@ -17,6 +17,9 @@ LEVELADMIN = 0;
 
 player addRating -2000;
 
+player enableFatigue false;
+player enableStamina false;
+
 menu_y_ok = false;
 
 setViewDistance 1000;

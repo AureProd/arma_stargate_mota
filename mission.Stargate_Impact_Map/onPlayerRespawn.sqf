@@ -4,6 +4,9 @@
 
 player addRating -2000;
 
+player enableFatigue false;
+player enableStamina false;
+
 player setDamage 0;
 
 // liste vies : [ % maladie tete, % maladie ventre, % hit tete, % hit ventre, % hit bras droit, % hit bras gauche, % hit jambe droit, % hit jambe gauche ]
