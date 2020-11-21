@@ -67,6 +67,8 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
 	(surfaceIsWater (position _this)) && 
 	([position _this] call returnIfInPecheZone) && 
 	((typeOf (vehicle _this)) == 'C_Rubberboat') && 
+	((driver (vehicle _this)) != player) &&
 	(alive _this) &&
 	(!peche_ON)
 "];
+
