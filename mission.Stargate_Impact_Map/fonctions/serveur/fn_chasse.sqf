@@ -1,6 +1,6 @@
 
 private _animalList = ["Sheep_random_F", "Goat_random_F"]; //,"Hen_random_F","Cock_random_F"];
-private _maxAnimals = 10;
+//private _maxAnimals = 10;
 
 // variable "animaux_morts" --> [liste_animaux_mort, race]
 missionNamespace setVariable ["animaux_morts", [[], []], true];
@@ -9,10 +9,13 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
     // variable "nom_zone" --> [animaux_vivants, races, pos, radius]
     missionNamespace setVariable [_x, [[], [], (getMarkerPos _x), ((getMarkerSize _x) select 0)], true];
 
-    [_maxAnimals, _x, _animalList] spawn {
-        private _maxAnimals = param [0];
-        private _zone = param [1];
-        private _animalList = param [2];
+    [_x, _animalList] spawn {
+        //private _maxAnimals = param [0];
+        private _zone_config = param [0];
+        private _animalList = param [1];
+
+        private _maxAnimals = _zone_config select 1;
+        private _zone = _zone_config select 0;
 
         while { true } do {
             waitUntil { (count ((missionNamespace getVariable _zone) select 0)) < _maxAnimals }; 

@@ -6,10 +6,6 @@ player addAction ["Dépecer l'animal ...", {
 
 	private _animal = cursorObject;
 
-    [] call mission_fnc_chargement;
-
-    // CODE AU DEPEUCAGE
-
 	private _animalsMorts = (missionNamespace getVariable 'animaux_morts');
 	private _listeAnimaux = (_animalsMorts select 0);
 	private _listeRaces = (_animalsMorts select 1);
@@ -21,6 +17,8 @@ player addAction ["Dépecer l'animal ...", {
 	_animalsMorts set [0, _listeAnimaux];
 	_animalsMorts set [1, _listeRaces];
 	missionNamespace setVariable ["animaux_morts", _animalsMorts, true];
+
+    [] call mission_fnc_chargement;
 
     deleteVehicle _animal;
 
