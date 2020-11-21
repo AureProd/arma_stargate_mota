@@ -2,7 +2,7 @@
 while {true} do 
 {
 	{
-		if ((simulationEnabled _x) && !(_x in ((missionNamespace getVariable 'animaux_morts') select 0))) then {
+		if ((simulationEnabled _x) && !(((type _x) == "Sheep_random_F") or ((type _x) == "Goat_random_F"))) then {
 			deleteVehicle _x;
 		};
 	} foreach AllDead;
