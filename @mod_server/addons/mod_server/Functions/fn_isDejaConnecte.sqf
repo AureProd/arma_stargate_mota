@@ -48,6 +48,7 @@ else
 		private _planete_visite = _queryResult select 16; // p_planete_visite
 		private _quetes_actives = _queryResult select 17;
 		private _garage = _queryResult select 18;
+		private _documents = _queryResult select 20;
 
 		_licences = [_licences] call db_fnc_mresToArray;
 		_inv_reel = [_inv_reel] call db_fnc_mresToArray;
@@ -59,8 +60,9 @@ else
 		_planete_visite = [_planete_visite] call db_fnc_mresToArray;
 		_quetes_actives = [_quetes_actives] call db_fnc_mresToArray;
 		_garage = [_garage] call db_fnc_mresToArray;
+		_documents = [_documents] call db_fnc_mresToArray;
 
-		// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, liste quetes actives, garage, white liste soldat, level admin
-		[false, _queryResult select 3, _queryResult select 4, _queryResult select 5,  _licences, _queryResult select 7, _queryResult select 8, _queryResult select 9, _queryResult select 10, _inv_reel, _inv_virtuel, _pos_player, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage, _queryResult select 19, _queryResultWhiteListe select 3] remoteExec ["mission_fnc_intro_stargate", _client];
+		// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, liste quetes actives, garage, white liste soldat, level admin, documents
+		[false, _queryResult select 3, _queryResult select 4, _queryResult select 5,  _licences, _queryResult select 7, _queryResult select 8, _queryResult select 9, _queryResult select 10, _inv_reel, _inv_virtuel, _pos_player, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage, _queryResult select 19, _queryResultWhiteListe select 3, _documents] remoteExec ["mission_fnc_intro_stargate", _client];
 	};
 };
