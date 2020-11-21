@@ -23,6 +23,7 @@ CREATE TABLE player
  p_quetes_actives TEXT NOT NULL,
  p_garage TEXT NOT NULL,
  p_white_liste_soldat INTEGER(10) NOT NULL, 
+ p_documents TEXT NOT NULL, 
  PRIMARY KEY (p_id)
 ) ENGINE=InnoDB CHARSET=UTF8;
 
