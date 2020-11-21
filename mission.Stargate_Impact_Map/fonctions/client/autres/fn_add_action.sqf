@@ -118,7 +118,7 @@ private _fn_addActions =
 				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
 			] call _fn_addActions;
 			[
-				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_x select 10)
 			] call _fn_addActions;
 
 			(call compile (_x select 2)) allowDamage false;
@@ -134,7 +134,7 @@ private _fn_addActions =
 				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
 			] call _fn_addActions;
 			[
-				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_x select 10)
 			] call _fn_addActions;
 
 			(call compile (_x select 2)) allowDamage false;
@@ -150,7 +150,7 @@ private _fn_addActions =
 				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
 			] call _fn_addActions;
 			[
-				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 2) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_x select 10)
 			] call _fn_addActions;
 
 			(call compile (_x select 2)) allowDamage false;
@@ -166,7 +166,7 @@ private _fn_addActions =
 				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
 			] call _fn_addActions;
 			[
-				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 1) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_x select 10)
 			] call _fn_addActions;
 
 			(call compile (_x select 2)) allowDamage false;
@@ -182,7 +182,7 @@ private _fn_addActions =
 				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
 			] call _fn_addActions;
 			[
-				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 2) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_x select 10)
 			] call _fn_addActions;
 
 			(call compile (_x select 2)) allowDamage false;
@@ -198,7 +198,7 @@ private _fn_addActions =
 				(call compile (_x select 2)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_dispo) and (alive player)", (_x select 0)], _x
 			] call _fn_addActions;
 			[
-				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_quete select 10)
+				(call compile (_x select 8)), "pictures\addActions\interaction_parler.paa", {call compile (_this select 3)}, format ["((['classe'] call mission_fnc_getBDD) == 3) and ((['race'] call mission_fnc_getBDD) == 1) and ([%1] call mission_fnc_has_quetes_actives) and (alive player)", (_x select 0)], (_x select 10)
 			] call _fn_addActions;
 
 			(call compile (_x select 2)) allowDamage false;
