@@ -7,7 +7,7 @@ waitUntil {dialog};
 
 private _image_fond = (findDisplay 10000) displayCtrl 10001;
 
-if (call mission_fnc_isTauri) then 
+if ([] call mission_fnc_is_tauri) then 
 {
 	_image_fond ctrlSetText "pictures\interfaces\menu_quetes\menu_journal.paa";
 } 

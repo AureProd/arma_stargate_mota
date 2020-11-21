@@ -1,5 +1,5 @@
 
-// fonction name : mission_fnc_isTauri
+// fonction name : mission_fnc_is_tauri
 // parmettres : [player]
 
 private _nomVarPlayer = format ["variable_%1", getPlayerUID (param [0, player])]; // BDD player
