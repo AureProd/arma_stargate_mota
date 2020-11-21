@@ -8,6 +8,6 @@ diag_log "Lancement de la connection a la BDD";
 
 [] call mission_fnc_canaux;
 
-[] call mission_fnc_demarage_fps;
+//[] call mission_fnc_demarage_fps;
 
 [] spawn mission_fnc_chasse;

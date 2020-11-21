@@ -205,7 +205,7 @@ class CfgFunctions
             file = "fonctions\fps\fonctions_capture";
             class capture_drapeau {};
             class change_flag_color {};
-            class add_fps_mode {};
+            class add_fps_mode {}; // demarre le mode fps coté client --> fn_intro_stargate.sqf
             class set_logo_flag {};
             class son_notif {};
             class interface_fps {};
@@ -219,7 +219,7 @@ class CfgFunctions
         class serveur_fps
         {
             file = "fonctions\fps\serveur";
-            class demarage_fps {};
+            class demarage_fps {}; // demarre le mode fps coté serveur --> initServer.sqf
         };
     };
 };

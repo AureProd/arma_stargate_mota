@@ -107,7 +107,7 @@ else
 
 waitUntil {!dialog};
 
-[] call mission_fnc_add_fps_mode;
+//[] call mission_fnc_add_fps_mode;
 
 [] spawn mission_fnc_survival;
 
