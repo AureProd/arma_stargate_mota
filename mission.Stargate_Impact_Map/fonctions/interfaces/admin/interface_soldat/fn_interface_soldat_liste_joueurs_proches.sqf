@@ -18,7 +18,7 @@ lbClear _liste_items_illegals;
 		if ((_tab select 0) == (_x select 0)) then 
 		{
 			if ((_x select 10) == 1) then {
-				_liste_items_illegals lbAdd (format ["%1 [x%2]", (_x select 2), (_tab select 1)];
+				_liste_items_illegals lbAdd (format ["%1 [x%2]", (_x select 2), (_tab select 1)]);
 			};
 		};
 	} forEach _liste_objets_config;
