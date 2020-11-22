@@ -35,8 +35,8 @@ else
 	player setUnitLoadout (missionConfigFile >> "stargate_items" >> "loadout_tauri");
 };
 
-if (1 in (_variable select 10)) then {
+/* if (1 in (_variable select 10)) then {
 	player linkItem "ItemMap";
-};
+}; */
 
 [] call mission_fnc_syns_data;

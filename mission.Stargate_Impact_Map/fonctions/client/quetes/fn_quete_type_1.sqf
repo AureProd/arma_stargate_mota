@@ -20,7 +20,13 @@ switch (_version_code) do {
 	case 2: { 
 		hint format ["%1", (_quete select 9)];
 		[(_quete select 6)] call mission_fnc_add_xp;
-		player linkItem "ItemMap";
+		//player linkItem "ItemMap";
+
+		if ([] call mission_fnc_is_tauri) then {
+			[1] call mission_fnc_add_planetes;
+		} else {
+			[82] call mission_fnc_add_planetes;
+		};
 
 		[_id_quete] call mission_fnc_remove_quetes_actives;
 		[_id_quete] call mission_fnc_add_quetes_faites;

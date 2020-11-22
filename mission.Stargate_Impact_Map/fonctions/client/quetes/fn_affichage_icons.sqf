@@ -8,13 +8,15 @@ addMissionEventHandler ["Draw3D",
 		private _image_bis = param [1];
 
 		private _pos = getPosATL _id;
+		private _posSaoul = getPosASL _id;
 		private _posBis = [_pos select 0, _pos select 1, (_pos select 2) + 2.2];
+		private _posTers = [_posSaoul select 0, _posSaoul select 1, (_posSaoul select 2) + 2.2];
 
 		private _distance = ((eyePos player) distance2D _pos);
 
 		private _image = (getMissionPath _image_bis);
 
-		private _visibilite = [player, "VIEW", (vehicle player)] checkVisibility [(eyePos player), _pos];
+		private _visibilite = [player, "VIEW", (vehicle player)] checkVisibility [(eyePos player), _posTers];
 
 		//drawIcon3D [_image, [1,1,1,1], _posBis, (25 / _distance), (25 / _distance), 1, "", 1, 1, "PuristaMedium", "right", false];		
 
