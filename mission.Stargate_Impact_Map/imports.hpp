@@ -19,6 +19,7 @@
 #include "dialog\popup_bis.hpp"
 #include "dialog\menu_general.hpp"
 #include "dialog\menu_docs_planetes.hpp"
+#include "dialog\interface_admin.hpp"
 
 // Configs
 #include "config\mission_config.cpp"

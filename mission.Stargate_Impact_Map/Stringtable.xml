@@ -513,5 +513,82 @@
 				<English>Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A</English>
 			</Key>
 		</Container>
+		<Container name="Interfaces">
+			<Key ID="STR_menu_y_level">
+				<Original>level %1</Original>
+                <French>level %1</French>
+				<English>level %1</English>
+			</Key>
+            <Key ID="STR_admin_titre_items_illegals">
+				<Original>Objets Illégals</Original>
+                <French>Objets Illégals</French>
+				<English>Objets Illégals</English>
+			</Key>
+			<Key ID="STR_admin_bouton_detruire">
+				<Original>Détruire</Original>
+                <French>Détruire</French>
+				<English>Détruire</English>
+			</Key>
+			<Key ID="STR_admin_bouton_wl_soldat">
+				<Original>White-listé soldat : %1</Original>
+                <French>White-listé soldat : %1</French>
+				<English>White-listé soldat : %1</English>
+			</Key>
+			<Key ID="STR_admin_bouton_invisible">
+				<Original>Invisibilité : %1</Original>
+                <French>Invisibilité : %1</French>
+				<English>Invisibilité : %1</English>
+			</Key>
+			<Key ID="STR_admin_bouton_invinsible">
+				<Original>Invinsibilité : %1</Original>
+                <French>Invinsibilité : %1</French>
+				<English>Invinsibilité : %1</English>
+			</Key>
+			<Key ID="STR_admin_bouton_tp_to_position_sauvegardee">
+				<Original>TP à la position sauvegardée</Original>
+                <French>TP à la position sauvegardée</French>
+				<English>TP à la position sauvegardée</English>
+			</Key>
+			<Key ID="STR_admin_bouton_sauvegarde_position">
+				<Original>Sauvegarde la position</Original>
+                <French>Sauvegarde la position</French>
+				<English>Sauvegarde la position</English>
+			</Key>
+			<Key ID="STR_admin_titre_planetes_debloquees">
+				<Original>Planètes débloquées</Original>
+                <French>Planètes débloquées</French>
+				<English>Planètes débloquées</English>
+			</Key>
+			<Key ID="STR_admin_bouton_tuer_joueur">
+				<Original>Tuer le joueur</Original>
+                <French>Tuer le joueur</French>
+				<English>Tuer le joueur</English>
+			</Key>
+			<Key ID="STR_admin_text_xp_joueur">
+				<Original>%1 XP</Original>
+                <French>%1 XP</French>
+				<English>%1 XP</English>
+			</Key>
+			<Key ID="STR_admin_bouton_add_xp">
+				<Original>Add XP</Original>
+                <French>Add XP</French>
+				<English>Add XP</English>
+			</Key>
+			<Key ID="STR_admin_bouton_delete_xp">
+				<Original>Delete XP</Original>
+                <French>Delete XP</French>
+				<English>Delete XP</English>
+			</Key>
+			<Key ID="STR_admin_bouton_tp_joueur_admin">
+				<Original>TP joueur > admin</Original>
+                <French>TP joueur > admin</French>
+				<English>TP joueur > admin</English>
+			</Key>
+			<Key ID="STR_admin_bouton_tp_admin_joueur">
+				<Original>TP joueur < admin</Original>
+                <French>TP joueur < admin</French>
+				<English>TP joueur < admin</English>
+			</Key>
+		</Container>
 	</Package>
 </Project>

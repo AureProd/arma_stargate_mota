@@ -65,6 +65,6 @@ private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> 
 	};
 } forEach _tableauLevels;
 
-_texte_xp ctrlSetText format ["level %1", (_variable select 4)];
+_texte_xp ctrlSetText format [localize "STR_menu_y_level", (_variable select 4)];
 
 [] call mission_fnc_actualise_menu_y;

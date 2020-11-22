@@ -93,7 +93,7 @@ class menu_journal_quetes
 			w = safeZoneW * 0.188125;
 			h = safeZoneH * 0.20777778;
 			style = 2+16;
-			text = "Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange  de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous  donnerons une carte qui vous sera utile pour vous orientez !   ";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -109,7 +109,7 @@ class menu_journal_quetes
 			w = safeZoneW * 0.188125;
 			h = safeZoneH * 0.02888889;
 			style = 2+16;
-			text = "Récompence : 5 point d'xp";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0,1,0,1};
 			font = "PuristaMedium";
@@ -125,7 +125,7 @@ class menu_journal_quetes
 			w = safeZoneW * 0.188125;
 			h = safeZoneH * 0.06111112;
 			style = 2+16;
-			text = "Objectif : Trouvez l'office du tourisme !";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,0,0,1};
 			font = "PuristaMedium";
@@ -230,7 +230,7 @@ class menu_journal_quetes_bis
 			w = safeZoneW * 0.188125;
 			h = safeZoneH * 0.20777778;
 			style = 2+16;
-			text = "Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange  de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous  donnerons une carte qui vous sera utile pour vous orientez !   ";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -246,7 +246,7 @@ class menu_journal_quetes_bis
 			w = safeZoneW * 0.188125;
 			h = safeZoneH * 0.02888889;
 			style = 2+16;
-			text = "Récompence : 5 point d'xp";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0,1,0,1};
 			font = "PuristaMedium";
@@ -262,7 +262,7 @@ class menu_journal_quetes_bis
 			w = safeZoneW * 0.188125;
 			h = safeZoneH * 0.06111112;
 			style = 2+16;
-			text = "Objectif : Trouvez l'office du tourisme !";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,0,0,1};
 			font = "PuristaMedium";

@@ -484,7 +484,7 @@ class menu_y
 			w = safeZoneW * 0.06197917;
 			h = safeZoneH * 0.03148149;
 			style = 2+192;
-			text = "LEVEL 1";
+			text = $STR_erreur;
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
 			font = "PuristaLight";
