@@ -3,7 +3,7 @@
 <Project name="StarGate">
 	<Package name="Mission StarGate">
 		<Container name="Items">
-			<Key ID="str_TAG_bouteille">
+			<Key ID="STR_bouteille">
 				<Original>bouteille</Original>
                 <French>bouteille</French>
 				<English>bottle</English>
@@ -37,11 +37,6 @@
 				<Original>aspirine</Original>
                 <French>aspirine</French>
 				<English>aspirine</English>
-			</Key>
-            <Key ID="str_TAG_bouteille">
-				<Original>bouteille</Original>
-                <French>bouteille</French>
-				<English>bottle</English>
 			</Key>
             <Key ID="str_TAG_smecta">
 				<Original>smecta</Original>
@@ -98,25 +93,25 @@
                 <French>couteau</French>
 				<English>couteau</English>
 			</Key>
-            <Key ID="str_TAG_maquereau">
-				<Original>maquereau</Original>
-                <French>maquereau</French>
-				<English>maquereau</English>
+            <Key ID="STR_maquereau_cru">
+				<Original>maquereau cru</Original>
+                <French>maquereau cru</French>
+				<English>maquereau cru</English>
 			</Key>
-            <Key ID="str_TAG_cru">
-				<Original>cru</Original>
-                <French>cru</French>
-				<English>cru</English>
+            <Key ID="STR_maquereau_cuit">
+				<Original>maquereau cuit</Original>
+                <French>maquereau cuit</French>
+				<English>maquereau cuit</English>
 			</Key>
-            <Key ID="str_TAG_cuit">
-				<Original>cuit</Original>
-                <French>cuit</French>
-				<English>cuit</English>
+            <Key ID="STR_mullet_cru">
+				<Original>mullet cru</Original>
+                <French>mullet cru</French>
+				<English>mullet cru</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_mullet_cuit">
+				<Original>mullet cuit</Original>
+                <French>mullet cuit</French>
+				<English>mullet cuit</English>
 			</Key>
 
             <Key ID="str_TAG_">
