@@ -34,8 +34,6 @@ class stargate_items
             {6, 0, "bandage", "pictures\items\bandage.paa", 3, 0.5, 0, 0, 1, 0},
             {7, 0, "aspirine", "pictures\items\aspirine.paa", 4, 0.5, 0, 0, 1, 0},
             {8, 0, "smecta", "pictures\items\smecta.paa", 4, 0.5, 0, 0, 1, 0},
-            {9, 0, "bouteille_goauld", "pictures\items\bouteille.paa", 2, 1.5, 0, 0, 0, 30},
-            {10, 0, "sandwich_goauld", "pictures\items\sandwich.paa", 1, 1, 0, 0, 0, 30},
             //{11, 0, "bandage_goauld", "pictures\items\bandage.paa", 3, 0.5, 0, 0, 0},
             //{12, 0, "aspirine_goauld", "pictures\items\aspirine.paa", 4, 0.5, 0, 0, 0},
             //{13, 0, "smecta_goauld", "pictures\items\smecta.paa", 4, 0.5, 0, 0, 0},
@@ -73,12 +71,12 @@ class stargate_items
 		};
 
         // { tableau d'ids des items / message de presentation de item }
-        messages_items[] = {
+        /* messages_items[] = {
             {{6, 11}, "Ce medicament soigne les plaies"}, // message bandage
             {{8, 13}, "Ce medicament soigne les mots de ventre"}, // message smecta
             {{7, 12}, "Ce medicament soigne les migraines"}, // message aspirine
             {{3}, "Ce medicament purifie l'eau des gourdes"} // message micropur
-        };
+        }; */
 	};
     class loadout_tauri
     {

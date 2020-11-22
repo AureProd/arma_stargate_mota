@@ -45,6 +45,16 @@ private _fn_addActions =
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "pharmacie_tauri"));
 
 {
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[true] call mission_fnc_interface_marcher}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "marcher_goauld_militaire"));
+
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[true] call mission_fnc_interface_pharmacie}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "pharmacie_goauld_militaire"));
+
+{
 	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[true] call mission_fnc_interface_marcher}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "marcher_tauri_militaire"));
@@ -70,14 +80,29 @@ private _fn_addActions =
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vetement_goauld"));
 
 {
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[1] call mission_fnc_interface_vetement}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vetement_goauld_militaire"));
+
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[2] call mission_fnc_interface_vetement}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and ((['classe'] call mission_fnc_getBDD) == 3) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vetement_goauld_grades"));
+
+{
 	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_vetement}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vetement_tauri"));
 
 {
-	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[true] call mission_fnc_interface_vetement}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[1] call mission_fnc_interface_vetement}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vetement_tauri_militaire"));
+
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[2] call mission_fnc_interface_vetement}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and ((['classe'] call mission_fnc_getBDD) == 3) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vetement_tauri_grades"));
 
 {
 	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_marcher_general}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;

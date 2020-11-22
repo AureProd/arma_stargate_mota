@@ -120,125 +120,13 @@ class stargate_vetements
 			{"", 3, 2, "G_Aviator", "player addGoggles 'G_Aviator';"}
 		};
 	};
-	class vetements_tauri_archeologue
+	class vetements_tauri_grades
 	{
-		tenue[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 5, "SGA_SG1_Uniform", "player forceAddUniform 'SGA_SG1_Uniform';"},
-			{"", 15, 10, "SGA_SG1_Uniform_blue", "player forceAddUniform 'SGA_SG1_Uniform_blue';"},
-			{"", 25, 13, "SGA_SG1_Uniform_desert", "player forceAddUniform 'SGA_SG1_Uniform_desert';"},
-			{"", 30, 20, "SGA_SG1_Uniform_red", "player forceAddUniform 'SGA_SG1_Uniform_red';"},
-			{"", 45, 25, "SGA_SG1_Uniform_Black", "player forceAddUniform 'SGA_SG1_Uniform_Black';"},
-			{"", 60, 30, "SGA_SG1_Uniform_wood", "player forceAddUniform 'SGA_SG1_Uniform_wood';"}
-		};
-        veste[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 5, "V_TacVest_oli", "player addVest 'V_TacVest_oli';"},
-			{"", 3, 7, "YSA_TacticalVest_Black", "player addVest 'YSA_TacticalVest_Black';"},
-			{"", 15, 10, "V_PlateCarrier1_rgr", "player addVest 'V_PlateCarrier1_rgr';"},
-			{"", 15, 12, "V_PlateCarrier1_blk", "player addVest 'V_PlateCarrier1_blk';"},
-			{"", 25, 15, "V_TacVest_khk", "player addVest 'V_TacVest_khk';"},
-			{"", 30, 20, "V_TacVestIR_blk", "player addVest 'V_TacVestIR_blk';"},
-			{"", 30, 20, "V_Chestrig_blk", "player addVest 'V_Chestrig_blk';"},
-			{"", 45, 25, "V_PlateCarrier2_blk", "player addVest 'V_PlateCarrier2_blk';"},
-			{"", 60, 30, "V_I_G_resistanceLeader_F", "player addVest 'V_I_G_resistanceLeader_F';"}
-		};
-        sac[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 3, "B_AssaultPack_sgg", "player addVest 'B_AssaultPack_sgg';"},
-			{"", 15, 5, "B_AssaultPack_blk", "player addVest 'B_AssaultPack_blk';"},
-			{"", 25, 7, "B_Kitbag_tan", "player addVest 'B_Kitbag_tan';"},
-			{"", 30, 8, "B_FieldPack_blk", "player addVest 'B_FieldPack_blk';"},
-			{"", 45, 10, "B_TacticalPack_blk", "player addVest 'B_TacticalPack_blk';"},
-			{"", 60, 15, "B_Carryall_eaf_F", "player addBackpack 'B_Carryall_eaf_F';"},
-			{"", 60, 15, "B_Carryall_green_F", "player addBackpack 'B_Carryall_green_F';"}
-        };
-        casque[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 2, "H_Bandanna_khk", "player addHeadgear 'H_Bandanna_khk';"},
-			{"", 3, 2, "H_Cap_oli", "player addHeadgear 'H_Cap_oli';"},
-			{"", 3, 2, "H_Booniehat_oli", "player addHeadgear 'H_Booniehat_oli';"},
-			{"", 3, 2, "sga_sgc_hat_olive", "player addHeadgear 'sga_sgc_hat_olive';"},
-			{"", 15, 4, "H_Bandanna_blu", "player addHeadgear 'H_Bandanna_blu';"},
-			{"", 15, 4, "sga_sgc_hat_blue", "player addHeadgear 'sga_sgc_hat_blue';"},
-			{"", 25, 4, "H_Bandanna_sand", "player addHeadgear 'H_Bandanna_sand';"},
-			{"", 25, 4, "H_Cap_tan", "player addHeadgear 'H_Cap_tan';"},
-			{"", 25, 4, "H_Booniehat_tan", "player addHeadgear 'H_Booniehat_tan';"},
-			{"", 30, 4, "H_Cap_red", "player addHeadgear 'H_Cap_red';"},
-			{"", 45, 5, "H_Bandanna_gry", "player addHeadgear 'H_Bandanna_gry';"},
-			{"", 45, 5, "H_Cap_blk", "player addHeadgear 'H_Cap_blk';"},
-			{"", 60, 10, "H_Bandanna_camo", "player addHeadgear 'H_Bandanna_camo';"},
-			{"", 60, 10, "H_Bandanna_khk_hs", "player addHeadgear 'H_Bandanna_khk_hs';"},
-			{"", 60, 10, "H_Watchcap_blk", "player addHeadgear 'H_Watchcap_blk';"},
-			{"", 60, 10, "H_Watchcap_khk", "player addHeadgear 'H_Watchcap_khk';"},
-			{"", 60, 10, "H_Watchcap_camo", "player addHeadgear 'H_Watchcap_camo';"},
-			{"", 60, 10, "H_Cap_oli_hs", "player addHeadgear 'H_Cap_oli_hs';"},
-			{"", 60, 10, "H_Cap_headphones", "player addHeadgear 'H_Cap_headphones';"},
-			{"", 60, 10, "H_MilCap_wdl", "player addHeadgear 'H_MilCap_wdl';"},
-			{"", 60, 10, "H_MilCap_blue", "player addHeadgear 'H_MilCap_blue';"},
-			{"", 60, 10, "H_MilCap_gry", "player addHeadgear 'H_MilCap_gry';"},
-			{"", 60, 10, "H_Booniehat_khk_hs", "player addHeadgear 'H_Booniehat_khk_hs';"},
-			{"", 60, 10, "H_Booniehat_khk_hs", "player addHeadgear 'H_Booniehat_khk_hs';"}
-		};
-        lunette[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 2, "G_Aviator", "player addGoggles 'G_Aviator';"}
-		};
-	};
-	class vetements_tauri_scientifique
-	{
-		tenue[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 5, "SGA_SG1_Uniform", "player forceAddUniform 'SGA_SG1_Uniform';"},
-			{"", 15, 10, "SGA_SG1_Uniform_blue", "player forceAddUniform 'SGA_SG1_Uniform_blue';"},
-			{"", 25, 13, "SGA_SG1_Uniform_desert", "player forceAddUniform 'SGA_SG1_Uniform_desert';"},
-			{"", 30, 20, "SGA_SG1_Uniform_red", "player forceAddUniform 'SGA_SG1_Uniform_red';"},
-			{"", 45, 25, "SGA_SG1_Uniform_Black", "player forceAddUniform 'SGA_SG1_Uniform_Black';"},
-			{"", 60, 30, "SGA_SG1_Uniform_wood", "player forceAddUniform 'SGA_SG1_Uniform_wood';"}
-		};
-        veste[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 5, "V_TacVest_oli", "player addVest 'V_TacVest_oli';"},
-			{"", 3, 7, "YSA_TacticalVest_Black", "player addVest 'YSA_TacticalVest_Black';"},
-			{"", 15, 10, "V_PlateCarrier1_rgr", "player addVest 'V_PlateCarrier1_rgr';"},
-			{"", 15, 12, "V_PlateCarrier1_blk", "player addVest 'V_PlateCarrier1_blk';"},
-			{"", 25, 15, "V_TacVest_khk", "player addVest 'V_TacVest_khk';"},
-			{"", 30, 20, "V_TacVestIR_blk", "player addVest 'V_TacVestIR_blk';"},
-			{"", 30, 20, "V_Chestrig_blk", "player addVest 'V_Chestrig_blk';"},
-			{"", 45, 25, "V_PlateCarrier2_blk", "player addVest 'V_PlateCarrier2_blk';"},
-			{"", 60, 30, "V_I_G_resistanceLeader_F", "player addVest 'V_I_G_resistanceLeader_F';"}
-		};
-        sac[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 3, "B_AssaultPack_sgg", "player addVest 'B_AssaultPack_sgg';"},
-			{"", 15, 5, "B_AssaultPack_blk", "player addVest 'B_AssaultPack_blk';"},
-			{"", 25, 7, "B_Kitbag_tan", "player addVest 'B_Kitbag_tan';"},
-			{"", 30, 8, "B_FieldPack_blk", "player addVest 'B_FieldPack_blk';"},
-			{"", 45, 10, "B_TacticalPack_blk", "player addVest 'B_TacticalPack_blk';"},
-			{"", 60, 15, "B_Carryall_eaf_F", "player addBackpack 'B_Carryall_eaf_F';"},
-			{"", 60, 15, "B_Carryall_green_F", "player addBackpack 'B_Carryall_green_F';"}
-        };
-        casque[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 2, "H_Bandanna_khk", "player addHeadgear 'H_Bandanna_khk';"},
-			{"", 3, 2, "H_Cap_oli", "player addHeadgear 'H_Cap_oli';"},
-			{"", 3, 2, "H_Booniehat_oli", "player addHeadgear 'H_Booniehat_oli';"},
-			{"", 3, 2, "sga_sgc_hat_olive", "player addHeadgear 'sga_sgc_hat_olive';"},
-			{"", 15, 4, "H_Bandanna_blu", "player addHeadgear 'H_Bandanna_blu';"},
-			{"", 15, 4, "sga_sgc_hat_blue", "player addHeadgear 'sga_sgc_hat_blue';"},
-			{"", 25, 4, "H_Bandanna_sand", "player addHeadgear 'H_Bandanna_sand';"},
-			{"", 25, 4, "H_Cap_tan", "player addHeadgear 'H_Cap_tan';"},
-			{"", 25, 4, "H_Booniehat_tan", "player addHeadgear 'H_Booniehat_tan';"},
-			{"", 30, 4, "H_Cap_red", "player addHeadgear 'H_Cap_red';"},
-			{"", 45, 5, "H_Bandanna_gry", "player addHeadgear 'H_Bandanna_gry';"},
-			{"", 45, 5, "H_Cap_blk", "player addHeadgear 'H_Cap_blk';"},
-			{"", 60, 10, "H_Bandanna_camo", "player addHeadgear 'H_Bandanna_camo';"},
-			{"", 60, 10, "H_Bandanna_khk_hs", "player addHeadgear 'H_Bandanna_khk_hs';"},
-			{"", 60, 10, "H_Watchcap_blk", "player addHeadgear 'H_Watchcap_blk';"},
-			{"", 60, 10, "H_Watchcap_khk", "player addHeadgear 'H_Watchcap_khk';"},
-			{"", 60, 10, "H_Watchcap_camo", "player addHeadgear 'H_Watchcap_camo';"},
-			{"", 60, 10, "H_Cap_oli_hs", "player addHeadgear 'H_Cap_oli_hs';"},
-			{"", 60, 10, "H_Cap_headphones", "player addHeadgear 'H_Cap_headphones';"},
-			{"", 60, 10, "H_MilCap_wdl", "player addHeadgear 'H_MilCap_wdl';"},
-			{"", 60, 10, "H_MilCap_blue", "player addHeadgear 'H_MilCap_blue';"},
-			{"", 60, 10, "H_MilCap_gry", "player addHeadgear 'H_MilCap_gry';"},
-			{"", 60, 10, "H_Booniehat_khk_hs", "player addHeadgear 'H_Booniehat_khk_hs';"},
-			{"", 60, 10, "H_Booniehat_khk_hs", "player addHeadgear 'H_Booniehat_khk_hs';"}
-		};
-        lunette[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 3, 2, "G_Aviator", "player addGoggles 'G_Aviator';"}
-		};
+		tenue[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        veste[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        sac[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        casque[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
 	};
     class vetements_goauld
 	{
@@ -273,6 +161,49 @@ class stargate_vetements
 			{"", 60, 25, "sga_jaffa_gold_open_serpent_headgear", "player addHeadgear 'sga_jaffa_gold_open_serpent_headgear';"},
 			{"", 60, 40, "sga_jaffa_plate_headgear_gold", "player addHeadgear 'sga_jaffa_plate_headgear_gold';"}
 		};
+        lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
+	};
+	class vetements_goauld_militaire
+	{
+		tenue[] = { // { nom / level / prix / id de l'objet / fonction }
+			{"", 3, 5, "sga_jaffa_free", "player forceAddUniform 'sga_jaffa_free';"},
+            {"", 15, 10, "sga_jaffa", "player forceAddUniform 'sga_jaffa';"},
+            {"", 30, 13, "sga_jaffa_black", "player forceAddUniform 'sga_jaffa_black';"},
+            {"", 45, 20, "sga_jaffa_red", "player forceAddUniform 'sga_jaffa_red';"},
+            {"", 60, 30, "sga_jaffa_gold", "player forceAddUniform 'sga_jaffa_gold';"}
+		};
+        veste[] = { // { nom / level / prix / id de l'objet / fonction }
+			{"", 3, 0, "V_BandollierB_cbr", "player addVest 'V_BandollierB_cbr';"},
+            {"", 3, 0, "V_HarnessO_brn", "player addVest 'V_HarnessO_brn';"},
+            {"", 3, 0, "V_TacVest_khk", "player addVest 'V_TacVest_khk';"},
+            {"", 3, 0, "V_TacChestrig_grn_F", "player addVest 'V_TacChestrig_grn_F';"}
+		};
+        sac[] = { // { nom / level / prix / id de l'objet / fonction }
+            {"", 3, 0, "B_OutdoorPack_blk", "player addBackpack 'B_OutdoorPack_blk';"},
+            {"", 3, 0, "B_AssaultPack_khk", "player addBackpack 'B_AssaultPack_khk';"},
+            {"", 3, 0, "B_Carryall_ocamo", "player addBackpack 'B_Carryall_ocamo';"},
+            {"", 50, 20, "B_Bergen_dgtl_f", "player addBackpack 'B_Bergen_dgtl_f';"}
+        };
+        casque[] = { // { nom / level / prix / id de l'objet / fonction }
+			{"", 3, 2, "sga_jaffa_plate_headgear", "player addHeadgear 'sga_jaffa_plate_headgear';"},
+			{"", 15, 4, "sga_jaffa_closed_serpent_headgear", "player addHeadgear 'sga_jaffa_closed_serpent_headgear';"},
+            {"", 15, 4, "sga_jaffa_open_serpent_headgear", "player addHeadgear 'sga_jaffa_open_serpent_headgear';"},
+			{"", 30, 8, "sga_jaffa_black_closed_serpent_headgear", "player addHeadgear 'sga_jaffa_black_closed_serpent_headgear';"},
+			{"", 30, 8, "sga_jaffa_black_open_serpent_headgear", "player addHeadgear 'sga_jaffa_black_open_serpent_headgear';"},
+			{"", 45, 10, "sga_jaffa_red_closed_serpent_headgear", "player addHeadgear 'sga_jaffa_red_closed_serpent_headgear';"},
+			{"", 45, 10, "sga_jaffa_red_open_serpent_headgear", "player addHeadgear 'sga_jaffa_red_open_serpent_headgear';"},
+			{"", 60, 25, "sga_jaffa_gold_closed_serpent_headgear", "player addHeadgear 'sga_jaffa_gold_closed_serpent_headgear';"},
+			{"", 60, 25, "sga_jaffa_gold_open_serpent_headgear", "player addHeadgear 'sga_jaffa_gold_open_serpent_headgear';"},
+			{"", 60, 40, "sga_jaffa_plate_headgear_gold", "player addHeadgear 'sga_jaffa_plate_headgear_gold';"}
+		};
+        lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
+	};
+	class vetements_goauld_grades
+	{
+		tenue[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        veste[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        sac[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        casque[] = {}; // { nom / level / prix / id de l'objet / fonction }
         lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
 	};
 };

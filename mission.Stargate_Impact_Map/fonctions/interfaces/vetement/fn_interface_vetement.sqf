@@ -17,6 +17,6 @@ else
 };
 
 bouton_A_OK_bis = 1;
-isMilitaire = param [0, false];
+isMilitaire = param [0, 0];
 
 [] call mission_fnc_vetement_bouton_tenue;

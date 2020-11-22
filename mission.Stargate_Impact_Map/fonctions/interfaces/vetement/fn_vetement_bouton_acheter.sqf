@@ -7,33 +7,17 @@ private _liste_objets_config = nil;
 
 if ((_playerBdd select 1) == 2) then 
 {
-	private _nom_config = "vetements_tauri";
+	private _nom_config = nil;
 	
-	if (isMilitaire) then 
-	{
-		/*	
-			classes :
-			1 = archeoloque
-			2 = scientifique
-			3 = soldat 
-			races :
-			1 = goauld
-			2 = tauri	
-		*/
-		switch (_playerBdd select 0) do 
-		{
-			case 1: 
-			{ 
-				_nom_config = "vetements_tauri_archeologue";
-			};
-			case 2: 
-			{ 
-				_nom_config = "vetements_tauri_scientifique";
-			};
-			case 3: 
-			{ 
-				_nom_config = "vetements_tauri_militaire";
-			};
+	switch (isMilitaire) do {
+		case 1: { 
+			_nom_config = "vetements_tauri_militaire";
+		};
+		case 2: { 
+			_nom_config = "vetements_tauri_grades";
+		};
+		default { 
+			_nom_config = "vetements_tauri";
 		};
 	};
 
@@ -63,27 +47,41 @@ if ((_playerBdd select 1) == 2) then
 } 
 else 
 {
+	private _nom_config = nil;
+	
+	switch (isMilitaire) do {
+		case 1: { 
+			_nom_config = "vetements_goauld_militaire";
+		};
+		case 2: { 
+			_nom_config = "vetements_goauld_grades";
+		};
+		default { 
+			_nom_config = "vetements_goauld";
+		};
+	};
+
 	switch (bouton_A_OK_bis) do 
 	{
 		case 1: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> "vetements_goauld" >> "tenue");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> _nom_config >> "tenue");
 		};
 		case 2: 
 		{
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> "vetements_goauld" >> "veste");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> _nom_config >> "veste");
 		};
 		case 3: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> "vetements_goauld" >> "sac");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> _nom_config >> "sac");
 		};
 		case 4: 
 		{
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> "vetements_goauld" >> "casque");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> _nom_config >> "casque");
 		};
 		case 5: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> "vetements_goauld" >> "lunette");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_vetements" >> _nom_config >> "lunette");
 		};
 	};
 };
