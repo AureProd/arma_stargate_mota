@@ -52,7 +52,7 @@ class popup
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; [] call mission_fnc_quitter_team; [] call mission_fnc_reset_bdd; [] call mission_fnc_interface_spawn;";
+			onButtonClick = "playSound 'button'; closeDialog 1; [] call mission_fnc_quitter_team; [true] call mission_fnc_reset_bdd; [] call mission_fnc_interface_spawn;";
 		};
 		class bouton_refuser
 		{
