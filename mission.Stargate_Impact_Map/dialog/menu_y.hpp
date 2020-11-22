@@ -68,7 +68,6 @@ class menu_y
 			borderSize = 0;
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0.6,0,0,0.5};
-			colorBackgroundActive[] = {0,0,0,0};
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
@@ -131,7 +130,6 @@ class menu_y
 			borderSize = 0;
 			colorBackground[] = {0,0,0,0};
 			colorBackgroundActive[] = {0.6,0,0,0.5};
-			colorBackgroundActive[] = {0,0,0,0};
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};

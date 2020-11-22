@@ -9,7 +9,7 @@ private _image_fond = (findDisplay 60000) displayCtrl 60001;
 
 if ((_variable select 1) == 1) then 
 {
-	_image_fond ctrlSetText "pictures\interfaces\menu_planetes\menuplanete_goauld.png";
+	_image_fond ctrlSetText "pictures\interfaces\menu_planetes\menuplanete_goauld.paa";
 } 
 else 
 {
