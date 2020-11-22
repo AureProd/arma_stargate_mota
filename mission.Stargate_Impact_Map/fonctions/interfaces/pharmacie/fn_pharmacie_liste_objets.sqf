@@ -5,8 +5,6 @@ private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 // { id / level / nom / lien image / type objets / poid / is militaire (1 = militaire / 0 = pas militaire) / prix / is tauri }
 private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
 
-//private _liste_messages_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "messages_items");
-
 private _liste_objets = (findDisplay 7000) displayCtrl 7005;
 private _bouton_acheter = (findDisplay 7000) displayCtrl 7003;
 private _index = lbCurSel _liste_objets;
@@ -143,13 +141,6 @@ if (_index != -1) then
 		_bouton_acheter ctrlEnable false;
 		_liste_objets lbSetCurSel -1;
 	};
-
-	/* {
-		if ((_objet select 0) in (_x select 0)) then 
-		{
-			hint format ["%1", (_x select 1)];
-		}; 
-	} forEach _liste_messages_objets_config; */
 }
 else
 {

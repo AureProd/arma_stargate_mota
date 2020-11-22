@@ -4,7 +4,7 @@ class docs_planetes
 	class documents
     {
 		liste[] = { // id document / nom document / image document
-			{1, "tablette perdue", "pictures\planetes\terre.paa"}
+			
 		};
 	};
 	class planetes

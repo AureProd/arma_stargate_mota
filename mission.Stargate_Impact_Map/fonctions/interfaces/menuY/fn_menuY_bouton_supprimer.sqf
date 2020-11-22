@@ -29,27 +29,27 @@ if ((_tab select 1) >= _nb_item) then
 } 
 else 
 {
-	if (((_tab select 0) == 2) or ((_tab select 0) == 4) or ((_tab select 0) == 30) or ((_tab select 0) == 31)) then 
+	if (((_tab select 0) == 2) or ((_tab select 0) == 4) or ((_tab select 4) == 7)) then 
 	{
 		if ((_tab select 0) == 2) then 
 		{
-			hint "On ne peux pas supprimer plus de 1 gourde, car elle a un pourcentage";
+			hint localize "STR_impossible_supprimer_2_gourdes";
 		} 
 		else 
 		{
 			if ((_tab select 0) == 4) then 
 			{
-				hint "On ne peux pas supprimer plus de 1 ration, car elle a un pourcentage";
+				hint localize "STR_impossible_supprimer_2_rations";
 			} 
 			else 
 			{
-				hint "Vous ne pouvez pas supprimer plus de 1 couteau à la fois";
+				hint localize "STR_impossible_supprimer_2_outils";
 			};
 		};
 	}
 	else 
 	{
-		hint "Vous ne pouvez pas supprimer plus d'items que vous en avez";
+		hint localize "STR_impossible_supprimer_plus_qu_on_peut";
 	};
 };
 

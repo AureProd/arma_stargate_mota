@@ -14,12 +14,12 @@ returnIfInPecheZone = {
 	_return;
 };
 
-player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
+player addAction [(localize "STR_peche_add_action"), {
 	peche_ON = true;
 
 	private _poissons = [];
 	
-	hint "Vous avez lancé votre filet";
+	hint localize "STR_peche_filet";
 
 	[false] call mission_fnc_chargement;
 
@@ -41,7 +41,7 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
 	private _tableau_bis = (selectRandom (selectRandom _tabbleau_aleatoire));
 
 	if ((count _tableau_bis) == 0) then {
-		hint "Vous n'avez rien pêché !!!";
+		hint localize "STR_rien_pecher";
 	} else {
 		private _poisson = (selectRandom _tableau_bis);
 
@@ -53,10 +53,10 @@ player addAction ["<t color='#ff0000'>Lancer le filet ...</t>", {
 		{
 			[(_poisson select 0)] call mission_fnc_add_item;
 		} else {
-			hint "Votre inventaire est plein, vous ne pouvez pas prendre ce poisson";
+			hint localize "STR_peche_erreur_poid";
 		};
 
-		hint format ["Vous avez peché : %1 !!!", (_poisson select 2)];
+		hint format ["%2 %1 !!!", (_poisson select 2), (localize "STR_peche_reussie")];
 	};
 
 	sleep 3;

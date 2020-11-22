@@ -14,7 +14,7 @@ if (_prix <= (_playerBdd select 2)) then
 } 
 else 
 {
-	hint "Vous n'avez pas assez d'XP pour acheter cet objet";
+	hint localize "STR_pas_assez_xp";
 
 	_return = false;
 };

@@ -1,7 +1,7 @@
 
 depeucage_ON = false;
 
-player addAction ["Dépecer l'animal ...", {
+player addAction [(localize "STR_depeucer_add_action"), {
 	depeucage_ON = true;
 
 	private _animal = cursorObject;
@@ -25,7 +25,7 @@ player addAction ["Dépecer l'animal ...", {
 	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
     
 	if (_race == "Sheep_random_F") then {
-		hint "Voilà votre viande de mouton !!!"; // id 22
+		hint localize "STR_depeucer_mouton"; // id 22
 
 		private _indexViande = _liste_objets_config findIf {
 			(_x select 0) == 22
@@ -38,10 +38,10 @@ player addAction ["Dépecer l'animal ...", {
 		if (_return) then {
 			[_viande select 0] call mission_fnc_add_item;
 		} else {
-			hint "Votre inventaire est plein, vous ne pouvez pas prendre cette viande";
+			hint localize "STR_depeucer_erreur_poid";
 		};
 	} else {
-		hint "Voilà votre viande de chevre !!!"; // id 24
+		hint localize "STR_depeucer_chevre"; // id 24
 
 		private _indexViande = _liste_objets_config findIf {
 			(_x select 0) == 24
@@ -55,7 +55,7 @@ player addAction ["Dépecer l'animal ...", {
 		{
 			[_viande select 0] call mission_fnc_add_item;
 		} else {
-			hint "Votre inventaire est plein, vous ne pouvez pas prendre cette viande";
+			hint localize "STR_depeucer_erreur_poid";
 		};
 	};
 

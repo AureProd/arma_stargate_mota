@@ -9,10 +9,10 @@ class stargate
 	class licences
 	{
 		licences_tableau[] = {
-			{1, "apprentit archeologue"}, 
-			{2, "apprentit scientifique"},
-			{3, "gendarme"},
-			{4, "permis conduire"}
+			{1, $STR_Archeologue}, 
+			{2, $STR_Scientifique},
+			{3, $STR_Soldat},
+			{4, $STR_Permis_Conduire}
 		};
 	};
 	class chasse

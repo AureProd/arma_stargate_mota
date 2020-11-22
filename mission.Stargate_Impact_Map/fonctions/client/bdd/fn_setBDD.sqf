@@ -12,11 +12,11 @@ private _choix = param [0, "rien"];
 private _num = param [1, nil];
 
 if (!(_choix in _valeurs)) exitWith {
-    hint "ERREUR (mauvais choix dans la BDD) !!!";
+    hint localize "STR_erreur";
 };
 
 if (_num == nil) exitWith {
-    hint "ERREUR (pas de valeur de passé en paramettre) !!!";
+    hint localize "STR_erreur";
 };
 
 private _indexChoix = _valeurs find _choix;
@@ -26,7 +26,7 @@ switch (_indexChoix) do {
         if ((_num == 1) or (_num == 2) or (_num == 3)) then {
             [[0, _num]] call mission_fnc_modif_var_bdd;
         } else {
-            hint "ERREUR (mauvaise valeur pour la classe) !!!";
+            hint localize "STR_erreur";
         };
     };
     case 1: { // race

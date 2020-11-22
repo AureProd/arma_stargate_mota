@@ -11,7 +11,7 @@ private _choix = param [0, "rien"];
 private _player = param [1, player];
 
 if (!(_choix in _valeurs)) exitWith {
-    hint "ERREUR (mauvais choix dans la BDD) !!!";
+    hint localize "STR_erreur";
 };
 
 private _indexChoix = _valeurs find _choix;

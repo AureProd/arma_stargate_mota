@@ -38,9 +38,9 @@ class CfgDebriefing
 {
     class NotWhitelist
     {
-        title = "Mission echouée";
-        subtitle = "WhiteList du serveur";
-        description = "Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A";
+        title = $STR_white_liste_titre;
+        subtitle = $STR_white_liste_sous_titre;
+        description = $STR_white_liste_description;
         pictureBackground = "";
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};

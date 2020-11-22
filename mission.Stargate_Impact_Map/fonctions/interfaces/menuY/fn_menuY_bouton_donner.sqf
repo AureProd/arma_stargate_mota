@@ -124,39 +124,39 @@ if ((player distance2D _joueur_distant) < 10) then {
 				}
 				else
 				{
-					hint "L'inventaire de l'autre joueur est plein, vous ne pouvez pas lui donner cet item";
+					hint localize "STR_inventaire_joueur_distant_plein";
 				};
 			};
 		} forEach _liste_objets_config;
 	}
 	else
 	{
-		if (((_tab select 0) == 2) or ((_tab select 0) == 4) or ((_tab select 0) == 30) or ((_tab select 0) == 31)) then 
+		if (((_tab select 0) == 2) or ((_tab select 0) == 4) or ((_tab select 4) == 7)) then 
 		{
 			if ((_tab select 0) == 2) then 
 			{
-				hint "On ne peux pas donner plus de 1 gourde, car elle a un pourcentage";
+				hint localize "STR_impossible_donner_2_gourdes";
 			} 
 			else 
 			{
 				if ((_tab select 0) == 4) then 
 				{
-					hint "On ne peux pas donner plus de 1 ration, car elle a un pourcentage";
+					hint localize "STR_impossible_donner_2_rations";
 				} 
 				else 
 				{
-					hint "Vous ne pouvez pas donnez plus de 1 couteau à la fois";
+					hint localize "STR_impossible_donner_2_outils";
 				};
 			};
 		}
 		else 
 		{
-			hint "Vous ne pouvez pas donner plus d'items que vous en avez";
+			hint localize "STR_impossible_donner_plus_qu_on_peut";
 		};
 	};
 
 	[] call mission_fnc_actualise_menu_y;	
 } else {
-	hint "Vous ne pouvez pas donner d'items car le joueur séléctionner est trop loin";
+	hint localize "STR_joueur_distant_trop_loin";
 };
 

@@ -19,8 +19,9 @@ player addEventHandler ["Killed",
 					[
 						format
 						[
-							"Vous avez été tué par %1.", 
-							name (_this select 1)
+							"%2 %1.", 
+							name (_this select 1),
+							localize "STR_tuer_message"
 						], 
 						"BLACK OUT", 0.1
 					];

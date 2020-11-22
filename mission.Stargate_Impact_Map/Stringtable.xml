@@ -8,90 +8,95 @@
                 <French>bouteille</French>
 				<English>bottle</English>
 			</Key>
-            <Key ID="str_TAG_gourde">
+            <Key ID="STR_gourde">
 				<Original>gourde</Original>
                 <French>gourde</French>
 				<English>gourde</English>
 			</Key>
-            <Key ID="str_TAG_micropur">
+            <Key ID="STR_micropur">
 				<Original>micropur</Original>
                 <French>micropur</French>
 				<English>micropur</English>
 			</Key>
-            <Key ID="str_TAG_ration">
+            <Key ID="STR_ration">
 				<Original>ration</Original>
                 <French>ration</French>
 				<English>ration</English>
 			</Key>
-            <Key ID="str_TAG_sandwich">
+            <Key ID="STR_sandwich">
 				<Original>sandwich</Original>
                 <French>sandwich</French>
 				<English>sandwich</English>
 			</Key>
-            <Key ID="str_TAG_bandage">
+            <Key ID="STR_bandage">
 				<Original>bandage</Original>
                 <French>bandage</French>
 				<English>bandage</English>
 			</Key>
-            <Key ID="str_TAG_aspirine">
+            <Key ID="STR_aspirine">
 				<Original>aspirine</Original>
                 <French>aspirine</French>
 				<English>aspirine</English>
 			</Key>
-            <Key ID="str_TAG_smecta">
+            <Key ID="STR_smecta">
 				<Original>smecta</Original>
                 <French>smecta</French>
 				<English>smecta</English>
 			</Key>
-            <Key ID="str_TAG_raisin">
+            <Key ID="STR_raisin">
 				<Original>raisin</Original>
                 <French>raisin</French>
 				<English>raisin</English>
 			</Key>
-           <Key ID="str_TAG_mouton_cru">
+           <Key ID="STR_mouton_cru">
 				<Original>mouton cru</Original>
                 <French>mouton cru</French>
 				<English>mouton cru</English>
 			</Key>
-            <Key ID="str_TAG_mouton_cuit">
+            <Key ID="STR_mouton_cuit">
 				<Original>mouton cuit</Original>
                 <French>mouton cuit</French>
 				<English>mouton cuit</English>
 			</Key>
-            <Key ID="str_TAG_chevre_crue">
+            <Key ID="STR_chevre_crue">
 				<Original>chevre crue</Original>
                 <French>chevre crue</French>
 				<English>chevre crue</English>
 			</Key>
-            <Key ID="str_TAG_chevre_cuite">
+            <Key ID="STR_chevre_cuite">
 				<Original>chevre cuite</Original>
                 <French>chevre cuite</French>
 				<English>chevre cuite</English>
 			</Key>
-            <Key ID="str_TAG_poule_crue">
+            <Key ID="STR_poule_crue">
 				<Original>poule crue</Original>
                 <French>poule crue</French>
 				<English>poule crue</English>
 			</Key>
-            <Key ID="str_TAG_poule_cuite">
+            <Key ID="STR_poule_cuite">
 				<Original>poule cuite</Original>
                 <French>poule cuite</French>
 				<English>poule cuite</English>
 			</Key>
-            <Key ID="str_TAG_lapin_cru">
+            <Key ID="STR_lapin_cru">
 				<Original>lapin cru</Original>
                 <French>lapin cru</French>
 				<English>lapin cru</English>
 			</Key>
-            <Key ID="str_TAG_lapin_cuit">
+            <Key ID="STR_lapin_cuit">
 				<Original>lapin cuit</Original>
                 <French>lapin cuit</French>
 				<English>lapin cuit</English>
 			</Key>
-            <Key ID="str_TAG_couteau">
+            <Key ID="STR_couteau">
 				<Original>couteau</Original>
                 <French>couteau</French>
-				<English>couteau</English>
+				<English>cut</English>
+			</Key>
+            <Key ID="STR_symbiote">
+				<Original>symbiote</Original>
+                <French>symbiote</French>
+				<English>symbiote</English>
 			</Key>
             <Key ID="STR_maquereau_cru">
 				<Original>maquereau cru</Original>
@@ -113,75 +118,404 @@
                 <French>mullet cuit</French>
 				<English>mullet cuit</English>
 			</Key>
-
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_ornate_cru">
+				<Original>ornate cru</Original>
+                <French>ornate cru</French>
+				<English>ornate cru</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_ornate_cuit">
+				<Original>ornate cuit</Original>
+                <French>ornate cuit</French>
+				<English>ornate cuit</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_poisson_chat_cru">
+				<Original>poisson chat cru</Original>
+                <French>poisson chat cru</French>
+				<English>poisson chat cru</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_poisson_chat_cuit">
+				<Original>poisson chat cuit</Original>
+                <French>poisson chat cuit</French>
+				<English>poisson chat cuit</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_salema_cru">
+				<Original>salema cru</Original>
+                <French>salema cru</French>
+				<English>salema cru</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_salema_cuit">
+				<Original>salema cuit</Original>
+                <French>salema cuit</French>
+				<English>salema cuit</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_thon_cru">
+				<Original>thon cru</Original>
+                <French>thon cru</French>
+				<English>thon cru</English>
 			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
-			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
-			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
-			</Key>
-            <Key ID="str_TAG_">
-				<Original>bandage</Original>
-                <French>bandage</French>
-				<English>bandage</English>
+            <Key ID="STR_thon_cuit">
+				<Original>thon cuit</Original>
+                <French>thon cuit</French>
+				<English>thon cuit</English>
 			</Key>
 		</Container>
-        <Container name="Vetements">
-			<Key ID="str_TAG_Yes">
-				<Original>yes</Original>
-                <French>oui</French>
-				<English>yes</English>
+        <Container name="Licences">
+			<Key ID="STR_Archeologue">
+				<Original>Archeologue</Original>
+                <French>Archeologue</French>
+				<English>Archeologue</English>
+			</Key>
+            <Key ID="STR_Scientifique">
+				<Original>Scientifique</Original>
+                <French>Scientifique</French>
+				<English>Scientifique</English>
+			</Key>
+            <Key ID="STR_Soldat">
+				<Original>Soldat</Original>
+                <French>Soldat</French>
+				<English>Soldat</English>
+			</Key>
+            <Key ID="STR_Permis_Conduire">
+				<Original>Permis Conduire</Original>
+                <French>Permis Conduire</French>
+				<English>Driver Licence</English>
 			</Key>
 		</Container>
         <Container name="Armes">
-			<Key ID="str_TAG_Yes">
-				<Original>yes</Original>
-                <French>oui</French>
-				<English>yes</English>
+			<Key ID="STR_Lance_goauld">
+				<Original>Lance goauld</Original>
+                <French>Lance goauld</French>
+				<English>Lance goauld</English>
+			</Key>
+		</Container>
+        <Container name="Chargeurs">
+			<Key ID="STR_Chargeur_Rook">
+				<Original>Chargeur Rook</Original>
+                <French>Chargeur Rook</French>
+				<English>Rook Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_P_07">
+				<Original>Chargeur P 07</Original>
+                <French>Chargeur P 07</French>
+				<English>P 07 Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_ACP_2">
+				<Original>Chargeur ACP 2</Original>
+                <French>Chargeur ACP 2</French>
+				<English>ACP 2 Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_4_Five">
+				<Original>Chargeur 4 Five</Original>
+                <French>Chargeur 4 Five</French>
+				<English>4 Five Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_MP5">
+				<Original>Chargeur MP5</Original>
+                <French>Chargeur MP5</French>
+				<English>MP5 Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_SPAS_12">
+				<Original>Chargeur SPAS 12</Original>
+                <French>Chargeur SPAS 12</French>
+				<English>SPAS 12 Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_P_90">
+				<Original>Chargeur P 90</Original>
+                <French>Chargeur P 90</French>
+				<English>P 90 Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_MK_14">
+				<Original>Chargeur MK 14</Original>
+                <French>Chargeur MK 14</French>
+				<English>MK 14 Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_LIM">
+				<Original>Chargeur LIM</Original>
+                <French>Chargeur LIM</French>
+				<English>LIM Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_Lance_goauld">
+				<Original>Chargeur Lance goauld</Original>
+                <French>Chargeur Lance goauld</French>
+				<English>Lance goauld Magasine</English>
+			</Key>
+            <Key ID="STR_Chargeur_Zat_ni_katel">
+				<Original>Chargeur Zat'ni'katel</Original>
+                <French>Chargeur Zat'ni'katel</French>
+				<English>Zat'ni'katel Magasine</English>
+			</Key>
+		</Container>
+        <Container name="Viseurs">
+			<Key ID="STR_MRD_rouge">
+				<Original>MRD rouge</Original>
+                <French>MRD rouge</French>
+				<English>Red MRD</English>
+			</Key>
+            <Key ID="STR_ACO_1_rouge">
+				<Original>ACO 1 rouge</Original>
+                <French>ACO 1 rouge</French>
+				<English>Red ACO 1</English>
+			</Key>
+            <Key ID="STR_ACO_1_verte">
+				<Original>ACO 1 verte</Original>
+                <French>ACO 1 verte</French>
+				<English>Green ACO 1</English>
+			</Key>
+            <Key ID="STR_ACO_2_rouge">
+				<Original>ACO 2 rouge</Original>
+                <French>ACO 2 rouge</French>
+				<English>Red ACO 2</English>
+			</Key>
+            <Key ID="STR_ACO_2_verte">
+				<Original>ACO 2 verte</Original>
+                <French>ACO 2 verte</French>
+				<English>Green ACO 2</English>
+			</Key>
+            <Key ID="STR_Holographique_1">
+				<Original>Holographique 1</Original>
+                <French>Holographique 1</French>
+				<English>Holographique 1</English>
+			</Key>
+            <Key ID="STR_Holographique_2">
+				<Original>Holographique 2</Original>
+                <French>Holographique 2</French>
+				<English>Holographique 2</English>
+			</Key>
+		</Container>
+        <Container name="Quetes">
+			<Key ID="STR_Quetes_map_titre">
+				<Original>Bienvenue sur StarGate</Original>
+                <French>Bienvenue sur StarGate</French>
+				<English>Welcome to StarGate</English>
+			</Key>
+            <Key ID="STR_Quetes_map_description">
+				<Original>Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous donnerons une carte qui vous sera utile pour vous orientez !</Original>
+                <French>Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous donnerons une carte qui vous sera utile pour vous orientez !</French>
+				<English>Bonjour, bienvenue sur le serveur Stargate Impact ces un mmorpg avec un mélange de milsim et de life. Pour commencer a jouer allez en ville et trouver l'office du tourisme, il vous donnerons une carte qui vous sera utile pour vous orientez !</English>
+			</Key>
+            <Key ID="STR_Quetes_map_objectif">
+				<Original>Trouvez l'office du tourisme !</Original>
+                <French>Trouvez l'office du tourisme !</French>
+				<English>Trouvez l'office du tourisme !</English>
+			</Key>
+            <Key ID="STR_Quetes_map_text_final">
+				<Original>Voilà votre carte...</Original>
+                <French>Voilà votre carte...</French>
+				<English>Voilà votre carte...</English>
+			</Key>
+		</Container>
+        <Container name="Autres_Messages">
+            <Key ID="STR_erreur">
+				<Original>Erreurs</Original>
+                <French>Erreurs</French>
+				<English>Error</English>
+			</Key>
+			<Key ID="STR_sauvegarde_syns_data">
+				<Original>Sauvegarde du player en BDD</Original>
+                <French>Sauvegarde du player en BDD</French>
+				<English>Sauvegarde du player en BDD</English>
+			</Key>
+            <Key ID="STR_pas_assez_xp">
+				<Original>Vous n'avez pas assez d'XP pour acheter cet objet</Original>
+                <French>Vous n'avez pas assez d'XP pour acheter cet objet</French>
+				<English>Vous n'avez pas assez d'XP pour acheter cet objet</English>
+			</Key>
+            <Key ID="STR_ration_vide">
+				<Original>Votre ration est vide maintenant</Original>
+                <French>Votre ration est vide maintenant</French>
+				<English>Votre ration est vide maintenant</English>
+			</Key>
+            <Key ID="STR_item_only_medical">
+				<Original>Pour utiliser cet item, allez dans le menu medical</Original>
+                <French>Pour utiliser cet item, allez dans le menu medical</French>
+				<English>Pour utiliser cet item, allez dans le menu medical</English>
+			</Key>
+            <Key ID="STR_boire_sans_soif">
+				<Original>Vous n'aviez pas soif, il fallait pas boire</Original>
+                <French>Vous n'aviez pas soif, il fallait pas boire</French>
+				<English>Vous n'aviez pas soif, il fallait pas boire</English>
+			</Key>
+            <Key ID="STR_gourde_vide">
+				<Original>Votre gourde est vide maintenant</Original>
+                <French>Votre gourde est vide maintenant</French>
+				<English>Votre gourde est vide maintenant</English>
+			</Key>
+            <Key ID="STR_gourde_pleine_eau_sale">
+				<Original>Votre gourde est pleine d'eau sale maintenant</Original>
+                <French>Votre gourde est pleine d'eau sale maintenant</French>
+				<English>Votre gourde est pleine d'eau sale maintenant</English>
+			</Key>
+            <Key ID="STR_pieds_dans_eau">
+				<Original>Vous devez être au bord de l'eau, pour remplir votre gourde</Original>
+                <French>Vous devez être au bord de l'eau, pour remplir votre gourde</French>
+				<English>Vous devez être au bord de l'eau, pour remplir votre gourde</English>
+			</Key>
+            <Key ID="STR_boire_eau_sale">
+				<Original>Votre gourde est pleine d'eau sale, donc vous avez maintenant mal au ventre</Original>
+                <French>Votre gourde est pleine d'eau sale, donc vous avez maintenant mal au ventre</French>
+				<English>Votre gourde est pleine d'eau sale, donc vous avez maintenant mal au ventre</English>
+			</Key>
+            <Key ID="STR_pas_gourde_a_purifier">
+				<Original>Vous n'avez pas de gourde avec de l'eau à purifier</Original>
+                <French>Vous n'avez pas de gourde avec de l'eau à purifier</French>
+				<English>Vous n'avez pas de gourde avec de l'eau à purifier</English>
+			</Key>
+            <Key ID="STR_inventaire_plein">
+				<Original>Votre inventaire est plein, vous ne pouvez pas acheter cet item</Original>
+                <French>Votre inventaire est plein, vous ne pouvez pas acheter cet item</French>
+				<English>Votre inventaire est plein, vous ne pouvez pas acheter cet item</English>
+			</Key>
+            <Key ID="STR_inventaire_joueur_distant_plein">
+				<Original>L'inventaire de l'autre joueur est plein, vous ne pouvez pas lui donner cet item</Original>
+                <French>L'inventaire de l'autre joueur est plein, vous ne pouvez pas lui donner cet item</French>
+				<English>L'inventaire de l'autre joueur est plein, vous ne pouvez pas lui donner cet item</English>
+			</Key>
+            <Key ID="STR_impossible_donner_2_gourdes">
+				<Original>On ne peux pas donner plus de 1 gourde, car elle a un pourcentage</Original>
+                <French>On ne peux pas donner plus de 1 gourde, car elle a un pourcentage</French>
+				<English>On ne peux pas donner plus de 1 gourde, car elle a un pourcentage</English>
+			</Key>
+            <Key ID="STR_impossible_donner_2_rations">
+				<Original>On ne peux pas donner plus de 1 ration, car elle a un pourcentage</Original>
+                <French>On ne peux pas donner plus de 1 ration, car elle a un pourcentage</French>
+				<English>On ne peux pas donner plus de 1 ration, car elle a un pourcentage</English>
+			</Key>
+            <Key ID="STR_impossible_donner_2_outils">
+				<Original>Vous ne pouvez pas donnez plus de 1 outil à la fois</Original>
+                <French>Vous ne pouvez pas donnez plus de 1 outil à la fois</French>
+				<English>Vous ne pouvez pas donnez plus de 1 outil à la fois</English>
+			</Key>
+            <Key ID="STR_impossible_donner_plus_qu_on_peut">
+				<Original>Vous ne pouvez pas donner plus d'items que vous en avez</Original>
+                <French>Vous ne pouvez pas donner plus d'items que vous en avez</French>
+				<English>Vous ne pouvez pas donner plus d'items que vous en avez</English>
+			</Key>
+            <Key ID="STR_joueur_distant_trop_loin">
+				<Original>Vous ne pouvez pas donner d'items car le joueur séléctionner est trop loin</Original>
+                <French>Vous ne pouvez pas donner d'items car le joueur séléctionner est trop loin</French>
+				<English>Vous ne pouvez pas donner d'items car le joueur séléctionner est trop loin</English>
+			</Key>
+            <Key ID="STR_impossible_supprimer_2_gourdes">
+				<Original>On ne peux pas supprimer plus de 1 gourde, car elle a un pourcentage</Original>
+                <French>On ne peux pas supprimer plus de 1 gourde, car elle a un pourcentage</French>
+				<English>On ne peux pas supprimer plus de 1 gourde, car elle a un pourcentage</English>
+			</Key>
+            <Key ID="STR_impossible_supprimer_2_rations">
+				<Original>On ne peux pas supprimer plus de 1 ration, car elle a un pourcentage</Original>
+                <French>On ne peux pas supprimer plus de 1 ration, car elle a un pourcentage</French>
+				<English>On ne peux pas supprimer plus de 1 ration, car elle a un pourcentage</English>
+			</Key>
+            <Key ID="STR_impossible_supprimer_2_outils">
+				<Original>Vous ne pouvez pas supprimer plus de 1 outil à la fois</Original>
+                <French>Vous ne pouvez pas supprimer plus de 1 outil à la fois</French>
+				<English>Vous ne pouvez pas supprimer plus de 1 outil à la fois</English>
+			</Key>
+            <Key ID="STR_impossible_supprimer_plus_qu_on_peut">
+				<Original>Vous ne pouvez pas supprimer plus d'items que vous en avez</Original>
+                <French>Vous ne pouvez pas supprimer plus d'items que vous en avez</French>
+				<English>Vous ne pouvez pas supprimer plus d'items que vous en avez</English>
+			</Key>
+		</Container>
+        <Container name="Peche">
+            <Key ID="STR_peche_add_action">
+				<Original>Lancer le filet ...</Original>
+                <French>Lancer le filet ...</French>
+				<English>Lancer le filet ...</English>
+			</Key>
+			<Key ID="STR_peche_filet">
+				<Original>Vous avez lancé votre filet</Original>
+                <French>Vous avez lancé votre filet</French>
+				<English>Vous avez lancé votre filet</English>
+			</Key>
+            <Key ID="STR_peche_erreur_poid">
+				<Original>Votre inventaire est plein, vous ne pouvez pas prendre ce poisson</Original>
+                <French>Votre inventaire est plein, vous ne pouvez pas prendre ce poisson</French>
+				<English>Votre inventaire est plein, vous ne pouvez pas prendre ce poisson</English>
+			</Key>
+            <Key ID="STR_rien_pecher">
+				<Original>Vous n'avez rien pêché !!!</Original>
+                <French>Vous n'avez rien pêché !!!</French>
+				<English>Vous n'avez rien pêché !!!</English>
+			</Key>
+            <Key ID="STR_peche_reussie">
+				<Original>Vous avez peché :</Original>
+                <French>Vous avez peché :</French>
+				<English>Vous avez peché :</English>
+			</Key>
+		</Container>
+        <Container name="Kill_Animals">
+			<Key ID="STR_Kill_mouton">
+				<Original>Vous avez tué un mouton !!!</Original>
+                <French>Vous avez tué un mouton !!!</French>
+				<English>Vous avez tué un mouton !!!</English>
+			</Key>
+            <Key ID="STR_Kill_chevre">
+				<Original>Vous avez tué une chevre !!!</Original>
+                <French>Vous avez tué une chevre !!!</French>
+				<English>Vous avez tué une chevre !!!</English>
+			</Key>
+		</Container>
+        <Container name="Depeucage">
+            <Key ID="STR_depeucer_add_action">
+				<Original>Dépecer l'animal ...</Original>
+                <French>Dépecer l'animal ...</French>
+				<English>Dépecer l'animal ...</English>
+			</Key>
+			<Key ID="STR_depeucer_mouton">
+				<Original>Voilà votre viande de mouton !!!</Original>
+                <French>Voilà votre viande de mouton !!!</French>
+				<English>Voilà votre viande de mouton !!!</English>
+			</Key>
+            <Key ID="STR_depeucer_chevre">
+				<Original>Voilà votre viande de chevre !!!</Original>
+                <French>Voilà votre viande de chevre !!!</French>
+				<English>Voilà votre viande de chevre !!!</English>
+			</Key>
+            <Key ID="STR_depeucer_erreur_poid">
+				<Original>Votre inventaire est plein, vous ne pouvez pas prendre cette viande</Original>
+                <French>Votre inventaire est plein, vous ne pouvez pas prendre cette viande</French>
+				<English>Votre inventaire est plein, vous ne pouvez pas prendre cette viande</English>
+			</Key>
+		</Container>
+        <Container name="FPS">
+            <Key ID="STR_fps_capturer_drapeau">
+				<Original>Capturer le drapeau</Original>
+                <French>Capturer le drapeau</French>
+				<English>Capturer le drapeau</English>
+			</Key>
+		</Container>
+        <Container name="Kill_Players">
+            <Key ID="STR_killer_message_1">
+				<Original>Vous avez tué</Original>
+                <French>Vous avez tué</French>
+				<English>Vous avez tué</English>
+			</Key>
+            <Key ID="STR_killer_message_2">
+				<Original>50 XP gagnés</Original>
+                <French>50 XP gagnés</French>
+				<English>50 XP gagnés</English>
+			</Key>
+            <Key ID="STR_tuer_message">
+				<Original>Vous avez été tué par</Original>
+                <French>Vous avez été tué par</French>
+				<English>Vous avez été tué par</English>
+			</Key>
+		</Container>
+        <Container name="Description_ext">
+            <Key ID="STR_white_liste_titre">
+				<Original>Mission echouée</Original>
+                <French>Mission echouée</French>
+				<English>Mission echouée</English>
+			</Key>
+            <Key ID="STR_white_liste_sous_titre">
+				<Original>WhiteList du serveur</Original>
+                <French>WhiteList du serveur</French>
+				<English>WhiteList du serveur</English>
+			</Key>
+            <Key ID="STR_white_liste_description">
+				<Original>Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A</Original>
+                <French>Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A</French>
+				<English>Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A</English>
 			</Key>
 		</Container>
 	</Package>

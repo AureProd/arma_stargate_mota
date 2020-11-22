@@ -57,7 +57,7 @@ if (_ok == 1) then
 } 
 else 
 {
-	hint "ERREUR : Le texte rentré n'est pas un nombre !!!";
+	hint localize "STR_erreur";
 };
 
 _valeur;

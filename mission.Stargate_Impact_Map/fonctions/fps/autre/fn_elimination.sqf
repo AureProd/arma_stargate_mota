@@ -10,8 +10,10 @@ if(player == _killer) then
 	[
 		format
 		[
-			"Vous avez tué %1\n50 XP gagnés",
-			name _mort
+			"%2 %1\n%3",
+			name _mort,
+			localize "STR_killer_message_1",
+			localize "STR_killer_message_2"
 		],
 		"PLAIN DOWN",
 		0.25

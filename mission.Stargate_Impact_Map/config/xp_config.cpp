@@ -3,6 +3,7 @@ class stargate_xp
 {
 	class ajout_xp
 	{
+		// liste des choses qui donnent de XP
 		gourde_purification = 2;
 		gourde_remplissage = 2;
 		elimination_mode_fps = 50;

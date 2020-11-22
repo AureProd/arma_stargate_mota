@@ -69,7 +69,7 @@ if (_index != -1) then
 		}
 		else
 		{
-			hint "Votre inventaire est plein, vous ne pouvez pas acheter cet item";
+			hint localize "STR_inventaire_plein";
 		};
 	} else {
 		if ((_objet select 4) == 10) then {

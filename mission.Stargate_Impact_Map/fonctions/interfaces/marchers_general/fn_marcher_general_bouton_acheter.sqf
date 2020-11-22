@@ -69,14 +69,7 @@ if (_index != -1) then
 		}
 		else
 		{
-			hint "Votre inventaire est plein, vous ne pouvez pas acheter cet item";
+			hint localize "STR_inventaire_plein";
 		};
-	} else {
-		/* if ((_objet select 4) == 7) then {
-			[(_objet select 7)] call mission_fnc_paiement_vente;
-			private _reste = [(_objet select 0)] call mission_fnc_vendre_item;
-
-			[_reste] call mission_fnc_marcher_general_bouton_inventaire;
-		}; */
 	};
 };

@@ -239,7 +239,7 @@ class menu_y
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] call mission_fnc_syns_data; hint 'Sauvegarde du player en BDD';";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_syns_data; hint localize 'STR_sauvegarde_syns_data';";
 		};
 		class bouton_utiliser
 		{

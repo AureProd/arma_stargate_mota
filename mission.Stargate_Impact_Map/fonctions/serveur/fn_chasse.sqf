@@ -84,15 +84,3 @@ missionNamespace setVariable ["animaux_morts", [[], []], true];
 
 } forEach (getArray(missionConfigFile >> "stargate" >> "chasse" >> "zones"));
 
-
-
-/* player addAction ["Dépecer l'animal ...", {
-    [] call mission_fnc_chargement;
-
-    // CODE AU DEPEUCAGE
-
-    deleteVehicle cursorObject
-    hint "Voila votre cotelette !!";
-}, nil, 1.5, true, true, "", "((cursorObject distance player) < 5) && (cursorObject in animalsMorts) && ((damage cursorObject) > 0.5) && (alive player)"]; */
-
-

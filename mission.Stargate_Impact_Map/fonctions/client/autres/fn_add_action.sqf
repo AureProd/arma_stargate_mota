@@ -6,7 +6,7 @@ private _fn_addActions =
 {
 	private _id = param [0];
 	private _image = param [1];
-	private _code = param [2, {hint "test";}];
+	private _code = param [2, {hint localize "STR_erreur";}];
 	private _condition = param [3, "true"];
 	private _param = param [4, []];
 

@@ -35,7 +35,7 @@ switch (_objet select 4) do
 
 				_objetRation set [2, 0];
 
-				hint "Votre ration est vide maintenant";
+				hint localize "STR_ration_vide";
 
 				_inventaireVirtuel set [_indexInventaire, _objetRation];
 				[[8, _inventaireVirtuel]] call mission_fnc_modif_var_bdd;
@@ -84,7 +84,7 @@ switch (_objet select 4) do
 		}
 		else
 		{
-			hint "Pour utiliser cet item, allez dans le menu medical";
+			hint localize "STR_item_only_medical";
 		};
 	};
 	case 4: // medicament
@@ -95,7 +95,7 @@ switch (_objet select 4) do
 		}
 		else
 		{
-			hint "Pour utiliser cet item, allez dans le menu medical";
+			hint localize "STR_item_only_medical";
 		};
 	};
 	case 5: // syteme gourde
@@ -130,7 +130,7 @@ switch (_objet select 4) do
 
 							[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 
-							hint "Vous n'aviez pas soif, il fallait pas boire";
+							hint localize "STR_boire_sans_soif";
 						} else {
 							_soif = 100;
 						};
@@ -139,7 +139,7 @@ switch (_objet select 4) do
 					_objetGourde set [2, false];
 					_objetGourde set [3, 0];
 
-					hint "Votre gourde est vide maintenant";
+					hint localize "STR_gourde_vide";
 				}
 				else 
 				{
@@ -164,7 +164,7 @@ switch (_objet select 4) do
 
 							player setDamage (1 - (_vie / 100));
 
-							hint "Vous n'aviez pas soif, il fallait pas boire";
+							hint localize "STR_boire_sans_soif";
 						} else {
 							_soif = 100;
 						};
@@ -184,7 +184,7 @@ switch (_objet select 4) do
 
 					if (_fonction_bis_OK) then 
 					{
-						hint "Votre gourde est pleine d'eau sale maintenant";
+						hint localize "STR_gourde_pleine_eau_sale";
 
 						_objetGourde set [3, 100];
 
@@ -194,12 +194,12 @@ switch (_objet select 4) do
 					}
 					else
 					{
-						hint "Vous devez être au bord de l'eau, pour remplir votre gourde";
+						hint localize "STR_pieds_dans_eau";
 					};
 				}
 				else
 				{
-					hint "Votre gourde est pleine d'eau sale, donc vous avez maintenant mal au ventre";
+					hint localize "STR_boire_eau_sale";
 
 					if (_soif + 10 < 100) then {
 						_soif = _soif + 10;
@@ -250,7 +250,7 @@ switch (_objet select 4) do
 
 			if ((isNil "_objetGourde") and (isNil "_indexObjet")) then 
 			{
-				hint "Vous n'avez pas de gourde avec de l'eau à purifier";
+				hint localize "STR_pas_gourde_a_purifier";
 			} 
 			else 
 			{
