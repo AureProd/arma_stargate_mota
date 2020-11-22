@@ -364,7 +364,7 @@ class menu_y
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] call menuY_open_admin;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_menuY_open_admin;";
 		};
 		class bouton_fermer
 		{
