@@ -26,7 +26,7 @@ if (_index_liste != -1) then {
 					};
 				};
 			} forEach _liste_objets_config;
-		} forEach _inventaire_virtuel;
+		} forEach _inventaire_joueur;
 
 		private _tableau = _items_illegals select _index_liste_items;
 

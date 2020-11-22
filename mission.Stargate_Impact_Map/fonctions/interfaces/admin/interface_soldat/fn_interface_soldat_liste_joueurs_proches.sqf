@@ -23,7 +23,7 @@ if (_index_liste != -1) then {
 				};
 			};
 		} forEach _liste_objets_config;
-	} forEach _inventaire_virtuel;
+	} forEach _inventaire_joueur;
 
 	_liste_items_illegals lbSetCurSel -1;
 
