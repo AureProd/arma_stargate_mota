@@ -19,7 +19,8 @@ if (_index_liste != -1) then {
 			if ((_tab select 0) == (_x select 0)) then 
 			{
 				if ((_x select 10) == 1) then {
-					_liste_items_illegals lbAdd (format ["%1 [x%2]", (_x select 2), (_tab select 1)]);
+					private _index = _liste_items_illegals lbAdd (format ["%1 [x%2]", (_x select 2), (_tab select 1)]);
+					_listbox_objets lbSetPicture [_index, (_x select 3)];
 				};
 			};
 		} forEach _liste_objets_config;
