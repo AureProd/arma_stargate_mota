@@ -12,7 +12,7 @@ lbClear _liste_items_illegals;
 liste_joueurs_groupe = [];
 
 {
-	if (((_x distance2D player) < 30) and (_x != player)) then {
+	if (((_x distance2D player) < 30) and (_x == player)) then { // a modif
 		_liste_joueurs_proches lbAdd (name _x);
 		liste_joueurs_groupe pushBack _x;
 	};

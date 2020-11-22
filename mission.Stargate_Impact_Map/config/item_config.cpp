@@ -51,8 +51,8 @@ class stargate_items
             {27, 0, $STR_poule_cuite, "pictures\items\viande\raw_cock.paa", 9, 0.5, 0, 4, 2, 15, 0},
             {28, 0, $STR_lapin_cru, "pictures\items\viande\raw_hen.paa", 8, 1, 0, 1, 2, 5, 0},
             {29, 0, $STR_lapin_cuit, "pictures\items\viande\raw_hen.paa", 9, 0.5, 0, 3, 2, 10, 0},
-            {30, 0, $STR_couteau, "pictures\items\couteaux\couteau_taury.paa", 7, 3, 0, 15, 1, 0, 1},
-            {31, 0, $STR_couteau, "pictures\items\couteaux\couteau_goauld.paa", 7, 3, 0, 15, 0, 0, 1},
+            {30, 0, $STR_couteau, "pictures\items\couteaux\couteau_taury.paa", 7, 3, 0, 15, 1, 0, 1}, // a modif
+            {31, 0, $STR_couteau, "pictures\items\couteaux\couteau_goauld.paa", 7, 3, 0, 15, 0, 0, 1}, // a modif
             {32, 0, $STR_symbiote, "pictures\items\poissons\symbiote.paa", 10, 2, 0, 12, 2, 0, 0},
             {33, 0, $STR_maquereau_cru, "pictures\items\poissons\maquereau.paa", 10, 1, 0, 6, 2, 10, 0},
             {34, 0, $STR_maquereau_cuit, "pictures\items\poissons\maquereau.paa", 11, 0.5, 0, 8, 2, 35, 0},
