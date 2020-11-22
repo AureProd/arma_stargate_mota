@@ -5,7 +5,7 @@ private _liste_vies = [100, 100, 100, 100, 100, 100, 100, 100];
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, garage, white liste soldat, documents]
 missionNamespace setVariable [nomVarPlayerUID, [1, 1, 400, [], 1, 100, 100, 100, [], [100, 100, 100, 100, 100, 100, 100, 100], [], [1], [], [], [], 0, []], true];
 
-private _param_recommencement = param [0, false]
+private _param_recommencement = param [0, false];
 
 if (_param_recommencement) then {
 	if ([] call mission_fnc_is_wl_soldat) then {
