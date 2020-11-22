@@ -32,6 +32,12 @@ class CfgFunctions
             class add_quetes_actives {};
             class has_quetes_actives {};
             class remove_quetes_actives {};
+            class add_planetes {};
+            class has_planetes {};
+            class remove_planetes {};
+            class add_docs {};
+            class has_docs {};
+            class remove_docs {};
         };
         class journal_quetes
         {
@@ -54,6 +60,18 @@ class CfgFunctions
             class quetesActives {};
             class get_config_quetes {};
         };
+        class interfaces_docs
+        {
+            file = "fonctions\interfaces\menu_docs";
+            class interface_docs_db_clicks {};
+            class interface_docs {};
+        };
+        class interfaces_planetes
+        {
+            file = "fonctions\interfaces\menu_planetes";
+            class interface_planetes_db_clicks {};
+            class interface_planetes {};
+        };
         class interfaces_autres
         {
             file = "fonctions\interfaces\autres";
@@ -71,6 +89,7 @@ class CfgFunctions
             class chargement {};
             class vendre_item {};
             class paiement_vente {};
+            class interface_maps {};
         };
         class interfaces_armurerie
         {

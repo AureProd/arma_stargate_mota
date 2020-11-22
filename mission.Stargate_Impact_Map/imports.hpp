@@ -18,6 +18,7 @@
 #include "dialog\menu_journal_quetes.hpp"
 #include "dialog\popup_bis.hpp"
 #include "dialog\menu_general.hpp"
+#include "dialog\menu_docs_planetes.hpp"
 
 // Configs
 #include "config\mission_config.cpp"
