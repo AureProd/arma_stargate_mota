@@ -8,7 +8,9 @@ switch (LEVELADMIN) do {
 	};
 	default { 
 		if ((["classe"] call mission_fnc_getBDD) == 3) then {
-			[] spawn interface_soldat;
+			closeDialog 1;
+
+			[] spawn mission_fnc_interface_soldat;
 		};
 	};
 };
