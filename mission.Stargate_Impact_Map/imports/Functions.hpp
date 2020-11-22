@@ -38,6 +38,8 @@ class CfgFunctions
             class add_docs {};
             class has_docs {};
             class remove_docs {};
+            class modif_var_bdd_joueurs_distant {};
+            class setBDD_distant {};
         };
         class interface_soldat
         {
@@ -46,6 +48,13 @@ class CfgFunctions
             class interface_soldat_liste_joueurs_proches {};
             class interface_soldat_liste_items_illegals {};
             class interface_soldat_bouton_detruire {};
+        };
+        class interface_chef_soldats
+        {
+            file = "fonctions\interfaces\admin\interface_chef_soldats";
+            class interface_chef_soldats {};
+            class interface_chef_soldats_liste_joueurs {};
+            class interface_chef_soldats_bouton_wl_soldat {};
         };
         class journal_quetes
         {
