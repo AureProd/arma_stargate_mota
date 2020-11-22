@@ -17,8 +17,8 @@ if (_index != -1) then {
 
 	_bouton_white_liste ctrlEnable true;
 	_bouton_tuer_player ctrlEnable true;
-	_text_xp ctrlEnable true;
-	_enter_xp ctrlEnable true;
+	_text_xp ctrlShow true;
+	_enter_xp ctrlShow true;
 	_bouton_add_xp ctrlEnable true;
 	_bouton_delete_xp ctrlEnable true;
 	_bouton_tp_joueur_admin ctrlEnable true;
@@ -34,8 +34,8 @@ if (_index != -1) then {
 } else {
 	_bouton_white_liste ctrlEnable false;
 	_bouton_tuer_player ctrlEnable false;
-	_text_xp ctrlEnable false;
-	_enter_xp ctrlEnable false;
+	_text_xp ctrlShow false;
+	_enter_xp ctrlShow false;
 	_bouton_add_xp ctrlEnable false;
 	_bouton_delete_xp ctrlEnable false;
 	_bouton_tp_joueur_admin ctrlEnable false;

@@ -64,8 +64,8 @@ private _bouton_tp_joueur_admin = (findDisplay 12000) displayCtrl 12014;
 private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
 
 _bouton_tuer_player ctrlEnable false;
-_text_xp ctrlEnable false;
-_enter_xp ctrlEnable false;
+_text_xp ctrlShow false;
+_enter_xp ctrlShow false;
 _bouton_add_xp ctrlEnable false;
 _bouton_delete_xp ctrlEnable false;
 _bouton_tp_joueur_admin ctrlEnable false;

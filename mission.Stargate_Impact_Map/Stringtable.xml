@@ -306,8 +306,8 @@
 		</Container>
         <Container name="Autres_Messages">
             <Key ID="STR_erreur">
-				<Original>Erreurs</Original>
-                <French>Erreurs</French>
+				<Original>Erreur</Original>
+                <French>Erreur</French>
 				<English>Error</English>
 			</Key>
 			<Key ID="STR_sauvegarde_syns_data">
