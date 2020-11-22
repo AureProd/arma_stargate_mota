@@ -99,7 +99,7 @@ class interface_soldat
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "playSound 'button'; [] call mission_fnc_interface_soldat_liste_joueurs_proches;";
+			onLBSelChanged = "[] call mission_fnc_interface_soldat_liste_joueurs_proches;";
 		};
 		class liste_objets_illegals
 		{
@@ -128,7 +128,7 @@ class interface_soldat
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "playSound 'button'; [] call mission_fnc_interface_soldat_liste_items_illegals;";
+			onLBSelChanged = "[] call mission_fnc_interface_soldat_liste_items_illegals;";
 		};
 		class items_illegals
 		{
@@ -296,7 +296,7 @@ class interface_admin_1
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "playSound 'button'; [] call mission_fnc_interface_soldat_liste_joueurs_proches;";
+			onLBSelChanged = "[] call mission_fnc_interface_soldat_liste_joueurs_proches;";
 		};
 		class liste_objets_illegals
 		{
@@ -325,7 +325,7 @@ class interface_admin_1
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "playSound 'button'; [] call mission_fnc_interface_soldat_liste_items_illegals;";
+			onLBSelChanged = "[] call mission_fnc_interface_soldat_liste_items_illegals;";
 		};
 		class items_illegals
 		{
@@ -401,7 +401,7 @@ class interface_admin_1
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "playSound 'button'; [] call mission_fnc_interface_chef_soldats_liste_joueurs;";
+			onLBSelChanged = "[] call mission_fnc_interface_chef_soldats_liste_joueurs;";
 		};
 		class bouton_on_off_wl_soldat
 		{
