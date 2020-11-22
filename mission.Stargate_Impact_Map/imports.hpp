@@ -27,6 +27,7 @@
 #include "config\arme_config.cpp"
 #include "config\vetement_config.cpp"
 #include "config\quetes_config.cpp"
+#include "config\docs_planetes_config.cpp"
 
 // FPS CTF 
 
