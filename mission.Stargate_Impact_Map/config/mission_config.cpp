@@ -3,8 +3,8 @@ class stargate
 {
 	class coordonnees_spawn
     {
-		spawn_goauld[] = {38869.605, 38965.328, 0.5}; // a coté de etang / biome goauld
-        spawn_tauri[] = {38144.555, 3127.349, 0.5}; // place des chalets / biome tauri
+		spawn_goauld[] = {38894.375, 38926.156, 0.5}; // biome goauld
+        spawn_tauri[] = {38144.555, 3127.349, 0.5}; // biome tauri
 	};
 	class licences
 	{
