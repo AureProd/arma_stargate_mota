@@ -27,7 +27,7 @@ class stargate_items
             poisson cuit --> 11
         */
         tableau_items[] = {
-			{1, 0, "bouteille", "pictures\items\bouteille.paa", 2, 1.5, 0, 10, 1, 30, 0},
+			{1, 0, $str_TAG_bouteille, "pictures\items\bouteille.paa", 2, 1.5, 0, 10, 1, 30, 0},
             {2, 15, "gourde", "pictures\items\gourde.paa", 5, 3, 1, 70, 1, 50, 0},
             {3, 15, "micropur", "pictures\items\micropur.paa", 5, 0.5, 25, 0, 3, 0},
             {4, 15, "ration", "pictures\items\ration.paa", 1, 1, 1, 50, 1, 30, 0},
@@ -54,8 +54,8 @@ class stargate_items
             {30, 0, "couteau", "pictures\items\couteaux\couteau_taury.paa", 7, 3, 0, 15, 1, 0, 0},
             {31, 0, "couteau", "pictures\items\couteaux\couteau_goauld.paa", 7, 3, 0, 15, 0, 0, 0},
             {32, 0, "symbiote", "pictures\items\poissons\symbiote.paa", 10, 2, 0, 12, 2, 0, 0},
-            {33, 0, "maquereau cru", "pictures\items\poissons\maquereau.paa", 10, 1, 0, 6, 2, 10, 0},
-            {34, 0, "maquereau cuit", "pictures\items\poissons\maquereau.paa", 11, 0.5, 0, 8, 2, 35, 0},
+            {33, 0, $str_TAG_maquereau + " " + $str_TAG_cru, "pictures\items\poissons\maquereau.paa", 10, 1, 0, 6, 2, 10, 0},
+            {34, 0, $str_TAG_maquereau + " " + $str_TAG_cuit, "pictures\items\poissons\maquereau.paa", 11, 0.5, 0, 8, 2, 35, 0},
             {35, 0, "mullet cru", "pictures\items\poissons\mullet.paa", 10, 1, 0, 5, 2, 8, 0},
             {36, 0, "mullet cuit", "pictures\items\poissons\mullet.paa", 11, 0.5, 0, 7, 2, 30, 0},
             {37, 0, "ornate cru", "pictures\items\poissons\ornate.paa", 10, 1, 0, 4, 2, 5, 0},

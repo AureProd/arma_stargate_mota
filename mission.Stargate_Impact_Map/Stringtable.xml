@@ -1,0 +1,193 @@
+
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="StarGate">
+	<Package name="Mission StarGate">
+		<Container name="Items">
+			<Key ID="str_TAG_bouteille">
+				<Original>bouteille</Original>
+                <French>bouteille</French>
+				<English>bottle</English>
+			</Key>
+            <Key ID="str_TAG_gourde">
+				<Original>gourde</Original>
+                <French>gourde</French>
+				<English>gourde</English>
+			</Key>
+            <Key ID="str_TAG_micropur">
+				<Original>micropur</Original>
+                <French>micropur</French>
+				<English>micropur</English>
+			</Key>
+            <Key ID="str_TAG_ration">
+				<Original>ration</Original>
+                <French>ration</French>
+				<English>ration</English>
+			</Key>
+            <Key ID="str_TAG_sandwich">
+				<Original>sandwich</Original>
+                <French>sandwich</French>
+				<English>sandwich</English>
+			</Key>
+            <Key ID="str_TAG_bandage">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_aspirine">
+				<Original>aspirine</Original>
+                <French>aspirine</French>
+				<English>aspirine</English>
+			</Key>
+            <Key ID="str_TAG_bouteille">
+				<Original>bouteille</Original>
+                <French>bouteille</French>
+				<English>bottle</English>
+			</Key>
+            <Key ID="str_TAG_smecta">
+				<Original>smecta</Original>
+                <French>smecta</French>
+				<English>smecta</English>
+			</Key>
+            <Key ID="str_TAG_raisin">
+				<Original>raisin</Original>
+                <French>raisin</French>
+				<English>raisin</English>
+			</Key>
+           <Key ID="str_TAG_mouton_cru">
+				<Original>mouton cru</Original>
+                <French>mouton cru</French>
+				<English>mouton cru</English>
+			</Key>
+            <Key ID="str_TAG_mouton_cuit">
+				<Original>mouton cuit</Original>
+                <French>mouton cuit</French>
+				<English>mouton cuit</English>
+			</Key>
+            <Key ID="str_TAG_chevre_crue">
+				<Original>chevre crue</Original>
+                <French>chevre crue</French>
+				<English>chevre crue</English>
+			</Key>
+            <Key ID="str_TAG_chevre_cuite">
+				<Original>chevre cuite</Original>
+                <French>chevre cuite</French>
+				<English>chevre cuite</English>
+			</Key>
+            <Key ID="str_TAG_poule_crue">
+				<Original>poule crue</Original>
+                <French>poule crue</French>
+				<English>poule crue</English>
+			</Key>
+            <Key ID="str_TAG_poule_cuite">
+				<Original>poule cuite</Original>
+                <French>poule cuite</French>
+				<English>poule cuite</English>
+			</Key>
+            <Key ID="str_TAG_lapin_cru">
+				<Original>lapin cru</Original>
+                <French>lapin cru</French>
+				<English>lapin cru</English>
+			</Key>
+            <Key ID="str_TAG_lapin_cuit">
+				<Original>lapin cuit</Original>
+                <French>lapin cuit</French>
+				<English>lapin cuit</English>
+			</Key>
+            <Key ID="str_TAG_couteau">
+				<Original>couteau</Original>
+                <French>couteau</French>
+				<English>couteau</English>
+			</Key>
+            <Key ID="str_TAG_maquereau">
+				<Original>maquereau</Original>
+                <French>maquereau</French>
+				<English>maquereau</English>
+			</Key>
+            <Key ID="str_TAG_cru">
+				<Original>cru</Original>
+                <French>cru</French>
+				<English>cru</English>
+			</Key>
+            <Key ID="str_TAG_cuit">
+				<Original>cuit</Original>
+                <French>cuit</French>
+				<English>cuit</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+            <Key ID="str_TAG_">
+				<Original>bandage</Original>
+                <French>bandage</French>
+				<English>bandage</English>
+			</Key>
+		</Container>
+        <Container name="Vetements">
+			<Key ID="str_TAG_Yes">
+				<Original>yes</Original>
+                <French>oui</French>
+				<English>yes</English>
+			</Key>
+		</Container>
+        <Container name="Armes">
+			<Key ID="str_TAG_Yes">
+				<Original>yes</Original>
+                <French>oui</French>
+				<English>yes</English>
+			</Key>
+		</Container>
+	</Package>
+</Project>
