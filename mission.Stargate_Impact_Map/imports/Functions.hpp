@@ -39,6 +39,14 @@ class CfgFunctions
             class has_docs {};
             class remove_docs {};
         };
+        class interface_soldat
+        {
+            file = "fonctions\interfaces\admin\interface_soldat";
+            class interface_soldat {};
+            class interface_soldat_liste_joueurs_proches {};
+            class interface_soldat_liste_items_illegals {};
+            class interface_soldat_bouton_detruire {};
+        };
         class journal_quetes
         {
             file = "fonctions\interfaces\journal_quetes";
@@ -130,6 +138,7 @@ class CfgFunctions
             class menuY_bouton_supprimer {};
             class menuY_liste_objets {};
             class menuY_liste_joueurs {};
+            class menuY_open_admin {};
         };
         class interfaces_menu_groupe
         {

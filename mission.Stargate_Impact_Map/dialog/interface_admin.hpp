@@ -99,7 +99,7 @@ class interface_soldat
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "";
+			onLBSelChanged = "[] call mission_fnc_interface_soldat_liste_joueurs_proches;";
 		};
 		class liste_objets_illegals
 		{
@@ -128,7 +128,7 @@ class interface_soldat
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			
+			onLBSelChanged = "[] call mission_fnc_interface_soldat_liste_items_illegals;";
 		};
 		class items_illegals
 		{
@@ -149,7 +149,7 @@ class interface_soldat
 		class bouton_detruire
 		{
 			type = 1;
-			idc = -1;
+			idc = 12010;
 			x = safeZoneX + safeZoneW * 0.53625;
 			y = safeZoneY + safeZoneH * 0.32777778;
 			w = safeZoneW * 0.08625;
@@ -175,7 +175,7 @@ class interface_soldat
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_interface_soldat_bouton_detruire;";
 		};
 	};
 };
@@ -346,7 +346,7 @@ class interface_admin_1
 		class bouton_detruire
 		{
 			type = 1;
-			idc = -1;
+			idc = 12010;
 			x = safeZoneX + safeZoneW * 0.53625;
 			y = safeZoneY + safeZoneH * 0.32777778;
 			w = safeZoneW * 0.08625;
@@ -619,7 +619,7 @@ class interface_admin_5
 		class bouton_detruire
 		{
 			type = 1;
-			idc = -1;
+			idc = 12010;
 			x = safeZoneX + safeZoneW * 0.53625;
 			y = safeZoneY + safeZoneH * 0.32777778;
 			w = safeZoneW * 0.08625;
