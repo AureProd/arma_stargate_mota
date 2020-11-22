@@ -438,9 +438,9 @@
 				<English>Vous n'avez rien pêché !!!</English>
 			</Key>
             <Key ID="STR_peche_reussie">
-				<Original>Vous avez peché :</Original>
-                <French>Vous avez peché :</French>
-				<English>Vous avez peché :</English>
+				<Original>Vous avez peché : %1 !!!</Original>
+                <French>Vous avez peché : %1 !!!</French>
+				<English>Vous avez peché : %1 !!!</English>
 			</Key>
 		</Container>
         <Container name="Kill_Animals">
@@ -485,20 +485,15 @@
 			</Key>
 		</Container>
         <Container name="Kill_Players">
-            <Key ID="STR_killer_message_1">
-				<Original>Vous avez tué</Original>
-                <French>Vous avez tué</French>
-				<English>Vous avez tué</English>
-			</Key>
-            <Key ID="STR_killer_message_2">
-				<Original>50 XP gagnés</Original>
-                <French>50 XP gagnés</French>
-				<English>50 XP gagnés</English>
+            <Key ID="STR_killer_message">
+				<Original>Vous avez tué %1/n50 XP gagnés</Original>
+                <French>Vous avez tué %1/n50 XP gagnés</French>
+				<English>Vous avez tué %1/n50 XP gagnés</English>
 			</Key>
             <Key ID="STR_tuer_message">
-				<Original>Vous avez été tué par</Original>
-                <French>Vous avez été tué par</French>
-				<English>Vous avez été tué par</English>
+				<Original>Vous avez été tué par %1.</Original>
+                <French>Vous avez été tué par %1.</French>
+				<English>Vous avez été tué par %1.</English>
 			</Key>
 		</Container>
         <Container name="Description_ext">

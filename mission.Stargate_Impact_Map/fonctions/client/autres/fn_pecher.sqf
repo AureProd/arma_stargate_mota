@@ -56,7 +56,7 @@ player addAction [(localize "STR_peche_add_action"), {
 			hint localize "STR_peche_erreur_poid";
 		};
 
-		hint format ["%2 %1 !!!", (_poisson select 2), (localize "STR_peche_reussie")];
+		hint format [localize "STR_peche_reussie", (_poisson select 2)];
 	};
 
 	sleep 3;

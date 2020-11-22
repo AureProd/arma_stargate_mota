@@ -6,18 +6,7 @@ private _killer = param [1];
 
 if(player == _killer) then
 {
-	titleText
-	[
-		format
-		[
-			"%2 %1\n%3",
-			name _mort,
-			localize "STR_killer_message_1",
-			localize "STR_killer_message_2"
-		],
-		"PLAIN DOWN",
-		0.25
-	];
+	titleText [format [localize "STR_killer_message", name _mort], "PLAIN DOWN",0.25];
 
 	private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "elimination_mode_fps");
 
