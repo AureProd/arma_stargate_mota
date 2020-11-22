@@ -674,7 +674,7 @@ class interface_admin_5
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "[] call mission_fnc_interface_chef_soldats_liste_joueurs;";
+			onLBSelChanged = "[] call mission_fnc_interface_admin_liste_joueurs;";
 		};
 		class bouton_on_off_wl_soldat
 		{
@@ -705,7 +705,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] call mission_fnc_interface_chef_soldats_bouton_wl_soldat;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_interface_admin_bouton_wl_soldat;";
 		};
 		class bouton_on_off_invisible
 		{
@@ -879,7 +879,7 @@ class interface_admin_5
 		class bouton_tuer_player
 		{
 			type = 1;
-			idc = -1;
+			idc = 12011;
 			x = safeZoneX + safeZoneW * 0.41125;
 			y = safeZoneY + safeZoneH * 0.50111112;
 			w = safeZoneW * 0.159375;
@@ -905,7 +905,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_tuer_joueur;";
 		};
 		class xp_player
 		{
@@ -945,7 +945,7 @@ class interface_admin_5
 		class bouton_add_xp
 		{
 			type = 1;
-			idc = -1;
+			idc = 12012;
 			x = safeZoneX + safeZoneW * 0.41125;
 			y = safeZoneY + safeZoneH * 0.69;
 			w = safeZoneW * 0.0775;
@@ -976,7 +976,7 @@ class interface_admin_5
 		class bouton_del_xp
 		{
 			type = 1;
-			idc = -1;
+			idc = 12013;
 			x = safeZoneX + safeZoneW * 0.491875;
 			y = safeZoneY + safeZoneH * 0.69;
 			w = safeZoneW * 0.07875;
@@ -1007,7 +1007,7 @@ class interface_admin_5
 		class bouton_TP_joueur_admin
 		{
 			type = 1;
-			idc = -1;
+			idc = 12014;
 			x = safeZoneX + safeZoneW * 0.41125;
 			y = safeZoneY + safeZoneH * 0.76;
 			w = safeZoneW * 0.159375;
@@ -1033,12 +1033,12 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [1] call mission_fnc_admin_tp_joueur;";
 		};
 		class bouton_TP_admin_joueur
 		{
 			type = 1;
-			idc = -1;
+			idc = 12015;
 			x = safeZoneX + safeZoneW * 0.41125;
 			y = safeZoneY + safeZoneH * 0.83;
 			w = safeZoneW * 0.159375;
@@ -1064,7 +1064,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [2] call mission_fnc_admin_tp_joueur;";
 		};
 	};
 };

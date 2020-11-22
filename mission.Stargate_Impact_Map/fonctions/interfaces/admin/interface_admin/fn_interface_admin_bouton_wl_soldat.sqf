@@ -8,15 +8,13 @@ if (_index != -1) then {
 	private _joueurs = allPlayers;
 	private _joueur = _joueurs select _index;
 
-	_bouton_white_liste ctrlEnable true;
-
 	if ((["wl soldat", _joueur] call mission_fnc_getBDD) == 1) then {
-		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "ON"];
+		["wl soldat", 0, _joueur] call mission_fnc_setBDD_distant;
 	} else {
-		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "OFF"];
+		["wl soldat", 1, _joueur] call mission_fnc_setBDD_distant;
 	};
-} else {
-	_bouton_white_liste ctrlEnable false;
+
+	[] call mission_fnc_interface_admin_liste_joueurs;
 };
 
 

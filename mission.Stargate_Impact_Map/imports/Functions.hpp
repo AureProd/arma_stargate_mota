@@ -63,6 +63,11 @@ class CfgFunctions
             class admin_invinsibilite {};
             class interface_admin {};
             class admin_tp_loc {};
+            class interface_admin_liste_joueurs {};
+            class interface_admin_bouton_wl_soldat {};
+            class admin_tuer_joueur {};
+            class admin_get_player {};
+            class admin_tp_joueur {};
         };
         class journal_quetes
         {
