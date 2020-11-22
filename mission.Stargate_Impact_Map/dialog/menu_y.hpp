@@ -27,7 +27,7 @@ class menu_y
 		class bouton_groupe
 		{
 			type = 1;
-			idc = 3007;
+			idc = -1;
 			x = safeZoneX + safeZoneW * 0.251875;
 			y = safeZoneY + safeZoneH * 0.28111112;
 			w = safeZoneW * 0.109375;
@@ -53,7 +53,7 @@ class menu_y
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] call mission_fnc_interface_groupe;";
+			onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] spawn mission_fnc_interface_groupe;";
 		};
 		class bouton_documents
 		{

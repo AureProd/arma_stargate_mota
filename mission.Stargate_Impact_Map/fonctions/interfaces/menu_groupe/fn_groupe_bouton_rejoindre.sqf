@@ -124,4 +124,4 @@ if ((getPlayerUID _joueur) in _invitePar) then
 
 [player] join (group _joueur);
 
-[true] call mission_fnc_interface_groupe;
+[true] spawn mission_fnc_interface_groupe;

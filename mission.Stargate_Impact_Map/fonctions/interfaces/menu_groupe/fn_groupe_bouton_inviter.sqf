@@ -33,4 +33,4 @@ if (!_ok) then
 	};
 };
 
-[true] call mission_fnc_interface_groupe;
+[true] spawn mission_fnc_interface_groupe;
