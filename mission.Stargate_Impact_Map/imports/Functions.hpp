@@ -56,6 +56,14 @@ class CfgFunctions
             class interface_chef_soldats_liste_joueurs {};
             class interface_chef_soldats_bouton_wl_soldat {};
         };
+        class interface_admin_5
+        {
+            file = "fonctions\interfaces\admin\interface_admin";
+            class admin_invisibilite {};
+            class admin_invinsibilite {};
+            class interface_admin {};
+            class admin_tp_loc {};
+        };
         class journal_quetes
         {
             file = "fonctions\interfaces\journal_quetes";

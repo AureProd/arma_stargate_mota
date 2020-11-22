@@ -3,7 +3,7 @@ switch (LEVELADMIN) do {
 	case 5: {
 		closeDialog 1;
 
-		
+		[] spawn mission_fnc_interface_admin;
 	};
 	case 1: {
 		closeDialog 1;

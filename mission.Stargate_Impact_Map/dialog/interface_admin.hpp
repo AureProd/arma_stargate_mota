@@ -674,7 +674,7 @@ class interface_admin_5
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "";
+			onLBSelChanged = "[] call mission_fnc_interface_chef_soldats_liste_joueurs;";
 		};
 		class bouton_on_off_wl_soldat
 		{
@@ -705,7 +705,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_interface_chef_soldats_bouton_wl_soldat;";
 		};
 		class bouton_on_off_invisible
 		{
@@ -736,7 +736,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_invisibilite;";
 		};
 		class bouton_on_off_invincible
 		{
@@ -767,38 +767,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
-		};
-		class bouton_sauvegarde_position
-		{
-			type = 1;
-			idc = -1;
-			x = safeZoneX + safeZoneW * 0.61625;
-			y = safeZoneY + safeZoneH * 0.64111112;
-			w = safeZoneW * 0.20125;
-			h = safeZoneH * 0.04111112;
-			style = 2;
-			text = $STR_admin_bouton_sauvegarde_position;
-			borderSize = 0;
-			colorBackground[] = {0.2,0.2,0.2,1};
-			colorBackgroundActive[] = {1,0,0,1};
-			colorBackgroundDisabled[] = {0,0,0,0};
-			colorBorder[] = {0,0,0,0};
-			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
-			colorShadow[] = {0,0,0,0};
-			colorText[] = {1,1,1,1};
-			font = "PuristaMedium";
-			offsetPressedX = 0;
-			offsetPressedY = 0;
-			offsetX = 0;
-			offsetY = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
-			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
-			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
-			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
-			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_invinsibilite;";
 		};
 		class bouton_tp_position_sauvegarder
 		{
@@ -829,7 +798,38 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [1] call mission_fnc_admin_tp_loc;";
+		};
+		class bouton_sauvegarde_position
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.61625;
+			y = safeZoneY + safeZoneH * 0.64111112;
+			w = safeZoneW * 0.20125;
+			h = safeZoneH * 0.04111112;
+			style = 2;
+			text = $STR_admin_bouton_sauvegarde_position;
+			borderSize = 0;
+			colorBackground[] = {0.2,0.2,0.2,1};
+			colorBackgroundActive[] = {1,0,0,1};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBorder[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0,0,0,0};
+			colorShadow[] = {0,0,0,0};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			offsetPressedX = 0;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onButtonClick = "playSound 'button'; [2] call mission_fnc_admin_tp_loc;";
 		};
 		class liste_planetes_joueur
 		{

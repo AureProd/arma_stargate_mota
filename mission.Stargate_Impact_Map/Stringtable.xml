@@ -415,6 +415,11 @@
                 <French>Vous ne pouvez pas supprimer plus d'items que vous en avez</French>
 				<English>Vous ne pouvez pas supprimer plus d'items que vous en avez</English>
 			</Key>
+			<Key ID="STR_impossible_tp_sans_location_admin">
+				<Original>Vous ne pouvez pas vous TP car vous n'avez pas enregistrer de localisation</Original>
+                <French>Vous ne pouvez pas vous TP car vous n'avez pas enregistrer de localisation</French>
+				<English>Vous ne pouvez pas vous TP car vous n'avez pas enregistrer de localisation</English>
+			</Key>
 		</Container>
         <Container name="Peche">
             <Key ID="STR_peche_add_action">
@@ -540,9 +545,9 @@
 				<English>Invisibilité : %1</English>
 			</Key>
 			<Key ID="STR_admin_bouton_invinsible">
-				<Original>Invinsibilité : %1</Original>
-                <French>Invinsibilité : %1</French>
-				<English>Invinsibilité : %1</English>
+				<Original>Invincibilité : %1</Original>
+                <French>Invincibilité : %1</French>
+				<English>Invincibilité : %1</English>
 			</Key>
 			<Key ID="STR_admin_bouton_tp_to_position_sauvegardee">
 				<Original>TP à la position sauvegardée</Original>
@@ -580,14 +585,14 @@
 				<English>Delete XP</English>
 			</Key>
 			<Key ID="STR_admin_bouton_tp_joueur_admin">
-				<Original>TP joueur > admin</Original>
-                <French>TP joueur > admin</French>
-				<English>TP joueur > admin</English>
+				<Original>TP joueur vers admin</Original>
+                <French>TP joueur vers admin</French>
+				<English>TP joueur vers admin</English>
 			</Key>
 			<Key ID="STR_admin_bouton_tp_admin_joueur">
-				<Original>TP joueur < admin</Original>
-                <French>TP joueur < admin</French>
-				<English>TP joueur < admin</English>
+				<Original>TP joueur vers admin</Original>
+                <French>TP joueur vers admin</French>
+				<English>TP joueur vers admin</English>
 			</Key>
 		</Container>
 	</Package>
