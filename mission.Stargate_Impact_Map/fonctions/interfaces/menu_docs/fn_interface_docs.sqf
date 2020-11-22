@@ -1,5 +1,5 @@
 
-createDialog "menu_docs_planetes";
+createDialog "menu_docs";
 waitUntil {dialog};
 
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel]
