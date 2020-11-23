@@ -4,7 +4,7 @@
 
 private _vie = param [0];
 
-if (!ISINVICIBLE) then {
+if (!ISINVINCIBLE) then {
 	player setDamage (1 - (_vie / 100));
 };
 

@@ -3,7 +3,8 @@
 nomVarPlayerUID = format ["variable_%1", getPlayerUID player]; // BDD player
 
 LEVELADMIN = 0;
-ISINVICIBLE = false;
+ISINVINCIBLE = false;
+ISINVISIBLE = false;
 LOCADMIN = nil;
 SPECMODE = [false, nil];
 

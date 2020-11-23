@@ -654,6 +654,11 @@
                 <French>SOIF</French>
 				<English>SOIF</English>
 			</Key>
+			<Key ID="STR_admin_pas_tp_vehicule">
+				<Original>Pas de Tp quand vous êtes en véhicule ou que le joueur distant est en véhicule</Original>
+                <French>Pas de Tp quand vous êtes en véhicule ou que le joueur distant est en véhicule</French>
+				<English>Pas de Tp quand vous êtes en véhicule ou que le joueur distant est en véhicule</English>
+			</Key>
 		</Container>
 	</Package>
 </Project>

@@ -6,7 +6,7 @@ private _compteur = 0;
 
 while {true} do 
 {
-	if (!ISINVICIBLE) then {
+	if (!ISINVINCIBLE) then {
 		// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
 		private _variablesPlayer = missionNamespace getVariable nomVarPlayerUID;
 		private _vie = _variablesPlayer select 5;
