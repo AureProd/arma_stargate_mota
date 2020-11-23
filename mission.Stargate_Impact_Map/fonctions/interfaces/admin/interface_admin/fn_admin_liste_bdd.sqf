@@ -13,8 +13,8 @@ switch (_indexTypeBdd) do {
 	case 0: { // XP
 		_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _player] call mission_fnc_getBDD)];
 
-		_bouton_add_xp ctrlSetText (localize "STR_admin_text_level_joueur");
-		_bouton_delete_xp ctrlSetText (localize "STR_admin_text_level_joueur");
+		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_add_xp");
+		_bouton_delete_xp ctrlSetText (localize "STR_admin_bouton_delete_xp");
 
 		_bouton_add_xp ctrlEnable true;
 		_bouton_delete_xp ctrlEnable true;
