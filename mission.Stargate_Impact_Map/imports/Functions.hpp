@@ -68,6 +68,7 @@ class CfgFunctions
             class admin_tuer_joueur {};
             class admin_get_player {};
             class admin_tp_joueur {};
+            class admin_ajout_xp {};
         };
         class journal_quetes
         {

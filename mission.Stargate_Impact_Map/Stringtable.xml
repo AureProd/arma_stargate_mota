@@ -587,12 +587,12 @@
 			<Key ID="STR_admin_bouton_tp_joueur_admin">
 				<Original>TP joueur vers admin</Original>
                 <French>TP joueur vers admin</French>
-				<English>TP joueur vers admin</English>
+				<English>TP joueur to admin</English>
 			</Key>
 			<Key ID="STR_admin_bouton_tp_admin_joueur">
-				<Original>TP joueur vers admin</Original>
-                <French>TP joueur vers admin</French>
-				<English>TP joueur vers admin</English>
+				<Original>TP admin vers joueur</Original>
+                <French>TP admin vers joueur</French>
+				<English>TP admin to joueur</English>
 			</Key>
 		</Container>
 	</Package>

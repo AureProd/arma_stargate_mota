@@ -56,7 +56,7 @@ class interface_soldat
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -162,7 +162,7 @@ class interface_soldat
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -253,7 +253,7 @@ class interface_admin_1
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -359,7 +359,7 @@ class interface_admin_1
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -419,7 +419,7 @@ class interface_admin_1
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -526,7 +526,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -632,7 +632,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -692,7 +692,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -723,7 +723,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -754,7 +754,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -785,7 +785,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -816,7 +816,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -892,7 +892,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -936,7 +936,7 @@ class interface_admin_5
 			autocomplete = "";
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorDisabled[] = {0.2,0.2,0.2,1};
-			colorSelection[] = {1,1,1,1};
+			colorSelection[] = {1,1,1,0.25};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
@@ -958,7 +958,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -971,7 +971,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [1] call mission_fnc_admin_ajout_xp;";
 		};
 		class bouton_del_xp
 		{
@@ -989,7 +989,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -1002,7 +1002,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; ";
+			onButtonClick = "playSound 'button'; [2] call mission_fnc_admin_ajout_xp;";
 		};
 		class bouton_TP_joueur_admin
 		{
@@ -1020,7 +1020,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -1051,7 +1051,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";

@@ -8,6 +8,7 @@ private _bouton_add_xp = (findDisplay 12000) displayCtrl 12012;
 private _bouton_delete_xp = (findDisplay 12000) displayCtrl 12013;
 private _bouton_tp_joueur_admin = (findDisplay 12000) displayCtrl 12014;
 private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
+private _liste_planetes = (findDisplay 12000) displayCtrl 12004;
 
 private _index = lbCurSel _liste_joueurs;
 
@@ -31,6 +32,14 @@ if (_index != -1) then {
 	};
 
 	_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _joueur] call mission_fnc_getBDD)];
+	
+	{
+		if ((_x select 0) in (["planete visite", _joueur] call mission_fnc_getBDD)) then {
+			_liste_planetes lbAdd (format ["%1", (_x select 1)]);
+		};
+	} forEach (getArray(missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));
+
+	_liste_planetes lbSetCurSel -1;
 } else {
 	_bouton_white_liste ctrlEnable false;
 	_bouton_tuer_player ctrlEnable false;
@@ -40,6 +49,8 @@ if (_index != -1) then {
 	_bouton_delete_xp ctrlEnable false;
 	_bouton_tp_joueur_admin ctrlEnable false;
 	_bouton_tp_admin_joueur ctrlEnable false;
+
+	lbClear _liste_planetes;
 };
 
 

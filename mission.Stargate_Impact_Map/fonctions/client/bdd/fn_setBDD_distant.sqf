@@ -47,7 +47,7 @@ switch (_indexChoix) do {
         private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
         private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> "tableau_levels");
 
-        if ((_num) <= _xpMax) then 
+        if (((_num) <= _xpMax) and ((_num) <= 0)) then 
         {
             _xpPlayer = _num;	
         }
@@ -56,7 +56,9 @@ switch (_indexChoix) do {
             if (_xpPlayer < _xpMax) then 
             {
                 _xpPlayer = 300000;
-            };
+            } else {
+                _xpPlayer = 0;
+            }
         };
 
         private _aGagneLevel = false;
