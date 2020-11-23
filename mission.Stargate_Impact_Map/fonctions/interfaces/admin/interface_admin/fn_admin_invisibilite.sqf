@@ -2,11 +2,11 @@
 private _bouton_invisibilite = (findDisplay 12000) displayCtrl 12008;
 
 if (isObjectHidden player) then {
-	//[player, false] remoteExec ["hideObject", -2, true];
-	player hideObjectGlobal false;
+	[player, false] remoteExec ["hideObject", -2, true];
+	player hideObject false;
 } else {
-	//[player, true] remoteExec ["hideObject", -2, true];
-	player hideObjectGlobal true;
+	[player, true] remoteExec ["hideObject", -2, true];
+	player hideObject true;
 };
 
 if (isObjectHidden player) then {

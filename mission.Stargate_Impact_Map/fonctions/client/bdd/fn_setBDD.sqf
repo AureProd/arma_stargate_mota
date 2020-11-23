@@ -101,7 +101,7 @@ switch (_indexChoix) do {
         private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
         private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> "tableau_levels");
 
-        if ((_num < _levelMax) and (_num > 0)) then 
+        if ((_num <= _levelMax) and (_num >= 0)) then 
         {
             _levelPlayer = _num;
         }
@@ -123,7 +123,7 @@ switch (_indexChoix) do {
     case 5: { // vie
         private _nouv_num = nil;
 
-        if ((_num < 100) and (_num > 0)) then {
+        if ((_num <= 100) and (_num >= 0)) then {
             _nouv_num = _num;
         } else {
             if (_num > 100) then {
@@ -133,12 +133,15 @@ switch (_indexChoix) do {
             };
         };
 
+        //player setDamage (1 - (_vie / 100));
+        [_nouv_num] call mission_fnc_set_damage_player;
+
         [[5, _nouv_num]] call mission_fnc_modif_var_bdd;
     };
     case 6: { // faim
         private _nouv_num = nil;
 
-        if ((_num < 100) and (_num > 0)) then {
+        if ((_num <= 100) and (_num >= 0)) then {
             _nouv_num = _num;
         } else {
             if (_num > 100) then {
@@ -153,7 +156,7 @@ switch (_indexChoix) do {
     case 7: { // soif
         private _nouv_num = nil;
 
-        if ((_num < 100) and (_num > 0)) then {
+        if ((_num <= 100) and (_num >= 0)) then {
             _nouv_num = _num;
         } else {
             if (_num > 100) then {
