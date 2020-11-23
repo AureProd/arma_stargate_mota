@@ -930,7 +930,7 @@ class interface_admin_5
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1.4);
 			
 		};
 		class ajout_xp

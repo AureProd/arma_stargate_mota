@@ -27,18 +27,18 @@ if (_index != -1) then {
 	_bouton_tp_joueur_admin ctrlEnable true;
 	_bouton_tp_admin_joueur ctrlEnable true;
 	_bouton_reset_bdd ctrlEnable true;
-	_select_liste_bdd ctrlEnable true;
+	_select_liste_bdd ctrlShow true;
 
 	lbClear _liste_planetes;
 	lbClear _select_liste_bdd;
 
-	_liste_planetes lbAdd "XP"; // 0
-	_liste_planetes lbAdd "LEVEL"; // 1
-	_liste_planetes lbAdd (localize "STR_vie"); // 2
-	_liste_planetes lbAdd (localize "STR_faim"); // 3
-	_liste_planetes lbAdd (localize "STR_soif"); // 4
+	_select_liste_bdd lbAdd "XP"; // 0
+	_select_liste_bdd lbAdd "LEVEL"; // 1
+	_select_liste_bdd lbAdd (localize "STR_vie"); // 2
+	_select_liste_bdd lbAdd (localize "STR_faim"); // 3
+	_select_liste_bdd lbAdd (localize "STR_soif"); // 4
 
-	_liste_planetes lbSetCurSel 0;
+	_select_liste_bdd lbSetCurSel 0;
 
 	if ((["wl soldat", _joueur] call mission_fnc_getBDD) == 1) then {
 		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "ON"];
@@ -65,7 +65,7 @@ if (_index != -1) then {
 	_bouton_tp_joueur_admin ctrlEnable false;
 	_bouton_tp_admin_joueur ctrlEnable false;
 	_bouton_reset_bdd ctrlEnable false;
-	_select_liste_bdd ctrlEnable false;
+	_select_liste_bdd ctrlShow false;
 
 	lbClear _liste_planetes;
 };

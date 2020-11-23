@@ -66,6 +66,6 @@ _bouton_delete_xp ctrlEnable false;
 _bouton_tp_joueur_admin ctrlEnable false;
 _bouton_tp_admin_joueur ctrlEnable false;
 _bouton_reset_bdd ctrlEnable false;
-_select_liste_bdd ctrlEnable false;
+_select_liste_bdd ctrlShow false;
 
 
