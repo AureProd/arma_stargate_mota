@@ -50,6 +50,12 @@ if (_index != -1) then {
 		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "OFF"];
 	};
 
+	if (SPECMODE select 0) then {
+		_bouton_mode_spec ctrlSetText format [localize "STR_admin_on_off_spec_mode", "ON"];
+	} else {
+		_bouton_mode_spec ctrlSetText format [localize "STR_admin_on_off_spec_mode", "OFF"];
+	};
+
 	//_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _joueur] call mission_fnc_getBDD)];
 	
 	{

@@ -1219,7 +1219,7 @@ class interface_admin_5
 			w = safeZoneW * 0.20125;
 			h = safeZoneH * 0.04111112;
 			style = 2;
-			text = "$STR_erreur"; // STR_admin_on_off_spec_mode
+			text = "$STR_erreur";
 			borderSize = 0;
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorBackgroundActive[] = {1,0,0,1};
