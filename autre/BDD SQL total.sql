@@ -34,5 +34,5 @@ CREATE TABLE whitelist
  wl_pseudo VARCHAR(100) NOT NULL,
  wl_admin_level INTEGER(10) NOT NULL, 
  PRIMARY KEY (wl_id)
-) ENGINE=InnoDB CHARSET=;
+) ENGINE=InnoDB CHARSET=UTF8;
 
