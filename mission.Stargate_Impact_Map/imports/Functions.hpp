@@ -40,6 +40,7 @@ class CfgFunctions
             class remove_docs {};
             class modif_var_bdd_joueurs_distant {};
             class setBDD_distant {};
+            class reset_bdd_distant {};
         };
         class interface_soldat
         {
@@ -69,6 +70,7 @@ class CfgFunctions
             class admin_get_player {};
             class admin_tp_joueur {};
             class admin_ajout_xp {};
+            class admin_reset_bdd {};
         };
         class journal_quetes
         {

@@ -9,6 +9,8 @@ private _bouton_delete_xp = (findDisplay 12000) displayCtrl 12013;
 private _bouton_tp_joueur_admin = (findDisplay 12000) displayCtrl 12014;
 private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
 private _liste_planetes = (findDisplay 12000) displayCtrl 12004;
+private _bouton_reset_bdd = (findDisplay 12000) displayCtrl 12021;
+private _select_liste_bdd = (findDisplay 12000) displayCtrl 12020;
 
 private _index = lbCurSel _liste_joueurs;
 
@@ -24,6 +26,19 @@ if (_index != -1) then {
 	_bouton_delete_xp ctrlEnable true;
 	_bouton_tp_joueur_admin ctrlEnable true;
 	_bouton_tp_admin_joueur ctrlEnable true;
+	_bouton_reset_bdd ctrlEnable true;
+	_select_liste_bdd ctrlEnable true;
+
+	lbClear _liste_planetes;
+	lbClear _select_liste_bdd;
+
+	_liste_planetes lbAdd "XP"; // 0
+	_liste_planetes lbAdd "LEVEL"; // 1
+	_liste_planetes lbAdd (localize "STR_vie"); // 2
+	_liste_planetes lbAdd (localize "STR_faim"); // 3
+	_liste_planetes lbAdd (localize "STR_soif"); // 4
+
+	_liste_planetes lbSetCurSel 0;
 
 	if ((["wl soldat", _joueur] call mission_fnc_getBDD) == 1) then {
 		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "ON"];
@@ -49,6 +64,8 @@ if (_index != -1) then {
 	_bouton_delete_xp ctrlEnable false;
 	_bouton_tp_joueur_admin ctrlEnable false;
 	_bouton_tp_admin_joueur ctrlEnable false;
+	_bouton_reset_bdd ctrlEnable false;
+	_select_liste_bdd ctrlEnable false;
 
 	lbClear _liste_planetes;
 };

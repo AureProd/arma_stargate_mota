@@ -55,6 +55,8 @@ private _bouton_add_xp = (findDisplay 12000) displayCtrl 12012;
 private _bouton_delete_xp = (findDisplay 12000) displayCtrl 12013;
 private _bouton_tp_joueur_admin = (findDisplay 12000) displayCtrl 12014;
 private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
+private _bouton_reset_bdd = (findDisplay 12000) displayCtrl 12021;
+private _select_liste_bdd = (findDisplay 12000) displayCtrl 12020;
 
 _bouton_tuer_player ctrlEnable false;
 _text_xp ctrlShow false;
@@ -63,4 +65,7 @@ _bouton_add_xp ctrlEnable false;
 _bouton_delete_xp ctrlEnable false;
 _bouton_tp_joueur_admin ctrlEnable false;
 _bouton_tp_admin_joueur ctrlEnable false;
+_bouton_reset_bdd ctrlEnable false;
+_select_liste_bdd ctrlEnable false;
+
 

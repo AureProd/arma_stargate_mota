@@ -6,7 +6,7 @@ CREATE TABLE player
  p_id INTEGER AUTO_INCREMENT NOT NULL,
  p_uid VARCHAR(100) NOT NULL,
  p_name VARCHAR(100) NOT NULL,
- p_classe INTEGER(10) NOT NULL,stargatedb
+ p_classe INTEGER(10) NOT NULL,
  p_race INTEGER(10) NOT NULL,
  p_exp INTEGER(100) NOT NULL,
  p_licence TEXT NOT NULL,

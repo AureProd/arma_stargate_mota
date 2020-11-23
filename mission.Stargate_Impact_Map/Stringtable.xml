@@ -594,6 +594,26 @@
                 <French>TP admin vers joueur</French>
 				<English>TP admin to joueur</English>
 			</Key>
+			<Key ID="STR_reset_bdd">
+				<Original>Reset BDD</Original>
+                <French>Reset BDD</French>
+				<English>Reset BDD</English>
+			</Key>
+			<Key ID="STR_vie">
+				<Original>VIE</Original>
+                <French>VIE</French>
+				<English>LIFE</English>
+			</Key>
+			<Key ID="STR_faim">
+				<Original>FAIM</Original>
+                <French>FAIM</French>
+				<English>FAIM</English>
+			</Key>
+			<Key ID="STR_soif">
+				<Original>SOIF</Original>
+                <French>SOIF</French>
+				<English>SOIF</English>
+			</Key>
 		</Container>
 	</Package>
 </Project>

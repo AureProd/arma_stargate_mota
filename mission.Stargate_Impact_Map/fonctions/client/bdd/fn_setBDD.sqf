@@ -44,13 +44,13 @@ switch (_indexChoix) do {
         private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
         private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> "tableau_levels");
 
-        if (((_num) <= _xpMax) or ((_num) <= 0)) then 
+        if (((_num) <= _xpMax) and ((_num) >= 0)) then 
         {
             _xpPlayer = _num;	
         }
         else
         {
-            if (_xpPlayer < _xpMax) then 
+            if (_num > _xpMax) then 
             {
                 _xpPlayer = 300000;
             } else {
@@ -101,13 +101,17 @@ switch (_indexChoix) do {
         private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
         private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> "tableau_levels");
 
-        if (_num < _levelMax) then 
+        if ((_num < _levelMax) and (_num > 0)) then 
         {
             _levelPlayer = _num;
         }
         else 
         {
-            _levelPlayer = 60;
+            if (_num > _levelMax) then {
+                _levelPlayer = 60;
+            } else {
+                _levelPlayer = 0;
+            };
         };
 
         [[4, _levelPlayer]] call mission_fnc_modif_var_bdd;
@@ -115,6 +119,51 @@ switch (_indexChoix) do {
         ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1", _levelPlayer]]] call BIS_fnc_showNotification; // xp + level
 
         playSound "level_up";
+    };
+    case 5: { // vie
+        private _nouv_num = nil;
+
+        if ((_num < 100) and (_num > 0)) then {
+            _nouv_num = _num;
+        } else {
+            if (_num > 100) then {
+                _nouv_num = 100;
+            } else {
+                _nouv_num = 0;
+            };
+        };
+
+        [[5, _nouv_num]] call mission_fnc_modif_var_bdd;
+    };
+    case 6: { // faim
+        private _nouv_num = nil;
+
+        if ((_num < 100) and (_num > 0)) then {
+            _nouv_num = _num;
+        } else {
+            if (_num > 100) then {
+                _nouv_num = 100;
+            } else {
+                _nouv_num = 0;
+            };
+        };
+
+        [[6, _nouv_num]] call mission_fnc_modif_var_bdd;
+    };
+    case 7: { // soif
+        private _nouv_num = nil;
+
+        if ((_num < 100) and (_num > 0)) then {
+            _nouv_num = _num;
+        } else {
+            if (_num > 100) then {
+                _nouv_num = 100;
+            } else {
+                _nouv_num = 0;
+            };
+        };
+
+        [[7, _nouv_num]] call mission_fnc_modif_var_bdd;
     };
     default { 
         [[_indexChoix, _num]] call mission_fnc_modif_var_bdd;
