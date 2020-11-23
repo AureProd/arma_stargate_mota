@@ -33,13 +33,8 @@ if (_index != -1) then {
 		};
 		case 1: { // LEVEL
 			switch (_choix) do {
-				case 1: { // ajout xp
-					private _ajout = (["level", _joueur] call mission_fnc_getBDD) + _valeur_entrer_ajout;
-
-					["level", _ajout, _joueur] call mission_fnc_setBDD_distant;
-				};
-				case 2: { // suppression xp
-					private _ajout = (["level", _joueur] call mission_fnc_getBDD) - _valeur_entrer_ajout;
+				case 1: { // set level
+					private _ajout = _valeur_entrer_ajout;
 
 					["level", _ajout, _joueur] call mission_fnc_setBDD_distant;
 				};
@@ -47,13 +42,8 @@ if (_index != -1) then {
 		};
 		case 2: { // VIE
 			switch (_choix) do {
-				case 1: { // ajout xp
-					private _ajout = (["vie", _joueur] call mission_fnc_getBDD) + _valeur_entrer_ajout;
-
-					["vie", _ajout, _joueur] call mission_fnc_setBDD_distant;
-				};
-				case 2: { // suppression xp
-					private _ajout = (["vie", _joueur] call mission_fnc_getBDD) - _valeur_entrer_ajout;
+				case 1: { // set vie
+					private _ajout = _valeur_entrer_ajout;
 
 					["vie", _ajout, _joueur] call mission_fnc_setBDD_distant;
 				};
@@ -61,13 +51,8 @@ if (_index != -1) then {
 		};
 		case 3: { // FAIM
 			switch (_choix) do {
-				case 1: { // ajout xp
-					private _ajout = (["faim", _joueur] call mission_fnc_getBDD) + _valeur_entrer_ajout;
-
-					["faim", _ajout, _joueur] call mission_fnc_setBDD_distant;
-				};
-				case 2: { // suppression xp
-					private _ajout = (["faim", _joueur] call mission_fnc_getBDD) - _valeur_entrer_ajout;
+				case 1: { // set faim
+					private _ajout = _valeur_entrer_ajout;
 
 					["faim", _ajout, _joueur] call mission_fnc_setBDD_distant;
 				};
@@ -75,13 +60,8 @@ if (_index != -1) then {
 		};
 		case 4: { // SOIF
 			switch (_choix) do {
-				case 1: { // ajout xp
-					private _ajout = (["soif", _joueur] call mission_fnc_getBDD) + _valeur_entrer_ajout;
-
-					["soif", _ajout, _joueur] call mission_fnc_setBDD_distant;
-				};
-				case 2: { // suppression xp
-					private _ajout = (["soif", _joueur] call mission_fnc_getBDD) - _valeur_entrer_ajout;
+				case 1: { // set soif
+					private _ajout = _valeur_entrer_ajout;
 
 					["soif", _ajout, _joueur] call mission_fnc_setBDD_distant;
 				};

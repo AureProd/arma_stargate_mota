@@ -24,8 +24,6 @@ if (_index != -1) then {
 	_bouton_tuer_player ctrlEnable true;
 	_text_xp ctrlShow true;
 	_enter_xp ctrlShow true;
-	_bouton_add_xp ctrlEnable true;
-	_bouton_delete_xp ctrlEnable true;
 	_bouton_tp_joueur_admin ctrlEnable true;
 	_bouton_tp_admin_joueur ctrlEnable true;
 	_bouton_reset_bdd ctrlEnable true;

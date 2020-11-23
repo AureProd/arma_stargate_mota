@@ -580,9 +580,29 @@
 				<English>LEVEL %1</English>
 			</Key>
 			<Key ID="STR_admin_text_vie_joueur">
-				<Original>%1 %</Original>
-                <French>%1 %</French>
-				<English>%1 %</English>
+				<Original>%1 %2</Original>
+                <French>%1 %2</French>
+				<English>%1 %2</English>
+			</Key>
+			<Key ID="STR_admin_bouton_set_level">
+				<Original>Set LEVEL</Original>
+                <French>Set LEVEL</French>
+				<English>Set LEVEL</English>
+			</Key>
+			<Key ID="STR_admin_bouton_set_vie">
+				<Original>Set VIE</Original>
+                <French>Set VIE</French>
+				<English>Set VIE</English>
+			</Key>
+			<Key ID="STR_admin_bouton_set_faim">
+				<Original>Set FAIM</Original>
+                <French>Set FAIM</French>
+				<English>Set FAIM</English>
+			</Key>
+			<Key ID="STR_admin_bouton_set_soif">
+				<Original>Set SOIF</Original>
+                <French>Set SOIF</French>
+				<English>Set SOIF</English>
 			</Key>
 			<Key ID="STR_admin_bouton_add_xp">
 				<Original>Add XP</Original>
