@@ -205,7 +205,7 @@ class menu_medical
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[1] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [1] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_ventre_logo
 		{
@@ -236,7 +236,7 @@ class menu_medical
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[2] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [2] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_bras_droit_logo
 		{
@@ -267,7 +267,7 @@ class menu_medical
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[3] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [3] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_bras_gauche_logo
 		{
@@ -298,7 +298,7 @@ class menu_medical
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[4] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [4] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_mollet_droit_logo
 		{
@@ -329,7 +329,7 @@ class menu_medical
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[5] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [5] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_mollet_gauche_logo
 		{
@@ -360,7 +360,7 @@ class menu_medical
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[6] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [6] call mission_fnc_utiliser_blessure;";
 		};
 
 		class sante_bar
@@ -771,7 +771,7 @@ class menu_medical_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[1] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [1] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_ventre_logo
 		{
@@ -802,7 +802,7 @@ class menu_medical_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[2] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [2] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_bras_droit_logo
 		{
@@ -833,7 +833,7 @@ class menu_medical_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[3] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [3] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_bras_gauche_logo
 		{
@@ -864,7 +864,7 @@ class menu_medical_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[4] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [4] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_mollet_droit_logo
 		{
@@ -895,7 +895,7 @@ class menu_medical_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[5] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [5] call mission_fnc_utiliser_blessure;";
 		};
 		class bouton_mollet_gauche_logo
 		{
@@ -926,7 +926,7 @@ class menu_medical_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "[6] call mission_fnc_utiliser_blessure;";
+			onButtonClick = "playSound 'button'; [6] call mission_fnc_utiliser_blessure;";
 		};
 
 		class sante_bar

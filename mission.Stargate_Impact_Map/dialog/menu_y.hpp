@@ -36,7 +36,8 @@ class menu_y
 			text = "";
 			borderSize = 0;
 			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {0.6,0,0,0.5};
+			colorBackgroundActive[] = {0,0,0,0};
+			//colorBackgroundActive[] = {0.6,0,0,0.5};
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
@@ -53,7 +54,7 @@ class menu_y
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] spawn mission_fnc_interface_groupe;";
+			//onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] spawn mission_fnc_interface_groupe;";
 		};
 		class bouton_documents
 		{

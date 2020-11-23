@@ -86,7 +86,8 @@ switch (_indexChoix) do {
 
             ["Notif_max", ["LEVEL MAX / XP MAX", format ["Vous avez atteints le level et l'xp maximum : GG", _levelPlayer, _xpPlayer]]] remoteExec ["BIS_fnc_showNotification", _joueur];
 
-            playSound "level_up";
+            //playSound "level_up";
+            ["level_up"] remoteExec ["playSound", _joueur];
         }
         else
         {
@@ -96,7 +97,8 @@ switch (_indexChoix) do {
 
                 ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1 avec %2 d'xp", _levelPlayer, _xpPlayer]]] remoteExec ["BIS_fnc_showNotification", _joueur];
 
-                playSound "level_up";
+                //playSound "level_up";
+                ["level_up"] remoteExec ["playSound", _joueur];
             };
         };
     };
@@ -127,7 +129,8 @@ switch (_indexChoix) do {
         //["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1", _levelPlayer]]] call BIS_fnc_showNotification; // xp + level
         ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1", _levelPlayer]]] remoteExec ["BIS_fnc_showNotification", _joueur];
 
-        playSound "level_up";
+        //playSound "level_up";
+        ["level_up"] remoteExec ["playSound", _joueur];
     };
     case 5: { // vie
         private _nouv_num = nil;

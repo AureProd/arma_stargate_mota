@@ -56,7 +56,7 @@ class interface_soldat
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {1,0,0,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -253,7 +253,7 @@ class interface_admin_1
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {1,0,0,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -526,7 +526,7 @@ class interface_admin_5
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
-			colorFocused[] = {0.2,0.2,0.2,1};
+			colorFocused[] = {1,0,0,1};
 			colorShadow[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
