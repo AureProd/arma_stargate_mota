@@ -1,6 +1,8 @@
 
 private _bouton_mode_spec = (findDisplay 12000) displayCtrl 12023;
 
+private _player = [] call mission_fnc_admin_get_player;
+
 if (SPECMODE select 0) then {
 	private _camera = SPECMODE select 1;
 
@@ -9,18 +11,11 @@ if (SPECMODE select 0) then {
 
 	SPECMODE = [false, nil];
 } else {
-	private _camera = "camera" camCreate (eyePos player);
+	private _camera = "camera" camCreate (eyePos _player);
 	SPECMODE = [true, _camera];
 
-	_camera attachTo [player, [0, 0, 0], 'head'];
-
-	[_camera] spawn {
-		private _camera = param [0];
-
-		sleep 5;
-
-		_camera cameraEffect ["internal", "back"];
-	};
+	_camera attachTo [_player, [0, 0, 0], 'head'];
+	_camera cameraEffect ["internal", "back"];
 };
 
 if (SPECMODE select 0) then {
