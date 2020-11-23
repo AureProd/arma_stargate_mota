@@ -50,7 +50,7 @@ if (_index != -1) then {
 		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "OFF"];
 	};
 
-	if (SPECMODE select 0) then {
+	if (SPECMODE) then {
 		_bouton_mode_spec ctrlSetText format [localize "STR_admin_on_off_spec_mode", "ON"];
 	} else {
 		_bouton_mode_spec ctrlSetText format [localize "STR_admin_on_off_spec_mode", "OFF"];

@@ -6,7 +6,7 @@ LEVELADMIN = 0;
 ISINVINCIBLE = false;
 ISINVISIBLE = false;
 LOCADMIN = nil;
-SPECMODE = [false, nil];
+SPECMODE = false;
 
 [] spawn mission_fnc_boules_caisses;
 [] spawn mission_fnc_jump;

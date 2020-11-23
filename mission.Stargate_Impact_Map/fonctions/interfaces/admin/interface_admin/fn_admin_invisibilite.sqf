@@ -1,7 +1,7 @@
 
 private _bouton_invisibilite = (findDisplay 12000) displayCtrl 12008;
 
-if (SPECMODE select 0) then {
+if (SPECMODE) then {
 	if ((isObjectHidden player) and ISINVISIBLE) then {
 		//[player, false] remoteExec ["hideObject", -2, true];
 		player hideObject false;

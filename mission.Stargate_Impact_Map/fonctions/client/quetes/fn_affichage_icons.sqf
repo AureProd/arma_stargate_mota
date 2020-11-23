@@ -47,7 +47,7 @@ addMissionEventHandler ["Draw3D",
 	} forEach _config_quetes;
 
 	{
-		if ((isObjectHidden _x) and ISINVISIBLE) then {
+		if ((isObjectHidden _x) and ISINVISIBLE and (_x != player)) then {
 			private _pos_player = _x modelToWorld(_x selectionPosition "head");
 
 			drawIcon3D ["iconMan", [1,1,1,1],[_pos_player select 0, _pos_player select 1, (_pos_player select 2)], 1, 1, 0, name _x, 1, 0.04, "PuristaMedium"];
