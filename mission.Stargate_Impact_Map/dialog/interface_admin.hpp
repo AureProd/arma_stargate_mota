@@ -1110,8 +1110,8 @@ class interface_admin_5
 				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
 				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
-				
 			};
+			onLBSelChanged = "[] call mission_fnc_admin_liste_bdd;";
 		};
 		class bouton_reset_joueur
 		{

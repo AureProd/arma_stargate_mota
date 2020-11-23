@@ -520,9 +520,9 @@
 		</Container>
 		<Container name="Interfaces">
 			<Key ID="STR_menu_y_level">
-				<Original>level %1</Original>
-                <French>level %1</French>
-				<English>level %1</English>
+				<Original>LEVEL %1</Original>
+                <French>LEVEL %1</French>
+				<English>LEVEL %1</English>
 			</Key>
             <Key ID="STR_admin_titre_items_illegals">
 				<Original>Objets Illégals</Original>
@@ -573,6 +573,16 @@
 				<Original>%1 XP</Original>
                 <French>%1 XP</French>
 				<English>%1 XP</English>
+			</Key>
+			<Key ID="STR_admin_text_level_joueur">
+				<Original>LEVEL %1</Original>
+                <French>LEVEL %1</French>
+				<English>LEVEL %1</English>
+			</Key>
+			<Key ID="STR_admin_text_vie_joueur">
+				<Original>%1 %</Original>
+                <French>%1 %</French>
+				<English>%1 %</English>
 			</Key>
 			<Key ID="STR_admin_bouton_add_xp">
 				<Original>Add XP</Original>

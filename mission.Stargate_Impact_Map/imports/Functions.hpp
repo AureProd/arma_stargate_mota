@@ -71,6 +71,7 @@ class CfgFunctions
             class admin_tp_joueur {};
             class admin_ajout_xp {};
             class admin_reset_bdd {};
+            class admin_liste_bdd {};
         };
         class journal_quetes
         {

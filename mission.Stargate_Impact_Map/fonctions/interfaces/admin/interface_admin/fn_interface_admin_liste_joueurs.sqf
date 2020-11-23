@@ -1,4 +1,6 @@
 
+private _index_select_liste_bdd = param [0, 0];
+
 private _liste_joueurs = (findDisplay 12000) displayCtrl 12003;
 private _bouton_white_liste = (findDisplay 12000) displayCtrl 12005;
 private _bouton_tuer_player = (findDisplay 12000) displayCtrl 12011;
@@ -38,7 +40,9 @@ if (_index != -1) then {
 	_select_liste_bdd lbAdd (localize "STR_faim"); // 3
 	_select_liste_bdd lbAdd (localize "STR_soif"); // 4
 
-	_select_liste_bdd lbSetCurSel 0;
+	_select_liste_bdd lbSetCurSel _index_select_liste_bdd;
+
+	[] call mission_fnc_admin_liste_bdd;
 
 	if ((["wl soldat", _joueur] call mission_fnc_getBDD) == 1) then {
 		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "ON"];
@@ -46,7 +50,7 @@ if (_index != -1) then {
 		_bouton_white_liste ctrlSetText format [localize "STR_admin_bouton_wl_soldat", "OFF"];
 	};
 
-	_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _joueur] call mission_fnc_getBDD)];
+	//_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _joueur] call mission_fnc_getBDD)];
 	
 	{
 		if ((_x select 0) in (["planete visite", _joueur] call mission_fnc_getBDD)) then {

@@ -89,7 +89,7 @@ if (_index != -1) then {
 		};
 	};
 
-	[] call mission_fnc_interface_admin_liste_joueurs;
+	[_indexTypeBdd] call mission_fnc_interface_admin_liste_joueurs;
 };
 
 
