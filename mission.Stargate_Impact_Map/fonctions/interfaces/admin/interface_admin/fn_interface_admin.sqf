@@ -8,11 +8,13 @@ private _bouton_detruire = (findDisplay 12000) displayCtrl 12010;
 private _liste_joueurs = (findDisplay 12000) displayCtrl 12003;
 private _bouton_white_liste = (findDisplay 12000) displayCtrl 12005;
 private _liste_planetes = (findDisplay 12000) displayCtrl 12004;
+private _liste_pos = (findDisplay 12000) displayCtrl 12022;
 
 lbClear _liste_joueurs_proches;
 lbClear _liste_items_illegals;
 lbClear _liste_joueurs;
 lbClear _liste_planetes;
+lbClear _liste_pos;
 
 liste_joueurs_groupe = [];
 
@@ -25,10 +27,17 @@ liste_joueurs_groupe = [];
 	_liste_joueurs lbAdd (name _x);
 } forEach allPlayers;
 
+{
+	if (((getMarkerType _x) == "flag_France") and ((markerText _x) != "")) then {
+		_liste_pos lbAdd (markerText _x);
+	};
+} forEach allMapMarkers;
+
 _liste_joueurs_proches lbSetCurSel -1;
 _liste_items_illegals lbSetCurSel -1;
 _liste_joueurs lbSetCurSel -1;
 _liste_planetes lbSetCurSel -1;
+_liste_pos lbSetCurSel 0;
 
 _bouton_detruire ctrlEnable false;
 _bouton_white_liste ctrlEnable false;
@@ -57,6 +66,7 @@ private _bouton_tp_joueur_admin = (findDisplay 12000) displayCtrl 12014;
 private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
 private _bouton_reset_bdd = (findDisplay 12000) displayCtrl 12021;
 private _select_liste_bdd = (findDisplay 12000) displayCtrl 12020;
+private _bouton_mode_spec = (findDisplay 12000) displayCtrl 12023;
 
 _bouton_tuer_player ctrlEnable false;
 _text_xp ctrlShow false;
@@ -67,5 +77,5 @@ _bouton_tp_joueur_admin ctrlEnable false;
 _bouton_tp_admin_joueur ctrlEnable false;
 _bouton_reset_bdd ctrlEnable false;
 _select_liste_bdd ctrlShow false;
-
+_bouton_mode_spec ctrlShow false;
 

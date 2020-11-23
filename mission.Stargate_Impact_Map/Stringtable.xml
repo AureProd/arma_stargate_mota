@@ -559,6 +559,16 @@
                 <French>Sauvegarde la position</French>
 				<English>Sauvegarde la position</English>
 			</Key>
+			<Key ID="STR_admin_tp_to_pos">
+				<Original>TP vers la zone choisie</Original>
+                <French>TP vers la zone choisie</French>
+				<English>TP vers la zone choisie</English>
+			</Key>
+			<Key ID="STR_admin_on_off_spec_mode">
+				<Original>Spec mode : %1</Original>
+                <French>Spec mode : %1</French>
+				<English>Spec mode : %1</English>
+			</Key>
 			<Key ID="STR_admin_titre_planetes_debloquees">
 				<Original>Planètes débloquées</Original>
                 <French>Planètes débloquées</French>

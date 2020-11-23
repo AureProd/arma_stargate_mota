@@ -1098,7 +1098,7 @@ class interface_admin_5
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
@@ -1144,6 +1144,103 @@ class interface_admin_5
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
 			onButtonClick = "playSound 'button'; [2] call mission_fnc_admin_reset_bdd;";
 			
+		};
+		class tp_to_pos
+		{
+			type = 1;
+			idc = -1;
+			x = safeZoneX + safeZoneW * 0.61625;
+			y = safeZoneY + safeZoneH * 0.76333334;
+			w = safeZoneW * 0.20125;
+			h = safeZoneH * 0.04111112;
+			style = 2;
+			text = "$STR_admin_tp_to_pos";
+			borderSize = 0;
+			colorBackground[] = {0.2,0.2,0.2,1};
+			colorBackgroundActive[] = {1,0,0,1};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBorder[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,0};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			offsetPressedX = 0;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1.4);
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_bouton_tp_to_pos;";
+			
+		};
+		class select_pos
+		{
+			type = 4;
+			idc = 12022;
+			x = safeZoneX + safeZoneW * 0.61625;
+			y = safeZoneY + safeZoneH * 0.71444445;
+			w = safeZoneW * 0.20125;
+			h = safeZoneH * 0.04111112;
+			style = 16;
+			arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_ca.paa";
+			arrowFull = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_active_ca.paa";
+			colorBackground[] = {0.2,0.2,0.2,1};
+			colorDisabled[] = {0,0,0,0};
+			colorSelect[] = {1,1,1,1};
+			colorSelectBackground[] = {0.8,0,0,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			maxHistoryDelay = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
+			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
+			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
+			wholeHeight = 0.3;
+			class ComboScrollBar
+			{
+				color[] = {1,1,1,1};
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+			};
+			
+		};
+		class on_off_mode_spec
+		{
+			type = 1;
+			idc = 12023;
+			x = safeZoneX + safeZoneW * 0.61625;
+			y = safeZoneY + safeZoneH * 0.83666667;
+			w = safeZoneW * 0.20125;
+			h = safeZoneH * 0.04111112;
+			style = 2;
+			text = "$STR_erreur"; // STR_admin_on_off_spec_mode
+			borderSize = 0;
+			colorBackground[] = {0.2,0.2,0.2,1};
+			colorBackgroundActive[] = {1,0,0,1};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBorder[] = {0,0,0,0};
+			colorDisabled[] = {0,0,0,0};
+			colorFocused[] = {0.2,0.2,0.2,1};
+			colorShadow[] = {0,0,0,0};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			offsetPressedX = 0;
+			offsetPressedY = 0;
+			offsetX = 0;
+			offsetY = 0;
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1.4);
+			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
+			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
+			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
+			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_bouton_mode_spec;";
+
 		};
 	};
 };

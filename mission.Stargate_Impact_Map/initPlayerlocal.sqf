@@ -5,6 +5,7 @@ nomVarPlayerUID = format ["variable_%1", getPlayerUID player]; // BDD player
 LEVELADMIN = 0;
 ISINVICIBLE = false;
 LOCADMIN = nil;
+SPECMODE = false;
 
 [] spawn mission_fnc_boules_caisses;
 [] spawn mission_fnc_jump;

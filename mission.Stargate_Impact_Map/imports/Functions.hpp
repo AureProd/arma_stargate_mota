@@ -72,6 +72,8 @@ class CfgFunctions
             class admin_ajout_xp {};
             class admin_reset_bdd {};
             class admin_liste_bdd {};
+            class admin_bouton_mode_spec {};
+            class admin_bouton_tp_to_pos {};
         };
         class journal_quetes
         {

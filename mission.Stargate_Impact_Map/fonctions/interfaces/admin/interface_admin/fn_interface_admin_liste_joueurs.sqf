@@ -13,6 +13,7 @@ private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
 private _liste_planetes = (findDisplay 12000) displayCtrl 12004;
 private _bouton_reset_bdd = (findDisplay 12000) displayCtrl 12021;
 private _select_liste_bdd = (findDisplay 12000) displayCtrl 12020;
+private _bouton_mode_spec = (findDisplay 12000) displayCtrl 12023;
 
 private _index = lbCurSel _liste_joueurs;
 
@@ -28,6 +29,7 @@ if (_index != -1) then {
 	_bouton_tp_admin_joueur ctrlEnable true;
 	_bouton_reset_bdd ctrlEnable true;
 	_select_liste_bdd ctrlShow true;
+	_bouton_mode_spec ctrlShow true;
 
 	lbClear _liste_planetes;
 	lbClear _select_liste_bdd;
@@ -68,6 +70,7 @@ if (_index != -1) then {
 	_bouton_tp_admin_joueur ctrlEnable false;
 	_bouton_reset_bdd ctrlEnable false;
 	_select_liste_bdd ctrlShow false;
+	_bouton_mode_spec ctrlShow false;
 
 	lbClear _liste_planetes;
 };
