@@ -120,6 +120,7 @@ class CfgFunctions
             class vendre_item {};
             class paiement_vente {};
             class interface_maps {};
+            class set_damage_player {};
         };
         class interfaces_armurerie
         {

@@ -126,7 +126,8 @@ switch (_objet select 4) do
 
 							_vie = _vie - 30;
 
-							player setDamage (1 - (_vie / 100));
+							//player setDamage (1 - (_vie / 100));
+							[_vie] call mission_fnc_set_damage_player;
 
 							[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 
@@ -162,7 +163,8 @@ switch (_objet select 4) do
 
 							[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 
-							player setDamage (1 - (_vie / 100));
+							//player setDamage (1 - (_vie / 100));
+							[_vie] call mission_fnc_set_damage_player;
 
 							hint localize "STR_boire_sans_soif";
 						} else {
@@ -223,7 +225,8 @@ switch (_objet select 4) do
 
 					[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 				};
 			};
 

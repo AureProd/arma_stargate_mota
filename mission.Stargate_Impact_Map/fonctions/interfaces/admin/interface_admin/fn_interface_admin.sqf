@@ -33,25 +33,15 @@ _bouton_white_liste ctrlEnable false;
 private _bouton_invisibilite = (findDisplay 12000) displayCtrl 12008;
 private _bouton_invincibilite = (findDisplay 12000) displayCtrl 12009;
 
-if (isDamageAllowed player) then {
-	//player allowDamage false;
-
-	_bouton_invincibilite ctrlSetText format [localize "STR_admin_bouton_invinsible", "OFF"];
-} else {
-	//player allowDamage true;
-
+if (ISINVICIBLE) then {
 	_bouton_invincibilite ctrlSetText format [localize "STR_admin_bouton_invinsible", "ON"];
+} else {
+	_bouton_invincibilite ctrlSetText format [localize "STR_admin_bouton_invinsible", "OFF"];
 };
 
 if (isObjectHidden player) then {
-	//[player, false] remoteExec ["hideObject", -2, true];
-	//player hideObjectGlobal true;
-
 	_bouton_invisibilite ctrlSetText format [localize "STR_admin_bouton_invisible", "ON"];
 } else {
-	//[player, true] remoteExec ["hideObject", -2, true];
-	//player hideObjectGlobal false;
-
 	_bouton_invisibilite ctrlSetText format [localize "STR_admin_bouton_invisible", "OFF"];
 };
 

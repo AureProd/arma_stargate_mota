@@ -10,6 +10,6 @@ if (_index == -1) exitWith {
 private _joueurs = allPlayers;
 private _joueur = _joueurs select _index;
 
-joueur;
+_joueur;
 
 

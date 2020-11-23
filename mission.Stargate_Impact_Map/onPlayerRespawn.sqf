@@ -1,6 +1,7 @@
 
 [] call mission_fnc_depeucer;
 [] call mission_fnc_pecher;
+[] call mission_fnc_events;
 
 player addRating -2000;
 

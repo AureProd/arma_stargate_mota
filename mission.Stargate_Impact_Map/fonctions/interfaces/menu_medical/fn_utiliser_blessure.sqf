@@ -55,7 +55,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 					_vie = (_vie + (100 - _liste_vies_bis));
 					_liste_vies set [2, 100];
 
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
 					[] call mission_fnc_medical_bouton_blessure;
 					
@@ -75,7 +76,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 					_vie = (_vie + (100 - _liste_vies_bis));
 					_liste_vies set [3, 100];
 					
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
 					[] call mission_fnc_medical_bouton_blessure;
 					
@@ -95,7 +97,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 					_vie = (_vie + (100 - _liste_vies_bis));
 					_liste_vies set [4, 100];
 
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
 					[] call mission_fnc_medical_bouton_blessure;
 					
@@ -115,7 +118,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 					_vie = (_vie + (100 - _liste_vies_bis));
 					_liste_vies set [5, 100];
 
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
 					[] call mission_fnc_medical_bouton_blessure;
 					
@@ -135,7 +139,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 					_vie = (_vie + (100 - _liste_vies_bis));
 					_liste_vies set [6, 100];
 
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
 					[] call mission_fnc_medical_bouton_blessure;
 					
@@ -155,7 +160,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 					_vie = (_vie + (100 - _liste_vies_bis));
 					_liste_vies set [7, 100];
 
-					player setDamage (1 - (_vie / 100));
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
 					[] call mission_fnc_medical_bouton_blessure;
 					
@@ -213,7 +219,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 						_vie = (_vie + (100 - _liste_vies_bis));
 						_liste_vies set [0, 100];
 
-						player setDamage (1 - (_vie / 100));
+						//player setDamage (1 - (_vie / 100));
+						[_vie] call mission_fnc_set_damage_player;
 
 						[] call mission_fnc_medical_bouton_maladie;
 
@@ -236,7 +243,8 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 						_vie = (_vie + (100 - _liste_vies_bis));
 						_liste_vies set [1, 100];
 
-						player setDamage (1 - (_vie / 100));
+						//player setDamage (1 - (_vie / 100));
+						[_vie] call mission_fnc_set_damage_player;
 
 						[] call mission_fnc_medical_bouton_maladie;
 						
