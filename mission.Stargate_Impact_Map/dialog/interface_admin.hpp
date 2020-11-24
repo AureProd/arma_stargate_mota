@@ -741,7 +741,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_admin_invisibilite;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_invisibilite;";
 			
 		};
 		class bouton_on_off_invincible
@@ -773,7 +773,7 @@ class interface_admin_5
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_admin_invinsibilite;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_admin_invinsibilite;";
 			
 		};
 		class bouton_tp_position_sauvegarder

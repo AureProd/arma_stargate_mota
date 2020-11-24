@@ -54,7 +54,7 @@ class menu_y
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			//onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] spawn mission_fnc_interface_groupe;";
+			//onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] call mission_fnc_interface_groupe;";
 		};
 		class bouton_documents
 		{
@@ -116,7 +116,7 @@ class menu_y
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] spawn mission_fnc_interface_medical;";
+			onButtonClick = "playSound 'button'; closeDialog 1; menu_y_ok = true; [] call mission_fnc_interface_medical;";
 		};
 		class bouton_liste_planetes
 		{

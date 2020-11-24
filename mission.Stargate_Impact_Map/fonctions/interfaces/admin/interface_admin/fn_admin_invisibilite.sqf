@@ -27,9 +27,6 @@ if (SPECMODE) then {
 	};
 };
 
-
-
-
 if ((isObjectHidden player) and ISINVISIBLE) then {
 	_bouton_invisibilite ctrlSetText format [localize "STR_admin_bouton_invisible", "ON"];
 } else {

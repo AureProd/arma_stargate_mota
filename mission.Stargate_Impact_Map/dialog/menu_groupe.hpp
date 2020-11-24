@@ -69,7 +69,7 @@ class menu_groupe
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [true] spawn mission_fnc_interface_groupe;";
+			onButtonClick = "playSound 'button'; [true] call mission_fnc_interface_groupe;";
 		};
 		class liste_team
 		{
@@ -127,7 +127,7 @@ class menu_groupe
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "[] spawn mission_fnc_groupe_liste_joueurs;";
+			onLBSelChanged = "[] call mission_fnc_groupe_liste_joueurs;";
 		};
 		class bouton_fermer
 		{
@@ -189,7 +189,7 @@ class menu_groupe
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_groupe_bouton_inviter;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_groupe_bouton_inviter;";
 		};
 		class bouton_quitter
 		{
@@ -220,7 +220,7 @@ class menu_groupe
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_groupe_bouton_quitter;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_groupe_bouton_quitter;";
 		};
 		class bouton_rejoindre
 		{
@@ -251,7 +251,7 @@ class menu_groupe
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_groupe_bouton_rejoindre;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_groupe_bouton_rejoindre;";
 		};
 	};
 };
@@ -337,7 +337,7 @@ class menu_groupe_goauld
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			onLBSelChanged = "[] spawn mission_fnc_groupe_liste_joueurs;";
+			onLBSelChanged = "[] call mission_fnc_groupe_liste_joueurs;";
 		};
 		class bouton_fermer
 		{
@@ -399,7 +399,7 @@ class menu_groupe_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_groupe_bouton_inviter;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_groupe_bouton_inviter;";
 		};
 		class bouton_quitter
 		{
@@ -430,7 +430,7 @@ class menu_groupe_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_groupe_bouton_quitter;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_groupe_bouton_quitter;";
 		};
 		class bouton_rejoindre
 		{
@@ -461,7 +461,7 @@ class menu_groupe_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] spawn mission_fnc_groupe_bouton_rejoindre;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_groupe_bouton_rejoindre;";
 		};
 		class bouton_image_actualisation
 		{
@@ -492,7 +492,7 @@ class menu_groupe_goauld
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [true] spawn mission_fnc_interface_groupe;";
+			onButtonClick = "playSound 'button'; [true] call mission_fnc_interface_groupe;";
 		};
 	};
 };
