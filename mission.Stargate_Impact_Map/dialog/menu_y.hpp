@@ -511,7 +511,7 @@ class menu_y
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
 			
 		};
-		class liste_joueurs
+		/* class liste_joueurs
 		{
 			type = 5;
 			idc = 3006;
@@ -530,6 +530,39 @@ class menu_y
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
+			{
+				color[] = {1,1,1,1};
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+			};
+			
+		}; */
+		class liste_joueurs_donner
+		{
+			type = 4;
+			idc = 3006;
+			x = safeZoneX + safeZoneW * 0.629375;
+			y = safeZoneY + safeZoneH * 0.71;
+			w = safeZoneW * 0.151875;
+			h = safeZoneH * 0.03222223;
+			style = 16+2;
+			arrowEmpty = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_ca.paa";
+			arrowFull = "\A3\ui_f\data\GUI\RscCommon\RscCombo\arrow_combo_active_ca.paa";
+			colorBackground[] = {0.2,0.2,0.2,1};
+			colorDisabled[] = {0,0,0,0};
+			colorSelect[] = {1,1,1,1};
+			colorSelectBackground[] = {0,0,0,0};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			maxHistoryDelay = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
+			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
+			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
+			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
+			wholeHeight = 0.3;
+			class ComboScrollBar
 			{
 				color[] = {1,1,1,1};
 				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
