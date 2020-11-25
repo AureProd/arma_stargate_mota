@@ -17,6 +17,8 @@ SPECMODE = false;
 [] call mission_fnc_affichage_icons;
 [] call mission_fnc_events;
 
+[] call mission_fnc_create_reset_invitations;
+
 player addRating -2000;
 
 player enableFatigue false;

@@ -2,7 +2,16 @@
 private _listbox_players = (findDisplay 2000) displayCtrl 2002;
 private _index = lbCurSel _listbox_players;
 private _joueurUid = liste_joueurs_groupe select _index;
-private _joueur = nil;
+
+if ((count ([] call mission_fnc_get_team)) >= 5) then {
+	[_joueurUid] call mission_fnc_add_invitation;
+};
+
+[true] spawn mission_fnc_interface_groupe;
+
+
+
+/* private _joueur = nil;
 
 {
 	if ((getPlayerUID _x) == _joueurUid) then {
@@ -31,6 +40,5 @@ if (!_ok) then
 		_variableInvitations_bis pushBack (getPlayerUID player);
 		_joueur setVariable ["invitePar", _variableInvitations_bis, true];
 	};
-};
+}; */
 
-[true] spawn mission_fnc_interface_groupe;

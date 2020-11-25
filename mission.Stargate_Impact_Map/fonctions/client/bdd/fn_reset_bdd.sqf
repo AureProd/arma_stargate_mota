@@ -1,6 +1,9 @@
 
 private _param_recommencement = param [0, false];
 
+[getPlayerUID player] call mission_fnc_quitter_team;
+[] call mission_fnc_create_reset_invitations;
+
 private _isWhiteListe = false;
 
 if (_param_recommencement) then {

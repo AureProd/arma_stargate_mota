@@ -8,11 +8,11 @@ private _teams = missionNamespace getVariable ["team", []];
 
 private _indexTeam = _teams findIf {
 	private _tab = _x;
-	private _ok = true;
+	private _ok = false;
 
 	{
-		if (!(_x in _tab)) then {
-			_ok = false;
+		if (_x in _tab) then {
+			_ok = true;
 		};
 	} forEach _new_teams;
 

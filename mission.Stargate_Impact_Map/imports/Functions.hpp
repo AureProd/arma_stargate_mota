@@ -47,6 +47,8 @@ class CfgFunctions
             class set_team {};
             class add_team {};
             class delete_team {};
+            class create_reset_invitations {};
+            class add_invitation {};
         };
         class interface_soldat
         {

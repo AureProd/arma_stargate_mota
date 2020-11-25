@@ -310,6 +310,11 @@
                 <French>Erreur</French>
 				<English>Error</English>
 			</Key>
+			<Key ID="STR_team_trop_joueurs">
+				<Original>Le groupe est déjà plein</Original>
+                <French>Le groupe est déjà plein</French>
+				<English>Le groupe est déjà plein</English>
+			</Key>
 			<Key ID="STR_sauvegarde_syns_data">
 				<Original>Sauvegarde du player en BDD</Original>
                 <French>Sauvegarde du player en BDD</French>

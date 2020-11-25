@@ -2,9 +2,43 @@
 private _listbox_players = (findDisplay 2000) displayCtrl 2002;
 private _index = lbCurSel _listbox_players;
 private _joueurUid = liste_joueurs_groupe select _index;
-private _joueur = nil;
 
-{
+private _joueur = [_joueurUid] call mission_fnc_get_player_with_uid;
+
+private _invitePar = [] call mission_fnc_get_invite_par_team;
+
+if ((count ([_joueurUid] call mission_fnc_get_team)) < 5) then {
+	if ([] call mission_fnc_is_in_team) then {
+		[] call mission_fnc_quitter_team;
+	};
+
+	if (_joueurUid in _invitePar) then {
+		if ([_joueurUid] call mission_fnc_is_in_team) then 
+		{
+			private _team = [_joueurUid] call mission_fnc_get_team;
+			_team pushBack (getPlayerUID player);
+
+			[_team] call mission_fnc_set_team;
+		}
+		else
+		{
+			private _team = [_joueurUid] call mission_fnc_get_team;
+			_team pushBack (getPlayerUID player);
+
+			[_team] call mission_fnc_add_team;
+		};
+	};
+	
+	[player] join (group _joueur);
+
+	[true] spawn mission_fnc_interface_groupe;
+} else {
+	hint localize "STR_team_trop_joueurs";
+};
+
+
+
+/* {
 	if ((getPlayerUID _x) == _joueurUid) then {
 		_joueur = _x;
 	};
@@ -120,8 +154,6 @@ if ((getPlayerUID _joueur) in _invitePar) then
 	} forEach _inviteParJoueur;
 
 	player setVariable ["invitePar", _inviteParJoueur_bis, true];
-};
+}; */
 
-[player] join (group _joueur);
 
-[true] spawn mission_fnc_interface_groupe;

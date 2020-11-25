@@ -5,7 +5,27 @@ private _bouton_inviter = (findDisplay 2000) displayCtrl 2004;
 
 private _index = lbCurSel _liste_joueurs;
 private _joueurUid = liste_joueurs_groupe select _index;
-private _joueur = nil;
+
+private _invitePar = [] call mission_fnc_get_invite_par_team;
+private _invitations = [] call mission_fnc_get_invitations_team;
+
+if (_joueurUid in _invitePar) then {
+	_bouton_rejoindre ctrlEnable true;
+} else {
+	_bouton_rejoindre ctrlEnable false;
+};
+
+if (_joueurUid in _invitations) then {
+	_bouton_inviter ctrlEnable false;
+} else {
+	if ((count ([] call mission_fnc_get_team)) >= 5) then {
+		_bouton_inviter ctrlEnable true;
+	};
+};
+
+
+
+/* private _joueur = nil;
 
 {
 	if ((getPlayerUID _x) == _joueurUid) then {
@@ -40,4 +60,4 @@ if ((getPlayerUID _joueur) in _variableInvitations) then
 else
 {
 	_bouton_rejoindre ctrlEnable false;
-};
+}; */

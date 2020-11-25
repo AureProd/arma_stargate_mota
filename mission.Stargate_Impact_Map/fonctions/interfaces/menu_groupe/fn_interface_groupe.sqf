@@ -2,18 +2,18 @@
 private _isPremier = param [0, false];
 
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel]
-private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
+//private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 
 if (!_isPremier) then 
 {
-	if ((_playerBdd select 1) == 1) then 
+	if ([] call mission_fnc_is_tauri) then 
 	{
-		createDialog "menu_groupe_goauld";
+		createDialog "menu_groupe";
 		waitUntil {dialog};
 	} 
 	else 
 	{
-		createDialog "menu_groupe";
+		createDialog "menu_groupe_goauld";
 		waitUntil {dialog};
 	};
 };
@@ -28,46 +28,16 @@ private _bouton_rejoindre = (findDisplay 2000) displayCtrl 2006;
 lbClear _listbox_players;
 lbClear _listbox_team;
 
-private _team = [];
-private _isChef = false;
+private _team = [] call mission_fnc_get_team;
+private _isChef = [] call mission_fnc_is_chef_team;
 
-{
-	private _tableau = _x;
-	{
-		if (_x == (getPlayerUID player)) then 
-		{
-			if (_forEachIndex == 0) then 
-			{
-				_isChef = true;
-			};
-
-			//player setVariable ["inTeam", true, true];
-			_team = _tableau;
-		};
-	} forEach _tableau;
-} forEach (missionNamespace getVariable ["team", []]);
-
-private _invitePar = player getVariable ["invitePar", []];
-private _invitations = [];
+private _invitePar = [] call mission_fnc_get_invite_par_team;
+private _invitations = [] call mission_fnc_get_invitations_team;
 
 liste_joueurs_groupe = [];
 
 {
-	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif]
-	private _joueurDonnees = missionNamespace getVariable (format ["variable_%1", getPlayerUID _x]);
-
-	if ((_x != player) and ((_joueurDonnees select 1) == (_playerBdd select 1))) then 
-	{
-		private _invitJoueur = _x getVariable ["invitePar", []];
-
-		if ((getPlayerUID player) in _invitJoueur) then 
-		{
-			_invitations pushBack (getPlayerUID _x);
-		};
-	};
-
-	if ((_x != player) and ((_joueurDonnees select 1) == (_playerBdd select 1))) then 
-	{
+	if ((_x != player) and ((["classe"] call mission_fnc_getBDD) == (["classe", _x] call mission_fnc_getBDD))) then {
 		private _index = _listbox_players lbAdd format ["%1", name _x];
 
 		liste_joueurs_groupe pushBack (getPlayerUID _x);
@@ -104,7 +74,7 @@ if ([] call mission_fnc_is_in_team) then
 {
 	if (_isChef) then 
 	{
-		if (((lbSize _listbox_players) > 0) and ((count _team) < 5)) then
+		if (((count liste_joueurs_groupe) > 0) and ((count _team) < 5)) then
 		{
 			_bouton_inviter ctrlEnable true;
 		}
@@ -112,22 +82,7 @@ if ([] call mission_fnc_is_in_team) then
 		{
 			if ((count _team) >= 5) then 
 			{
-				{
-					if (_x != player) then 
-					{
-						private _invitJoueur = _x getVariable ["invitePar", []];
-
-						private _newTeam = [];
-						{
-							if (_x != player) then 
-							{
-								_newTeam pushBack (getPlayerUID _x);
-							};
-						} forEach _invitJoueur;
-
-						_x setVariable ["invitePar", _newTeam, true];
-					};
-				} forEach allPlayers;
+				[] call mission_fnc_create_reset_invitations;
 			};
 		};
 	};
@@ -135,16 +90,9 @@ if ([] call mission_fnc_is_in_team) then
 	_bouton_quitter ctrlEnable true;
 
 	{
-		private _joueurUid = _x;
-		private _joueurnouv = nil;
+		private _joueur = [_x] call mission_fnc_get_player_with_uid;
 
-		{
-			if ((getPlayerUID _x) == _joueurUid) then {
-				_joueurnouv = _x;
-			};
-		} forEach allPlayers;
-
-		private _index = _listbox_team lbAdd format ["%1", name _joueurnouv];
+		private _index = _listbox_team lbAdd format ["%1", name _joueur];
 
 		if (_forEachIndex == 0) then 
 		{
@@ -164,7 +112,9 @@ else
 
 _listbox_team lbSetCurSel -1;
 
-if ((lbSize _listbox_players) > 0) then 
+
+
+/* if ((lbSize _listbox_players) > 0) then 
 {
 	_listbox_players lbSetCurSel 0;
 
@@ -199,4 +149,4 @@ if ((lbSize _listbox_players) > 0) then
 	{
 		_bouton_inviter ctrlEnable false;
 	};
-};
+};  */
