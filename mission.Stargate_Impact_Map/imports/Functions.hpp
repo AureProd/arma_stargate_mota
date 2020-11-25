@@ -41,6 +41,12 @@ class CfgFunctions
             class modif_var_bdd_joueurs_distant {};
             class setBDD_distant {};
             class reset_bdd_distant {};
+            class is_chef_team {};
+            class get_invitations_team {};
+            class get_invite_par_team {};
+            class set_team {};
+            class add_team {};
+            class delete_team {};
         };
         class interface_soldat
         {
@@ -127,6 +133,7 @@ class CfgFunctions
             class paiement_vente {};
             class interface_maps {};
             class set_damage_player {};
+            class get_player_with_uid {};
         };
         class interfaces_armurerie
         {

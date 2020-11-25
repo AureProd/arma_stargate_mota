@@ -1,8 +1,8 @@
 
 // fonction name : mission_fnc_get_team
-// parmettres : []
+// parmettres : [player uid]
 
-private _playerUID = getPlayerUID player;
+private _playerUID = param [0, (getPlayerUID player)];
 
 private _teams = missionNamespace getVariable ["team", []];
 
