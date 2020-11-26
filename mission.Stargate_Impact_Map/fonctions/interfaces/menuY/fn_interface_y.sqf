@@ -40,7 +40,8 @@ private _licences = getArray(missionConfigFile >> "stargate" >> "licences" >> "l
 	{
 		if ((_x select 0) == _licence_active) then 
 		{
-			_listbox_competences lbAdd (_x select 1);
+			private _index = _listbox_competences lbAdd (_x select 1);
+			_listbox_competences lbSetPicture [_index, (_x select 2)];
 		};
 	} forEach _licences;
 } forEach (_variable select 3);

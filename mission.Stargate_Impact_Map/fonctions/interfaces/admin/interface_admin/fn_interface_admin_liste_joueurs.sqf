@@ -10,10 +10,10 @@ private _bouton_add_xp = (findDisplay 12000) displayCtrl 12012;
 private _bouton_delete_xp = (findDisplay 12000) displayCtrl 12013;
 private _bouton_tp_joueur_admin = (findDisplay 12000) displayCtrl 12014;
 private _bouton_tp_admin_joueur = (findDisplay 12000) displayCtrl 12015;
-private _liste_planetes = (findDisplay 12000) displayCtrl 12004;
 private _bouton_reset_bdd = (findDisplay 12000) displayCtrl 12021;
 private _select_liste_bdd = (findDisplay 12000) displayCtrl 12020;
 private _bouton_mode_spec = (findDisplay 12000) displayCtrl 12023;
+private _bouton_kick = (findDisplay 12000) displayCtrl 12031;
 
 private _index = lbCurSel _liste_joueurs;
 
@@ -29,9 +29,9 @@ if (_index != -1) then {
 	_bouton_tp_admin_joueur ctrlEnable true;
 	_bouton_reset_bdd ctrlEnable true;
 	_select_liste_bdd ctrlShow true;
-	_bouton_mode_spec ctrlShow true;
+	_bouton_mode_spec ctrlEnable true;
+	_bouton_kick ctrlEnable true;
 
-	lbClear _liste_planetes;
 	lbClear _select_liste_bdd;
 
 	_select_liste_bdd lbAdd "XP"; // 0
@@ -39,6 +39,7 @@ if (_index != -1) then {
 	_select_liste_bdd lbAdd (localize "STR_vie"); // 2
 	_select_liste_bdd lbAdd (localize "STR_faim"); // 3
 	_select_liste_bdd lbAdd (localize "STR_soif"); // 4
+	_select_liste_bdd lbAdd (localize "STR_uid"); // 5
 
 	_select_liste_bdd lbSetCurSel _index_select_liste_bdd;
 
@@ -57,14 +58,8 @@ if (_index != -1) then {
 	};
 
 	//_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _joueur] call mission_fnc_getBDD)];
-	
-	{
-		if ((_x select 0) in (["planete visite", _joueur] call mission_fnc_getBDD)) then {
-			_liste_planetes lbAdd (format ["%1", (_x select 1)]);
-		};
-	} forEach (getArray(missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));
 
-	_liste_planetes lbSetCurSel -1;
+
 } else {
 	_bouton_white_liste ctrlEnable false;
 	_bouton_tuer_player ctrlEnable false;
@@ -76,9 +71,8 @@ if (_index != -1) then {
 	_bouton_tp_admin_joueur ctrlEnable false;
 	_bouton_reset_bdd ctrlEnable false;
 	_select_liste_bdd ctrlShow false;
-	_bouton_mode_spec ctrlShow false;
-
-	lbClear _liste_planetes;
+	_bouton_mode_spec ctrlEnable false;
+	_bouton_kick ctrlEnable false;
 };
 
 

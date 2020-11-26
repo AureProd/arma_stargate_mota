@@ -6,6 +6,7 @@ private _select_liste_bdd = (findDisplay 12000) displayCtrl 12020;
 private _indexTypeBdd = lbCurSel _select_liste_bdd;
 
 private _text_xp = (findDisplay 12000) displayCtrl 12006;
+private _ajout_xp = (findDisplay 12000) displayCtrl 12007;
 
 private _player = [] call mission_fnc_admin_get_player;
 
@@ -49,6 +50,13 @@ switch (_indexTypeBdd) do {
 		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_set_soif");
 		
 		_bouton_add_xp ctrlEnable true;
+		_bouton_delete_xp ctrlEnable false;
+	};
+	case 5: { // UID
+		_text_xp ctrlSetText format ["%1", (getPlayerUID _player)];
+		_ajout_xp ctrlSetText format ["%1", (getPlayerUID _player)];
+
+		_bouton_add_xp ctrlEnable false;
 		_bouton_delete_xp ctrlEnable false;
 	};
 };

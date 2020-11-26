@@ -45,6 +45,15 @@ class CfgDebriefing
         picture = "";
         pictureColor[] = {0,0.3,0.6,1};
     };
+    class Kick
+    {
+        title = $STR_kick_titre;
+        subtitle = $STR_kick_sous_titre;
+        description = $STR_kick_description;
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
 };
 
 class CfgServer 

@@ -2,31 +2,16 @@
 private _liste_joueurs_proches = (findDisplay 12000) displayCtrl 12001;
 private _liste_items_illegals = (findDisplay 12000) displayCtrl 12002;
 
+private _bouton_detruire = (findDisplay 12000) displayCtrl 12010;
+private _bouton_amende = (findDisplay 12000) displayCtrl 12032;
+private _prix_amende = (findDisplay 12000) displayCtrl 12033;
+
 private _index_liste = lbCurSel _liste_joueurs_proches;
 
 if (_index_liste != -1) then {
-	private _player = liste_joueurs_groupe select _index_liste;
-
-	private _inventaire_joueur = ["inventaire virtuel", _player] call mission_fnc_getBDD;
-
-	private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
-
-	lbClear _liste_items_illegals;
-
-	{
-		private _tab = _x;
-		{
-			if ((_tab select 0) == (_x select 0)) then 
-			{
-				if ((_x select 10) == 1) then {
-					private _index = _liste_items_illegals lbAdd (format ["%1 [x%2]", (_x select 2), (_tab select 1)]);
-					_listbox_objets lbSetPicture [_index, (_x select 3)];
-				};
-			};
-		} forEach _liste_objets_config;
-	} forEach _inventaire_joueur;
-
-	_liste_items_illegals lbSetCurSel -1;
+	[] call mission_fnc_interface_soldat_select_licences_item;
 
 	_bouton_detruire ctrlEnable false;
+	_bouton_amende ctrlEnable true;
+	_prix_amende ctrlShow true;
 };

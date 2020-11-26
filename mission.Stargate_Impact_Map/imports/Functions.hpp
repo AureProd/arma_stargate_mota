@@ -11,6 +11,7 @@ class CfgFunctions
             class add_xp {};
             class survival {};
             class not_whitelist {};
+            class kick {};
             class modif_var_bdd {};
             class remove_xp {};
             class syns_data {};
@@ -49,6 +50,7 @@ class CfgFunctions
             class delete_team {};
             class create_reset_invitations {};
             class add_invitation {};
+            class remove_licence_distant {};
         };
         class interface_soldat
         {
@@ -57,6 +59,8 @@ class CfgFunctions
             class interface_soldat_liste_joueurs_proches {};
             class interface_soldat_liste_items_illegals {};
             class interface_soldat_bouton_detruire {};
+            class interface_soldat_select_licences_item {};
+            class interface_soldat_bouton_amende {};
         };
         class interface_chef_soldats
         {
@@ -82,6 +86,7 @@ class CfgFunctions
             class admin_liste_bdd {};
             class admin_bouton_mode_spec {};
             class admin_bouton_tp_to_pos {};
+            class admin_liste_licences_planetes {};
         };
         class journal_quetes
         {
@@ -136,6 +141,8 @@ class CfgFunctions
             class interface_maps {};
             class set_damage_player {};
             class get_player_with_uid {};
+            class prison {};
+            class popup_ammende {};
         };
         class interfaces_armurerie
         {

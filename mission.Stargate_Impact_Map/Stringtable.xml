@@ -180,6 +180,16 @@
                 <French>Permis Conduire</French>
 				<English>Driver Licence</English>
 			</Key>
+			<Key ID="STR_Port_Arme">
+				<Original>Port Arme</Original>
+                <French>Port Arme</French>
+				<English>Port Arme</English>
+			</Key>
+			<Key ID="STR_Prisonnier">
+				<Original>Prisonnier</Original>
+                <French>Prisonnier</French>
+				<English>Prisonnier</English>
+			</Key>
 		</Container>
         <Container name="Armes">
 			<Key ID="STR_Lance_goauld">
@@ -522,6 +532,31 @@
                 <French>Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A</French>
 				<English>Vous n'êtes pas dans la whiteList du serveur, venez discord : https://discord.gg/QcS588A</English>
 			</Key>
+			<Key ID="STR_kick_titre">
+				<Original>Mission echouée</Original>
+                <French>Mission echouée</French>
+				<English>Mission echouée</English>
+			</Key>
+            <Key ID="STR_kick_sous_titre">
+				<Original>Vous êtes kick du serveur</Original>
+                <French>Vous êtes kick du serveur</French>
+				<English>Vous êtes kick du serveur</English>
+			</Key>
+            <Key ID="STR_kick_description">
+				<Original>Vous avez été kick du serveur par un admin, venez discord pour lire les rêgles : https://discord.gg/QcS588A</Original>
+                <French>Vous avez été kick du serveur par un admin, venez discord pour lire les rêgles : https://discord.gg/QcS588A</French>
+				<English>Vous avez été kick du serveur par un admin, venez discord pour lire les rêgles : https://discord.gg/QcS588A</English>
+			</Key>
+			<Key ID="STR_kick_script">
+				<Original>Vous avez été kick par un admin</Original>
+                <French>Vous avez été kick par un admin</French>
+				<English>Vous avez été kick par un admin</English>
+			</Key>
+			<Key ID="STR_white_liste_script">
+				<Original>Vous n'êtes pas dans la White List</Original>
+                <French>Vous n'êtes pas dans la White List</French>
+				<English>Vous n'êtes pas dans la White List</English>
+			</Key>
 		</Container>
 		<Container name="Interfaces">
 			<Key ID="STR_menu_y_level">
@@ -529,15 +564,10 @@
                 <French>LEVEL %1</French>
 				<English>LEVEL %1</English>
 			</Key>
-            <Key ID="STR_admin_titre_items_illegals">
-				<Original>Objets Illégals</Original>
-                <French>Objets Illégals</French>
-				<English>Objets Illégals</English>
-			</Key>
-			<Key ID="STR_admin_bouton_detruire">
-				<Original>Détruire</Original>
-                <French>Détruire</French>
-				<English>Détruire</English>
+			<Key ID="STR_admin_bouton_Supprimer">
+				<Original>Supprimer</Original>
+                <French>Supprimer</French>
+				<English>Delete</English>
 			</Key>
 			<Key ID="STR_admin_bouton_wl_soldat">
 				<Original>White-listé soldat : %1</Original>
@@ -573,11 +603,6 @@
 				<Original>Spec mode : %1</Original>
                 <French>Spec mode : %1</French>
 				<English>Spec mode : %1</English>
-			</Key>
-			<Key ID="STR_admin_titre_planetes_debloquees">
-				<Original>Planètes débloquées</Original>
-                <French>Planètes débloquées</French>
-				<English>Planètes débloquées</English>
 			</Key>
 			<Key ID="STR_admin_bouton_tuer_joueur">
 				<Original>Tuer le joueur</Original>
@@ -659,10 +684,80 @@
                 <French>SOIF</French>
 				<English>SOIF</English>
 			</Key>
+			<Key ID="STR_uid">
+				<Original>UID</Original>
+                <French>UID</French>
+				<English>UID</English>
+			</Key>
 			<Key ID="STR_admin_pas_tp_vehicule">
 				<Original>Pas de Tp quand vous êtes en véhicule ou que le joueur distant est en véhicule</Original>
                 <French>Pas de Tp quand vous êtes en véhicule ou que le joueur distant est en véhicule</French>
 				<English>Pas de Tp quand vous êtes en véhicule ou que le joueur distant est en véhicule</English>
+			</Key>
+			<Key ID="STR_admin_bouton_amende">
+				<Original>Amende</Original>
+                <French>Amende</French>
+				<English>Amende</English>
+			</Key>
+			<Key ID="STR_admin_bouton_Kick">
+				<Original>Kick</Original>
+                <French>Kick</French>
+				<English>Kick</English>
+			</Key>
+			<Key ID="STR_admin_titre_items_illegals">
+				<Original>Objets Illégals</Original>
+                <French>Objets Illégals</French>
+				<English>Objets Illégals</English>
+			</Key>
+			<Key ID="STR_admin_items">
+				<Original>Items</Original>
+                <French>Items</French>
+				<English>Items</English>
+			</Key>
+			<Key ID="STR_admin_licences">
+				<Original>Licences</Original>
+                <French>Licences</French>
+				<English>Licences</English>
+			</Key>
+			<Key ID="STR_admin_titre_planetes_debloquees">
+				<Original>Planètes débloquées</Original>
+                <French>Planètes débloquées</French>
+				<English>Planètes débloquées</English>
+			</Key>
+			<Key ID="STR_admin_popup_amende">
+				<Original>%1 viens de vous mettre une amende de %2 XP, si vous ne la payez pas vous irez en prison</Original>
+                <French>%1 viens de vous mettre une amende de %2 XP, si vous ne la payez pas vous irez en prison</French>
+				<English>%1 viens de vous mettre une amende de %2 XP, si vous ne la payez pas vous irez en prison</English>
+			</Key>
+			<Key ID="STR_admin_amende_payer">
+				<Original>%1 a payer son amende</Original>
+                <French>%1 a payer son amende</French>
+				<English>%1 a payer son amende</English>
+			</Key>
+			<Key ID="STR_admin_amende_non_payer">
+				<Original>%1 n'a pas payer son amende et à été envoyer en prison pour %2 min</Original>
+                <French>%1 n'a pas payer son amende et à été envoyer en prison pour %2 min</French>
+				<English>%1 n'a pas payer son amende et à été envoyer en prison pour %2 min</English>
+			</Key>
+			<Key ID="STR_admin_debut_prison">
+				<Original>%1, Bienvenue en prison pour %2 min</Original>
+                <French>%1, Bienvenue en prison pour %2 min</French>
+				<English>%1, Bienvenue en prison pour %2 min</English>
+			</Key>
+			<Key ID="STR_admin_prison_car_pas_argent">
+				<Original>Vous n'aviez pas assez d'argent pour payer l'amende donc bienvenue en prison pour %2 min</Original>
+                <French>Vous n'aviez pas assez d'argent pour payer l'amende donc bienvenue en prison pour %2 min</French>
+				<English>Vous n'aviez pas assez d'argent pour payer l'amende donc bienvenue en prison pour %2 min</English>
+			</Key>
+			<Key ID="STR_admin_fin_prison">
+				<Original>%1, Votre séjour en prison est fini, bon jeu</Original>
+                <French>%1, Votre séjour en prison est fini, bon jeu</French>
+				<English>%1, Votre séjour en prison est fini, bon jeu</English>
+			</Key>
+			<Key ID="STR_admin_timer_prison">
+				<Original>%1 secondes restantes</Original>
+                <French>%1 secondes restantes</French>
+				<English>%1 secondes restantes</English>
 			</Key>
 		</Container>
 	</Package>
