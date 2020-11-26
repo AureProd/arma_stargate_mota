@@ -106,7 +106,7 @@ class popup_amende
 			w = safeZoneW * 0.5;
 			h = safeZoneH * 0.70333334;
 			style = 48;
-			text = "G:\autre\documents\Arma 3 - Other Profiles\AureProd\mpmissions\Stargate_Impact_Map\mission.Stargate_Impact_Map\pictures\interfaces\autres\pop-up-vierge.png";
+			text = "pictures\interfaces\autres\pop-up-vierge.paa";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";

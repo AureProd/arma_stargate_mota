@@ -8,8 +8,8 @@ class stargate
 	};
 	class prisons
     {
-		prison_goauld[] = {38894.375, 38926.156, 0.5}; // biome goauld
-        prison_tauri[] = {38144.555, 3127.349, 0.5}; // biome tauri
+		prison_goauld[] = {36904.535, 3179.304, 0.5}; // biome goauld
+        prison_tauri[] = {36950.266, 3178.416, 0.5}; // biome tauri
 
 		temp_prison = 300;
 	};

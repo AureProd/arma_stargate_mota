@@ -169,7 +169,6 @@ class interface_soldat
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
 			wholeHeight = 0.3;
-			onLBSelChanged = "[] call mission_fnc_admin_liste_bdd;";
 			class ComboScrollBar
 			{
 				color[] = {1,1,1,1};
@@ -436,7 +435,6 @@ class interface_admin_1
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
 			wholeHeight = 0.3;
-			onLBSelChanged = "[] call mission_fnc_admin_liste_bdd;";
 			class ComboScrollBar
 			{
 				color[] = {1,1,1,1};
@@ -763,7 +761,6 @@ class interface_admin_5
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
 			wholeHeight = 0.3;
-			onLBSelChanged = "[] call mission_fnc_admin_liste_bdd;";
 			class ComboScrollBar
 			{
 				color[] = {1,1,1,1};
@@ -1507,7 +1504,6 @@ class interface_admin_5
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
 			wholeHeight = 0.3;
-			onLBSelChanged = "[] call mission_fnc_admin_liste_bdd;";
 			class ComboScrollBar
 			{
 				color[] = {1,1,1,1};
