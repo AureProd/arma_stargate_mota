@@ -94,7 +94,7 @@ class popup_amende
 	movingEnable = 0;
     enableSimulation = 1;
     duration = 120;
-	onUnload = "duration = [true, 1];";
+	onUnload = "amende = [true, 1];";
 	class Controls
 	{
 		class image_fond
@@ -142,7 +142,7 @@ class popup_amende
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; duration = [true, 2];";
+			onButtonClick = "playSound 'button'; closeDialog 1; amende = [true, 2];";
 		};
 		class bouton_refuser
 		{
@@ -173,7 +173,7 @@ class popup_amende
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; duration = [true, 1];";
+			onButtonClick = "playSound 'button'; closeDialog 1; amende = [true, 1];";
 		};
 		class text
 		{
@@ -189,7 +189,7 @@ class popup_amende
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
-			
+			lineSpacing = 1;
 		};
 	};
 };

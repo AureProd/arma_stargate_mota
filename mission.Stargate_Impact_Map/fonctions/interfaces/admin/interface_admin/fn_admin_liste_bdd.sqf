@@ -16,6 +16,7 @@ switch (_indexTypeBdd) do {
 
 		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_add_xp");
 		_bouton_delete_xp ctrlSetText (localize "STR_admin_bouton_delete_xp");
+		_ajout_xp ctrlSetText "0";
 
 		_bouton_add_xp ctrlEnable true;
 		_bouton_delete_xp ctrlEnable true;
@@ -24,6 +25,7 @@ switch (_indexTypeBdd) do {
 		_text_xp ctrlSetText format [localize "STR_admin_text_level_joueur", (["level", _player] call mission_fnc_getBDD)];
 
 		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_set_level");
+		_ajout_xp ctrlSetText "0";
 		
 		_bouton_add_xp ctrlEnable true;
 		_bouton_delete_xp ctrlEnable false;
@@ -32,6 +34,7 @@ switch (_indexTypeBdd) do {
 		_text_xp ctrlSetText format [localize "STR_admin_text_vie_joueur", (["vie", _player] call mission_fnc_getBDD), "%"];
 
 		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_set_vie");
+		_ajout_xp ctrlSetText "0";
 		
 		_bouton_add_xp ctrlEnable true;
 		_bouton_delete_xp ctrlEnable false;
@@ -40,6 +43,7 @@ switch (_indexTypeBdd) do {
 		_text_xp ctrlSetText format [localize "STR_admin_text_vie_joueur", (["faim", _player] call mission_fnc_getBDD), "%"];
 
 		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_set_faim");
+		_ajout_xp ctrlSetText "0";
 		
 		_bouton_add_xp ctrlEnable true;
 		_bouton_delete_xp ctrlEnable false;
@@ -48,6 +52,7 @@ switch (_indexTypeBdd) do {
 		_text_xp ctrlSetText format [localize "STR_admin_text_vie_joueur", (["soif", _player] call mission_fnc_getBDD), "%"];
 
 		_bouton_add_xp ctrlSetText (localize "STR_admin_bouton_set_soif");
+		_ajout_xp ctrlSetText "0";
 		
 		_bouton_add_xp ctrlEnable true;
 		_bouton_delete_xp ctrlEnable false;

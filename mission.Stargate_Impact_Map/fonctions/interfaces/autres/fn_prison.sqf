@@ -2,10 +2,12 @@
 private _timer = {
 	private _time = param [0];
 
-	for "_i" from _time to 0 do {
-		hint format [localize "STR_admin_timer_prison", _i];
+	for "_i" from 0 to _time do {
+		hint format [localize "STR_admin_timer_prison", (_time - _i)];
 
 		sleep 1;
+
+		if (!([3] call mission_fnc_has_licence)) exitWith {}
 	};
 };
 

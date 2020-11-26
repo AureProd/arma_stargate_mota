@@ -114,6 +114,9 @@ class interface_soldat
 			colorDisabled[] = {0,0,0,0};
 			colorSelect[] = {1,0,0,1};
 			colorText[] = {1,1,1,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+    		colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
@@ -306,6 +309,22 @@ class interface_admin_1
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
+		class fond_bis
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX+safeZoneW*0.16875;
+			y = safeZoneY+safeZoneH*0.41333334;
+			w = safeZoneW*0.41375;
+			h = safeZoneH*0.48333334;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.8,0.8,0.8,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1);
+			
+		};
 		class bouton_fermer
 		{
 			type = 1;
@@ -380,6 +399,9 @@ class interface_admin_1
 			colorDisabled[] = {0,0,0,0};
 			colorSelect[] = {1,0,0,1};
 			colorText[] = {1,1,1,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+    		colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
@@ -632,6 +654,38 @@ class interface_admin_5
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
+		class fond_bis
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX+safeZoneW*0.16875;
+			y = safeZoneY+safeZoneH*0.41333334;
+			w = safeZoneW*0.41375;
+			h = safeZoneH*0.48333334;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.8,0.8,0.8,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1);
+			
+		};
+		class fond_ters
+		{
+			type = 0;
+			idc = -1;
+			x = safeZoneX+safeZoneW*0.601875;
+			y = safeZoneY+safeZoneH*0.41333334;
+			w = safeZoneW*0.23;
+			h = safeZoneH*0.48333334;
+			style = 0;
+			text = "";
+			colorBackground[] = {0.8,0.8,0.8,1};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1);
+			
+		};
 		class bouton_fermer
 		{
 			type = 1;
@@ -706,6 +760,9 @@ class interface_admin_5
 			colorDisabled[] = {0,0,0,0};
 			colorSelect[] = {1,0,0,1};
 			colorText[] = {1,1,1,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+    		colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
@@ -1057,6 +1114,9 @@ class interface_admin_5
 			colorDisabled[] = {0,0,0,0};
 			colorSelect[] = {1,0,0,1};
 			colorText[] = {1,1,1,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+    		colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
@@ -1512,7 +1572,7 @@ class interface_admin_5
 				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 			};
-			onLBSelChanged = "[] call mission_fnc_interface_soldat_select_licences_item;";
+			onLBSelChanged = "[] call mission_fnc_admin_liste_licences_planetes;";
 		};
 	};
 };

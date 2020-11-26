@@ -18,7 +18,7 @@ if (_index_liste != -1) then {
 
 	if (_index_liste_items != -1) then {
 		switch (_index_licenses_items) do {
-			case 1: { 
+			case 0: { 
 				private _items_illegals = [];
 
 				{
@@ -39,7 +39,7 @@ if (_index_liste != -1) then {
 
 				_inventaire_joueur deleteAt _index_inventaire;
 			};
-			case 2: { 
+			case 1: { 
 				private _licences = [];
 
 				{

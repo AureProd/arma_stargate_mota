@@ -102,6 +102,6 @@ _bouton_tp_joueur_admin ctrlEnable false;
 _bouton_tp_admin_joueur ctrlEnable false;
 _bouton_reset_bdd ctrlEnable false;
 _select_liste_bdd ctrlShow false;
-_bouton_mode_spec ctrlShow false;
-_bouton_kick ctrlShow false;
+_bouton_mode_spec ctrlEnable false;
+_bouton_kick ctrlEnable false;
 

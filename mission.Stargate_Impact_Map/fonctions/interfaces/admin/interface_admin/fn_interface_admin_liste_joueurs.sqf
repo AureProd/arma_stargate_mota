@@ -57,6 +57,8 @@ if (_index != -1) then {
 		_bouton_mode_spec ctrlSetText format [localize "STR_admin_on_off_spec_mode", "OFF"];
 	};
 
+	[] call mission_fnc_admin_liste_licences_planetes;
+
 	//_text_xp ctrlSetText format [localize "STR_admin_text_xp_joueur", (["xp", _joueur] call mission_fnc_getBDD)];
 
 
