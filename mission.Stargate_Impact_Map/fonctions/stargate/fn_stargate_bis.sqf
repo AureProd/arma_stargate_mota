@@ -100,7 +100,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 
 		[_porte, false] call mission_fnc_light;
 
-		hint "La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir";
+		hint localize "STR_porte_distante_deja_ouverte";
 	} else {
 		sleep 0.5;
 

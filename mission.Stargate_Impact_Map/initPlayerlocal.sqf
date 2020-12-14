@@ -14,6 +14,7 @@ SPECMODE = false;
 [] spawn mission_fnc_boules_caisses;
 [] spawn mission_fnc_jump;
 
+[] call mission_fnc_add_action_vehicle;
 [] call mission_fnc_add_action;
 [] call mission_fnc_addAction_bis;
 [] call mission_fnc_depeucer;

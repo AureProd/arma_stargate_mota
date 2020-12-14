@@ -2,6 +2,7 @@
 [] call mission_fnc_depeucer;
 [] call mission_fnc_pecher;
 [] call mission_fnc_events;
+[] call mission_fnc_add_action_vehicle;
 
 player addRating -2000;
 

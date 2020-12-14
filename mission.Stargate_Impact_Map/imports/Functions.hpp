@@ -274,6 +274,13 @@ class CfgFunctions
             class canaux {};
             class chasse {};
         };
+        class vehicles
+        {
+            file = "fonctions\client\vehicle";
+            class add_action_vehicle {};
+            class ajout_vehicle {};
+            class fourriere {};
+        };
 
         // FPS CTF
         class fonctions_capture_fps

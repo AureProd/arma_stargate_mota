@@ -5,7 +5,7 @@ private _porte = param [0];
 private _player = param [1];
 
 if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)) then {
-	titleText ["Vous êtes mort car vous avez pris la porte dans le mauvais sens", "BLACK OUT"];
+	titleText [(localize "STR_mort_porte_mauvais_sens"), "BLACK OUT"];
 
 	playSound "degat_payer";
 
@@ -72,7 +72,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 	_player setDir _porteDistanteDir;
 
 	if ((_porteDistante animationPhase 'anim_iris1') == 1) then {
-		titleText ["Vous êtes mort car l'iris de la porte distante est fermée", "BLACK OUT"];
+		titleText [(localize "STR_mort_iris_fermee"), "BLACK OUT"];
 
 		[_player] spawn {
 			_player = param [0];

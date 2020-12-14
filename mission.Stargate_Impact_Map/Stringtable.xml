@@ -760,5 +760,59 @@
 				<English>%1 secondes restantes</English>
 			</Key>
 		</Container>
+		<Container name="Vehicles">
+			<Key ID="STR_fourriere">
+				<Original><t color='#FF0000'>Mettre le vehicle en fourrière</t></Original>
+                <French><t color='#FF0000'>Mettre le vehicle en fourrière</t></French>
+				<English><t color='#FF0000'>Mettre le vehicle en fourrière</t></English>
+			</Key>
+			<Key ID="STR_lock_vehicle">
+				<Original><t color='#FF0000'>Fermer le vehicle</t></Original>
+                <French><t color='#FF0000'>Fermer le vehicle</t></French>
+				<English><t color='#FF0000'>Lock</t></English>
+			</Key>
+			<Key ID="STR_unlock_vehicle">
+				<Original><t color='#00FF00'>Ouvrir le vehicle</t></Original>
+                <French><t color='#00FF00'>Ouvrir le vehicle</t></French>
+				<English><t color='#00FF00'>UnLock</t></English>
+			</Key>
+		</Container>
+		<Container name="Stargate">
+			<Key ID="STR_open_iris">
+				<Original>ouvrir l'iris</Original>
+                <French>ouvrir l'iris</French>
+				<English>open iris</English>
+			</Key>
+			<Key ID="STR_close_iris">
+				<Original>fermer l'iris</Original>
+                <French>fermer l'iris</French>
+				<English>close iris</English>
+			</Key>
+			<Key ID="STR_open_stargate_to">
+				<Original>ouvrir la porte des étoiles vers %1</Original>
+                <French>ouvrir la porte des étoiles vers %1</French>
+				<English>open stargate to %1</English>
+			</Key>
+			<Key ID="STR_close_stargate">
+				<Original>fermeture de la porte des étoiles</Original>
+                <French>fermeture de la porte des étoiles</French>
+				<English>close stargate</English>
+			</Key>
+			<Key ID="STR_mort_porte_mauvais_sens">
+				<Original>Vous êtes mort car vous avez pris la porte dans le mauvais sens</Original>
+                <French>Vous êtes mort car vous avez pris la porte dans le mauvais sens</French>
+				<English>Vous êtes mort car vous avez pris la porte dans le mauvais sens</English>
+			</Key>
+			<Key ID="STR_mort_iris_fermee">
+				<Original>Vous êtes mort car l'iris de la porte distante est fermée</Original>
+                <French>Vous êtes mort car l'iris de la porte distante est fermée</French>
+				<English>Vous êtes mort car l'iris de la porte distante est fermée</English>
+			</Key>
+			<Key ID="STR_porte_distante_deja_ouverte">
+				<Original>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</Original>
+                <French>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</French>
+				<English>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</English>
+			</Key>
+		</Container>
 	</Package>
 </Project>
