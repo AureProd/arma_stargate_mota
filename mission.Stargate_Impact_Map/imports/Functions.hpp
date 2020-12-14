@@ -264,6 +264,7 @@ class CfgFunctions
             class depeucer {};
             class pecher {};
             class fonction_kill_animal {};
+            class disable_vocal {};
         };
         class serveur
         {

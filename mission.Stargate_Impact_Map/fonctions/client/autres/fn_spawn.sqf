@@ -19,15 +19,33 @@ enableEnvironment [true, true];
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
 private _variable = missionNamespace getVariable nomVarPlayerUID;
 
+[] spawn mission_fnc_disable_vocal;
+
 if ((_variable select 1) == 1) then 
 {
 	Canal_Tauri radioChannelRemove [player];
+	Canal_Tauri_Soldats radioChannelRemove [player];
 	Canal_Goauld radioChannelAdd [player];
+
+	if ((_variable select 0) == 3) then 
+	{
+		Canal_Goauld_Soldats radioChannelAdd [player];
+	} else {
+		Canal_Goauld_Soldats radioChannelRemove [player];
+	};
 } 
 else 
 {
 	Canal_Goauld radioChannelRemove [player];
+	Canal_Goauld_Soldats radioChannelRemove [player];
 	Canal_Tauri radioChannelAdd [player];
+
+	if ((_variable select 0) == 3) then 
+	{
+		Canal_Tauri_Soldats radioChannelAdd [player];
+	} else {
+		Canal_Tauri_Soldats radioChannelRemove [player];
+	};
 };
 
 //player allowDamage false;
