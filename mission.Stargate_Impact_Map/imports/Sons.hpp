@@ -43,4 +43,66 @@ class CfgSounds
         sound[] = {"sons\jump.wav", 10, 1};
         titles[] = {};
     };
+	
+	// STARGATE
+	class close_iris 
+	{ 
+		name = "close_iris"; 
+		sound[] = {"sons\close_iris.ogg", 1, 1}; 
+		titles[] = {}; 
+	};
+	class open_iris  
+	{ 
+		name = "open_iris"; 
+		sound[] = {"sons\open_iris.ogg", 1, 1}; 
+		titles[] = {}; 
+	};
+	class gate_open  
+	{ 
+		name = "gate_open"; 
+		sound[] = {"sons\gate_open.ogg", 1, 1}; 
+		titles[] = {}; 
+	};
+	class gate_close
+	{ 
+		name = "gate_close"; 
+		sound[] = {"sons\gate_close.ogg", 1, 1}; 
+		titles[] = {}; 
+	};
+	class gate_ring  
+	{ 
+		name = "gate_ring"; 
+		sound[] = {"sons\gate_ring.ogg", 10, 1}; 
+		titles[] = {}; 
+	};
+	class gate_stop  
+	{ 
+		name = "gate_stop"; 
+		sound[] = {"sons\gate_stop.ogg", 50, 1}; 
+		titles[] = {}; 
+	};
+	class tp_joueur  
+	{ 
+		name = "tp_joueur"; 
+		sound[] = {"sons\tp_joueur.ogg", 1, 1}; 
+		titles[] = {}; 
+	};
+	class degat_payer  
+	{ 
+		name = "degat_payer"; 
+		sound[] = {"sons\degat_payer.ogg", 1, 1}; 
+		titles[] = {}; 
+	};
+	class chevron_lock  
+	{ 
+		name = "chevron_lock"; 
+		sound[] = {"sons\chevron_lock.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class sg_chevron_lock  
+	{ 
+		name = "sg_chevron_lock"; 
+		sound[] = {"sons\sg_chevron_lock.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
 };

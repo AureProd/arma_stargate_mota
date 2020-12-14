@@ -296,5 +296,22 @@ class CfgFunctions
             file = "fonctions\fps\serveur";
             class demarage_fps {}; // demarre le mode fps coté serveur --> initServer.sqf
         };
+
+        //STARGATE
+        class stargate
+        {
+            file = "fonctions\stargate";
+            class addAction_bis {};
+            class iris {};
+            class stargate_bis {};
+            class kawoosh {};
+            class ring {};
+            class light {};
+            class transport {};
+            class detectionTransport {};
+            class createLight {};
+            class ring_bis {};
+            class dhd {};
+        };
     };
 };
