@@ -13,7 +13,13 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 
 	sleep 5;
 
-	_player setPos (getMarkerPos "spawn");
+	[_player] spawn {
+		_player = param [0];
+
+		waitUntil { !ISINVINCIBLE_BIS };
+
+		_player setDamage 1;
+	};
 
 	titleFadeOut 1;
 } else {
@@ -68,9 +74,13 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 	if ((_porteDistante animationPhase 'anim_iris1') == 1) then {
 		titleText ["Vous êtes mort car l'iris de la porte distante est fermée", "BLACK OUT"];
 
-		//_player setDamage 1;
+		[_player] spawn {
+			_player = param [0];
 
-		_player setPos (getMarkerPos "spawn");
+			waitUntil { !ISINVINCIBLE_BIS };
+
+			_player setDamage 1;
+		};
 
 		[_player, false] remoteExec ["hideObject", 0];
 
