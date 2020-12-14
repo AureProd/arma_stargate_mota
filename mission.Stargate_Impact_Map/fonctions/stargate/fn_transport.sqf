@@ -30,6 +30,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 	private _porteDistanteDir = (getDir _porteDistante);
 	private _porteDistantePosX = (_porteDistantePos select 0);
 	private _porteDistantePosY = (_porteDistantePos select 1);
+	private _porteDistantePosZ = ((_porteDistantePos select 2) + 1.5);
 
 	if (((_porteDistanteDir > 315) or (_porteDistanteDir <= 45)) or ((_porteDistanteDir > 135) and (_porteDistanteDir <= 225))) then {
 		if (((_porteDistanteDir > 315) or (_porteDistanteDir <= 45))) then {
@@ -45,7 +46,16 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 		};
 	};
 
-	_player setPos [_porteDistantePosX, _porteDistantePosY, 0];
+	_player setPos [_porteDistantePosX, _porteDistantePosY, _porteDistantePosZ];
+	ISINVINCIBLE_BIS = true;
+
+	[_player] spawn {
+		_player = param [0];
+
+		waitUntil { isTouchingGround _player };
+
+		ISINVINCIBLE_BIS = false;
+	};
 
 	_porteDistanteDir = _porteDistanteDir + 180;
 

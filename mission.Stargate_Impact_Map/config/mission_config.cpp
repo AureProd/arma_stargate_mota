@@ -13,6 +13,15 @@ class stargate
 
 		temp_prison = 300;
 	};
+	class licences
+	{
+		// id / text / image / isAchetable / isSupprimable
+		licences_tableau[] = {
+			{1, $STR_Permis_Conduire, "pictures\licences\SGI_licence_permis_co.paa", 1, 1},
+			{2, $STR_Port_Arme, "pictures\licences\SGI_licence_armecivil_co.paa", 1, 1},
+			{3, $STR_Prisonnier, "", 0, 1}
+		};
+	};
 	class chasse
 	{
 		zones[] = { // id de zone / nb d'annimaux

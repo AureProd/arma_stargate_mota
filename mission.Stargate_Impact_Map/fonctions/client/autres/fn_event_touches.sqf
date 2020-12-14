@@ -3,7 +3,7 @@
 {
 	if ((_this select 1) == 21) then 
 	{
-		if (menu_y_ok) then 
+		if (menu_y_ok and !(player getVariable ["notInTransport", false])) then 
 		{
 			closeDialog 1;
 

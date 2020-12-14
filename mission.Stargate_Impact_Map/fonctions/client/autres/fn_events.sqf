@@ -4,7 +4,7 @@ player addEventHandler ["HandleDamage", {
 
 	private _return = _damage;
 
-	if (ISINVINCIBLE) then {
+	if (ISINVINCIBLE or ISINVINCIBLE_BIS) then {
 		_return = 0;
 	};
 

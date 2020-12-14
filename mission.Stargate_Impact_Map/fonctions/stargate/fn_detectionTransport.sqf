@@ -44,7 +44,7 @@ while {true} do {
 			};
 		};
 
-		if (_boolean && !(_player getVariable ["notInTransport", false])) then {
+		if (_boolean and !(_player getVariable ["notInTransport", false])) then {
 			_player setVariable ["notInTransport", true, true];
 
 			[_porte, ["tp_joueur", 50]] remoteExec ["say3D", 0];

@@ -19,17 +19,23 @@ private _bar_soif = (findDisplay 5000) displayCtrl 5008;
 
 [] call mission_fnc_medical_bouton_nourriture;
 
-while {dialog} do
-{
-	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif]
-	private _variablesPlayer = missionNamespace getVariable nomVarPlayerUID;
-	private _vie = _variablesPlayer select 5;
-	private _faim = _variablesPlayer select 6;
-	private _soif = _variablesPlayer select 7;
+[_bar_vie, _bar_bouffe, _bar_soif] spawn {
+	private _bar_vie = param [0];
+	private _bar_bouffe = param [1];
+	private _bar_soif = param [2];
 
-	_bar_vie progressSetPosition (_vie / 100);
-	_bar_bouffe progressSetPosition (_faim / 100);
-	_bar_soif progressSetPosition (_soif / 100);
+	while {dialog} do
+	{
+		// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif]
+		private _variablesPlayer = missionNamespace getVariable nomVarPlayerUID;
+		private _vie = _variablesPlayer select 5;
+		private _faim = _variablesPlayer select 6;
+		private _soif = _variablesPlayer select 7;
 
-	sleep 0.5;
+		_bar_vie progressSetPosition (_vie / 100);
+		_bar_bouffe progressSetPosition (_faim / 100);
+		_bar_soif progressSetPosition (_soif / 100);
+
+		sleep 0.5;
+	};
 };

@@ -11,8 +11,6 @@ private _addActions =
 	private _id_shop = _id addAction [_text, _code, _param, 1.5, true, true, "", _condition, 10];
 };
 
-private _dhd_iris = (call compile "dhd_iris");
-
 {
 	private _planete = _x;
 	private _dhd = (call compile (_x select 4));
