@@ -36,7 +36,7 @@ private _addActions =
 		if ((_x select 0) != (_planete select 0)) then {
 			[_dhd, (format [(localize "STR_open_stargate_to"), (_x select 1)]), {
 				[((_this select 3) select 0),((_this select 3) select 1)] call mission_fnc_stargate_bis;
-			}, format ["!((%1 getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) and (alive _this)", _porte], [_porte, _porteDistante]] call _addActions;
+			}, format ["!((%1 getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) and (alive _this) and ([%2] call mission_fnc_has_planetes)", _porte, (_x select 0)], [_porte, _porteDistante]] call _addActions;
 		};
 	} forEach (getArray (missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));
 
