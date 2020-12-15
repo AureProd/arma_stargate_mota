@@ -41,7 +41,8 @@ else
 				((_x select 4) == 5) or 
 				((_x select 4) == 6) or
 				((_x select 4) == 9) or 
-				((_x select 4) == 11)
+				((_x select 4) == 11) or 
+				((_x select 4) == 13)
 			) then 
 			{
 				_bouton_utiliser ctrlEnable true;

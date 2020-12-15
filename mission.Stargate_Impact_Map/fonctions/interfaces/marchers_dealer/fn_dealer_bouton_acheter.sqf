@@ -6,7 +6,7 @@ private _invVirtuelPlayer = _playerBdd select 8;
 // { id / level / nom / lien image / type objets / poid / is militaire / prix / is tauri }
 private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
 
-private _liste_objets = (findDisplay 6000) displayCtrl 6005;
+private _liste_objets = (findDisplay 20000) displayCtrl 20005;
 private _index = lbCurSel _liste_objets;
 
 if (_index != -1) then 
@@ -15,48 +15,28 @@ if (_index != -1) then
 
 	{
 		if (bouton_A_OK) then {
-			if ((_playerBdd select 1) == 2) then 
+			if ((_playerBdd select 1) == 2) then // is tauri
 			{
-				if (((_x select 8) == 1) or ((_x select 8) == 2)) then 
+				if (((_x select 8) == 1) or ((_x select 8) == 2)) then // verif si objet for tauri
 				{
-					if (isMilitaire) then 
+					if ((_x select 6) == 0) then // verif si pas militaire
 					{
-						if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
+						if ((_x select 4) == 13) then // verif si objet is outil
 						{
 							_tab pushBack _x;
-						};
-					}
-					else 
-					{
-						if ((_x select 6) == 0) then 
-						{
-							if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
-							{
-								_tab pushBack _x;
-							};
 						};
 					};
 				};
 			}
-			else
+			else // is goauld
 			{
-				if (((_x select 8) == 0) or ((_x select 8) == 2)) then 
+				if (((_x select 8) == 0) or ((_x select 8) == 2)) then // verif si objet for goauld
 				{
-					if (isMilitaire) then 
+					if ((_x select 6) == 0) then // verif si pas militaire
 					{
-						if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
+						if ((_x select 4) == 13) then // verif si objet is outil
 						{
 							_tab pushBack _x;
-						};
-					}
-					else 
-					{
-						if ((_x select 6) == 0) then 
-						{
-							if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
-							{
-								_tab pushBack _x;
-							};
 						};
 					};
 				};
@@ -100,5 +80,4 @@ if (_index != -1) then
 		};
 	};
 };
-
 

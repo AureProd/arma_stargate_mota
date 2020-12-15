@@ -52,6 +52,7 @@ class CfgFunctions
             class add_invitation {};
             class remove_licence_distant {};
             class add_garage {};
+            class is_in_inventory {};
         };
         class interface_soldat
         {
@@ -232,6 +233,15 @@ class CfgFunctions
             class boucherie_bouton_inventaire {};
             class boucherie_bouton_acheter {};
         };
+        class interfaces_dealer
+        {
+            file = "fonctions\interfaces\marchers_dealer";
+            class interface_dealer {};
+            class dealer_liste_objets {};
+            class dealer_bouton_magasin {};
+            class dealer_bouton_inventaire {};
+            class dealer_bouton_acheter {};
+        };
         class interfaces_poissonerie
         {
             file = "fonctions\interfaces\marchers_poissonerie";
@@ -246,8 +256,8 @@ class CfgFunctions
             file = "fonctions\interfaces\marchers";
             class interface_marcher {};
             class marcher_liste_objets {};
-            class marcher_bouton_nourriture {};
-            class marcher_bouton_boissons {};
+            class marcher_bouton_magasin {};
+            class marcher_bouton_inventaire {};
             class marcher_bouton_acheter {};
         };
         class interfaces_pharmacie
@@ -285,6 +295,9 @@ class CfgFunctions
             class pecher {};
             class fonction_kill_animal {};
             class disable_vocal {};
+            class add_action_recolte {};
+            class traitement {};
+            class recolte {};
         };
         class serveur
         {

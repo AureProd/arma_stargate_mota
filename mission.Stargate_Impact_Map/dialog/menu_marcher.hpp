@@ -24,7 +24,7 @@ class menu_marcher
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class fond_bouton_nourriture
+		class fond_bouton_magasin
 		{
 			type = 0;
 			idc = 6006;
@@ -40,7 +40,7 @@ class menu_marcher
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class fond_bouton_boissons
+		class fond_bouton_inventaire
 		{
 			type = 0;
 			idc = 6007;
@@ -56,7 +56,7 @@ class menu_marcher
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class bouton_nourriture
+		class bouton_magasin
 		{
 			type = 1;
 			idc = 6001;
@@ -85,9 +85,9 @@ class menu_marcher
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] call mission_fnc_marcher_bouton_nourriture;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_marcher_bouton_magasin;";
 		};
-		class bouton_boissons
+		class bouton_inventaire
 		{
 			type = 1;
 			idc = 6002;
@@ -116,9 +116,9 @@ class menu_marcher
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; [] call mission_fnc_marcher_bouton_boissons;";
+			onButtonClick = "playSound 'button'; [] call mission_fnc_marcher_bouton_inventaire;";
 		};
-		class bouton_acheter
+		class bouton_acheter_vendre
 		{
 			type = 1;
 			idc = 6003;

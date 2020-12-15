@@ -19,12 +19,14 @@ class stargate_items
             |-> blessure --> 3
             |-> medicaments --> 4    
             |-> systeme gourde --> 5     
-            |-> raisin --> 6
+            |-> fruits et legumes (raisin) --> 6
             |-> objet outil --> 7
             |-> viande crue --> 8
             |-> viande cuite --> 9
             |-> poisson cru --> 10
             |-> poisson cuit --> 11
+            |-> drogue sale --> 12
+            |-> drogue propre --> 13
         */
         tableau_items[] = {
 			{1, 0, $STR_bouteille, "pictures\items\bouteille.paa", 2, 1.5, 0, 10, 1, 30, 0},
@@ -65,7 +67,16 @@ class stargate_items
             {41, 0, $STR_salema_cru, "pictures\items\poissons\salema.paa", 10, 1, 0, 2, 2, 6, 0},
             {42, 0, $STR_salema_cuit, "pictures\items\poissons\salema.paa", 11, 0.5, 0, 4, 2, 20, 0},
             {43, 0, $STR_thon_cru, "pictures\items\poissons\thon.paa", 10, 1, 0, 3, 2, 7, 0},
-            {44, 0, $STR_thon_cuit, "pictures\items\poissons\thon.paa", 11, 0.5, 0, 6, 2, 25, 0}
+            {44, 0, $STR_thon_cuit, "pictures\items\poissons\thon.paa", 11, 0.5, 0, 6, 2, 25, 0},
+            {45, 0, $STR_fraise, "pictures\items\fruits\SGI_fraise_co.paa", 6, 0.5, 0, 10, 1, 20, 0},
+            {46, 0, $STR_peche, "pictures\items\fruits\SGI_peche_co.paa", 6, 0.5, 0, 20, 1, 40, 0},
+            {47, 0, $STR_pomme, "pictures\items\fruits\SGI_pomme_co.paa", 6, 0.5, 0, 30, 1, 60, 0},
+            {48, 0, $STR_kassa_sale, "pictures\items\illegal\mais.paa", 12, 0.5, 0, 45, 2, 40, 1},
+            {49, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_médiocre.paa", 12, 0.5, 0, 75, 2, 0, 1},
+            {50, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_supérieur.paa", 12, 0.5, 0, 75, 2, 0, 1},
+            {51, 10, $STR_kassa_pure, "pictures\items\illegal\mais.paa", 13, 0.5, 0, 45, 2, 0, 1},
+            {52, 20, $STR_kassa_pure, "pictures\items\illegal\Kassa_médiocre.paa", 13, 0.5, 0, 75, 2, 0, 1},
+            {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_supérieur.paa", 13, 0.5, 0, 75, 2, 0, 1}
 		};
 	};
     class loadout_tauri

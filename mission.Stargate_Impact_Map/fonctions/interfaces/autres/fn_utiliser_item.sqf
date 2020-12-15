@@ -272,52 +272,18 @@ switch (_objet select 4) do
 			};
 		};
 	};
-	case 6: // raisin
+	case 6: // fruit et legume (raisin)
 	{
-		switch ((_objet select 0)) do 
-		{
-			case 14: 
-			{ 
-				if (_soif + (_objet select 9) < 100) then {
-					_soif = _soif + (_objet select 9);
-				} else {
-					_soif = 100;
-				}; 
+		if (_soif + (_objet select 9) < 100) then {
+			_soif = _soif + (_objet select 9);
+		} else {
+			_soif = 100;
+		}; 
 
-				if (_faim + (_objet select 9) < 100) then {
-					_faim = _faim + (_objet select 9);
-				} else {
-					_faim = 100;
-				}; 
-			};
-			case 15: 
-			{ 
-				if (_soif + (_objet select 9) < 100) then {
-					_soif = _soif + (_objet select 9);
-				} else {
-					_soif = 100;
-				}; 
-
-				if (_faim + (_objet select 9) < 100) then {
-					_faim = _faim + (_objet select 9);
-				} else {
-					_faim = 100;
-				}; 
-			};
-			case 16: 
-			{ 
-				if (_soif + (_objet select 9) < 100) then {
-					_soif = _soif + (_objet select 9);
-				} else {
-					_soif = 100;
-				}; 
-
-				if (_faim + (_objet select 9) < 100) then {
-					_faim = _faim + (_objet select 9);
-				} else {
-					_faim = 100;
-				}; 
-			};
+		if (_faim + (_objet select 9) < 100) then {
+			_faim = _faim + (_objet select 9);
+		} else {
+			_faim = 100;
 		};
 	};
 	case 9: // viande cuite
@@ -335,6 +301,30 @@ switch (_objet select 4) do
 		} else {
 			_faim = 100;
 		}; 
+	};
+	case 13: // kassa pure
+	{ 
+		private _hndl = ppEffectCreate ["ColorInversion", 2500];  
+		_hndl ppEffectEnable true;  
+		_hndl ppEffectAdjust [0.5, 0.5, 0.5]; 
+		_hndl ppEffectCommit 10;
+
+		private _hndl2 = ppEffectCreate ["ChromAberration", 205];  
+		_hndl2 ppEffectEnable true; 
+		_hndl2 ppEffectAdjust [0.75, 0.75, true]; 
+		_hndl2 ppEffectCommit 10;
+
+		[_hndl, _hndl2] spawn {
+			sleep 30;
+
+			private _hndl = param [0];
+			private _hndl2 = param [1];
+
+			_hndl ppEffectEnable false;
+			_hndl2 ppEffectEnable false;
+			ppEffectDestroy _hndl;
+			ppEffectDestroy _hndl2;
+		};
 	};
 	default {
 		_bool_fin = false;

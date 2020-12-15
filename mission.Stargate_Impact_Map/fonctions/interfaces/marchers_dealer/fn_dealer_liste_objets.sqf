@@ -13,56 +13,36 @@ private _inventaire_virtuel = _playerBdd select 8;
 */ 
 private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
 
-private _liste_objets = (findDisplay 6000) displayCtrl 6005;
-private _bouton_acheter = (findDisplay 6000) displayCtrl 6003;
+private _liste_objets = (findDisplay 20000) displayCtrl 20005;
+private _bouton_acheter = (findDisplay 20000) displayCtrl 20002;
 private _index = lbCurSel _liste_objets;
 
 private _tab = [];
 
 {
 	if (bouton_A_OK) then {
-		if ((_playerBdd select 1) == 2) then 
+		if ((_playerBdd select 1) == 2) then // is tauri
 		{
-			if (((_x select 8) == 1) or ((_x select 8) == 2)) then 
+			if (((_x select 8) == 1) or ((_x select 8) == 2)) then // verif si objet for tauri
 			{
-				if (isMilitaire) then 
+				if ((_x select 6) == 0) then // verif si pas militaire
 				{
-					if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
+					if ((_x select 4) == 13) then // verif si objet is drogue
 					{
 						_tab pushBack _x;
-					};
-				}
-				else 
-				{
-					if ((_x select 6) == 0) then 
-					{
-						if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
-						{
-							_tab pushBack _x;
-						};
 					};
 				};
 			};
 		}
-		else
+		else // is goauld
 		{
-			if (((_x select 8) == 0) or ((_x select 8) == 2)) then 
+			if (((_x select 8) == 0) or ((_x select 8) == 2)) then // verif si objet for goauld
 			{
-				if (isMilitaire) then 
+				if ((_x select 6) == 0) then // verif si pas militaire
 				{
-					if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
+					if ((_x select 4) == 13) then // verif si objet is drogue
 					{
 						_tab pushBack _x;
-					};
-				}
-				else 
-				{
-					if ((_x select 6) == 0) then 
-					{
-						if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 0) == 2)) then 
-						{
-							_tab pushBack _x;
-						};
 					};
 				};
 			};
@@ -95,7 +75,7 @@ if (_index != -1) then
 			_liste_objets lbSetCurSel -1;
 		};
 	} else {
-		if ((_objet select 4) == 6) then {
+		if ((_objet select 4) == 13) then {
 			_bouton_acheter ctrlEnable true;
 		} else {
 			_bouton_acheter ctrlEnable false;
@@ -106,5 +86,3 @@ else
 {
 	_bouton_acheter ctrlEnable false;
 };
-
-

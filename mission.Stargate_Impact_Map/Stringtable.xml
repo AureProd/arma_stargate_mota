@@ -158,6 +158,31 @@
                 <French>thon cuit</French>
 				<English>thon cuit</English>
 			</Key>
+			<Key ID="STR_kassa_sale">
+				<Original>kassa sale</Original>
+                <French>kassa sale</French>
+				<English>kassa sale</English>
+			</Key>
+			<Key ID="STR_kassa_pure">
+				<Original>kassa pure</Original>
+                <French>kassa pure</French>
+				<English>kassa pure</English>
+			</Key>
+			<Key ID="STR_fraise">
+				<Original>fraise</Original>
+                <French>fraise</French>
+				<English>fraise</English>
+			</Key>
+			<Key ID="STR_peche">
+				<Original>peche</Original>
+                <French>peche</French>
+				<English>peche</English>
+			</Key>
+			<Key ID="STR_pomme">
+				<Original>pomme</Original>
+                <French>pomme</French>
+				<English>pomme</English>
+			</Key>
 		</Container>
         <Container name="Licences">
 			<Key ID="STR_Archeologue">
@@ -189,6 +214,21 @@
 				<Original>Prisonnier</Original>
                 <French>Prisonnier</French>
 				<English>Prisonnier</English>
+			</Key>
+			<Key ID="STR_Permis_Peche">
+				<Original>Permis Pêche</Original>
+                <French>Permis Pêche</French>
+				<English>Permis Pêche</English>
+			</Key>
+			<Key ID="STR_Permis_Chasse">
+				<Original>Permis Chasse</Original>
+                <French>Permis Chasse</French>
+				<English>Permis Chasse</English>
+			</Key>
+			<Key ID="STR_Permis_traitement_kassa">
+				<Original>Permis Traitement Kassa</Original>
+                <French>Permis Traitement Kassa</French>
+				<English>Permis Traitement Kassa</English>
 			</Key>
 		</Container>
         <Container name="Armes">
@@ -774,6 +814,36 @@
                 <French>Vous ne pouvez pas acheter de voiture sans un permis de conduire</French>
 				<English>Vous ne pouvez pas acheter de voiture sans un permis de conduire</English>
 			</Key>
+			<Key ID="STR_kassa_traitement">
+				<Original>Kassa en traitement...</Original>
+                <French>Kassa en traitement...</French>
+				<English>Kassa en traitement...</English>
+			</Key>
+			<Key ID="STR_kassa_traiter">
+				<Original>Kassa traité</Original>
+                <French>Kassa traité</French>
+				<English>Kassa traité</English>
+			</Key>
+			<Key ID="STR_kassa_traitement_impossible_sans_licence">
+				<Original>Vous ne pouvez pas traiter le kassa sans la licence</Original>
+                <French>Vous ne pouvez pas traiter le kassa sans la licence</French>
+				<English>Vous ne pouvez pas traiter le kassa sans la licence</English>
+			</Key>
+			<Key ID="STR_kassa1_traitement_add_action">
+				<Original>Traiter le kassa level 1</Original>
+                <French>Traiter le kassa level 1</French>
+				<English>Traiter le kassa level 1</English>
+			</Key>
+			<Key ID="STR_kassa2_traitement_add_action">
+				<Original>Traiter le kassa level 2</Original>
+                <French>Traiter le kassa level 2</French>
+				<English>Traiter le kassa level 2</English>
+			</Key>
+			<Key ID="STR_kassa3_traitement_add_action">
+				<Original>Traiter le kassa level 3</Original>
+                <French>Traiter le kassa level 3</French>
+				<English>Traiter le kassa level 3</English>
+			</Key>
 		</Container>
 		<Container name="Vehicles">
 			<Key ID="STR_fourriere">
@@ -884,6 +954,110 @@
 				<Original>Van Transport Gendarmerie</Original>
                 <French>Van Transport Gendarmerie</French>
 				<English>Van Transport Gendarmerie</English>
+			</Key>
+		</Container>
+		<Container name="Recolte_items">
+			<Key ID="STR_recolte_pomme">
+				<Original>Recolter des pommes</Original>
+                <French>Recolter des pommes</French>
+				<English>Recolter des pommes</English>
+			</Key>
+			<Key ID="STR_recolte_fraises">
+				<Original>Recolter des fraises</Original>
+                <French>Recolter des fraises</French>
+				<English>Recolter des fraises</English>
+			</Key>
+			<Key ID="STR_recolte_peches">
+				<Original>Recolter des pêches</Original>
+                <French>Recolter des pêches</French>
+				<English>Recolter des pêches</English>
+			</Key>
+			<Key ID="STR_recolte_raisin1">
+				<Original>Recolter des raisin level 1</Original>
+                <French>Recolter des raisin level 1</French>
+				<English>Recolter des raisin level 1</English>
+			</Key>
+			<Key ID="STR_recolte_raisin2">
+				<Original>Recolter des raisin level 2</Original>
+                <French>Recolter des raisin level 2</French>
+				<English>Recolter des raisin level 2</English>
+			</Key>
+			<Key ID="STR_recolte_raisin3">
+				<Original>Recolter des raisin level 3</Original>
+                <French>Recolter des raisin level 3</French>
+				<English>Recolter des raisin level 3</English>
+			</Key>
+			<Key ID="STR_recolte_kassa1">
+				<Original>Recolter des kassa level 1</Original>
+                <French>Recolter des kassa level 1</French>
+				<English>Recolter des kassa level 1</English>
+			</Key>
+			<Key ID="STR_recolte_kassa2">
+				<Original>Recolter des kassa level 2</Original>
+                <French>Recolter des kassa level 2</French>
+				<English>Recolter des kassa level 2</English>
+			</Key>
+			<Key ID="STR_recolte_kassa3">
+				<Original>Recolter des kassa level 3</Original>
+                <French>Recolter des kassa level 3</French>
+				<English>Recolter des kassa level 3</English>
+			</Key>
+			<Key ID="STR_recolte_pomme_bis">
+				<Original>Vous recoltez des pommes</Original>
+                <French>Vous recoltez des pommes</French>
+				<English>Vous recoltez des pommes</English>
+			</Key>
+			<Key ID="STR_recolte_fraises_bis">
+				<Original>Vous recoltez des fraises</Original>
+                <French>Vous recoltez des fraises</French>
+				<English>Vous recoltez des fraises</English>
+			</Key>
+			<Key ID="STR_recolte_peches_bis">
+				<Original>Vous recoltez des pêches</Original>
+                <French>Vous recoltez des pêches</French>
+				<English>Vous recoltez des pêches</English>
+			</Key>
+			<Key ID="STR_recolte_raisin1_bis">
+				<Original>Vous recoltez des raisin level 1</Original>
+                <French>Vous recoltez des raisin level 1</French>
+				<English>Vous recoltez des raisin level 1</English>
+			</Key>
+			<Key ID="STR_recolte_raisin2_bis">
+				<Original>Vous recoltez des raisin level 2</Original>
+                <French>Vous recoltez des raisin level 2</French>
+				<English>Vous recoltez des raisin level 2</English>
+			</Key>
+			<Key ID="STR_recolte_raisin3_bis">
+				<Original>Vous recoltez des raisin level 3</Original>
+                <French>Vous recoltez des raisin level 3</French>
+				<English>Vous recoltez des raisin level 3</English>
+			</Key>
+			<Key ID="STR_recolte_kassa1_bis">
+				<Original>Vous recoltez des kassa level 1</Original>
+                <French>Vous recoltez des kassa level 1</French>
+				<English>Vous recoltez des kassa level 1</English>
+			</Key>
+			<Key ID="STR_recolte_kassa2_bis">
+				<Original>Vous recoltez des kassa level 2</Original>
+                <French>Vous recoltez des kassa level 2</French>
+				<English>Vous recoltez des kassa level 2</English>
+			</Key>
+			<Key ID="STR_recolte_kassa3_bis">
+				<Original>Vous recoltez des kassa level 3</Original>
+                <French>Vous recoltez des kassa level 3</French>
+				<English>Vous recoltez des kassa level 3</English>
+			</Key>
+		</Container>
+		<Container name="Recolte_items">
+			<Key ID="STR_recolte_erreur_poid">
+				<Original>Vous n'avez plus de place dans votre inventaire pour prendre votre récolte</Original>
+                <French>Vous n'avez plus de place dans votre inventaire pour prendre votre récolte</French>
+				<English>Vous n'avez plus de place dans votre inventaire pour prendre votre récolte</English>
+			</Key>
+			<Key ID="STR_recolte_reussie">
+				<Original>Vous avez fini votre récolte</Original>
+                <French>Vous avez fini votre récolte</French>
+				<English>Vous avez fini votre récolte</English>
 			</Key>
 		</Container>
 	</Package>

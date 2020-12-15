@@ -52,11 +52,11 @@ player addAction [(localize "STR_peche_add_action"), {
 		if (_return) then 
 		{
 			[(_poisson select 0)] call mission_fnc_add_item;
+
+			hint format [localize "STR_peche_reussie", (_poisson select 2)];
 		} else {
 			hint localize "STR_peche_erreur_poid";
 		};
-
-		hint format [localize "STR_peche_reussie", (_poisson select 2)];
 	};
 
 	sleep 3;

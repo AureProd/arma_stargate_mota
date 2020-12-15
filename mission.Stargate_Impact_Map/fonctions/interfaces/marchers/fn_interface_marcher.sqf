@@ -19,4 +19,4 @@ else
 bouton_A_OK = true;
 isMilitaire = param [0, false];
 
-[] call mission_fnc_marcher_bouton_nourriture;
+[] call mission_fnc_marcher_bouton_magasin;

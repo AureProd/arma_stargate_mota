@@ -33,5 +33,7 @@ class stargate_shops
 		vehicules_tauri_militaire[] = {{"vehicules_tauri_militaire", "logo_vehicules_tauri_militaire"}}; // [id pnj, id logo spawn vehicule] --> shop vehicules militaires tauri
 		vehicules_goauld_bateaux[] = {{"vehicules_goauld_bateaux", "logo_vehicules_goauld_bateaux"}}; // [id pnj, id logo spawn vehicule] --> shop bateaux goauld
 		vehicules_tauri_bateaux[] = {{"vehicules_tauri_bateaux", "logo_vehicules_tauri_bateaux"}}; // [id pnj, id logo spawn vehicule] --> shop bateaux tauri
+		dealer_goauld[] = {"dealer_goauld"}; // --> shop dealer goauld
+		dealer_tauri[] = {"dealer_tauri"}; // --> shop dealer tauri
 	};
 };

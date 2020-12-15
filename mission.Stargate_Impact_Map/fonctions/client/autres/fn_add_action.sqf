@@ -14,6 +14,18 @@ private _fn_addActions =
 	_id setUserActionText [_id_shop, "", "", format ["<img size='10' image='%1'/>", _image]];
 };
 
+// params -> [id, text, code, condition, param]
+private _addActions_bis = 
+{
+	private _id = param [0];
+	private _text = param [1, ""];
+	private _code = param [2, {hint localize "STR_erreur";}];
+	private _condition = param [3, "true"];
+	private _param = param [4, []];
+
+	private _id_shop = _id addAction [_text, _code, _param, 1.5, true, true, "", _condition, 10];
+};
+
 /*	
 	classes :
 	1 = archeoloque
@@ -145,12 +157,12 @@ private _fn_addActions =
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_tauri"));
 
 {
-	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 1] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 1] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and ((['classe'] call mission_fnc_getBDD) == 3) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
 	(call compile (_x select 0)) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_goauld_militaire"));
 
 {
-	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 1] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 1] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and ((['classe'] call mission_fnc_getBDD) == 3) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
 	(call compile (_x select 0)) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_tauri_militaire"));
 
@@ -173,6 +185,16 @@ private _fn_addActions =
 	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_licences}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "licences_tauri"));
+
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_dealer}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "dealer_goauld"));
+
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_dealer}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "dealer_tauri"));
 
 // ---------------------------------------------------------------- 
 
@@ -272,4 +294,26 @@ private _fn_addActions =
 	};
 } forEach (getArray(missionConfigFile >> "stargate_quetes" >> "quetes" >> "soldat_goauld"));
 
+// ---------------------------------------------------------------- 
 
+sleep 60;
+
+{
+	switch (_x select 4) do {
+		case 0: { 
+			[(call compile (_x select 0)), (_x select 5), {
+				[((_this select 3) select 0)] call mission_fnc_traitement;
+			}, format ['(!recolte_ON) and (alive player) and (!([] call mission_fnc_is_tauri)) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2)], [_x]] call _addActions_bis;
+		};
+		case 1: { 
+			[(call compile (_x select 0)), (_x select 5), {
+				[((_this select 3) select 0)] call mission_fnc_traitement;
+			}, format ['(!recolte_ON) and (alive player) and ([] call mission_fnc_is_tauri) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2)], [_x]] call _addActions_bis;
+		};
+		case 2: { 
+			[(call compile (_x select 0)), (_x select 5), {
+				[((_this select 3) select 0)] call mission_fnc_traitement;
+			}, format ['(!recolte_ON) and (alive player) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2)], [_x]] call _addActions_bis;
+		};
+	};
+} forEach (getArray(missionConfigFile >> "stargate" >> "traitement" >> "pts_traitement"));
