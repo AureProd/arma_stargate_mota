@@ -157,6 +157,13 @@ class CfgFunctions
             class garage_bouton_sortir {};
             class garage_db_click_liste_vehicules {};
         };
+        class interfaces_achat_licences
+        {
+            file = "fonctions\interfaces\menu_achat_licences";
+            class interface_licences_db_clicks {};
+            class interface_licences {};
+            class interface_licences_liste {};
+        };
         class interfaces_armurerie
         {
             file = "fonctions\interfaces\armurerie";

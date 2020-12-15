@@ -1,5 +1,14 @@
 
 private _liste_vehicules = (findDisplay 30000) displayCtrl 30001;
+
+if (!([1] call mission_fnc_has_licence)) exitWith {
+	if ((lbCurSel _liste_vehicules) != -1) then {
+		_liste_vehicules lbSetCurSel -1;
+
+		hint localize "STR_pas_licences_permis_conduire";
+	};
+};
+
 private _bouton_louer = (findDisplay 30000) displayCtrl 30004;
 private _bouton_sortir = (findDisplay 30000) displayCtrl 30005;
 private _bouton_acheter = (findDisplay 30000) displayCtrl 30006;

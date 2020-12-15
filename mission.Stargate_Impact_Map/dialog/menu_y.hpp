@@ -410,6 +410,9 @@ class menu_y
 			colorDisabled[] = {0,0,0,0};
 			colorSelect[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
+			colorPicture[] = {1,1,1,1};
+			colorPictureSelected[] = {1,1,1,1};
+    		colorPictureDisabled[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;

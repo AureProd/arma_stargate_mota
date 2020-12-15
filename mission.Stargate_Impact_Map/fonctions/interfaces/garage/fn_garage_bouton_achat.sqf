@@ -37,7 +37,7 @@ liste_joueurs_groupe = [];
 			liste_joueurs_groupe pushBack [2, _x]; 
 
 			_picture_arme_id = getText(configFile >>  "CfgVehicles" >> (_x select 2) >> "picture");
-			private _index = _liste_vehicules lbAdd format ["%1", (_x select 1)];
+			private _index = _liste_vehicules lbAdd (_x select 1);
 			_liste_vehicules lbSetPicture [_index, _picture_arme_id];
 		} else {
 			if ((_x select 5) <= (_playerBdd select 4)) then {

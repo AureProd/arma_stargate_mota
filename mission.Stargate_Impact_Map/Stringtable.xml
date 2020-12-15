@@ -325,6 +325,11 @@
                 <French>Le groupe est déjà plein</French>
 				<English>Le groupe est déjà plein</English>
 			</Key>
+			<Key ID="STR_pas_possible_acheter_licence">
+				<Original>Le groupe est déjà plein</Original>
+                <French>Le groupe est déjà plein</French>
+				<English>Le groupe est déjà plein</English>
+			</Key>
 			<Key ID="STR_sauvegarde_syns_data">
 				<Original>Sauvegarde du player en BDD</Original>
                 <French>Sauvegarde du player en BDD</French>
@@ -759,6 +764,16 @@
                 <French>%1 secondes restantes</French>
 				<English>%1 secondes restantes</English>
 			</Key>
+			<Key ID="STR_pas_licences_porte_arme">
+				<Original>Vous ne pouvez pas acheter d'arme sans une licence de port arme</Original>
+                <French>Vous ne pouvez pas acheter d'arme sans une licence de port arme</French>
+				<English>Vous ne pouvez pas acheter d'arme sans une licence de port arme</English>
+			</Key>
+			<Key ID="STR_pas_licences_permis_conduire">
+				<Original>Vous ne pouvez pas acheter de voiture sans un permis de conduire</Original>
+                <French>Vous ne pouvez pas acheter de voiture sans un permis de conduire</French>
+				<English>Vous ne pouvez pas acheter de voiture sans un permis de conduire</English>
+			</Key>
 		</Container>
 		<Container name="Vehicles">
 			<Key ID="STR_fourriere">
@@ -861,7 +876,7 @@
 				<English>Van Transport Armée</English>
 			</Key>
 			<Key ID="STR_Pickup_gendarmerie">
-				<Original>VPickup Gendarmerie</Original>
+				<Original>Pickup Gendarmerie</Original>
                 <French>Pickup Gendarmerie</French>
 				<English>Pickup Gendarmerie</English>
 			</Key>

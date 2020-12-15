@@ -164,6 +164,16 @@ private _fn_addActions =
 	(call compile (_x select 0)) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_tauri_bateaux"));
 
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_licences}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "licences_goauld"));
+
+{
+	[(call compile _x), "pictures\addActions\popup_interaction_magasin.paa", {[] call mission_fnc_interface_licences}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)"] call _fn_addActions;
+	(call compile _x) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "licences_tauri"));
+
 // ---------------------------------------------------------------- 
 
 {

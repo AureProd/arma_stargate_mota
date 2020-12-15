@@ -21,6 +21,7 @@
 #include "dialog\menu_docs_planetes.hpp"
 #include "dialog\interface_admin.hpp"
 #include "dialog\menu_garage.hpp"
+#include "dialog\menu_licences.hpp"
 
 // Configs
 #include "config\mission_config.cpp"
