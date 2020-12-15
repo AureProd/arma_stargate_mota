@@ -560,9 +560,9 @@
 		</Container>
 		<Container name="Interfaces">
 			<Key ID="STR_menu_y_level">
-				<Original>LEVEL %1</Original>
-                <French>LEVEL %1</French>
-				<English>LEVEL %1</English>
+				<Original>level %1</Original>
+                <French>level %1</French>
+				<English>level %1</English>
 			</Key>
 			<Key ID="STR_admin_bouton_Supprimer">
 				<Original>Supprimer</Original>
@@ -812,6 +812,63 @@
 				<Original>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</Original>
                 <French>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</French>
 				<English>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</English>
+			</Key>
+		</Container>
+		<Container name="vehicles_items">
+			<Key ID="STR_Quad">
+				<Original>Quad</Original>
+                <French>Quad</French>
+				<English>Quad</English>
+			</Key>
+			<Key ID="STR_Pickup">
+				<Original>Pickup</Original>
+                <French>Pickup</French>
+				<English>Pickup</English>
+			</Key>
+			<Key ID="STR_4x4">
+				<Original>4x4</Original>
+                <French>4x4</French>
+				<English>4x4</English>
+			</Key>
+			<Key ID="STR_Prowler">
+				<Original>Prowler</Original>
+                <French>Prowler</French>
+				<English>Prowler</English>
+			</Key>
+			<Key ID="STR_Zodiak">
+				<Original>Zodiak</Original>
+                <French>Zodiak</French>
+				<English>Zodiak</English>
+			</Key>
+			<Key ID="STR_Hunter">
+				<Original>Hunter</Original>
+                <French>Hunter</French>
+				<English>Hunter</English>
+			</Key>
+			<Key ID="STR_Prowler">
+				<Original>Prowler</Original>
+                <French>Prowler</French>
+				<English>Prowler</English>
+			</Key>
+			<Key ID="STR_Prowler_camo">
+				<Original>Prowler Camouflage</Original>
+                <French>Prowler Camouflage</French>
+				<English>Prowler Camouflage</English>
+			</Key>
+			<Key ID="STR_van_transport_armee">
+				<Original>Van Transport Armée</Original>
+                <French>Van Transport Armée</French>
+				<English>Van Transport Armée</English>
+			</Key>
+			<Key ID="STR_Pickup_gendarmerie">
+				<Original>VPickup Gendarmerie</Original>
+                <French>Pickup Gendarmerie</French>
+				<English>Pickup Gendarmerie</English>
+			</Key>
+			<Key ID="STR_van_transport_gendarmerie">
+				<Original>Van Transport Gendarmerie</Original>
+                <French>Van Transport Gendarmerie</French>
+				<English>Van Transport Gendarmerie</English>
 			</Key>
 		</Container>
 	</Package>

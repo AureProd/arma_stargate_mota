@@ -20,6 +20,7 @@
 #include "dialog\menu_general.hpp"
 #include "dialog\menu_docs_planetes.hpp"
 #include "dialog\interface_admin.hpp"
+#include "dialog\menu_garage.hpp"
 
 // Configs
 #include "config\mission_config.cpp"
@@ -30,6 +31,7 @@
 #include "config\vetement_config.cpp"
 #include "config\quetes_config.cpp"
 #include "config\docs_planetes_config.cpp"
+#include "config\vehicules_config.cpp"
 
 // FPS CTF 
 

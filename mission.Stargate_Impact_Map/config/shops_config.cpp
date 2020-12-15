@@ -25,5 +25,11 @@ class stargate_shops
 		boucherie_tauri[] = {"boucherie_tauri"}; // --> shop general tauri
 		poissonerie_goauld[] = {"poissonerie_goauld"}; // --> shop general goauld
 		poissonerie_tauri[] = {"poissonerie_tauri"}; // --> shop general tauri
+		vehicules_goauld[] = {{"vehicules_goauld", "logo_vehicules_goauld"}}; // [id pnj, id logo spawn vehicule] --> shop vehicules goauld
+		vehicules_tauri[] = {{"vehicules_tauri", "logo_vehicules_tauri"}}; // [id pnj, id logo spawn vehicule] --> shop vehicules tauri
+		vehicules_goauld_militaire[] = {{"vehicules_goauld_militaire", "logo_vehicules_goauld_militaire"}}; // [id pnj, id logo spawn vehicule] --> shop vehicules militaires goauld
+		vehicules_tauri_militaire[] = {{"vehicules_tauri_militaire", "logo_vehicules_tauri_militaire"}}; // [id pnj, id logo spawn vehicule] --> shop vehicules militaires tauri
+		vehicules_goauld_bateaux[] = {{"vehicules_goauld_bateaux", "logo_vehicules_goauld_bateaux"}}; // [id pnj, id logo spawn vehicule] --> shop bateaux goauld
+		vehicules_tauri_bateaux[] = {{"vehicules_tauri_bateaux", "logo_vehicules_tauri_bateaux"}}; // [id pnj, id logo spawn vehicule] --> shop bateaux tauri
 	};
 };

@@ -51,6 +51,7 @@ class CfgFunctions
             class create_reset_invitations {};
             class add_invitation {};
             class remove_licence_distant {};
+            class add_garage {};
         };
         class interface_soldat
         {
@@ -143,6 +144,18 @@ class CfgFunctions
             class get_player_with_uid {};
             class prison {};
             class popup_ammende {};
+        };
+        class interfaces_garage
+        {
+            file = "fonctions\interfaces\garage";
+            class interface_garage {};
+            class garage_liste_vehicules {};
+            class garage_bouton_location {};
+            class garage_bouton_achat {};
+            class garage_bouton_louer {};
+            class garage_bouton_acheter {};
+            class garage_bouton_sortir {};
+            class garage_db_click_liste_vehicules {};
         };
         class interfaces_armurerie
         {

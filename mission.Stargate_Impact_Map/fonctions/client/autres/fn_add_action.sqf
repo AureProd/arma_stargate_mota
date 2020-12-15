@@ -134,7 +134,37 @@ private _fn_addActions =
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "poissonerie_tauri"));
 
-// ----------------------------------------------------------------
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 0] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_goauld"));
+
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 0] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_tauri"));
+
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 1] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_goauld_militaire"));
+
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 1] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_tauri_militaire"));
+
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 2] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 1) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_goauld_bateaux"));
+
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), 2] call mission_fnc_interface_garage}, "(((missionNamespace getVariable nomVarPlayerUID) select 1) == 2) and (alive player)", [(call compile (_x select 1))]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "vehicules_tauri_bateaux"));
+
+// ---------------------------------------------------------------- 
 
 {
 	switch (_x select 1) do {

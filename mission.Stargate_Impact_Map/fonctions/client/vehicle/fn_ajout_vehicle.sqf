@@ -1,5 +1,5 @@
 // nom fichier : mission_fnc_ajout_vehicle
-// paramettres : [id vehicle, position, joueur]
+// paramettres : [id vehicle, position, direction, isLocation, joueur]
 
 private _getPos = {
 	private _joueur = param [0];
@@ -25,14 +25,15 @@ private _getPos = {
 };
 
 private _vehicleId = param [0, "C_Offroad_02_unarmed_black_F"];
-private _isLocation = param [2, true];
-private _joueur = param [3, player];
+private _isLocation = param [3, true];
+private _joueur = param [4, player];
 private _spawnPosition = param [1, ([_joueur] call _getPos)];
+private _spawnDir = param [2, (getDir _joueur)];
 
 private _joueurUid = (getPlayerUID _joueur);
 
 private _vehicle = createVehicle [_vehicleId, _spawnPosition];
-_vehicle setDir (getDir _joueur);
+_vehicle setDir _spawnDir;
 
 _vehicle setVariable ["imatriculation", [true, _joueurUid, _isLocation]];
 

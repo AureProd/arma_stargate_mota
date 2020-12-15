@@ -483,12 +483,12 @@ class menu_y
 			y = safeZoneY + safeZoneH * 0.67222223;
 			w = safeZoneW * 0.06197917;
 			h = safeZoneH * 0.03148149;
-			style = 2+192;
+			style = 2;
 			text = $STR_erreur;
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
 			font = "PuristaLight";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class nb_items
@@ -499,7 +499,7 @@ class menu_y
 			y = safeZoneY + safeZoneH * 0.74555556;
 			w = safeZoneW * 0.026875;
 			h = safeZoneH * 0.03222223;
-			style = 192+2;
+			style = 2;
 			text = "1";
 			autocomplete = "";
 			colorBackground[] = {0,0,0,0};
@@ -507,7 +507,7 @@ class menu_y
 			colorSelection[] = {0,0,0,0};
 			colorText[] = {0.702,0.702,0.702,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		/* class liste_joueurs

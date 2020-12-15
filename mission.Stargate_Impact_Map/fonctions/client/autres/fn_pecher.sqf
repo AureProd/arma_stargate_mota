@@ -66,7 +66,7 @@ player addAction [(localize "STR_peche_add_action"), {
 }, nil, 6, true, true, "", "
 	(surfaceIsWater (position _this)) && 
 	([position _this] call returnIfInPecheZone) && 
-	((typeOf (vehicle _this)) == 'C_Rubberboat') && 
+	((typeOf (vehicle _this)) in (getArray(missionConfigFile >> 'stargate_vehicules' >> 'bateaux_peche' >> 'liste_id_bateaux_pour_peche'))) && 
 	((driver (vehicle _this)) != player) &&
 	(alive _this) &&
 	(!peche_ON)
