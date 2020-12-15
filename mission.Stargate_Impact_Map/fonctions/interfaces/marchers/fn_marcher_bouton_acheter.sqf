@@ -92,11 +92,11 @@ if (_index != -1) then
 			hint localize "STR_inventaire_plein";
 		};
 	} else {
-		if ((_objet select 4) == 13) then {
+		if ((_objet select 4) == 6) then {
 			[(_objet select 7)] call mission_fnc_paiement_vente;
 			private _reste = [(_objet select 0)] call mission_fnc_vendre_item;
 
-			[_reste] call mission_fnc_dealer_bouton_inventaire;
+			[_reste] call mission_fnc_marcher_bouton_inventaire;
 		};
 	};
 };
