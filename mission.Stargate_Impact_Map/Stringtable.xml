@@ -183,6 +183,16 @@
                 <French>pomme</French>
 				<English>pomme</English>
 			</Key>
+			<Key ID="STR_ble_sale">
+				<Original>blé sale</Original>
+                <French>blé sale</French>
+				<English>blé sale</English>
+			</Key>
+			<Key ID="STR_ble_traiter">
+				<Original>blé traité</Original>
+                <French>blé traité</French>
+				<English>blé traité</English>
+			</Key>
 		</Container>
         <Container name="Licences">
 			<Key ID="STR_Archeologue">
@@ -229,6 +239,16 @@
 				<Original>Permis Traitement Kassa</Original>
                 <French>Permis Traitement Kassa</French>
 				<English>Permis Traitement Kassa</English>
+			</Key>
+			<Key ID="STR_Permis_recolte_ble">
+				<Original>Permis Récolte Blé</Original>
+                <French>Permis Récolte Blé</French>
+				<English>Permis Récolte Blé</English>
+			</Key>
+			<Key ID="STR_Permis_traitement_ble">
+				<Original>Permis Traitement Blé</Original>
+                <French>Permis Traitement Blé</French>
+				<English>Permis Traitement Blé</English>
 			</Key>
 		</Container>
         <Container name="Armes">
@@ -844,6 +864,26 @@
                 <French>Traiter le kassa level 3</French>
 				<English>Traiter le kassa level 3</English>
 			</Key>
+			<Key ID="STR_ble_traitement_add_action">
+				<Original>Traiter le blé</Original>
+                <French>Traiter le blé</French>
+				<English>Traiter le blé</English>
+			</Key>
+			<Key ID="STR_ble_traitement">
+				<Original>Blé en traitement...</Original>
+                <French>Blé en traitement...</French>
+				<English>Blé en traitement...</English>
+			</Key>
+			<Key ID="STR_ble_traiter">
+				<Original>Blé traité</Original>
+                <French>Blé traité</French>
+				<English>Blé traité</English>
+			</Key>
+			<Key ID="STR_ble_traitement_impossible_sans_licence">
+				<Original>Vous ne pouvez pas traiter le blé sans la licence</Original>
+                <French>Vous ne pouvez pas traiter le blé sans la licence</French>
+				<English>Vous ne pouvez pas traiter le blé sans la licence</English>
+			</Key>
 		</Container>
 		<Container name="Vehicles">
 			<Key ID="STR_fourriere">
@@ -1047,8 +1087,18 @@
                 <French>Vous recoltez des kassa level 3</French>
 				<English>Vous recoltez des kassa level 3</English>
 			</Key>
+			<Key ID="STR_recolte_ble">
+				<Original>Recolter du blé</Original>
+                <French>Recolter du blé</French>
+				<English>Recolter du blé</English>
+			</Key>
+			<Key ID="STR_recolte_ble_bis">
+				<Original>Vous recoltez du blé</Original>
+                <French>Vous recoltez du blé</French>
+				<English>Vous recoltez du blé</English>
+			</Key>
 		</Container>
-		<Container name="Recolte_items">
+		<Container name="Recolte">
 			<Key ID="STR_recolte_erreur_poid">
 				<Original>Vous n'avez plus de place dans votre inventaire pour prendre votre récolte</Original>
                 <French>Vous n'avez plus de place dans votre inventaire pour prendre votre récolte</French>

@@ -19,7 +19,8 @@ class stargate_items
             |-> blessure --> 3
             |-> medicaments --> 4    
             |-> systeme gourde --> 5     
-            |-> fruits et legumes (raisin) --> 6
+            |-> fruits et legumes traités (raisin) --> 6
+            |-> fruits et legumes sales --> 6.5
             |-> objet outil --> 7
             |-> viande crue --> 8
             |-> viande cuite --> 9
@@ -76,7 +77,9 @@ class stargate_items
             {50, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_supérieur.paa", 12, 0.5, 0, 75, 2, 0, 1},
             {51, 10, $STR_kassa_pure, "pictures\items\illegal\mais.paa", 13, 0.5, 0, 45, 2, 0, 1},
             {52, 20, $STR_kassa_pure, "pictures\items\illegal\Kassa_médiocre.paa", 13, 0.5, 0, 75, 2, 0, 1},
-            {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_supérieur.paa", 13, 0.5, 0, 75, 2, 0, 1}
+            {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_supérieur.paa", 13, 0.5, 0, 75, 2, 0, 1},
+            {54, 20, $STR_ble_sale, "", 6.5, 0.5, 0, 75, 2, 0, 1},
+            {55, 30, $STR_ble_traiter, "", 6, 0.5, 0, 75, 2, 0, 1}
 		};
 	};
     class loadout_tauri

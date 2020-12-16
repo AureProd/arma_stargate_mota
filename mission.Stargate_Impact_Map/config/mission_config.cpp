@@ -11,7 +11,7 @@ class stargate
 		prison_goauld[] = {36904.535, 3179.304, 0.5}; // biome goauld
         prison_tauri[] = {36950.266, 3178.416, 0.5}; // biome tauri
 
-		temp_prison = 300;
+		temp_prison = 300; // tps en secondes
 	};
 	class licences
 	{
@@ -22,7 +22,9 @@ class stargate
 			{3, $STR_Prisonnier, "", 0, 1, 0, 0},
 			{4, $STR_Permis_Peche, "", 1, 0, 50, 0},
 			{5, $STR_Permis_Chasse, "", 1, 0, 50, 0},
-			{6, $STR_Permis_traitement_kassa, "", 1, 1, 50, 30}
+			{6, $STR_Permis_traitement_kassa, "", 1, 1, 50, 10},
+			{7, $STR_Permis_recolte_ble, "", 1, 1, 50, 10},
+			{8, $STR_Permis_traitement_ble, "", 1, 1, 50, 10}
 		};
 	};
 	class chasse
@@ -48,7 +50,9 @@ class stargate
 			{"zone_raisin3", 5, 16, 0, $STR_recolte_raisin3, $STR_recolte_raisin3_bis},
 			{"zone_kassa1", 10, 48, 2, $STR_recolte_kassa1, $STR_recolte_kassa1_bis}, 
 			{"zone_kassa2", 20, 49, 2, $STR_recolte_kassa2, $STR_recolte_kassa2_bis}, 
-			{"zone_kassa3", 30, 50, 2, $STR_recolte_kassa3, $STR_recolte_kassa3_bis} 
+			{"zone_kassa3", 30, 50, 2, $STR_recolte_kassa3, $STR_recolte_kassa3_bis}, 
+			{"zone_ble_tauri", 10, 54, 1, $STR_recolte_ble, $STR_recolte_ble_bis},
+			{"zone_ble_goauld", 10, 54, 0, $STR_recolte_ble, $STR_recolte_ble_bis}
 		};
 	};
 	class traitement
@@ -59,7 +63,10 @@ class stargate
 			{"traitement_kassa_goauld", 0, 50, 53, 0, $STR_kassa3_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
 			{"traitement_kassa_tauri", 3, 48, 51, 1, $STR_kassa1_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
 			{"traitement_kassa_tauri", 3, 49, 52, 1, $STR_kassa2_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
-			{"traitement_kassa_tauri", 3, 50, 53, 1, $STR_kassa3_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence}
+			{"traitement_kassa_tauri", 3, 50, 53, 1, $STR_kassa3_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
+			{"traitement_kassa_tauri", 3, 50, 53, 1, $STR_kassa3_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
+			{"traitement_ble_goauld", 10, 54, 55, 0, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 6, $STR_ble_traitement_impossible_sans_licence},
+			{"traitement_ble_tauri", 10, 54, 55, 1, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 6, $STR_ble_traitement_impossible_sans_licence}
 		};
 	};
 };
