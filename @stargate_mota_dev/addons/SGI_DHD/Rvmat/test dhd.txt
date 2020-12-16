@@ -1,0 +1,13 @@
+[] spawn {
+sleep 2;
+dhd_reel animate ["anim_aquila", 1];
+sleep 1;
+dhd_reel animate ["anim_aquila", 0];
+};
+
+dhd_reel setObjectTexture [9, "\SGI_DHD\Texture\SGI_DHD_co.paa"];
+
+hint format ["%1", ((getObjectTextures dhd_reel) select 9)];
+
+dhd_reel setObjectMaterial [12, "a3\data_f\lights\car_headlight.rvmat"];
+dhd_reel setObjectMaterial [12, "\SGI_DHD\Rvmat\sgi_dhd.rvmat"];

@@ -4,3 +4,7 @@ mods
 @mod_server/addons/mod_server.pbo
 @mod_server/addons/mod_server.pbo.bak
 ~mission.Stargate_Impact_Map/mission.sqm
+@stargate_mota_dev/addons/sga_dhd.pbo
+@stargate_mota_dev/addons/SGI_DHD.pbo
+@stargate_mota_dev/addons/SGI_porte_des_etoiles.pbo
+@stargate_mota_dev/addons/1700_canne_a_peche.pbo
