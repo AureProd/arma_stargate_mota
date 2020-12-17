@@ -31,7 +31,7 @@ class Header
 {
 	gameType = RPG; // Game type
 	minPlayers =  0; // minimum number of players
-	maxPlayers = 14; // maximum number of players
+	maxPlayers = 30; // maximum number of players
 };
 
 class CfgDebriefing 
