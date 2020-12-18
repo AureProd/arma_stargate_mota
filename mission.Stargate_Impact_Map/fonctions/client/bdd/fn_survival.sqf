@@ -52,7 +52,7 @@ while {true} do
 			if ((_faim < 1) and (_soif < 1)) then 
 			{
 				private _liste_vies_bis = _liste_vies select 1;
-				_liste_vies_bis - 20;
+				_liste_vies_bis = _liste_vies_bis - 20;
 				_liste_vies set [1, _liste_vies_bis];
 
 				_vie = _vie - 20;
@@ -66,7 +66,7 @@ while {true} do
 				else
 				{
 					private _liste_vies_bis = _liste_vies select 1;
-					_liste_vies_bis - 10;
+					_liste_vies_bis = _liste_vies_bis - 10;
 					_liste_vies set [1, _liste_vies_bis];
 
 					_vie = _vie - 10;
@@ -79,7 +79,7 @@ while {true} do
 				else
 				{
 					private _liste_vies_bis = _liste_vies select 1;
-					_liste_vies_bis - 10;
+					_liste_vies_bis = _liste_vies_bis - 10;
 					_liste_vies set [1, _liste_vies_bis];
 
 					_vie = _vie - 10;
