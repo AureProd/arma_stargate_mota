@@ -5,8 +5,6 @@
 //'now' is Fri Dec 18 13:24:17 2020 : 'file' last modified on Fri Dec 18 11:28:42 2020
 ////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
-
 class cfgPatches
 {
 	class sgi_canne

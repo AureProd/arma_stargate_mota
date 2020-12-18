@@ -5,8 +5,6 @@
 //'now' is Fri Dec 18 13:24:22 2020 : 'file' last modified on Fri Dec 18 13:05:36 2020
 ////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
-
 class CfgPatches
 {
 	class stargate
@@ -38,7 +36,7 @@ class CfgVehicles
 	class House_F;
 	class SGI_porte_des_etoiles_iris: House_F
 	{
-		model = "/SGI_porte_des_etoiles/SGI_porte_des_etoiles_iris.p3d";
+		model = "\sgi_porte_des_etoiles\SGI_porte_des_etoiles_iris.p3d";
 		displayName = "STAR GATE IRIS";
 		editorCategory = "SGI_stargate_gate_Objects";
 		editorsubcategory = "SGI_stargate_gates";
@@ -51,7 +49,7 @@ class CfgVehicles
 		autocenter = 0;
 		class EventHandlers
 		{
-			init = "[_this select 0] execvm '/SGI_porte_des_etoiles/sqf/initGate.sqf'";
+			init = "[_this select 0] execvm '\sgi_porte_des_etoiles\sqf\initGate.sqf'";
 		};
 		class AnimationSources
 		{
@@ -152,7 +150,7 @@ class CfgVehicles
 	};
 	class SGI_porte_des_etoiles: House_F
 	{
-		model = "/SGI_porte_des_etoiles/SGI_porte_des_etoiles.p3d";
+		model = "\sgi_porte_des_etoiles\SGI_porte_des_etoiles.p3d";
 		displayName = "STAR GATE";
 		editorCategory = "SGI_stargate_gate_Objects";
 		editorsubcategory = "SGI_stargate_gates";
@@ -165,7 +163,7 @@ class CfgVehicles
 		autocenter = 0;
 		class EventHandlers
 		{
-			init = "[_this select 0] execvm '/SGI_porte_des_etoiles/sqf/initGate.sqf'";
+			init = "[_this select 0] execvm '\sgi_porte_des_etoiles\sqf\initGate.sqf'";
 		};
 		class AnimationSources
 		{
@@ -178,7 +176,7 @@ class CfgVehicles
 	};
 	class SGI_gate: House_F
 	{
-		model = "/SGI_porte_des_etoiles/sga_stargate.p3d";
+		model = "\sgi_porte_des_etoiles\sga_stargate.p3d";
 		displayName = "STAR GATE bis";
 		editorCategory = "SGI_stargate_gate_Objects";
 		editorsubcategory = "SGI_stargate_gates";
@@ -191,7 +189,7 @@ class CfgVehicles
 		autocenter = 0;
 		class EventHandlers
 		{
-			init = "[_this select 0] execvm '/SGI_porte_des_etoiles/sqf/initGate.sqf'";
+			init = "[_this select 0] execvm '\sgi_porte_des_etoiles\sqf\initGate.sqf'";
 		};
 		class AnimationSources
 		{
@@ -298,9 +296,4 @@ class CfgVehicles
 		};
 		hiddenselections[] = {"light1a","light1b","light2a","light2b","light3a","light3b","light4a","light4b","light5a","light5b","light6a","light6b","light7a","light7b","light8a","light8b","light9a","light9b","eh","dummy1","ring","ring1","separators"};
 	};
-};
-class cfgMods
-{
-	author = "AureProd";
-	timepacked = "1608296736";
 };

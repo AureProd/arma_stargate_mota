@@ -5,8 +5,6 @@
 //'now' is Fri Dec 18 13:24:11 2020 : 'file' last modified on Fri Dec 18 11:48:02 2020
 ////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
-
 class cfgPatches
 {
 	class 1700_canne_a_peche

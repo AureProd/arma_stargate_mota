@@ -55,10 +55,10 @@ private _light = {
 if ((typeOf _porte) == "SGI_gate") then {
 	[_porte, false] call _light;
 
-	_porte setObjectTexture [20, "\sga_dhd\tex\glyphs.paa"];
-	_porte setObjectTexture [21, "\sga_dhd\tex\innerr.paa"];
+	_porte setObjectTexture [20, "\sgi_porte_des_etoiles\tex\glyphs.paa"];
+	_porte setObjectTexture [21, "\sgi_porte_des_etoiles\tex\innerr.paa"];
 } else {
 	[_porte, false] call _light;
 	
-	_porte setObjectTexture [10, "\SGI_porte_des_etoiles\Texture\SGI_portedesetoiles_co.paa"];
+	_porte setObjectTexture [10, "\sgi_porte_des_etoiles\Texture\SGI_portedesetoiles_co.paa"];
 };

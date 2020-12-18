@@ -5,8 +5,6 @@
 //'now' is Fri Dec 18 13:24:19 2020 : 'file' last modified on Fri Dec 18 11:44:02 2020
 ////////////////////////////////////////////////////////////////////
 
-#define _ARMA_
-
 class CfgPatches
 {
 	class stargate
@@ -38,7 +36,7 @@ class CfgVehicles
 	class House_F;
 	class SGI_dhd: House_F
 	{
-		model = "/sgi_dhd/SGI_dhd.p3d";
+		model = "\sgi_dhd\SGI_dhd.p3d";
 		displayName = "Stargate DHD";
 		editorCategory = "SGI_stargate_gate_Objects";
 		editorsubcategory = "SGI_stargate_dhd";
@@ -51,7 +49,7 @@ class CfgVehicles
 		autocenter = 0;
 		class EventHandlers
 		{
-			init = "[] execVM '/sgi_dhd/sqf/initgate.sqf';";
+			init = "[_this select 0] execVM '\sgi_dhd\sqf\initgate.sqf';";
 		};
 		class AnimationSources
 		{
