@@ -45,7 +45,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 
 	for "_i" from 1 to 17 step 1 do {
 		if ((typeOf _porte) == "SGI_gate") then {
-			_porte setObjectTexture [18, format ["photos\init%1.paa", _i]];
+			_porte setObjectTexture [18, format ["photos\init%1.paa", _i]]; // remote exec
 		} else {
 			_porte setObjectTexture [9, format ["photos\init%1.paa", _i]];
 		};
