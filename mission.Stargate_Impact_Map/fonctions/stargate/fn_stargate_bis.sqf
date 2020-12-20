@@ -111,8 +111,20 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 	} else {
 		sleep 0.5;
 
-		deleteVehicle ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
-		deleteVehicle ((_porteDistante getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
+		//deleteVehicle ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
+		//deleteVehicle ((_porteDistante getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
+
+		{ 
+			if((typeOf _x) == "#lightpoint") then {
+				deleteVehicle _x;
+			};
+		} forEach (attachedObjects _porte);
+
+		{ 
+			if((typeOf _x) == "#lightpoint") then {
+				deleteVehicle _x;
+			};
+		} forEach (attachedObjects _porteDistante);
 
 		//missionNamespace setVariable ["skipPorteVar", true];
 

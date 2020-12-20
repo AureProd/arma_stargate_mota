@@ -15,3 +15,5 @@ diag_log "Lancement de la connection a la BDD";
 [] spawn mission_fnc_chasse;
 
 //setTimeMultiplier 100;
+[[1988, 5, 16, 8, 0]] remoteExec ["setDate"];
+//[[1988, 5, 16, 20, 0]] remoteExec ["setDate"];

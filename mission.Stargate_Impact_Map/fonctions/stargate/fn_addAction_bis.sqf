@@ -42,7 +42,53 @@ private _addActions =
 
 	[_porte] spawn mission_fnc_detectionTransport;
 
-	/* if (((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) and ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 4)) then {
-		["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
-	}; */
+	if (((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) and ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 4)) then {
+		//["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
+		
+		[_porte] call mission_fnc_createLight;
+		[_porte, true] call mission_fnc_light;
+
+		if ((typeOf _porte) == "SGI_gate") then {
+			_porte setObjectTexture [18, "video\horison_events.ogv"];
+		} else {
+			_porte setObjectTexture [9, "video\horison_events.ogv"];
+		};
+
+		private _porteDistante = ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 1);
+
+		private _listePlanetes = (getArray (missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));
+		private _listeLogos = (getArray (missionConfigFile >> "docs_planetes" >> "planetes" >> "liste_logos"));
+
+		private _indexPlanete = _listePlanetes findIf {
+			(call compile (_x select 3)) == _porte
+		};
+
+		private _indexPlaneteDistante = _listePlanetes findIf {
+			(call compile (_x select 3)) == _porteDistante
+		};
+
+		if ((_indexPlanete != -1) and (_indexPlaneteDistante != -1)) then {
+			private _planete = _listePlanetes select _indexPlanete;
+			private _planeteDistante = _listePlanetes select _indexPlaneteDistante;
+			private _listeLogoPlanete = [];
+
+			{
+				private _indexPlaneteTableau = _x;
+
+				private _indexLogo = _listeLogos findIf {
+					_indexPlaneteTableau == (_x select 0)
+				};
+
+				_listeLogoPlanete pushBack (_listeLogos select _indexLogo);
+			} forEach (_planeteDistante select 5);
+
+			private _dhd = (call compile (_planete select 4));
+
+			if ((typeOf _dhd) == "SGI_dhd") then {
+				{
+					[_dhd, [(_x select 3), "a3\data_f\lights\car_headlight.rvmat"]] remoteExec ["setObjectMaterial", 0];
+				} forEach _listeLogoPlanete;
+			};
+		};
+	};
 } forEach (getArray (missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));
