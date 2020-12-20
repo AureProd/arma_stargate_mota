@@ -144,6 +144,7 @@ class CfgFunctions
             class set_damage_player {};
             class get_player_with_uid {};
             class prison {};
+            class amende {};
             class popup_ammende {};
         };
         class interfaces_garage

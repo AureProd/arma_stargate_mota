@@ -24,7 +24,7 @@ _select_item_licences lbAdd (localize "STR_admin_licences"); // 1
 liste_joueurs_groupe = [];
 
 {
-	if ((_x distance2D player) < 30) then {
+	if (((_x distance2D player) < 30) and ((["race", player] call mission_fnc_getBDD) == (["race", _x] call mission_fnc_getBDD))) then {
 		_liste_joueurs_proches lbAdd (name _x);
 		liste_joueurs_groupe pushBack _x;
 	};

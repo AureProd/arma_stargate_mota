@@ -142,7 +142,7 @@ class popup_amende
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; amende = [true, 2];";
+			onButtonClick = "playSound 'button'; closeDialog 1; [true] call mission_fnc_amende;";
 		};
 		class bouton_refuser
 		{
@@ -173,7 +173,7 @@ class popup_amende
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; amende = [true, 1];";
+			onButtonClick = "playSound 'button'; closeDialog 1; [false] call mission_fnc_amende;";
 		};
 		class text
 		{

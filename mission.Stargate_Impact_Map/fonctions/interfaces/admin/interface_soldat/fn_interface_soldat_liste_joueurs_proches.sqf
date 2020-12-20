@@ -7,6 +7,7 @@ private _bouton_amende = (findDisplay 12000) displayCtrl 12032;
 private _prix_amende = (findDisplay 12000) displayCtrl 12033;
 
 private _index_liste = lbCurSel _liste_joueurs_proches;
+_prix_amende ctrlSetText "0"; 
 
 if (_index_liste != -1) then {
 	[] call mission_fnc_interface_soldat_select_licences_item;

@@ -1,7 +1,7 @@
 // nom fonction : mission_fnc_disable_vocal
 // paramettre : []
 
-private _var_id = currentChannel;
+private _var_id = -1;
 
 while {true} do {
 	waitUntil { _var_id != currentChannel };
