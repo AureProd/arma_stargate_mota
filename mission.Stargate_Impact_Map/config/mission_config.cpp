@@ -8,11 +8,11 @@ class stargate
 	};
 	class prisons
     {
-		prison_goauld[] = {36904.535, 3179.304, 0.5}; // biome goauld
-        prison_tauri[] = {36950.266, 3178.416, 0.5}; // biome tauri
+		prison_goauld[] = {36904.535, 3179.304, 0.5}; // prison goauld
+        prison_tauri[] = {36950.266, 3178.416, 0.5}; // prison tauri
 
-		prison_goauld_id = "prison_goauld"; // biome goauld
-        prison_tauri_id = "prison_tauri"; // biome tauri
+		prison_goauld_id = "prison_goauld"; // marker prison goauld
+        prison_tauri_id = "prison_tauri"; // marker prison tauri
 
 		temp_prison = 300; // tps en secondes
 	};
