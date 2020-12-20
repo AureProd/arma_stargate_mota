@@ -18,17 +18,17 @@ private _addActions =
 		case 0: { 
 			[player, (_x select 4), {
 				[((_this select 3) select 0)] call mission_fnc_recolte;
-			}, format ['(!recolte_ON) and (alive player) and (!([] call mission_fnc_is_tauri)) and ((["level"] call mission_fnc_getBDD) >= %1) and ((position player) inArea "%2")', (_x select 1), (_x select 0)], [_x]] call _addActions;
+			}, format ['((typeOf player) == (typeOf (vehicle player))) and (!recolte_ON) and (alive player) and (!([] call mission_fnc_is_tauri)) and ((["level"] call mission_fnc_getBDD) >= %1) and ((position player) inArea "%2")', (_x select 1), (_x select 0)], [_x]] call _addActions;
 		};
 		case 1: { 
 			[player, (_x select 4), {
 				[((_this select 3) select 0)] call mission_fnc_recolte;
-			}, format ['(!recolte_ON) and (alive player) and ([] call mission_fnc_is_tauri) and ((["level"] call mission_fnc_getBDD) >= %1) and ((position player) inArea "%2")', (_x select 1), (_x select 0)], [_x]] call _addActions;
+			}, format ['((typeOf player) == (typeOf (vehicle player))) and (!recolte_ON) and (alive player) and ([] call mission_fnc_is_tauri) and ((["level"] call mission_fnc_getBDD) >= %1) and ((position player) inArea "%2")', (_x select 1), (_x select 0)], [_x]] call _addActions;
 		};
 		case 2: { 
 			[player, (_x select 4), {
 				[((_this select 3) select 0)] call mission_fnc_recolte;
-			}, format ['(!recolte_ON) and (alive player) and ((["level"] call mission_fnc_getBDD) >= %1) and ((position player) inArea "%2")', (_x select 1), (_x select 0)], [_x]] call _addActions;
+			}, format ['((typeOf player) == (typeOf (vehicle player))) and (!recolte_ON) and (alive player) and ((["level"] call mission_fnc_getBDD) >= %1) and ((position player) inArea "%2")', (_x select 1), (_x select 0)], [_x]] call _addActions;
 		};
 	};
 } forEach (getArray(missionConfigFile >> "stargate" >> "recolte" >> "zones_recolte"));

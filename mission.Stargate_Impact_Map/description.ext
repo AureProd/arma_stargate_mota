@@ -22,7 +22,7 @@ skipLobby = 1;
 disabledAI = 1;
 
  // desactive les cannaux vocaux
-disableChannels[] = { 0, 1, 2, 4};
+disableChannels[] = {1, 2, 4};
 
 // affichage des HUD
 showHUD[] = {1, 1, 1, 1, 1, 0, 0, 1, 1, 1};

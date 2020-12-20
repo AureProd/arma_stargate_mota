@@ -303,17 +303,17 @@ sleep 60;
 		case 0: { 
 			[(call compile (_x select 0)), (_x select 5), {
 				[((_this select 3) select 0)] call mission_fnc_traitement;
-			}, format ['(!recolte_ON) and (alive player) and (!([] call mission_fnc_is_tauri)) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2)], [_x]] call _addActions_bis;
+			}, format ['(!recolte_ON) and (alive player) and (!([] call mission_fnc_is_tauri)) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2), (_x select 9)], [_x]] call _addActions_bis;
 		};
 		case 1: { 
 			[(call compile (_x select 0)), (_x select 5), {
 				[((_this select 3) select 0)] call mission_fnc_traitement;
-			}, format ['(!recolte_ON) and (alive player) and ([] call mission_fnc_is_tauri) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2)], [_x]] call _addActions_bis;
+			}, format ['(!recolte_ON) and (alive player) and ([] call mission_fnc_is_tauri) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2), (_x select 9)], [_x]] call _addActions_bis;
 		};
 		case 2: { 
 			[(call compile (_x select 0)), (_x select 5), {
 				[((_this select 3) select 0)] call mission_fnc_traitement;
-			}, format ['(!recolte_ON) and (alive player) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2)], [_x]] call _addActions_bis;
+			}, format ['(!recolte_ON) and (alive player) and ([%1] call mission_fnc_is_in_inventory)', (_x select 2), (_x select 9)], [_x]] call _addActions_bis;
 		};
 	};
 } forEach (getArray(missionConfigFile >> "stargate" >> "traitement" >> "pts_traitement"));

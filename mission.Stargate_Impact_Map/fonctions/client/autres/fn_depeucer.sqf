@@ -65,10 +65,11 @@ player addAction [(localize "STR_depeucer_add_action"), {
 
 	depeucage_ON = false;
 }, nil, 1.5, true, true, "", "
- 	((cursorObject distance _this) < 5) && 
-	(cursorObject in ((missionNamespace getVariable 'animaux_morts') select 0)) && 
-	(([30, 1] in ((missionNamespace getVariable nomVarPlayerUID) select 8)) or ([31, 1] in ((missionNamespace getVariable nomVarPlayerUID) select 8))) && 
-	((damage cursorObject) > 0.7) && 
-	(alive _this) && 
+	((typeOf player) == (typeOf (vehicle player))) and 
+ 	((cursorObject distance _this) < 5) and 
+	(cursorObject in ((missionNamespace getVariable 'animaux_morts') select 0)) and 
+	(([30, 1] in ((missionNamespace getVariable nomVarPlayerUID) select 8)) or ([31, 1] in ((missionNamespace getVariable nomVarPlayerUID) select 8))) and 
+	((damage cursorObject) > 0.7) and 
+	(alive _this) and 
 	(!depeucage_ON)
 "];

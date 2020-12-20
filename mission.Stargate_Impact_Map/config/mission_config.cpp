@@ -11,6 +11,9 @@ class stargate
 		prison_goauld[] = {36904.535, 3179.304, 0.5}; // biome goauld
         prison_tauri[] = {36950.266, 3178.416, 0.5}; // biome tauri
 
+		prison_goauld_id = "prison_goauld"; // biome goauld
+        prison_tauri_id = "prison_tauri"; // biome tauri
+
 		temp_prison = 300; // tps en secondes
 	};
 	class licences
@@ -65,8 +68,8 @@ class stargate
 			{"traitement_kassa_tauri", 3, 49, 52, 1, $STR_kassa2_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
 			{"traitement_kassa_tauri", 3, 50, 53, 1, $STR_kassa3_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
 			{"traitement_kassa_tauri", 3, 50, 53, 1, $STR_kassa3_traitement_add_action, $STR_kassa_traitement, $STR_kassa_traiter, 1, 6, $STR_kassa_traitement_impossible_sans_licence},
-			{"traitement_ble_goauld", 10, 54, 55, 0, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 6, $STR_ble_traitement_impossible_sans_licence},
-			{"traitement_ble_tauri", 10, 54, 55, 1, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 6, $STR_ble_traitement_impossible_sans_licence}
+			{"traitement_ble_goauld", 10, 54, 55, 0, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 8, $STR_ble_traitement_impossible_sans_licence},
+			{"traitement_ble_tauri", 10, 54, 55, 1, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 8, $STR_ble_traitement_impossible_sans_licence}
 		};
 	};
 };

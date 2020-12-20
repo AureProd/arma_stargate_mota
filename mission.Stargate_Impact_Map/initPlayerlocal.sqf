@@ -9,8 +9,6 @@ ISINVISIBLE = false;
 LOCADMIN = nil;
 SPECMODE = false;
 
-[] spawn mission_fnc_prison;
-
 [] spawn mission_fnc_boules_caisses;
 [] spawn mission_fnc_jump;
 

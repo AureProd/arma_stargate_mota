@@ -27,7 +27,7 @@ private _addActions =
 	};
 
 	[_dhd, (localize "STR_close_stargate"), {
-		[((_this select 3) select 0)] call mission_fnc_stargate_bis;
+		[((_this select 3) select 0)] remoteExec ["mission_fnc_stargate_bis", 0];
 	}, format ["((%1 getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) and (alive _this) and ((%2 getVariable ['isOpen', [false, nil, false, nil, false]]) select 4)", _porte, _porte], [_porte]] call _addActions;
 
 	{
@@ -35,7 +35,7 @@ private _addActions =
 
 		if ((_x select 0) != (_planete select 0)) then {
 			[_dhd, (format [(localize "STR_open_stargate_to"), (_x select 1)]), {
-				[((_this select 3) select 0),((_this select 3) select 1)] call mission_fnc_stargate_bis;
+				[((_this select 3) select 0),((_this select 3) select 1)] remoteExec ["mission_fnc_stargate_bis", 0];
 			}, format ["!((%1 getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) and (alive _this) and ([%2] call mission_fnc_has_planetes)", _porte, (_x select 0)], [_porte, _porteDistante]] call _addActions;
 		};
 	} forEach (getArray (missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));

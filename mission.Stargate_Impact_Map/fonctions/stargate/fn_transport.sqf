@@ -9,6 +9,8 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 
 	playSound "degat_payer";
 
+	[_player, true] remoteExec ["hideObject", 0];
+
 	//_player setDamage 1;
 
 	sleep 5;
@@ -16,9 +18,11 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 	[_player] spawn {
 		_player = param [0];
 
-		waitUntil { !ISINVINCIBLE_BIS };
+		[_player, false] remoteExec ["hideObject", 0];
 
-		_player setDamage 1;
+		if (!ISINVINCIBLE_BIS) then {
+			_player setDamage 1;
+		};
 	};
 
 	titleFadeOut 1;
@@ -77,9 +81,9 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 		[_player] spawn {
 			_player = param [0];
 
-			waitUntil { !ISINVINCIBLE_BIS };
-
-			_player setDamage 1;
+			if (!ISINVINCIBLE_BIS) then {
+				_player setDamage 1;
+			};
 		};
 
 		[_player, false] remoteExec ["hideObject", 0];
@@ -103,6 +107,8 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 		missionNamespace setVariable ["skipPorteVarBis", true];
 
 		["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
+
+		playSound "tp_joueur";
 
 		sleep 1;
 	};

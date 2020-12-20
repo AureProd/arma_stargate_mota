@@ -46,7 +46,7 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 			{ 
 				private _liste_vies_bis = (_liste_vies select 2);
 
-				if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 1) || ((_object select 9) == 3))) then 
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 1) || ((_object select 9) == 3))) then 
 				{
 					playSound 'button';
 					
@@ -67,7 +67,7 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 			{ 
 				private _liste_vies_bis = (_liste_vies select 3);
 
-				if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 2) || ((_object select 9) == 3))) then 
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 2) || ((_object select 9) == 3))) then 
 				{
 					playSound 'button';
 					
@@ -88,7 +88,7 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 			{ 
 				private _liste_vies_bis = (_liste_vies select 4);
 
-				if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 4))) then 
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 4))) then 
 				{
 					playSound 'button';
 					
@@ -109,7 +109,7 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 			{ 
 				private _liste_vies_bis = (_liste_vies select 5);
 
-				if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 4))) then 
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 4))) then 
 				{
 					playSound 'button';
 					
@@ -130,7 +130,7 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 			{ 
 				private _liste_vies_bis = (_liste_vies select 6);
 
-				if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 5))) then 
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 5))) then 
 				{
 					playSound 'button';
 					
@@ -151,7 +151,7 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 			{ 
 				private _liste_vies_bis = (_liste_vies select 7);
 
-				if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 5))) then 
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 5))) then 
 				{
 					playSound 'button';
 					
@@ -206,50 +206,44 @@ if ((_index != -1) and (bouton_A_OK_bis != 1)) then
 		{
 			case 1: 
 			{ 
-				if (_id_objet == 7) then 
+				private _liste_vies_bis = (_liste_vies select 0);
+
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 1) || ((_object select 9) == 3))) then 
 				{
-					private _liste_vies_bis = (_liste_vies select 0);
+					playSound 'button';
+					
+					[] call mission_fnc_utiliser_item_medical;
 
-					if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 1) || ((_object select 9) == 3))) then 
-					{
-						playSound 'button';
-						
-						[] call mission_fnc_utiliser_item_medical;
+					_vie = (_vie + (100 - _liste_vies_bis));
+					_liste_vies set [0, 100];
 
-						_vie = (_vie + (100 - _liste_vies_bis));
-						_liste_vies set [0, 100];
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
-						//player setDamage (1 - (_vie / 100));
-						[_vie] call mission_fnc_set_damage_player;
-
-						[] call mission_fnc_medical_bouton_maladie;
-
-						[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
-					};
+					[] call mission_fnc_medical_bouton_maladie;
+					
+					[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 				};
 			};
 			case 2: 
 			{ 
-				if (_id_objet == 8) then 
+				private _liste_vies_bis = (_liste_vies select 1);
+
+				if ((_liste_vies_bis != 100) && (((_object select 9) == 0) || ((_object select 9) == 2) || ((_object select 9) == 3))) then 
 				{
-					private _liste_vies_bis = (_liste_vies select 1);
+					playSound 'button';
+					
+					[] call mission_fnc_utiliser_item_medical;
 
-					if (_liste_vies_bis != 100 && (((_object select 9) == 0) || ((_object select 9) == 2) || ((_object select 9) == 3))) then 
-					{
-						playSound 'button';
-						
-						[] call mission_fnc_utiliser_item_medical;
+					_vie = (_vie + (100 - _liste_vies_bis));
+					_liste_vies set [1, 100];
 
-						_vie = (_vie + (100 - _liste_vies_bis));
-						_liste_vies set [1, 100];
+					//player setDamage (1 - (_vie / 100));
+					[_vie] call mission_fnc_set_damage_player;
 
-						//player setDamage (1 - (_vie / 100));
-						[_vie] call mission_fnc_set_damage_player;
+					[] call mission_fnc_medical_bouton_maladie;
 
-						[] call mission_fnc_medical_bouton_maladie;
-						
-						[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
-					};
+					[[5, _vie], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 				};
 			};
 		};

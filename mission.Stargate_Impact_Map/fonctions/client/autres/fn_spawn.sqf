@@ -59,4 +59,6 @@ sleep 0.5;
 private _vie = _variable select 5;
 player setDamage (1 - (_vie / 100));
 
+[] spawn mission_fnc_prison;
+
 [] call mission_fnc_syns_data;

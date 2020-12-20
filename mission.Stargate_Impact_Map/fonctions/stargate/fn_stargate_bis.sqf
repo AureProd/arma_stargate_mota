@@ -15,11 +15,11 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 
 	sleep 0.3;
 
-	[_porte, ["gate_open", 50]] remoteExec ["say3D", 0];
-	[_porteDistante, ["gate_open", 50]] remoteExec ["say3D", 0];
+	_porte say3D ["gate_open", 50];
+	_porteDistante say3D ["gate_open", 50];
 
-	[_porte] remoteExec ["mission_fnc_kawoosh", 0];
-	[_porteDistante] remoteExec ["mission_fnc_kawoosh", 0];
+	[_porte] call mission_fnc_kawoosh;
+	[_porteDistante] call mission_fnc_kawoosh;
 
 	private _light = nil;
 	private _lightBis = nil;
@@ -45,30 +45,30 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 
 	for "_i" from 1 to 17 step 1 do {
 		if ((typeOf _porte) == "SGI_gate") then {
-			[_porte, [18, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+			_porte setObjectTexture [18, format ["photos\init%1.paa", _i]]; // remote exec
 		} else {
-			[_porte, [9, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+			_porte setObjectTexture [9, format ["photos\init%1.paa", _i]];
 		};
 
 		if ((typeOf _porteDistante) == "SGI_gate") then {
-			[_porteDistante, [18, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+			_porteDistante setObjectTexture [18, format ["photos\init%1.paa", _i]];
 		} else {
-			[_porteDistante, [9, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+			_porteDistante setObjectTexture [9, format ["photos\init%1.paa", _i]];
 		};
 
 		sleep 0.05;
 	};
 
 	if ((typeOf _porte) == "SGI_gate") then {
-		[_porte, [18, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		_porte setObjectTexture [18, "video\horison_events.ogv"];
 	} else {
-		[_porte, [9, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		_porte setObjectTexture [9, "video\horison_events.ogv"];
 	};
 
 	if ((typeOf _porteDistante) == "SGI_gate") then {
-		[_porteDistante, [18, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		_porteDistante setObjectTexture [18, "video\horison_events.ogv"];
 	} else {
-		[_porteDistante, [9, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		_porteDistante setObjectTexture [9, "video\horison_events.ogv"];
 	};
 
 	// variable "isOpen" --> [true si ouverte, porte distante, is porte principale, light, true si horizon ouvert]
@@ -137,15 +137,15 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 
 		for "_i" from 17 to 1 step -1 do {
 			if ((typeOf _porte) == "SGI_gate") then {
-				[_porte, [18, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+				_porte setObjectTexture [18, format ["photos\init%1.paa", _i]];
 			} else {
-				[_porte, [9, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+				_porte setObjectTexture [9, format ["photos\init%1.paa", _i]];
 			};
 
 			if ((typeOf _porteDistante) == "SGI_gate") then {
-				[_porteDistante, [18, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+				_porteDistante setObjectTexture [18, format ["photos\init%1.paa", _i]];
 			} else {
-				[_porteDistante, [9, format ["photos\init%1.paa", _i]]] remoteExec ["setObjectTexture", 0];
+				_porteDistante setObjectTexture [9, format ["photos\init%1.paa", _i]];
 			};
 
 			sleep 0.1;
@@ -163,15 +163,15 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 		[_porteDistante] call mission_fnc_ring;
 
 		if ((typeOf _porte) == "SGI_gate") then {
-			[_porte, [18, ""]] remoteExec ["setObjectTexture", 0];
+			_porte setObjectTexture [18, ""]; // #(rgb,8,8,3)color(1,0,0,1)
 		} else {
-			[_porte, [9, ""]] remoteExec ["setObjectTexture", 0];
+			_porte setObjectTexture [9, ""]; // #(rgb,8,8,3)color(1,0,0,1)
 		};
 
 		if ((typeOf _porteDistante) == "SGI_gate") then {
-			[_porteDistante, [18, ""]] remoteExec ["setObjectTexture", 0];
+			_porteDistante setObjectTexture [18, ""]; // #(rgb,8,8,3)color(1,0,0,1)
 		} else {
-			[_porteDistante, [9, ""]] remoteExec ["setObjectTexture", 0];
+			_porteDistante setObjectTexture [9, ""]; // #(rgb,8,8,3)color(1,0,0,1)
 		};
 
 		_porte setVariable ["isOpen", [false, nil, false, nil, false], true];

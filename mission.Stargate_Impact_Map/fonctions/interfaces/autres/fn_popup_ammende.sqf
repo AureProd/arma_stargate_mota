@@ -18,9 +18,7 @@ _time = _time / 60;
 if ((amende select 1) == 2) then {
 	[(format [localize "STR_admin_amende_payer", (name player)])] remoteExec ["hint", _joueur];
 
-	if ((["xp"] call mission_fnc_getBDD) >= _prix) then {
-		[_prix] call mission_fnc_remove_xp;
-	} else {
+	if (![_prix] call mission_fnc_paiement) then {
 		[(format [localize "STR_admin_amende_non_payer", (name player), _time])] remoteExec ["hint", _joueur];
 
 		hint format [localize "STR_admin_prison_car_pas_argent", _time];

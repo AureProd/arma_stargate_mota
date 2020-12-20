@@ -8,9 +8,9 @@ while {true} do {
 
 	_var_id = currentChannel;
 
-	if ((_var_id == Canal_Goauld) or (_var_id == Canal_Tauri)) then {
-		disableVoN = 1;
+	if ((_var_id == Canal_Goauld) or (_var_id == Canal_Tauri) or (_var_id == 0)) then {
+		_var_id enableChannel [true, false]; 
 	} else {
-		disableVoN = 0;
+		_var_id enableChannel [true, true]; 
 	};
 };

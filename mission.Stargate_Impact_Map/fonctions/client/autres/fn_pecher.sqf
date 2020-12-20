@@ -64,11 +64,11 @@ player addAction [(localize "STR_peche_add_action"), {
 	peche_ON = false;
 
 }, nil, 6, true, true, "", "
-	(surfaceIsWater (position _this)) && 
-	([position _this] call returnIfInPecheZone) && 
-	((typeOf (vehicle _this)) in (getArray(missionConfigFile >> 'stargate_vehicules' >> 'bateaux_peche' >> 'liste_id_bateaux_pour_peche'))) && 
-	((driver (vehicle _this)) != player) &&
-	(alive _this) &&
+	(surfaceIsWater (position _this)) and 
+	([position _this] call returnIfInPecheZone) and 
+	((typeOf (vehicle _this)) in (getArray(missionConfigFile >> 'stargate_vehicules' >> 'bateaux_peche' >> 'liste_id_bateaux_pour_peche'))) and 
+	((driver (vehicle _this)) != player) and
+	(alive _this) and
 	(!peche_ON)
 "];
 
