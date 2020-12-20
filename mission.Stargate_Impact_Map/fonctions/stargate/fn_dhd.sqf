@@ -34,16 +34,20 @@ if ((_indexPlanete != -1) and (_indexPlaneteDistante != -1)) then {
 	private _dhd = (call compile (_planete select 4));
 
 	if ((typeOf _dhd) == "SGI_dhd") then {
+		private _tabSons = ["dhd1", "dhd2", "dhd3", "dhd4", "dhd5", "dhd6"];
+
 		{
+			private _son = selectRandom _tabSons;
+
 			[_dhd, [(_x select 3), "a3\data_f\lights\car_headlight.rvmat"]] remoteExec ["setObjectMaterial", 0];
-			[_dhd, ["sg_chevron_lock", 10]] remoteExec ["say3D", 0];
+			[_dhd, [_son, 30]] remoteExec ["say3D", 0];
 			
 			sleep 0.8;
 		} forEach _listeLogoPlanete;
 
 		sleep 0.5;
 
-		[_dhd, ["chevron_lock", 10]] remoteExec ["say3D", 0];
+		[_dhd, ["dhd_central_bouton", 30]] remoteExec ["say3D", 0];
 		[_dhd, ["anim_aquila", 1]] remoteExec ["animate", 0];
 		[_dhd, [12, "a3\data_f\lights\car_headlight.rvmat"]] remoteExec ["setObjectMaterial", 0];
 

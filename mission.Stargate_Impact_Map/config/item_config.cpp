@@ -73,11 +73,11 @@ class stargate_items
             {46, 0, $STR_peche, "pictures\items\fruits\SGI_peche_co.paa", 6, 0.5, 0, 20, 1, 40, 0},
             {45, 0, $STR_fraise, "pictures\items\fruits\SGI_fraise_co.paa", 6, 0.5, 0, 30, 1, 60, 0},
             {48, 0, $STR_kassa_sale, "pictures\items\illegal\mais.paa", 12, 0.5, 0, 45, 2, 40, 1},
-            {49, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_médiocre.paa", 12, 0.5, 0, 75, 2, 0, 1},
-            {50, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_supérieur.paa", 12, 0.5, 0, 75, 2, 0, 1},
+            {49, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_mediocre.paa", 12, 0.5, 0, 75, 2, 0, 1},
+            {50, 0, $STR_kassa_sale, "pictures\items\illegal\Kassa_superieur.paa", 12, 0.5, 0, 75, 2, 0, 1},
             {51, 10, $STR_kassa_pure, "pictures\items\illegal\mais.paa", 13, 0.5, 0, 45, 2, 0, 1},
-            {52, 20, $STR_kassa_pure, "pictures\items\illegal\Kassa_médiocre.paa", 13, 0.5, 0, 75, 2, 0, 1},
-            {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_supérieur.paa", 13, 0.5, 0, 75, 2, 0, 1},
+            {52, 20, $STR_kassa_pure, "pictures\items\illegal\Kassa_mediocre.paa", 13, 0.5, 0, 75, 2, 0, 1},
+            {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_superieur.paa", 13, 0.5, 0, 75, 2, 0, 1},
             {54, 20, $STR_ble_sale, "", 6.5, 0.5, 0, 75, 2, 0, 1},
             {55, 30, $STR_ble_traiter, "", 6, 0.5, 0, 75, 2, 0, 1}
 		};

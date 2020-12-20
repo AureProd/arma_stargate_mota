@@ -105,4 +105,46 @@ class CfgSounds
 		sound[] = {"sons\sg_chevron_lock.ogg", 20, 1}; 
 		titles[] = {}; 
 	};
+	class dhd_central_bouton  
+	{ 
+		name = "dhd_central_bouton"; 
+		sound[] = {"sons\dhd\dhd_central_bouton.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class dhd1  
+	{ 
+		name = "dhd1"; 
+		sound[] = {"sons\dhd\dhd1.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class dhd2 
+	{ 
+		name = "dhd2"; 
+		sound[] = {"sons\dhd\dhd2.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class dhd3  
+	{ 
+		name = "dhd3"; 
+		sound[] = {"sons\dhd\dhd3.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class dhd4  
+	{ 
+		name = "dhd4"; 
+		sound[] = {"sons\dhd\dhd4.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class dhd5  
+	{ 
+		name = "dhd5"; 
+		sound[] = {"sons\dhd\dhd5.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
+	class dhd6  
+	{ 
+		name = "dhd6"; 
+		sound[] = {"sons\dhd\dhd6.ogg", 20, 1}; 
+		titles[] = {}; 
+	};
 };
