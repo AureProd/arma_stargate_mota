@@ -14,4 +14,4 @@ diag_log "Lancement de la connection a la BDD";
 
 [] spawn mission_fnc_chasse;
 
-setTimeMultiplier 100;
+//setTimeMultiplier 100;
