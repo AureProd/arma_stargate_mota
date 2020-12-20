@@ -34,6 +34,8 @@ if ((_indexPlanete != -1) and (_indexPlaneteDistante != -1)) then {
 	private _dhd = (call compile (_planete select 4));
 
 	if ((typeOf _dhd) == "SGI_dhd") then {
+		_porte setVariable ["isOpen", [true, nil, false, nil, false], true];
+
 		private _tabSons = ["dhd1", "dhd2", "dhd3", "dhd4", "dhd5", "dhd6"];
 
 		{

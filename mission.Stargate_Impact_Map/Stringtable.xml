@@ -799,6 +799,11 @@
                 <French>%1 a payer son amende</French>
 				<English>%1 a payer son amende</English>
 			</Key>
+			<Key ID="STR_admin_joueur_amende_payer">
+				<Original>Vous avez payé votre amende</Original>
+                <French>Vous avez payé votre amende</French>
+				<English>Vous avez payé votre amende</English>
+			</Key>
 			<Key ID="STR_admin_amende_non_payer">
 				<Original>%1 n'a pas payer son amende et à été envoyer en prison pour %2 min</Original>
                 <French>%1 n'a pas payer son amende et à été envoyer en prison pour %2 min</French>

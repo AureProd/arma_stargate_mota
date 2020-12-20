@@ -10,6 +10,5 @@ _light setLightBrightness 0.7;
 _light setLightAmbient [0, 0, 0.1];  
 _light setLightColor [0, 0, 1];  
 _light setLightDayLight true;
-_light lightAttachObject [_porte, _inpos];
-
-_light;
+//_light lightAttachObject [_porte, _inpos];
+_light attachTo [_porte, _inpos];

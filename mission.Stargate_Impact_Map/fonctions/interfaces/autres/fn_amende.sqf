@@ -8,8 +8,6 @@ private _time = getNumber(missionConfigFile >> "stargate" >> "prisons" >> "temp_
 _time = _time / 60;
 
 if (_type) then {
-	[(format [localize "STR_admin_amende_payer", (name player)])] remoteExec ["hint", _joueur];
-
 	if (!([_prix] call mission_fnc_paiement)) then {
 		[(format [localize "STR_admin_amende_non_payer", (name player), _time])] remoteExec ["hint", _joueur];
 
@@ -17,6 +15,10 @@ if (_type) then {
 
 		[3] call mission_fnc_add_licence;
 		[true] spawn mission_fnc_prison;
+	} else {
+		[(format [localize "STR_admin_amende_payer", (name player)])] remoteExec ["hint", _joueur];
+		
+		hint format [localize "STR_admin_joueur_amende_payer", _time];
 	};
 } else {
 	[(format [localize "STR_admin_amende_non_payer", (name player), _time])] remoteExec ["hint", _joueur];

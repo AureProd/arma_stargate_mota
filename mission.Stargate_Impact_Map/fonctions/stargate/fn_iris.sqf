@@ -26,10 +26,7 @@ if (_animation == 0) then {
 		if (isNil "_lightBis") then {
 			private _var = (_porte getVariable ['isOpen', [false, nil, false, nil, false]]);
 
-			private _light = [_porte] call mission_fnc_createLight;
-
-			_var set [3, _light];
-			_porte setVariable ['isOpen', _var, true];
+			[_porte] call mission_fnc_createLight;
 		};
 	};
 } else {
@@ -39,11 +36,11 @@ if (_animation == 0) then {
 		if (!(isNil "_lightBis")) then {
 			private _var = (_porte getVariable ['isOpen', [false, nil, false, nil, false]]);
 
-			private _light = ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 3);
-			deleteVehicle _light;
-
-			_var set [3, nil];
-			_porte setVariable ['isOpen', _var, true];
+			{ 
+				if((typeOf _x) == "#lightpoint") then {
+					deleteVehicle _x;
+				};
+			} forEach (attachedObjects _porte);
 		};
 	};
 };

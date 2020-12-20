@@ -36,5 +36,5 @@ private _vehicle = createVehicle [_vehicleId, _spawnPosition];
 _vehicle setDir _spawnDir;
 _vehicle lockInventory true;
 
-_vehicle setVariable ["imatriculation", [true, _joueurUid, _isLocation]];
+_vehicle setVariable ["imatriculation", [true, _joueurUid, _isLocation], true];
 

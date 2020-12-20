@@ -24,6 +24,8 @@ if (_isWhiteListe) then {
 
 player setDamage 0;
 
+[] call delete_all_vehicles;
+
 /*	
 	classes :
 	1 = archeoloque
