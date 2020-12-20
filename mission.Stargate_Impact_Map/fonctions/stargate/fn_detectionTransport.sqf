@@ -5,7 +5,7 @@ private _porte = param [0];
 		
 while {true} do {
 	waitUntil { 
-		private _varLight = ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 3);
+		private _varLight = ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
 
 		private _portePosX = ((getPos _porte) select 0);
 		private _portePosY = ((getPos _porte) select 1);
@@ -15,7 +15,7 @@ while {true} do {
 
 		private _boolean = false;
 
-		if (((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) and ((_porte animationPhase 'anim_iris1') == 0) and (!(isNil "_varLight"))) then {
+		if (((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) and ((_porte animationPhase 'anim_iris1') == 0) and (!(isNil "_varLight"))) then {
 			if ((((getDir _porte) > 315) or ((getDir _porte) <= 45)) or (((getDir _porte) > 135) and ((getDir _porte) <= 225))) then {
 				if (((getDir _porte) > 315) or ((getDir _porte) <= 45)) then {
 					if ((_playerPosX < (_portePosX + 3)) and (_playerPosX > (_portePosX - 3)) and (_playerPosY > (_portePosY - 0.9)) and (_playerPosY < (_portePosY + 0.1))) then {

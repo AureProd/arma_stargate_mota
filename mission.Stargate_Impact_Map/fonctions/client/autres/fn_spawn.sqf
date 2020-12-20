@@ -61,4 +61,6 @@ player setDamage (1 - (_vie / 100));
 
 [] spawn mission_fnc_prison;
 
+["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
+
 [] call mission_fnc_syns_data;

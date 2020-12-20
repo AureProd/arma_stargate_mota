@@ -4,7 +4,7 @@
 private _porte = param [0];
 private _player = param [1];
 
-if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)) then {
+if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 2)) then {
 	titleText [(localize "STR_mort_porte_mauvais_sens"), "BLACK OUT"];
 
 	playSound "degat_payer";
@@ -35,7 +35,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 2)
 
 	sleep 14;
 
-	private _porteDistante = (_porte getVariable ["isOpen", [false, nil, false, nil, false]] select 1);
+	private _porteDistante = (_porte getVariable ["isOpen", [false, nil, false, false, false]] select 1);
 	private _porteDistantePos = (getPos _porteDistante);
 	private _porteDistanteDir = (getDir _porteDistante);
 	private _porteDistantePosX = (_porteDistantePos select 0);

@@ -5,10 +5,10 @@ private _porte = param [0]; // porte
 private _porteDistante = param [1, nil]; // porte distante
 
 if (isNil "_porteDistante") then {
-	_porteDistante = ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 1);
+	_porteDistante = ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 1);
 };
 
-if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) and !((_porteDistante getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)) then {
+if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) and !((_porteDistante getVariable ['isOpen', [false, nil, false, false, false]]) select 0)) then {
 	[_porte, {
 		[param [0], param [2]] call mission_fnc_ring_bis;
 	}, _porteDistante] call mission_fnc_dhd;
@@ -22,20 +22,20 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 	[_porteDistante] remoteExec ["mission_fnc_kawoosh", 0];
 
 	if ((_porte animationPhase 'anim_iris1') == 0) then {
-		[_porte] call mission_fnc_createLight;
+		[_porte] remoteExec ["mission_fnc_createLight", 0];
 
 		// variable "isOpen" --> [true si ouverte, porte distante, is porte principale, light, true si horizon ouvert]
-		_porte setVariable ["isOpen", [true, _porteDistante, true, nil, true], true];
+		_porte setVariable ["isOpen", [true, _porteDistante, true, false, true], true];
 	} else {
-		_porte setVariable ["isOpen", [true, _porteDistante, true, nil, true], true];
+		_porte setVariable ["isOpen", [true, _porteDistante, true, false, true], true];
 	};
 
 	if ((_porteDistante animationPhase 'anim_iris1') == 0) then {
-		[_porteDistante] call mission_fnc_createLight;
+		[_porteDistante] remoteExec ["mission_fnc_createLight", 0];
 
-		_porteDistante setVariable ["isOpen", [true, _porte, false, nil, true], true];
+		_porteDistante setVariable ["isOpen", [true, _porte, false, false, true], true];
 	} else {
-		_porteDistante setVariable ["isOpen", [true, _porte, false, nil, true], true];
+		_porteDistante setVariable ["isOpen", [true, _porte, false, false, true], true];
 	};
 
 	//missionNamespace setVariable ["skipPorteVar", false];
@@ -84,22 +84,23 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 	_porte getVariable ["isOpen", _varPorte];
 	_porteDistante getVariable ["isOpen", _varPorteDistante];
 
-	while { ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) } do {
+	while { (((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) and ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 4)) } do {
 		if (missionNamespace getVariable ["skipPorteVarBis", true]) then {
-			["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] remoteExec ["BIS_fnc_playVideo", 0];
+			["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] remoteExec ["BIS_fnc_playVideo", 0]; 
+			// ["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
 		};
 
 		sleep (60 * 4);
 	}; 
 } else {
-	if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)) then {
+	if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0)) then {
 		[_porte, {
 			[param [0], param [2]] call mission_fnc_ring;
 		}, _porteDistante] call mission_fnc_dhd;
 
 		sleep 1;
 		
-		_porte setVariable ["isOpen", [false, nil, false, nil, false], true];
+		_porte setVariable ["isOpen", [false, nil, false, false, false], true];
 
 		//_porte say3D ["gate_stop", 50];
 		[_porte, ["gate_close", 50]] remoteExec ["say3D", 0];
@@ -110,8 +111,8 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 	} else {
 		sleep 0.5;
 
-		deleteVehicle ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 3);
-		deleteVehicle ((_porteDistante getVariable ['isOpen', [false, nil, false, nil, false]]) select 3);
+		deleteVehicle ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
+		deleteVehicle ((_porteDistante getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
 
 		//missionNamespace setVariable ["skipPorteVar", true];
 
@@ -190,8 +191,8 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)
 			[_porteDistante, [9, ""]] remoteExec ["setObjectTexture", 0];
 		};
 
-		_porte setVariable ["isOpen", [false, nil, false, nil, false], true];
-		_porteDistante setVariable ["isOpen", [false, nil, false, nil, false], true];
+		_porte setVariable ["isOpen", [false, nil, false, false, false], true];
+		_porteDistante setVariable ["isOpen", [false, nil, false, false, false], true];
 	};
 };
 

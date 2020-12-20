@@ -20,21 +20,21 @@ for "_i" from 1 to 22 do {
 sleep 1.5;
 
 if (_animation == 0) then {
-	if ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0) then {
-		private _lightBis = ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 3);
+	if ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) then {
+		private _lightBis = ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
 
 		if (isNil "_lightBis") then {
-			private _var = (_porte getVariable ['isOpen', [false, nil, false, nil, false]]);
+			private _var = (_porte getVariable ['isOpen', [false, nil, false, false, false]]);
 
-			[_porte] call mission_fnc_createLight;
+			[_porte] remoteExec ["mission_fnc_createLight", 0];
 		};
 	};
 } else {
-	if ((_porte getVariable ['isOpen', [false, nil, false, nil, nil]]) select 0) then {
-		private _lightBis = ((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 3);
+	if ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) then {
+		private _lightBis = ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 3);
 
 		if (!(isNil "_lightBis")) then {
-			private _var = (_porte getVariable ['isOpen', [false, nil, false, nil, false]]);
+			private _var = (_porte getVariable ['isOpen', [false, nil, false, false, false]]);
 
 			{ 
 				if((typeOf _x) == "#lightpoint") then {

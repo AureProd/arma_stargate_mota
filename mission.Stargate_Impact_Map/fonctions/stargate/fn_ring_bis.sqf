@@ -125,11 +125,11 @@ if (!(isNil "_porteDistante")) then {
 };
 
 if ((typeOf _porte) == "SGI_gate") then {
-	if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)) then {
+	if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0)) then {
 		sleep 0.5;
 
-		_porte setVariable ["isOpen", [true, _porteDistante, true, nil, false], true];
-		_porteDistante setVariable ["isOpen", [true, _porte, false, nil, false], true];
+		_porte setVariable ["isOpen", [true, _porteDistante, true, false, false], true];
+		_porteDistante setVariable ["isOpen", [true, _porte, false, false, false], true];
 
 		[_porte, ((_listeLogoPlanete select 0) select 2), 3] call _ring_porte_sga;
 		[_porteDistante, 3, 8] call _light;
@@ -157,11 +157,11 @@ if ((typeOf _porte) == "SGI_gate") then {
 		[_porte, false] call mission_fnc_light;
 	};
 } else {
-	if (!((_porte getVariable ['isOpen', [false, nil, false, nil, false]]) select 0)) then {
+	if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0)) then {
 		sleep 0.5;
 
-		_porte setVariable ["isOpen", [true, _porteDistante, true, nil, false], true];
-		_porteDistante setVariable ["isOpen", [true, _porte, false, nil, false], true];
+		_porte setVariable ["isOpen", [true, _porteDistante, true, false, false], true];
+		_porteDistante setVariable ["isOpen", [true, _porte, false, false, false], true];
 
 		[_porte, ((_listeLogoPlanete select 0) select 1), 8] call _ring_porte_sgi;
 		[_porteDistante, 3, 8] call _light;
