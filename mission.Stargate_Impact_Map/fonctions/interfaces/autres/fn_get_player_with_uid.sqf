@@ -8,6 +8,10 @@ private _index_joueur = allPlayers findif {
 	(getPlayerUID _x) == _joueur_UID
 };
 
-private _joueur = allPlayers select _index_joueur;
+private _joueur = nil;
+
+if (_index_joueur != -1) then {
+	_joueur = allPlayers select _index_joueur;
+};
 
 _joueur;
