@@ -37,32 +37,34 @@ private _invitations = [] call mission_fnc_get_invitations_team;
 liste_joueurs_groupe = [];
 
 {
-	if ((_x != player) and ((["classe"] call mission_fnc_getBDD) == (["classe", _x] call mission_fnc_getBDD))) then {
+	if ((_x != player) and ((["race"] call mission_fnc_getBDD) == (["race", _x] call mission_fnc_getBDD))) then {
 		private _index = _listbox_players lbAdd format ["%1", name _x];
 
 		liste_joueurs_groupe pushBack (getPlayerUID _x);
 
-		if (((getPlayerUID _x) in _invitePar) and ((getPlayerUID _x) in _invitations)) then 
-		{
-			_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\fleche_double.paa"];
-		}
-		else
-		{
-			if ((getPlayerUID _x) in _invitations) then 
-			{
-				_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\flechedroite.paa"];
-			};
-
-			if ((getPlayerUID _x) in _invitePar) then 
-			{
-				_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\flechegauche.paa"];
-			};
-		};
-
 		if ((getPlayerUID _x) in _team) then 
 		{
 			_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\deja_dans_team.paa"];
-		};	
+		} 
+		else 
+		{
+			if (((getPlayerUID _x) in _invitePar) and ((getPlayerUID _x) in _invitations)) then 
+			{
+				_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\fleche_double.paa"];
+			}
+			else
+			{
+				if ((getPlayerUID _x) in _invitations) then 
+				{
+					_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\flechedroite.paa"];
+				};
+
+				if ((getPlayerUID _x) in _invitePar) then 
+				{
+					_listbox_players lbSetPicture [_index, "pictures\interfaces\menu_groupe\flechegauche.paa"];
+				};
+			};
+		};
 	};
 } forEach allPlayers;
 

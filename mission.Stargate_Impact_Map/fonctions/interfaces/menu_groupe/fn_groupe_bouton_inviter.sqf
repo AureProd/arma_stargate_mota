@@ -3,7 +3,7 @@ private _listbox_players = (findDisplay 2000) displayCtrl 2002;
 private _index = lbCurSel _listbox_players;
 private _joueurUid = liste_joueurs_groupe select _index;
 
-if ((count ([] call mission_fnc_get_team)) >= 5) then {
+if ((count ([] call mission_fnc_get_team)) < 5) then {
 	[_joueurUid] call mission_fnc_add_invitation;
 };
 
