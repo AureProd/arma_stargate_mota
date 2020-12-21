@@ -70,7 +70,7 @@ liste_joueurs_groupe = [];
 	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif]
 	private _joueurDonnees = missionNamespace getVariable (format ["variable_%1", getPlayerUID _x]);
 
-	if ((_x != player) and ((_joueurDonnees select 1) == (_playerBdd select 1)) and ((player distance2D _x) < 10)) then 
+	if ((_x != player) and ((_joueurDonnees select 1) == (_playerBdd select 1)) and ((player distance _x) < 10)) then 
 	{
 		_listbox_joueurs lbAdd format ["%1", name _x];
 		liste_joueurs_groupe pushBack _x;

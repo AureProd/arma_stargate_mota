@@ -248,7 +248,7 @@ class popup_fourriere
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			onButtonClick = "playSound 'button'; closeDialog 1; [true] call mission_fnc_amende;";
+			onButtonClick = "playSound 'button'; closeDialog 1; [true] call mission_fnc_fourriere;";
 		};
 		class bouton_refuser
 		{

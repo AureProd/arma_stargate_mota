@@ -2,7 +2,7 @@
 // paramettres : [param, vehicle]
 
 private _param = param [0, false];
-private _vehicle = param [1, amende];
+private _vehicle = param [1];
 
 if (!_param) then {
 	createDialog "popup_fourriere";
@@ -13,5 +13,5 @@ if (!_param) then {
 
 	amende = _vehicle;
 } else {
-	deleteVehicle _vehicle;
+	deleteVehicle amende;
 };

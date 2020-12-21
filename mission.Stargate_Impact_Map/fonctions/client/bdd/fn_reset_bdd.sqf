@@ -24,7 +24,7 @@ if (_isWhiteListe) then {
 
 player setDamage 0;
 
-[] call delete_all_vehicles;
+[] call mission_fnc_delete_all_vehicles;
 
 /*	
 	classes :
