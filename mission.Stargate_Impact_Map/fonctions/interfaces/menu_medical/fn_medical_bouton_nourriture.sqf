@@ -27,7 +27,7 @@ liste_joueurs_groupe = [];
 	{
 		if ((_tab select 0) == (_x select 0)) then
 		{
-			if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6)) then 
+			if (((_x select 4) == 1) or ((_x select 4) == 2) or ((_x select 4) == 6) or ((_x select 4) == 9) or ((_x select 4) == 11)) then 
 			{
 				if ((_x select 0) == 4) then 
 				{

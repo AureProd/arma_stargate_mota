@@ -770,9 +770,9 @@
 				<English>Kick</English>
 			</Key>
 			<Key ID="STR_admin_titre_items_illegals">
-				<Original>Objets Illégals</Original>
-                <French>Objets Illégals</French>
-				<English>Objets Illégals</English>
+				<Original>Items</Original>
+                <French>Items</French>
+				<English>Items</English>
 			</Key>
 			<Key ID="STR_admin_items">
 				<Original>Items</Original>
@@ -793,6 +793,11 @@
 				<Original>%1 viens de vous mettre une amende de %2 XP, si vous ne la payez pas vous irez en prison</Original>
                 <French>%1 viens de vous mettre une amende de %2 XP, si vous ne la payez pas vous irez en prison</French>
 				<English>%1 viens de vous mettre une amende de %2 XP, si vous ne la payez pas vous irez en prison</English>
+			</Key>
+			<Key ID="STR_popup_fouriere">
+				<Original>Voulez vous mettre ce vehicule en fourrière</Original>
+                <French>Voulez vous mettre ce vehicule en fourrière</French>
+				<English>Voulez vous mettre ce vehicule en fourrière</English>
 			</Key>
 			<Key ID="STR_admin_amende_payer">
 				<Original>%1 a payer son amende</Original>
@@ -892,19 +897,19 @@
 		</Container>
 		<Container name="Vehicles">
 			<Key ID="STR_fourriere">
-				<Original><t color='#FF0000'>Mettre le vehicle en fourrière</t></Original>
-                <French><t color='#FF0000'>Mettre le vehicle en fourrière</t></French>
-				<English><t color='#FF0000'>Mettre le vehicle en fourrière</t></English>
+				<Original>Mettre le vehicle en fourrière</Original>
+                <French>Mettre le vehicle en fourrière</French>
+				<English>Mettre le vehicle en fourrière</English>
 			</Key>
 			<Key ID="STR_lock_vehicle">
-				<Original><t color='#FF0000'>Fermer le vehicle</t></Original>
-                <French><t color='#FF0000'>Fermer le vehicle</t></French>
-				<English><t color='#FF0000'>Lock</t></English>
+				<Original>Fermer le vehicle</Original>
+                <French>Fermer le vehicle</French>
+				<English>Lock</English>
 			</Key>
 			<Key ID="STR_unlock_vehicle">
-				<Original><t color='#00FF00'>Ouvrir le vehicle</t></Original>
-                <French><t color='#00FF00'>Ouvrir le vehicle</t></French>
-				<English><t color='#00FF00'>UnLock</t></English>
+				<Original>Ouvrir le vehicle</Original>
+                <French>Ouvrir le vehicle</French>
+				<English>UnLock</English>
 			</Key>
 		</Container>
 		<Container name="Stargate">
@@ -1113,6 +1118,38 @@
 				<Original>Vous avez fini votre récolte</Original>
                 <French>Vous avez fini votre récolte</French>
 				<English>Vous avez fini votre récolte</English>
+			</Key>
+		</Container>
+		<Container name="boules_caises">
+			<Key ID="STR_boules_caises_1">
+				<Original>Casque allumé</Original>
+                <French>Casque allumé</French>
+				<English>Casque allumé</English>
+			</Key>
+            <Key ID="STR_boules_caises_2">
+				<Original>30% plus haut</Original>
+                <French>30% plus haut</French>
+				<English>30% plus haut</English>
+			</Key>
+			<Key ID="STR_boules_caises_3">
+				<Original>50% plus haut</Original>
+                <French>50% plus haut</French>
+				<English>50% plus haut</English>
+			</Key>
+			<Key ID="STR_boules_caises_4">
+				<Original>80% plus haut</Original>
+                <French>80% plus haut</French>
+				<English>80% plus haut</English>
+			</Key>
+			<Key ID="STR_boules_caises_5">
+				<Original>90% plus haut</Original>
+                <French>90% plus haut</French>
+				<English>90% plus haut</English>
+			</Key>
+			<Key ID="STR_boules_caises_6">
+				<Original>Casque éteint</Original>
+                <French>Casque éteint</French>
+				<English>Casque éteint</English>
 			</Key>
 		</Container>
 	</Package>

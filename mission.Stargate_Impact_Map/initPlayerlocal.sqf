@@ -36,6 +36,12 @@ enableEnvironment [true, false];
 
 [player] remoteExec ["db_fnc_isDejaConnecte", 2];
 
+{
+	if ((_x getVariable ['imatriculation', [false, nil, nil]]) select 0) then {
+		_x lockInventory true;
+	};
+} forEach vehicles;
+
 /* 
 	TEST MISSION LOCAL :
 	

@@ -14,7 +14,7 @@ returnIfInPecheZone = {
 	_return;
 };
 
-player addAction [(localize "STR_peche_add_action"), {
+player addAction [(parseText format ["<t color='#FF0000'>%1</t>", (localize "STR_peche_add_action")]), {
 	peche_ON = true;
 
 	private _poissons = [];

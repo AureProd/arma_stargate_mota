@@ -51,13 +51,13 @@ else
 	
 	switch (isMilitaire) do {
 		case 1: { 
-			_nom_config = "vetements_tauri_militaire";
+			_nom_config = "vetements_goauld_militaire";
 		};
 		case 2: { 
-			_nom_config = "vetements_tauri_grades";
+			_nom_config = "vetements_goauld_grades";
 		};
 		default { 
-			_nom_config = "vetements_tauri";
+			_nom_config = "vetements_goauld";
 		};
 	};
 

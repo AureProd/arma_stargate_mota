@@ -32,7 +32,7 @@ class stargate_items
         tableau_items[] = {
 			{1, 0, $STR_bouteille, "pictures\items\bouteille.paa", 2, 1.5, 0, 10, 1, 30, 0},
             {2, 15, $STR_gourde, "pictures\items\gourde.paa", 5, 3, 1, 70, 1, 50, 0},
-            {3, 15, $STR_micropur, "pictures\items\micropur.paa", 5, 0.5, 25, 0, 3, 0},
+            {3, 15, $STR_micropur, "pictures\items\micropur.paa", 5, 0.5, 0, 25, 1, 0, 0},
             {4, 15, $STR_ration, "pictures\items\ration.paa", 1, 1, 1, 50, 1, 30, 0},
             {5, 0, $STR_sandwich, "pictures\items\sandwich.paa", 1, 1, 0, 8, 1, 30, 0},
             {6, 0, $STR_bandage, "pictures\items\bandage.paa", 3, 0.5, 0, 15, 1, 0, 0},
