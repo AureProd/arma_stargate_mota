@@ -12,9 +12,18 @@ private _addActions =
 	private _id_shop = _id addAction [_text, _code, _param, _priorite, true, true, "", _condition, 10];
 };
 
+[player, (localize "STR_reparer_vehicle"), {
+	cursorObject setDamage 0;
+	hint (localize "STR_reparer_vehicle_fait");
+}, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (alive _this) and ((damage cursorObject) != 0) and ([56] call mission_fnc_is_in_inventory)"] call _addActions;
+
 [player, (localize "STR_fourriere"), {
-	[false, cursorObject] call mission_fnc_fourriere;
+	[false, cursorObject, true] call mission_fnc_fourriere;
 }, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and ((['classe', _this] call mission_fnc_getBDD) == 3) and (alive _this)", 1.2] call _addActions;
+
+[player, (localize "STR_ranger_vehicle"), {
+	[false, cursorObject, false] call mission_fnc_fourriere;
+}, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (alive _this)"] call _addActions;
 
 [player, (localize "STR_lock_vehicle"), {
 	cursorObject lock true;

@@ -193,6 +193,11 @@
                 <French>blé traité</French>
 				<English>blé traité</English>
 			</Key>
+			<Key ID="STR_kit_reparation">
+				<Original>kit réparation</Original>
+                <French>kit réparation</French>
+				<English>kit réparation</English>
+			</Key>
 		</Container>
         <Container name="Licences">
 			<Key ID="STR_Archeologue">
@@ -798,6 +803,26 @@
 				<Original>Voulez vous mettre ce vehicule en fourrière</Original>
                 <French>Voulez vous mettre ce vehicule en fourrière</French>
 				<English>Voulez vous mettre ce vehicule en fourrière</English>
+			</Key>
+			<Key ID="STR_popup_fouriere_bis">
+				<Original>Voulez vous ranger ce vehicule</Original>
+                <French>Voulez vous ranger ce vehicule</French>
+				<English>Voulez vous ranger ce vehicule</English>
+			</Key>
+			<Key ID="STR_ranger_vehicle">
+				<Original>Ranger ce vehicule</Original>
+                <French>Ranger ce vehicule</French>
+				<English>Ranger ce vehicule</English>
+			</Key>
+			<Key ID="STR_reparer_vehicle">
+				<Original>Réparer ce vehicule</Original>
+                <French>Réparer ce vehicule</French>
+				<English>Réparer ce vehicule</English>
+			</Key>
+			<Key ID="STR_reparer_vehicle_fait">
+				<Original>Vous avez réparer ce vehicule</Original>
+                <French>Vous avez réparer ce vehicule</French>
+				<English>Vous avez réparer ce vehicule</English>
 			</Key>
 			<Key ID="STR_admin_amende_payer">
 				<Original>%1 a payer son amende</Original>

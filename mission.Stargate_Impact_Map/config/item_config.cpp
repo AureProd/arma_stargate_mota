@@ -78,8 +78,9 @@ class stargate_items
             {51, 10, $STR_kassa_pure, "pictures\items\illegal\mais.paa", 13, 0.5, 0, 45, 2, 0, 1},
             {52, 20, $STR_kassa_pure, "pictures\items\illegal\Kassa_mediocre.paa", 13, 0.5, 0, 75, 2, 0, 1},
             {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_superieur.paa", 13, 0.5, 0, 75, 2, 0, 1},
-            {54, 20, $STR_ble_sale, "", 6.5, 0.5, 0, 75, 2, 0, 1},
-            {55, 30, $STR_ble_traiter, "", 6, 0.5, 0, 75, 2, 0, 1}
+            {54, 20, $STR_ble_sale, "", 6.5, 0.5, 0, 75, 2, 0, 0},
+            {55, 30, $STR_ble_traiter, "", 6, 0.5, 0, 75, 2, 0, 0},
+            {56, 0, $STR_kit_reparation, "", 7, 5, 0, 100, 2, 0, 0}
 		};
 	};
     class loadout_tauri
