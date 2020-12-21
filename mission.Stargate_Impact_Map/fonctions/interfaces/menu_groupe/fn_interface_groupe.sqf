@@ -76,16 +76,9 @@ if ([] call mission_fnc_is_in_team) then
 {
 	if (_isChef) then 
 	{
-		if (((count liste_joueurs_groupe) > 0) and ((count _team) < 5)) then
+		if ((count _team) >= 5) then 
 		{
-			_bouton_inviter ctrlEnable true;
-		}
-		else
-		{
-			if ((count _team) >= 5) then 
-			{
-				[] call mission_fnc_create_reset_invitations;
-			};
+			[] call mission_fnc_create_reset_invitations;
 		};
 	};
 
@@ -105,14 +98,12 @@ if ([] call mission_fnc_is_in_team) then
 else 
 {
 	_listbox_team lbAdd format ["%1", name player];
-
-	if ((lbSize _listbox_players) > 0) then
-	{
-		_bouton_inviter ctrlEnable true;
-	};
 };
 
 _listbox_team lbSetCurSel -1;
+//_listbox_players lbSetCurSel -1;
+
+[] call mission_fnc_groupe_liste_joueurs;
 
 
 

@@ -8,11 +8,11 @@ private _joueur = [_joueurUid] call mission_fnc_get_player_with_uid;
 private _invitePar = [] call mission_fnc_get_invite_par_team;
 
 if ((count ([_joueurUid] call mission_fnc_get_team)) < 5) then {
-	if ([] call mission_fnc_is_in_team) then {
-		[] call mission_fnc_quitter_team;
-	};
-
 	if (_joueurUid in _invitePar) then {
+		if ([] call mission_fnc_is_in_team) then {
+			[] call mission_fnc_quitter_team;
+		};
+
 		if ([_joueurUid] call mission_fnc_is_in_team) then 
 		{
 			private _team = [_joueurUid] call mission_fnc_get_team;
@@ -27,9 +27,11 @@ if ((count ([_joueurUid] call mission_fnc_get_team)) < 5) then {
 
 			[_team] call mission_fnc_add_team;
 		};
+
+		[player] join (group _joueur);
+
+		[] call mission_fnc_create_reset_invitations;
 	};
-	
-	[player] join (group _joueur);
 
 	[true] spawn mission_fnc_interface_groupe;
 } else {

@@ -15,10 +15,20 @@ if (_joueurUid in _invitePar) then {
 	_bouton_rejoindre ctrlEnable false;
 };
 
-if (_joueurUid in _invitations) then {
-	_bouton_inviter ctrlEnable false;
+if ([] call mission_fnc_is_in_team) then {
+	if ([] call mission_fnc_is_chef_team) then {
+		if (_joueurUid in _invitations) then {
+			_bouton_inviter ctrlEnable false;
+		} else {
+			if ((count ([] call mission_fnc_get_team)) < 5) then {
+				_bouton_inviter ctrlEnable true;
+			};
+		};
+	};
 } else {
-	if ((count ([] call mission_fnc_get_team)) >= 5) then {
+	if (_joueurUid in _invitations) then {
+		_bouton_inviter ctrlEnable false;
+	} else {
 		_bouton_inviter ctrlEnable true;
 	};
 };

@@ -11,7 +11,7 @@ private _return = [];
 
 if (_index != -1) then {
 	private _invitations_player = _invitations select _index;
-	_invitations_player deleteAt 0;
+	//_invitations_player deleteAt 0;
 
 	_return = _invitations_player;
 };
