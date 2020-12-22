@@ -45,3 +45,7 @@ titleText [(localize "STR_mort"), "BLACK OUT", 0.1];
 }; */
 
 [] call mission_fnc_syns_data;
+
+sleep 2;
+
+titleFadeOut 1;

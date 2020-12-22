@@ -15,8 +15,8 @@ if (_param_recommencement) then {
 // liste vies : [ % maladie tete, % maladie ventre, % hit tete, % hit ventre, % hit bras droit, % hit bras gauche, % hit jambe droit, % hit jambe gauche ]
 private _liste_vies = [100, 100, 100, 100, 100, 100, 100, 100];
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, garage, white liste soldat, documents]
-missionNamespace setVariable [nomVarPlayerUID, [1, 1, 400, [], 1, 100, 100, 100, [], [100, 100, 100, 100, 100, 100, 100, 100], [], [1], [], [], [], 0, []], true];
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, [planetes stargate, maps], quetes actives, garage, white liste soldat, documents]
+missionNamespace setVariable [nomVarPlayerUID, [1, 1, 400, [], 1, 100, 100, 100, [], [100, 100, 100, 100, 100, 100, 100, 100], [], [1], [[],[]], [], [], 0, []], true];
 
 if (_isWhiteListe) then {
 	["wl soldat", 1] call mission_fnc_setBDD;

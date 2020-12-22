@@ -10,7 +10,7 @@ class docs_planetes
 	class planetes
 	{
 		liste[] = { // id planete / nom planete / image carte planete / id porte / id dhd / liste des logos pour porte (5 logos max)
-			{1, "Tau'ry", "pictures\planetes\Terre.paa", "porte_tauri", "dhd_tauri", {6, 30, 15, 11, 19, 37, 1}},
+			{1, "Tau'ry", "pictures\planetes\Terre.paa", "porte_tauri", "dhd_tauri", {6, 30, 11, 19, 15, 37, 1}},
 			{82, "Qa'al", "pictures\planetes\Qaal.paa", "porte_qa_al", "dhd_qa_al", {20, 3, 16, 5, 31, 10, 25}},
 		};
 

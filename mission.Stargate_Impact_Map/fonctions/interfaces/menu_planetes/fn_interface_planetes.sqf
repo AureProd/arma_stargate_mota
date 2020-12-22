@@ -19,7 +19,7 @@ else
 private _liste = (findDisplay 60000) displayCtrl 60002;
 
 {
-	if ([(_x select 0)] call mission_fnc_has_planetes) then {
+	if ([(_x select 0), 1] call mission_fnc_has_planetes) then {
 		_liste lbAdd (format ["%1", (_x select 1)]);
 	};
 } forEach (getArray(missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));

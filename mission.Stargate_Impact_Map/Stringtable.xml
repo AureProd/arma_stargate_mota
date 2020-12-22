@@ -834,6 +834,11 @@
                 <French>Réparer ce vehicule</French>
 				<English>Réparer ce vehicule</English>
 			</Key>
+			<Key ID="STR_retourner_vehicle">
+				<Original>Retourner ce vehicule</Original>
+                <French>Retourner ce vehicule</French>
+				<English>Retourner ce vehicule</English>
+			</Key>
 			<Key ID="STR_reparer_vehicle_fait">
 				<Original>Vous avez réparer ce vehicule</Original>
                 <French>Vous avez réparer ce vehicule</French>

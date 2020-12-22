@@ -26,28 +26,18 @@ if (SPECMODE) then {
 		private _player = param [0];
 
 		while {SPECMODE} do {
-			waitUntil { (vehicle _player) != _player }; 
-
-			detach player;
-			player attachTo [(vehicle _player), [0, 0, 0.4]];
-
-			waitUntil { (vehicle _player) == _player }; 
-
-			detach player;
-			player attachTo [_player, [0, 0, 0.4]];
-		};
-	};
-
-	[_player] spawn {
-		while {SPECMODE} do {
-			waitUntil { SPECMODE and (isNull attachedTo player) };
+			waitUntil { ((vehicle _player) != _player) or !SPECMODE }; 
 
 			if (SPECMODE) then {
-				if (!((isObjectHidden player) and ISINVISIBLE)) then {
-					[player, false] remoteExec ["hideObject", -2, true];
-				};
+				detach player;
+				player attachTo [(vehicle _player), [0, 0, 0.4]];
+			};
 
-				SPECMODE = false;
+			waitUntil { ((vehicle _player) == _player) or !SPECMODE }; 
+
+			if (SPECMODE) then {
+				detach player;
+				player attachTo [_player, [0, 0, 0.4]];
 			};
 		};
 	};

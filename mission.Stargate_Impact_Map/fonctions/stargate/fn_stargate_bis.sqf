@@ -24,7 +24,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 	if ((_porte animationPhase 'anim_iris1') == 0) then {
 		[_porte] remoteExec ["mission_fnc_createLight", 0];
 
-		// variable "isOpen" --> [true si ouverte, porte distante, is porte principale, light, true si horizon ouvert]
+		// variable "isOpen" --> [true si ouverte, porte distante, is porte principale, true pour dhd de lancé, true si horizon ouvert]
 		_porte setVariable ["isOpen", [true, _porteDistante, true, false, true], true];
 	} else {
 		_porte setVariable ["isOpen", [true, _porteDistante, true, false, true], true];

@@ -16,6 +16,11 @@ private _addActions =
 	[cursorObject] spawn mission_fnc_repair_vehicules;
 }, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (alive _this) and ((damage cursorObject) != 0) and ([56] call mission_fnc_is_in_inventory)"] call _addActions;
 
+[player, (localize "STR_retourner_vehicle"), {
+	cursorObject setPos [((getPos cursorObject) select 0), ((getPos cursorObject) select 1), ((getPos cursorObject) select 2) + 2];
+	cursorObject setDir (getDir cursorObject);
+}, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (alive _this) and ((((cursorObject call BIS_fnc_getPitchBank) select 1) > 50) and (((cursorObject call BIS_fnc_getPitchBank) select 1) < -50))"] call _addActions;
+
 [player, (localize "STR_fourriere"), {
 	[false, cursorObject, true] call mission_fnc_fourriere;
 }, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and ((['classe', _this] call mission_fnc_getBDD) == 3) and (alive _this)", 1.2] call _addActions;

@@ -23,9 +23,11 @@ switch (_version_code) do {
 		//player linkItem "ItemMap";
 
 		if ([] call mission_fnc_is_tauri) then {
-			[1] call mission_fnc_add_planetes;
+			[1, 0] call mission_fnc_add_planetes;
+			[1, 1] call mission_fnc_add_planetes;
 		} else {
-			[82] call mission_fnc_add_planetes;
+			[82, 0] call mission_fnc_add_planetes;
+			[82, 1] call mission_fnc_add_planetes;
 		};
 
 		[_id_quete] call mission_fnc_remove_quetes_actives;

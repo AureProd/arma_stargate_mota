@@ -54,14 +54,14 @@ private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> 
 	if ((_variable select 4) == _levelMax) then 
 	{
 		_bar_xp progressSetPosition ((_variable select 2) / _xpMax);
-		_texte_xp_bar ctrlSetText format ["%1 / %2", (_variable select 2), _xpMax];
+		_texte_xp_bar ctrlSetText format ["%1 / %2 xp", (_variable select 2), _xpMax];
 	}
 	else
 	{
 		if ((_x select 0) == ((_variable select 4) + 1)) then 
 		{
 			_bar_xp progressSetPosition ((_variable select 2) / (_x select 1));
-			_texte_xp_bar ctrlSetText format ["%1 / %2", (_variable select 2), (_x select 1)];
+			_texte_xp_bar ctrlSetText format ["%1 / %2 xp", (_variable select 2), (_x select 1)];
 		};
 	};
 } forEach _tableauLevels;
