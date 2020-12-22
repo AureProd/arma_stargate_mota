@@ -13,9 +13,8 @@ private _addActions =
 };
 
 [player, (localize "STR_reparer_vehicle"), {
-	cursorObject setDamage 0;
-	hint (localize "STR_reparer_vehicle_fait");
-}, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (alive _this) and ((damage cursorObject) != 0) and ([56] call mission_fnc_is_in_inventory)"] call _addActions;
+	[cursorObject] spawn mission_fnc_repair_vehicules;
+}, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (alive _this) and ((damage cursorObject) != 0) and ([56] call mission_fnc_is_in_inventory)"] call _addActions;
 
 [player, (localize "STR_fourriere"), {
 	[false, cursorObject, true] call mission_fnc_fourriere;

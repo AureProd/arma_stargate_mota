@@ -120,6 +120,14 @@ class stargate_vetements
         casque[] = {}; // { nom / level / prix / id de l'objet / fonction }
         lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
 	};
+	class vetement_tauri_gendarme
+	{
+		tenue[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        veste[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        sac[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        casque[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
+	};
     class vetements_goauld
 	{
 		tenue[] = { // { nom / level / prix / id de l'objet / fonction }
@@ -199,6 +207,14 @@ class stargate_vetements
         lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
 	};
 	class vetements_goauld_grades
+	{
+		tenue[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        veste[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        sac[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        casque[] = {}; // { nom / level / prix / id de l'objet / fonction }
+        lunette[] = {}; // { nom / level / prix / id de l'objet / fonction }
+	};
+	class vetement_goauld_gendarme
 	{
 		tenue[] = {}; // { nom / level / prix / id de l'objet / fonction }
         veste[] = {}; // { nom / level / prix / id de l'objet / fonction }

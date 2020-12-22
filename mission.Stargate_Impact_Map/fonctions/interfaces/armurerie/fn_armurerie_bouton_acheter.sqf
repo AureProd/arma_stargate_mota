@@ -8,37 +8,65 @@ private _liste_objets_config = nil;
 
 if ((_playerBdd select 1) == 2) then 
 {
+	private _nom_config = nil;
+	
+	switch (isMilitaire) do {
+		case 1: { 
+			_nom_config = "guns_tauri_militaire";
+		};
+		case 2: { 
+			_nom_config = "guns_tauri_gendarme";
+		};
+		default { 
+			_nom_config = "guns_tauri";
+		};
+	};
+
 	switch (bouton_A_OK_bis) do 
 	{
 		case 1: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_tauri" >> "armes");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "armes");
 		};
 		case 2: 
 		{
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_tauri" >> "chargeurs");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "chargeurs");
 		};
 		case 3: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_tauri" >> "viseurs");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "viseurs");
 		};
 	};
 } 
 else 
 {
+	private _nom_config = nil;
+	
+	switch (isMilitaire) do {
+		case 1: { 
+			_nom_config = "guns_goauld_militaire";
+		};
+		case 2: { 
+			_nom_config = "guns_goauld_gendarme";
+		};
+		default { 
+			_nom_config = "guns_goauld";
+		};
+	};
+
 	switch (bouton_A_OK_bis) do 
 	{
 		case 1: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_goauld" >> "armes");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "armes");
 		};
 		case 2: 
 		{
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_goauld" >> "chargeurs");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "chargeurs");
 		};
 		case 3: 
 		{ 
-			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_goauld" >> "viseurs");
+			_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "viseurs");
 		};
 	};
 };

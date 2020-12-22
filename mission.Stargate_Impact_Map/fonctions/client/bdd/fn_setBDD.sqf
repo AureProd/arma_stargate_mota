@@ -38,13 +38,14 @@ switch (_indexChoix) do {
         // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, quetes actives, garage]
         private _bddPlayer = missionNamespace getVariable nomVarPlayerUID;
         private _xpPlayer = _bddPlayer select 2;
+        private _xpPlayer_bis = _xpPlayer;
         private _levelPlayer = _bddPlayer select 4;
 
         private _levelMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "level_max");
         private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
         private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> "tableau_levels");
 
-        if (((_num) <= _xpMax) and ((_num) >= 0)) then 
+        if ((_num <= _xpMax) and (_num >= 0)) then 
         {
             _xpPlayer = _num;	
         }
@@ -52,7 +53,7 @@ switch (_indexChoix) do {
         {
             if (_num > _xpMax) then 
             {
-                _xpPlayer = 300000;
+                _xpPlayer = _xpMax;
             } else {
                 _xpPlayer = 0;
             }
@@ -74,21 +75,28 @@ switch (_indexChoix) do {
             } forEach _tableauLevels;
         };
 
-        [[2, _xpPlayer], [4, _levelPlayer]] call mission_fnc_modif_var_bdd;
+        [[2, _xpPlayer], player] call mission_fnc_modif_var_bdd_joueurs_distant;
+        [[4, _levelPlayer], player] call mission_fnc_modif_var_bdd_joueurs_distant;
 
-        if ((_xpPlayer == 300000) and (_levelPlayer == 60)) then 
+        if ((_xpPlayer_bis != _xpMax) and (_xpPlayer == _xpMax) and (_levelPlayer == _levelMax)) then 
         {
-            ["Notif_max", ["LEVEL MAX / XP MAX", format ["Vous avez atteints le level et l'xp maximum : GG", _levelPlayer, _xpPlayer]]] call BIS_fnc_showNotification; // xp + level
+            //["Notif_max", ["LEVEL MAX / XP MAX", format ["Vous avez atteints le level et l'xp maximum : GG", _levelPlayer, _xpPlayer]]] call BIS_fnc_showNotification; // xp + level
 
-            playSound "level_up";
+            ["Notif_max", ["LEVEL MAX / XP MAX", format ["Vous avez atteints le level et l'xp maximum : GG", _levelPlayer, _xpPlayer]]] remoteExec ["BIS_fnc_showNotification", player];
+
+            //playSound "level_up";
+            ["level_up"] remoteExec ["playSound", player];
         }
         else
         {
             if (_aGagneLevel) then 
             {
-                ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1 avec %2 d'xp", _levelPlayer, _xpPlayer]]] call BIS_fnc_showNotification; // xp + level
+                //["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1 avec %2 d'xp", _levelPlayer, _xpPlayer]]] call BIS_fnc_showNotification; // xp + level
 
-                playSound "level_up";
+                ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1 avec %2 d'xp", _levelPlayer, _xpPlayer]]] remoteExec ["BIS_fnc_showNotification", player];
+
+                //playSound "level_up";
+                ["level_up"] remoteExec ["playSound", player];
             };
         };
     };
@@ -101,24 +109,26 @@ switch (_indexChoix) do {
         private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
         private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> "tableau_levels");
 
-        if ((_num <= _levelMax) and (_num >= 0)) then 
+        if ((_num <= _levelMax) and (_num >= 1)) then 
         {
             _levelPlayer = _num;
         }
         else 
         {
             if (_num > _levelMax) then {
-                _levelPlayer = 60;
+                _levelPlayer = _levelMax;
             } else {
-                _levelPlayer = 0;
+                _levelPlayer = 1;
             };
         };
 
-        [[4, _levelPlayer]] call mission_fnc_modif_var_bdd;
+        [[4, _levelPlayer], player] call mission_fnc_modif_var_bdd_joueurs_distant;
 
-        ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1", _levelPlayer]]] call BIS_fnc_showNotification; // xp + level
+        //["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1", _levelPlayer]]] call BIS_fnc_showNotification; // xp + level
+        ["Notif_level", ["LEVEL UP", format ["Vous passez niveau %1", _levelPlayer]]] remoteExec ["BIS_fnc_showNotification", player];
 
-        playSound "level_up";
+        //playSound "level_up";
+        ["level_up"] remoteExec ["playSound", player];
     };
     case 5: { // vie
         private _nouv_num = nil;

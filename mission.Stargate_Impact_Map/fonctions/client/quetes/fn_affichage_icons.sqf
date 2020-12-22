@@ -48,13 +48,13 @@ addMissionEventHandler ["Draw3D",
 
 	{
 		if (ISINVISIBLE) then {
-			if ((isObjectHidden _x) and (_x != player)) then {
+			if (_x != player) then {
 				private _pos_player = _x modelToWorld(_x selectionPosition "head");
 
 				drawIcon3D ["iconMan", [1,1,1,1],[_pos_player select 0, _pos_player select 1, (_pos_player select 2)], 1, 1, 0, name _x, 1, 0.04, "PuristaMedium"];
 			};
 		} else {
-			if ((_x != player) and ((getPlayerUID _x) in ([] call mission_fnc_get_team))) then {
+			if ((_x != player) and ((getPlayerUID _x) in ([] call mission_fnc_get_team)) and !(isObjectHidden _x) and ((player distance _x) < 100)) then {
 				private _pos_player = _x modelToWorld(_x selectionPosition "head");
 
 				drawIcon3D ["iconMan", [1,1,1,1],[_pos_player select 0, _pos_player select 1, (_pos_player select 2) + 0.4], 1, 1, 0, name _x, 1, 0.04, "PuristaMedium"];

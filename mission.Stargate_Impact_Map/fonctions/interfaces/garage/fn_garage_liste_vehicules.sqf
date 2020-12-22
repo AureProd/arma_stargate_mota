@@ -1,11 +1,21 @@
 
 private _liste_vehicules = (findDisplay 30000) displayCtrl 30001;
 
-if (!([1] call mission_fnc_has_licence)) exitWith {
-	if ((lbCurSel _liste_vehicules) != -1) then {
-		_liste_vehicules lbSetCurSel -1;
+if (isMilitaire == 3) then {
+	if (!([9] call mission_fnc_has_licence)) exitWith {
+		if ((lbCurSel _liste_vehicules) != -1) then {
+			_liste_vehicules lbSetCurSel -1;
 
-		hint localize "STR_pas_licences_permis_conduire";
+			hint localize "STR_pas_licences_permis_bateau";
+		};
+	};
+} else {
+	if (!([1] call mission_fnc_has_licence)) exitWith {
+		if ((lbCurSel _liste_vehicules) != -1) then {
+			_liste_vehicules lbSetCurSel -1;
+
+			hint localize "STR_pas_licences_permis_conduire";
+		};
 	};
 };
 

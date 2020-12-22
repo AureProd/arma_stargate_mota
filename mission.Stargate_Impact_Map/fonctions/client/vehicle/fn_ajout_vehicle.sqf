@@ -39,3 +39,4 @@ _vehicle setDir _spawnDir;
 
 _vehicle setVariable ["imatriculation", [true, _joueurUid, _isLocation], true];
 
+_vehicle lock true;

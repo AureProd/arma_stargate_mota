@@ -10,6 +10,7 @@ class stargate_items
                 |-> pour speciale :
                     |-> si nourriture ou boisson ou raisin ou viande cuite ou poisson cuit -> valeur que ca te rend (en %)
                     |-> si medicament ou blessure -> partie du corp (0 = tout corp / 1 = tete / 2 = ventre / 3 = tete et ventre / 4 = bras / 5 = jambes)
+                    |-> si outil reel -> code ajout objet reel
             }
         */ 
         /*  
@@ -28,6 +29,7 @@ class stargate_items
             |-> poisson cuit --> 11
             |-> drogue sale --> 12
             |-> drogue propre --> 13
+            |-> outil reel --> 14
         */
         tableau_items[] = {
 			{1, 0, $STR_bouteille, "pictures\items\bouteille.paa", 2, 1.5, 0, 10, 1, 30, 0},
@@ -80,7 +82,9 @@ class stargate_items
             {53, 30, $STR_kassa_pure, "pictures\items\illegal\Kassa_superieur.paa", 13, 0.5, 0, 75, 2, 0, 1},
             {54, 20, $STR_ble_sale, "", 6.5, 0.5, 0, 75, 2, 0, 0},
             {55, 30, $STR_ble_traiter, "", 6, 0.5, 0, 75, 2, 0, 0},
-            {56, 0, $STR_kit_reparation, "", 7, 5, 0, 100, 2, 0, 0}
+            {56, 0, $STR_kit_reparation, "", 7, 5, 0, 100, 2, 0, 0},
+            {57, 30, $STR_canne_peche, "", 14, 0, 0, 100, 1, "player addweapon 'canne_a_peche';", 0},
+            {58, 0, $STR_canne_peche, "", 14, 0, 0, 100, 0, "player addweapon 'canne_a_peche_goauld';", 0}
 		};
 	};
     class loadout_tauri

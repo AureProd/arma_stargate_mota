@@ -38,6 +38,8 @@ else
 	player setUnitLoadout (missionConfigFile >> "stargate_items" >> "loadout_tauri");
 };
 
+titleText [(localize "STR_mort"), "BLACK OUT", 0.1];
+
 /* if (1 in (_variable select 10)) then {
 	player linkItem "ItemMap";
 }; */

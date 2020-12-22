@@ -27,7 +27,7 @@ private _tab = [];
 			{
 				if ((_x select 6) == 0) then // verif si pas militaire
 				{
-					if ((_x select 4) == 7) then // verif si objet is outil
+					if (((_x select 4) == 7) or ((_x select 4) == 14)) then // verif si objet is outil
 					{
 						_tab pushBack _x;
 					};
@@ -40,7 +40,7 @@ private _tab = [];
 			{
 				if ((_x select 6) == 0) then // verif si pas militaire
 				{
-					if ((_x select 4) == 7) then // verif si objet is outil
+					if (((_x select 4) == 7) or ((_x select 4) == 14)) then // verif si objet is outil
 					{
 						_tab pushBack _x;
 					};

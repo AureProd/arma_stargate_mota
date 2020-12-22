@@ -41,6 +41,7 @@ switch (_indexChoix) do {
         // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, quetes actives, garage]
         private _bddPlayer = missionNamespace getVariable _VarPlayerUID;
         private _xpPlayer = _bddPlayer select 2;
+        private _xpPlayer_bis = _xpPlayer;
         private _levelPlayer = _bddPlayer select 4;
 
         private _levelMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "level_max");
@@ -55,7 +56,7 @@ switch (_indexChoix) do {
         {
             if (_num > _xpMax) then 
             {
-                _xpPlayer = 300000;
+                _xpPlayer = _xpMax;
             } else {
                 _xpPlayer = 0;
             }
@@ -80,7 +81,7 @@ switch (_indexChoix) do {
         [[2, _xpPlayer], _joueur] call mission_fnc_modif_var_bdd_joueurs_distant;
         [[4, _levelPlayer], _joueur] call mission_fnc_modif_var_bdd_joueurs_distant;
 
-        if ((_xpPlayer == 300000) and (_levelPlayer == 60)) then 
+        if ((_xpPlayer_bis != _xpMax) and (_xpPlayer == _xpMax) and (_levelPlayer == _levelMax)) then 
         {
             //["Notif_max", ["LEVEL MAX / XP MAX", format ["Vous avez atteints le level et l'xp maximum : GG", _levelPlayer, _xpPlayer]]] call BIS_fnc_showNotification; // xp + level
 
@@ -118,7 +119,7 @@ switch (_indexChoix) do {
         else 
         {
             if (_num > _levelMax) then {
-                _levelPlayer = 60;
+                _levelPlayer = _levelMax;
             } else {
                 _levelPlayer = 1;
             };

@@ -8,6 +8,7 @@ private _valeur = param [0];
 private _bddPlayer = missionNamespace getVariable nomVarPlayerUID;
 private _xpPlayer = _bddPlayer select 2;
 private _levelPlayer = _bddPlayer select 4;
+private _xpPlayer_bis = _xpPlayer;
 
 private _levelMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "level_max");
 private _xpMax = getNumber(missionConfigFile >> "stargate_xp" >> "xp" >> "xp_max");
@@ -21,7 +22,7 @@ else
 {
 	if (_xpPlayer < _xpMax) then 
 	{
-		_xpPlayer = 300000;
+		_xpPlayer = _xpMax;
 	};
 };
 
@@ -43,7 +44,7 @@ if (_levelPlayer < _levelMax) then
 
 [[2, _xpPlayer], [4, _levelPlayer]] call mission_fnc_modif_var_bdd;
 
-if ((_xpPlayer == 300000) and (_levelPlayer == 60)) then 
+if ((_xpPlayer_bis != _xpMax) and (_xpPlayer == _xpMax) and (_levelPlayer == _levelMax)) then 
 {
 	["Notif_max", ["LEVEL MAX / XP MAX", format ["Vous avez atteints le level et l'xp maximum : GG", _levelPlayer, _xpPlayer]]] call BIS_fnc_showNotification; // xp + level
 

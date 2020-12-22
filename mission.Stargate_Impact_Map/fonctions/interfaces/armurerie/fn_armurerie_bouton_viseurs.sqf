@@ -20,11 +20,39 @@ private _liste_objets_config = nil;
 
 if ((_playerBdd select 1) == 2) then 
 {
-	_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_tauri" >> "viseurs");	
+	private _nom_config = nil;
+	
+	switch (isMilitaire) do {
+		case 1: { 
+			_nom_config = "guns_tauri_militaire";
+		};
+		case 2: { 
+			_nom_config = "guns_tauri_gendarme";
+		};
+		default { 
+			_nom_config = "guns_tauri";
+		};
+	};
+
+	_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "viseurs");	
 } 
 else 
 {
-	_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> "guns_goauld" >> "viseurs");
+	private _nom_config = nil;
+	
+	switch (isMilitaire) do {
+		case 1: { 
+			_nom_config = "guns_goauld_militaire";
+		};
+		case 2: { 
+			_nom_config = "guns_goauld_gendarme";
+		};
+		default { 
+			_nom_config = "guns_goauld";
+		};
+	};
+
+	_liste_objets_config = getArray(missionConfigFile >> "stargate_armes" >> _nom_config >> "viseurs");
 };
 
 lbClear _liste_objets;

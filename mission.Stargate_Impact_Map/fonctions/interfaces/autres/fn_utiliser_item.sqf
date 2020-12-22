@@ -186,13 +186,19 @@ switch (_objet select 4) do
 
 					if (_fonction_bis_OK) then 
 					{
-						hint localize "STR_gourde_pleine_eau_sale";
+						[_objetGourde] spawn {
+							[] call mission_fnc_chargement;
 
-						_objetGourde set [3, 100];
+							hint localize "STR_gourde_pleine_eau_sale";
 
-						private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "gourde_remplissage");
+							private _objetGourde = param [0];
 
-						[_gainXP] call mission_fnc_add_xp;
+							_objetGourde set [3, 100];
+
+							private _gainXP = getNumber(missionConfigFile >> "stargate_xp" >> "ajout_xp" >> "gourde_remplissage");
+
+							[_gainXP] call mission_fnc_add_xp;
+						};
 					}
 					else
 					{

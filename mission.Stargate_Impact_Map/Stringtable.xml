@@ -198,6 +198,11 @@
                 <French>kit réparation</French>
 				<English>kit réparation</English>
 			</Key>
+			<Key ID="STR_canne_peche">
+				<Original>canne pêche</Original>
+                <French>canne pêche</French>
+				<English>canne pêche</English>
+			</Key>
 		</Container>
         <Container name="Licences">
 			<Key ID="STR_Archeologue">
@@ -219,6 +224,11 @@
 				<Original>Permis Conduire</Original>
                 <French>Permis Conduire</French>
 				<English>Driver Licence</English>
+			</Key>
+			<Key ID="STR_Permis_Bateau">
+				<Original>Permis Bateau</Original>
+                <French>Permis Bateau</French>
+				<English>Boat Licence</English>
 			</Key>
 			<Key ID="STR_Port_Arme">
 				<Original>Port Arme</Original>
@@ -384,6 +394,11 @@
 				<Original>Erreur</Original>
                 <French>Erreur</French>
 				<English>Error</English>
+			</Key>
+			<Key ID="STR_mort">
+				<Original>Vous êtes morts</Original>
+                <French>Vous êtes morts</French>
+				<English>Vous êtes morts</English>
 			</Key>
 			<Key ID="STR_team_trop_joueurs">
 				<Original>Le groupe est déjà plein</Original>
@@ -868,6 +883,11 @@
 				<Original>Vous ne pouvez pas acheter de voiture sans un permis de conduire</Original>
                 <French>Vous ne pouvez pas acheter de voiture sans un permis de conduire</French>
 				<English>Vous ne pouvez pas acheter de voiture sans un permis de conduire</English>
+			</Key>
+			<Key ID="STR_pas_licences_permis_bateau">
+				<Original>Vous ne pouvez pas acheter de bateau sans un permis de bateau</Original>
+                <French>Vous ne pouvez pas acheter de bateau sans un permis de bateau</French>
+				<English>Vous ne pouvez pas acheter de bateau sans un permis de bateau</English>
 			</Key>
 			<Key ID="STR_kassa_traitement">
 				<Original>Kassa en traitement...</Original>

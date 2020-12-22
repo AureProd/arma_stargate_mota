@@ -315,6 +315,7 @@ class CfgFunctions
             class ajout_vehicle {};
             class fourriere {};
             class delete_all_vehicles {};
+            class repair_vehicules {};
         };
 
         // FPS CTF

@@ -18,6 +18,6 @@ else
 
 bouton_A_OK = true;
 pts_spawn = param [0]; // objet pts spawn
-isMilitaire = param [1, 0]; // 0 = voiture civil / 1 voiture armée / 2 bateau
+isMilitaire = param [1, 0]; // 0 = voiture civil / 1 voiture armée / 2 bateau / 3 voiture gendarme
 
 [] call mission_fnc_garage_bouton_location;

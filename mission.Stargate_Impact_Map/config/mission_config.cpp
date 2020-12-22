@@ -27,7 +27,8 @@ class stargate
 			{5, $STR_Permis_Chasse, "", 1, 0, 50, 0},
 			{6, $STR_Permis_traitement_kassa, "", 1, 1, 50, 10},
 			{7, $STR_Permis_recolte_ble, "", 1, 1, 50, 10},
-			{8, $STR_Permis_traitement_ble, "", 1, 1, 50, 10}
+			{8, $STR_Permis_traitement_ble, "", 1, 1, 50, 10},
+			{9, $STR_Permis_Bateau, "pictures\licences\SGI_licence_permis_co.paa", 1, 1, 50, 0}
 		};
 	};
 	class chasse

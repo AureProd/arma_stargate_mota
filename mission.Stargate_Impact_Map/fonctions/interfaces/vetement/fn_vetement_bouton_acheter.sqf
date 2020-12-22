@@ -16,6 +16,9 @@ if ((_playerBdd select 1) == 2) then
 		case 2: { 
 			_nom_config = "vetements_tauri_grades";
 		};
+		case 3: { 
+			_nom_config = "vetement_tauri_gendarme";
+		};
 		default { 
 			_nom_config = "vetements_tauri";
 		};
@@ -55,6 +58,9 @@ else
 		};
 		case 2: { 
 			_nom_config = "vetements_goauld_grades";
+		};
+		case 3: { 
+			_nom_config = "vetement_goauld_gendarme";
 		};
 		default { 
 			_nom_config = "vetements_goauld";
