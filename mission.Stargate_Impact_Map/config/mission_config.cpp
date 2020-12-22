@@ -46,8 +46,8 @@ class stargate
 	{
 		zones_recolte[] = { // [id zone, level acces de zone, id item gagné, is goauld ou tauri (0 goauld, 1 tauri, 2 tauri et goauld), text stringtable (text addAction), text stringtable (text recolte)]
 			{"zone_pommes", 0, 47, 1, $STR_recolte_pomme, $STR_recolte_pomme_bis}, 
-			{"zone_peches", 3, 46, 1, $STR_recolte_fraises, $STR_recolte_fraises_bis}, 
-			{"zone_fraises", 5, 45, 1, $STR_recolte_peches, $STR_recolte_peches_bis}, 
+			{"zone_peches", 3, 46, 1, $STR_recolte_peches, $STR_recolte_peches_bis}, 
+			{"zone_fraises", 5, 45, 1, $STR_recolte_fraises, $STR_recolte_fraises_bis}, 
 			{"zone_raisin1", 0, 14, 0, $STR_recolte_raisin1, $STR_recolte_raisin1_bis}, 
 			{"zone_raisin2", 3, 15, 0, $STR_recolte_raisin2, $STR_recolte_raisin2_bis}, 
 			{"zone_raisin3", 5, 16, 0, $STR_recolte_raisin3, $STR_recolte_raisin3_bis},

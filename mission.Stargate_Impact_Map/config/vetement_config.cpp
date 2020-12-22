@@ -74,11 +74,11 @@ class stargate_vetements
 			{"", 60, 200, "V_I_G_resistanceLeader_F", "player addVest 'V_I_G_resistanceLeader_F';"}
 		};
         sac[] = { // { nom / level / prix / id de l'objet / fonction }
-			{"", 10, 30, "B_AssaultPack_sgg", "player addBackpack 'B_AssaultPack_sgg';"},
-			{"", 15, 40, "B_AssaultPack_blk", "player addBackpack 'B_AssaultPack_blk';"},
-			{"", 25, 70, "B_Kitbag_tan", "player addBackpack 'B_Kitbag_tan';"},
-			{"", 30, 80, "B_FieldPack_blk", "player addBackpack 'B_FieldPack_blk';"},
-			{"", 45, 100, "B_TacticalPack_blk", "player addBackpack 'B_TacticalPack_blk';"},
+			{"", 10, 30, "B_AssaultPack_sgg", "player addVest 'B_AssaultPack_sgg';"},
+			{"", 15, 40, "B_AssaultPack_blk", "player addVest 'B_AssaultPack_blk';"},
+			{"", 25, 70, "B_Kitbag_tan", "player addVest 'B_Kitbag_tan';"},
+			{"", 30, 80, "B_FieldPack_blk", "player addVest 'B_FieldPack_blk';"},
+			{"", 45, 100, "B_TacticalPack_blk", "player addVest 'B_TacticalPack_blk';"},
 			{"", 60, 150, "B_Carryall_eaf_F", "player addBackpack 'B_Carryall_eaf_F';"},
 			{"", 60, 150, "B_Carryall_green_F", "player addBackpack 'B_Carryall_green_F';"}
         };
