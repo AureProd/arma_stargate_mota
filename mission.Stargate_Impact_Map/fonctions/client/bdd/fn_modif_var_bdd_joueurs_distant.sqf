@@ -12,3 +12,5 @@ private _playerBdd = missionNamespace getVariable _VarPlayerUID;
 _playerBdd set [(_tableauDonnees select 0), (_tableauDonnees select 1)];
 
 missionNamespace setVariable [_VarPlayerUID, _playerBdd, true];
+
+[] remoteExec ["mission_fnc_syns_data", _joueur];

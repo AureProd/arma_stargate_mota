@@ -40,3 +40,5 @@ player setDamage 0;
 
 // supprime tt equipement de unité
 player setUnitLoadout (getUnitLoadout (configFile >> "EmptyLoadout"));
+
+[] call mission_fnc_syns_data;

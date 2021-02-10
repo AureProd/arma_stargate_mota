@@ -182,3 +182,5 @@ switch (_indexChoix) do {
         [[_indexChoix, _num]] call mission_fnc_modif_var_bdd;
     };
 };
+
+[] call mission_fnc_syns_data;

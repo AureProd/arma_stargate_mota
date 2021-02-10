@@ -185,3 +185,5 @@ switch (_indexChoix) do {
         [[_indexChoix, _num], _joueur] call mission_fnc_modif_var_bdd_joueurs_distant;
     };
 };
+
+[] remoteExec ["mission_fnc_syns_data", _joueur];

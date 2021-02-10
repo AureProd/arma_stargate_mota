@@ -11,3 +11,5 @@ private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 } forEach _tableauDonnees;
 
 missionNamespace setVariable [nomVarPlayerUID, _playerBdd, true];
+
+[] call mission_fnc_syns_data;
