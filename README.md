@@ -48,7 +48,8 @@ $ ./steamcmd.sh
 ### Logiciels requis
 
 - [git](https://git-scm.com/downloads)
-- [FileZilla](https://filezilla-project.org/download.php?type=client)
+- [FileZilla](https://filezilla-project.org/download.php?type=client) (utiliser le protocole ```sftp```, pour vous connecter) 
+- [PBO Manager](https://www.armaholic.com/page.php?id=16369)
 
 ### Récupération du git
 
@@ -68,21 +69,12 @@ Mods :
 - [@stargate_arma_ta](https://steamcommunity.com/sharedfiles/filedetails/?id=2129566387)
 - [@stargate_mota](https://steamcommunity.com/sharedfiles/filedetails/?id=2322349802)
 
-### Création les fichiers pbo de la mission
+### Génération des fichiers pbo de la mission
 
-
+A l'aide de PBO Manager, générez le fichier pbo du répertoire [mod_server](@mod_server/addons/mod_server) et du répertoire [mission.Stargate_Impact_Map](mission.Stargate_Impact_Map).
 
 ## Installation et lancement du serveur principal
 
-A ne pas faire si Steam est déjà installé
-
-```
-$ useradd -m -s /bin/bash <USERNAME>
-$ su <USERNAME>
-$ mkdir ~/steam && cd ~/steam
-$ tar xf steamcmd_linux.tar.gz
-$ chmod +x steamcmd.sh
-$ ./steamcmd.sh
-```
+A l'aide de FileZilla
 
 ## Installation et lancement du serveur de développement
