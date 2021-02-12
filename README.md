@@ -37,11 +37,11 @@ $ GRANT ALL PRIVILEGES ON *.* TO '<USERNAME>'@'%' WITH GRANT OPTION;
 
 ### Création des bases de données
 
-Via HeidiSQL, créez deux bases de données, la première pour le serveur principal, qu'on nomera ```stargatedb``` et la seconde pour le serveur de développement, qu'on nomera ```stargatedb_dev```.
+Via HeidiSQL, créez deux bases de données, la première pour le serveur principal, qu'on nomera ```stargatedb``` et la seconde pour le serveur de développement, qu'on nomera ```stargatedb-dev```.
 
 ### Importation des bases de données
 
-Via HeidiSQL, importez le fichier [BDD_users.sql](autre/BDD.sql), dans la base de données ```stargatedb``` et dans la base de données ```stargatedb_dev```.
+Via HeidiSQL, importez le fichier [BDD.sql](autre/BDD.sql), dans la base de données ```stargatedb``` et dans la base de données ```stargatedb-dev```.
 
 ## Installation de Steam
 
@@ -183,7 +183,7 @@ $ IP = <BDD_ADDRESS>
 $ Port = <BDD_PORT>
 $ Username = <BDD_USERNAME>
 $ Password = <BDD_PASSWORD>
-$ Database = stargatedb_dev
+$ Database = stargatedb-dev
 ```
 
 A l'aide de FileZilla :
