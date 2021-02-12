@@ -5,7 +5,6 @@
 - [git](https://git-scm.com/downloads)
 - [FileZilla](https://filezilla-project.org/download.php?type=client) (connectez-vous via le protocole ```sftp```) 
 - [PBO Manager](https://www.armaholic.com/page.php?id=16369)
-- [Sublime Text](https://www.sublimetext.com/3)
 - [HeidiSQL](https://www.heidisql.com/download.php) (connectez-vous via le tunnel SSH)
 
 ## Installation de Screen
@@ -102,6 +101,17 @@ $ cd ~/stargate
 $ chmod +x run.sh
 ```
 
+A l'aide de FileZilla, copiez le répertoire [@extDB3](@extDB3/) dans le répertoire ```~/stargate/```, puis à l'aide de l'éditeur de FileZilla modifiez le fichier ```~/stargate/@extDB3/extdb3-conf.ini``` : 
+
+```
+$ [Database]
+$ IP = <BDD_ADDRESS>
+$ Port = <BDD_PORT>
+$ Username = <BDD_USERNAME>
+$ Password = <BDD_PASSWORD>
+$ Database = stargatedb
+```
+
 A l'aide de FileZilla :
 
 - copiez le fichier [server.cfg](autre/main/server.cfg) dans le répertoire ```~/stargate/```
@@ -163,6 +173,17 @@ A l'aide de FileZilla, copiez le fichier [run.sh](autre/dev/run.sh) dans le rép
 ```
 $ cd ~/stargate-dev
 $ chmod +x run.sh
+```
+
+A l'aide de FileZilla, copiez le répertoire [@extDB3](@extDB3/) dans le répertoire ```~/stargate-dev/```, puis à l'aide de l'éditeur de FileZilla modifiez le fichier ```~/stargate-dev/@extDB3/extdb3-conf.ini``` : 
+
+```
+$ [Database]
+$ IP = <BDD_ADDRESS>
+$ Port = <BDD_PORT>
+$ Username = <BDD_USERNAME>
+$ Password = <BDD_PASSWORD>
+$ Database = stargatedb_dev
 ```
 
 A l'aide de FileZilla :
