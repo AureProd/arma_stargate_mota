@@ -95,9 +95,14 @@ $ ./stargate_update.sh
 
 ### Importation des fichiers de la mission pour le serveur principal
 
-A l'aide de FileZilla,
+A l'aide de FileZilla, copiez le fichier [run.sh](autre/main/run.sh) dans le répertoire ```~/stargate/```, puis faites les commandes suivantes :
 
-- copiez le fichier [run.sh](autre/main/run.sh) dans le répertoire ```~/stargate/```
+```
+$ cd ~/stargate
+$ chmod +x run.sh
+```
+
+A l'aide de FileZilla :
 
 - copiez le fichier [server.cfg](autre/main/server.cfg) dans le répertoire ```~/stargate/```
 
@@ -120,13 +125,6 @@ A l'aide de FileZilla,
 
 - copiez dans le répertoire ```~/stargate/mpmissions/```, le fichier mission.Stargate_Impact_Map.pbo (générer précédement)
 
-Pour finir, faites les commandes suivantes :
-
-```
-$ cd ~/stargate
-$ chmod +x run.sh
-```
-
 ### Lancement du serveur principal
 
 ```
@@ -146,6 +144,8 @@ $ ctrl + D
 
 ## Installation et lancement du serveur de développement
 
+### Installation du serveur de développement
+
 A l'aide de FileZilla, copiez le fichier [stargate-dev_update.sh](autre/dev/stargate-dev_update.sh) dans le répertoire ```~/```, puis faites les commandes suivantes :
 
 ```
@@ -156,9 +156,14 @@ $ ./stargate-dev_update.sh
 
 ### Importation des fichiers de la mission pour le serveur principal
 
-A l'aide de FileZilla, 
+A l'aide de FileZilla, copiez le fichier [run.sh](autre/dev/run.sh) dans le répertoire ```~/stargate-dev/```, puis faites les commandes suivantes :
 
-- copiez le fichier [run.sh](autre/dev/run.sh) dans le répertoire ```~/stargate-dev/```
+```
+$ cd ~/stargate-dev
+$ chmod +x run.sh
+```
+
+A l'aide de FileZilla :
 
 - copiez le fichier [server.cfg](autre/dev/server.cfg) dans le répertoire ```~/stargate-dev/```
 
@@ -181,13 +186,6 @@ A l'aide de FileZilla,
 - copiez les fichiers bikey présent dans les dossiers ```~/stargate-dev/@CBA_A3/addons/```, ```~/stargate-dev/@map_stargate_impact/addons/```, ```~/stargate-dev/@stargate_arma_ta/addons/``` et ```~/stargate-dev/@stargate_mota/addons/```, puis collez les dans le dossier ```~/stargate-dev/keys/```
 
 - copiez dans le répertoire ```~/stargate-dev/mpmissions/```, le fichier mission.Stargate_Impact_Map.pbo (générer précédement)
-
-Pour finir, faites les commandes suivantes :
-
-```
-$ cd ~/stargate-dev
-$ chmod +x run.sh
-```
 
 ### Lancement du serveur principal
 
