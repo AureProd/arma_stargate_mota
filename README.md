@@ -125,7 +125,7 @@ $ ./run.sh
 $ ctrl + A + D
 ```
 
-## Arrêt du serveur principal
+### Arrêt du serveur principal
 
 ```
 $ screen -r stargate
@@ -175,7 +175,7 @@ $ ./run.sh
 $ ctrl + A + D
 ```
 
-## Arrêt du serveur principal
+### Arrêt du serveur principal
 
 ```
 $ screen -r stargate-dev
