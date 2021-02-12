@@ -64,7 +64,7 @@ $ ./steamcmd.sh
 $ git clone git@github.com:HuetJB/arma_stargate.git
 ```
 
-### Récupération des mods de la mission
+### Récupération des mods de la mission (sur votre PC)
 
 Abonnées vous à ces mods sur le workshop de steam (vous devez posséder Arma 3 pour qu'ils se téléchargent) et une fois qu'ils sont téléchargés, vous les trouvezrez dans le fichier ```Arma3/!Workshop/``` 
 
