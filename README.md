@@ -166,7 +166,7 @@ $ chmod +x stargate-dev_update.sh
 $ ./stargate-dev_update.sh
 ```
 
-### Importation des fichiers de la mission pour le serveur principal
+### Importation des fichiers de la mission pour le serveur de développement
 
 A l'aide de FileZilla, copiez le fichier [run.sh](autre/dev/run.sh) dans le répertoire ```~/stargate-dev/```, puis faites les commandes suivantes :
 
