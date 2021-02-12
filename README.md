@@ -97,11 +97,16 @@ $ ./stargate_update.sh
 
 A l'aide de FileZilla, 
 - copiez le fichier [run.sh](autre/main/run.sh) dans le répertoire ```~/stargate/```
+
 - copiez le fichier [server.cfg](autre/main/server.cfg) dans le répertoire ```~/stargate/```
+
 - copiez le fichier [server.cfg](autre/basic.cfg) dans le répertoire ```~/stargate/```
 - copiez le fichier [tbbmalloc.dll](autre/tbbmalloc.dll) dans le répertoire ```~/stargate/```
+
 - copiez le fichier [tbbmalloc_x64.dll](autre/tbbmalloc_x64.dll) dans le répertoire ```~/stargate/```
+
 - copiez le répertoire [@mod_server](@mod_server/) dans le répertoire ```~/stargate/```, avec dans le dossier ```~/stargate/@mod_server/addons/```, seulement le fichier mod_server.pbo (générer précédement)
+
 - copiez le mod @CBA_A3 (télécharger précédement) dans le répertoire ```~/stargate/```
 - copiez le mod @map_stargate_impact (télécharger précédement) dans le répertoire ```~/stargate/```
 - copiez le mod @stargate_arma_ta (télécharger précédement) dans le répertoire ```~/stargate/```
