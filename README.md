@@ -81,7 +81,7 @@ Mods :
 
 A l'aide de PBO Manager, générez le fichier mod_server.pbo du répertoire [mod_server](@mod_server/addons/mod_server) et le fichier mission.Stargate_Impact_Map.pbo du répertoire [mission.Stargate_Impact_Map](mission.Stargate_Impact_Map).
 
-## Installation et lancement du serveur principal
+## Installation du serveur principal
 
 ### Installation du serveur principal
 
@@ -124,6 +124,8 @@ A l'aide de FileZilla :
 - copiez les fichiers bikey présent dans les dossiers ```~/stargate/@CBA_A3/addons/```, ```~/stargate/@map_stargate_impact/addons/```, ```~/stargate/@stargate_arma_ta/addons/``` et ```~/stargate/@stargate_mota/addons/```, puis collez les dans le dossier ```~/stargate/keys/```
 
 - copiez dans le répertoire ```~/stargate/mpmissions/```, le fichier mission.Stargate_Impact_Map.pbo (générer précédement)
+
+## Lancement et arrêt du serveur principal
 
 ### Lancement du serveur principal
 
@@ -187,7 +189,9 @@ A l'aide de FileZilla :
 
 - copiez dans le répertoire ```~/stargate-dev/mpmissions/```, le fichier mission.Stargate_Impact_Map.pbo (générer précédement)
 
-### Lancement du serveur principal
+## Lancement et arrêt du serveur de développement
+
+### Lancement du serveur de développement
 
 ```
 $ screen -S stargate-dev
@@ -196,7 +200,7 @@ $ ./run.sh
 $ ctrl + A + D
 ```
 
-### Arrêt du serveur principal
+### Arrêt du serveur de développement
 
 ```
 $ screen -r stargate-dev
