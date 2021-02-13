@@ -45,6 +45,7 @@ class CfgFunctions
             class is_chef_team {};
             class get_invitations_team {};
             class get_invite_par_team {};
+            class remove_invitation {};
             class set_team {};
             class add_team {};
             class delete_team {};

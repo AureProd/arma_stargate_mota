@@ -31,6 +31,7 @@ if ((count ([_joueurUid] call mission_fnc_get_team)) < 5) then {
 		[player] join (group _joueur);
 
 		[] call mission_fnc_create_reset_invitations;
+		[_joueurUid, getPlayerUID player] call mission_fnc_remove_invitation;
 	};
 
 	[true] spawn mission_fnc_interface_groupe;

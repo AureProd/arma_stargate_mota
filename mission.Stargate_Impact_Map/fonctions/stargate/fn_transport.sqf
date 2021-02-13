@@ -78,6 +78,8 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 	if ((_porteDistante animationPhase 'anim_iris1') == 1) then {
 		titleText [(localize "STR_mort_iris_fermee"), "BLACK OUT"];
 
+		_player setVariable ["notInTransport", false, true];
+
 		_player setDamage 1;
 
 		[_player, false] remoteExec ["hideObject", 0];
