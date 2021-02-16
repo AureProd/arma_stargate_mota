@@ -64,7 +64,7 @@ class interface_soldat
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -88,7 +88,7 @@ class interface_soldat
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -120,7 +120,7 @@ class interface_soldat
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -146,7 +146,7 @@ class interface_soldat
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		}; */
 		class select_licences_items
@@ -167,7 +167,7 @@ class interface_soldat
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.2);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
@@ -206,7 +206,7 @@ class interface_soldat
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -238,7 +238,7 @@ class interface_soldat
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -262,7 +262,7 @@ class interface_soldat
 			colorSelection[] = {1,1,1,0.25};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			
 		};
 	};
@@ -349,7 +349,7 @@ class interface_admin_1
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -373,7 +373,7 @@ class interface_admin_1
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -405,7 +405,7 @@ class interface_admin_1
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -431,7 +431,7 @@ class interface_admin_1
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		}; */
 		class select_licences_items
@@ -452,7 +452,7 @@ class interface_admin_1
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.2);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
@@ -491,7 +491,7 @@ class interface_admin_1
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -523,7 +523,7 @@ class interface_admin_1
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -547,7 +547,7 @@ class interface_admin_1
 			colorSelection[] = {1,1,1,0.25};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			
 		};
 		class liste_joueurs
@@ -566,7 +566,7 @@ class interface_admin_1
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -603,7 +603,7 @@ class interface_admin_1
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -710,7 +710,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -734,7 +734,7 @@ class interface_admin_5
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -766,7 +766,7 @@ class interface_admin_5
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.3);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -792,7 +792,7 @@ class interface_admin_5
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.4);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		}; */
 		class select_licences_items
@@ -813,7 +813,7 @@ class interface_admin_5
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.2);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
@@ -852,7 +852,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -884,7 +884,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -908,7 +908,7 @@ class interface_admin_5
 			colorSelection[] = {1,1,1,0.25};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			
 		};
 		class liste_joueurs
@@ -927,7 +927,7 @@ class interface_admin_5
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.3);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			onLBSelChanged = "[] call mission_fnc_interface_admin_liste_joueurs;";
 			class ListScrollBar
@@ -965,7 +965,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -997,7 +997,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1029,7 +1029,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1061,7 +1061,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1093,7 +1093,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1120,7 +1120,7 @@ class interface_admin_5
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.3);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -1146,7 +1146,7 @@ class interface_admin_5
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			
 		}; */
 		class bouton_tuer_player
@@ -1173,7 +1173,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1194,7 +1194,7 @@ class interface_admin_5
 			colorBackground[] = {0.2,0.2,0.2,1};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			
 		};
 		class ajout_xp
@@ -1213,7 +1213,7 @@ class interface_admin_5
 			colorSelection[] = {1,1,1,0.25};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			
 		};
 		class bouton_add_xp
@@ -1240,7 +1240,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1272,7 +1272,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1304,7 +1304,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1336,7 +1336,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1362,7 +1362,7 @@ class interface_admin_5
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.2);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
@@ -1403,7 +1403,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1435,7 +1435,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1461,7 +1461,7 @@ class interface_admin_5
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.3);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};
@@ -1501,7 +1501,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1533,7 +1533,7 @@ class interface_admin_5
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.4);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -1559,7 +1559,7 @@ class interface_admin_5
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
-			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1.2);
+			sizeEx = (((((safezoneW/safezoneH)min 1.2)/1.2)/25)*1);
 			soundCollapse[] = {"\A3\ui_f\data\sound\RscCombo\soundCollapse",0.1,1.0};
 			soundExpand[] = {"\A3\ui_f\data\sound\RscCombo\soundExpand",0.1,1.0};
 			soundSelect[] = {"\A3\ui_f\data\sound\RscCombo\soundSelect",0.1,1.0};

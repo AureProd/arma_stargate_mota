@@ -71,7 +71,7 @@ class menu_journal_quetes
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -97,7 +97,7 @@ class menu_journal_quetes
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			lineSpacing = 1;
 		};
 		class text_recompence
@@ -113,7 +113,7 @@ class menu_journal_quetes
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0,1,0,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			lineSpacing = 1;
 		};
 		class text_objectif
@@ -129,7 +129,7 @@ class menu_journal_quetes
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,0,0,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			lineSpacing = 1;
 		};
 	};
@@ -208,7 +208,7 @@ class menu_journal_quetes_bis
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			class ListScrollBar
 			{
@@ -234,7 +234,7 @@ class menu_journal_quetes_bis
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.1);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			lineSpacing = 1;
 		};
 		class text_recompence
@@ -250,7 +250,7 @@ class menu_journal_quetes_bis
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0,1,0,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			lineSpacing = 1;
 		};
 		class text_objectif
@@ -266,7 +266,7 @@ class menu_journal_quetes_bis
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,0,0,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			lineSpacing = 1;
 		};
 	};

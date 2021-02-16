@@ -425,7 +425,7 @@ class menu_medical
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.15);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.2};
 			class ListScrollBar
 			{
@@ -991,7 +991,7 @@ class menu_medical_goauld
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.15);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.2};
 			class ListScrollBar
 			{

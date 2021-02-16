@@ -72,7 +72,7 @@ class menu_garage
 			font = "PuristaMedium";
 			maxHistoryDelay = 0;
 			rowHeight = 0;
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1.25);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundSelect[] = {"\A3\ui_f\data\sound\RscListbox\soundSelect",0.09,1.0};
 			onLBSelChanged = "[] call mission_fnc_garage_liste_vehicules;";
 			onLBDblClick = "playSound 'button'; [] call mission_fnc_garage_db_click_liste_vehicules;";

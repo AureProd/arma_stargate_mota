@@ -1,7 +1,7 @@
 
 menu_y_ok = true;
 
-//[] call mission_fnc_quetesActives; // <-- relance les quetes actives apres deco-reco
+[] call mission_fnc_quetesActives; // <-- relance les quetes actives apres deco-reco
 
 private _posPlayer = param [0];
 

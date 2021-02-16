@@ -1,9 +1,8 @@
 
+private _quete_id = param[0, nil];
+
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
-
-private _tab_quetes_deja_faite = _playerBdd select 10;
-private _tab_quetes_dispo = _playerBdd select 11;
 private _tab_quetes_active = _playerBdd select 13;
 
 private _config_quetes = nil; 
@@ -56,16 +55,27 @@ else
 };
 
 {
-	if ((_x select 0) in _tab_quetes_active) then 
-	{
-		_tab_quetes pushBack _x;
+	if (isNil "_quete_id") then {
+		if ((_x select 0) in _tab_quetes_active) then 
+		{
+			_tab_quetes pushBack _x;
+		};
+	} else {
+		if ((_x select 0) == _quete_id) then 
+		{
+			_tab_quetes pushBack _x;
+		};
 	};
 } forEach _config_quetes;
 
 {
-	switch (_x select 1) do {
-		case 1: { 
-			call compile (_x select 7);	
+	switch (_x select 6) do {
+		case 1: { // quête type 1
+			[_x, 0] call mission_fnc_quete_type_1;	
+		};
+		case 2: {}; // quête type 2
+		case 3: { // quête type 3
+			[_x, 0] call mission_fnc_quete_type_3;	
 		};
 	};
 } forEach _tab_quetes;

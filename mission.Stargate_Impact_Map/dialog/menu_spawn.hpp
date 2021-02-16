@@ -51,7 +51,7 @@ class menu_spawn
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class fondboutonarcheologue
@@ -147,7 +147,7 @@ class menu_spawn
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class imagetribus
@@ -163,7 +163,7 @@ class menu_spawn
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class imagespawn
@@ -179,7 +179,7 @@ class menu_spawn
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class boutonarcheologue

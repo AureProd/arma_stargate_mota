@@ -1,6 +1,5 @@
 
-// fonction name : mission_fnc_getBDD
-// parmettres : [choix, player]
+// [choix, player] call mission_fnc_getBDD
 
 private _valeurs = [
     "classe", "race", "xp", "licences", "level", "vie", "faim", "soif", "inventaire virtuel",

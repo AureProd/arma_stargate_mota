@@ -13,6 +13,7 @@ class CfgFunctions
             class not_whitelist {};
             class kick {};
             class modif_var_bdd {};
+            class modif_var_bdd_no_update {};
             class remove_xp {};
             class syns_data {};
             class reset_bdd {};
@@ -54,6 +55,8 @@ class CfgFunctions
             class remove_licence_distant {};
             class add_garage {};
             class is_in_inventory {};
+            class has_item {};
+            class remove_items {};
         };
         class interface_soldat
         {
@@ -107,10 +110,14 @@ class CfgFunctions
         class client_quetes
         {
             file = "fonctions\client\quetes";
+            class addActionsQuetes {};
             class affichage_icons {};
             class quete_type_1 {};
             class quetesActives {};
             class get_config_quetes {};
+            class giveQueteRecompence {};
+            class quete_type_2 {};
+            class quete_type_3 {};
         };
         class interfaces_docs
         {

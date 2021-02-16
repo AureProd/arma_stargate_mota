@@ -10,14 +10,12 @@ if (_index != -1) then
 {
 	private _quete = liste_joueurs_groupe select _index;
 
-	if ([_quete select 0] call mission_fnc_has_quetes_dispo) then
+	if (((_quete select 8) call mission_fnc_has_quetes_faites) and ((['level'] call mission_fnc_getBDD) >= (_quete select 9))) then
 	{
 		closeDialog 1;
 
-		switch (_quete select 1) do {
-			case 1: { 
-				call compile (_quete select 7);
-			};
-		};
+		[_quete select 0] call mission_fnc_add_quetes_actives;
+
+		[_quete select 0] call mission_fnc_quetesActives;
 	};
 };

@@ -22,12 +22,8 @@ liste_joueurs_groupe pushBack _liste_quete;
 private _listeBox = (findDisplay 10000) displayCtrl 10003;
 
 {
-	switch (_x select 1) do {
-		case 1: { 
-			private _index = _listeBox lbAdd format ["%1", (_x select 3)];
-			_listeBox lbsetColor [_index, [1, 1, 1, 1]]; // blanc
-		};
-	};
+	private _index = _listeBox lbAdd format ["%1", (_x select 2)];
+	_listeBox lbsetColor [_index, [1, 1, 1, 1]]; // blanc
 } forEach liste_joueurs_groupe;
 
 _listeBox lbSetCurSel -1;

@@ -1,12 +1,13 @@
 
-//private _inventaire = param [0]; //inventaire de player
-private _objet_id = param [0]; // id de objet (exemple : 1 = bouteille eau)
+// [objet_id, is_stackeable, index, player] call mission_fnc_supprime_item
 
+private _objet_id = param [0]; // id de objet (exemple : 1 = bouteille eau)
 private _isStackeable = param [1, true];
-private _index = param [2];
+private _index = param [2]; // seulement pour les items non stackeable (_isStackeable = false) 
+private _player = param [3, player];
 
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel]
-private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
+private _playerBdd = missionNamespace getVariable format ["variable_%1", getPlayerUID _player];
 private _inventaire = _playerBdd select 8;
 
 if (_isStackeable) then 
@@ -33,7 +34,11 @@ if (_isStackeable) then
 } 
 else 
 {
-	_inventaire deleteAt _index;
+	if (_index != -1) then {
+		_inventaire deleteAt _index;
 
-	[[8, _inventaire]] call mission_fnc_modif_var_bdd;
+		[[8, _inventaire]] call mission_fnc_modif_var_bdd;
+	} else {
+		hint localize "STR_erreur";
+	};
 };

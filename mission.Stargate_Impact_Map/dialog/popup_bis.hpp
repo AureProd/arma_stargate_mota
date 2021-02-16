@@ -98,7 +98,7 @@ class popup_specialites_archeologue
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0.9,0.9,0.9,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 	};
@@ -203,7 +203,7 @@ class popup_specialites_scientifique
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0.9,0.9,0.9,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 	};
@@ -308,7 +308,7 @@ class popup_specialites_soldat
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0.9,0.9,0.9,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 	};
@@ -413,7 +413,7 @@ class popup_cyber_cafe
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {0.9,0.9,0.9,1};
 			font = "PuristaMedium";
-			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 2);
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 	};

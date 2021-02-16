@@ -95,7 +95,7 @@ while {true} do
 		//player setDamage (1 - (_vie / 100));
 		[_vie] call mission_fnc_set_damage_player;
 
-		[[5, _vie], [6, _faim], [7, _soif], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
+		[[5, _vie], [6, _faim], [7, _soif], [9, _liste_vies]] call mission_fnc_modif_var_bdd_no_update;
 
 		_compteur = _compteur + 1;
 

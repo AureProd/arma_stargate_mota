@@ -184,7 +184,7 @@ class menu_groupe
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = 0.05;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"",0.5,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -215,7 +215,7 @@ class menu_groupe
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = 0.05;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"",0.5,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -246,7 +246,7 @@ class menu_groupe
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = 0.05;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"",0.5,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -278,7 +278,7 @@ class menu_groupe_goauld
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
-			sizeEx = 0;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
 		class liste_team
@@ -394,7 +394,7 @@ class menu_groupe_goauld
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = 0.05;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"",0.5,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -425,7 +425,7 @@ class menu_groupe_goauld
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = 0.05;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"",0.5,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
@@ -456,7 +456,7 @@ class menu_groupe_goauld
 			offsetPressedY = 0;
 			offsetX = 0;
 			offsetY = 0;
-			sizeEx = 0.05;
+			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			soundClick[] = {"",0.5,1.0};
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};

@@ -368,25 +368,25 @@
 			</Key>
 		</Container>
         <Container name="Quetes">
-			<Key ID="STR_Quetes_map_titre">
-				<Original>Bienvenue sur StarGate</Original>
-                <French>Bienvenue sur StarGate</French>
-				<English>Welcome to StarGate</English>
+			<Key ID="STR_give_quete_recompence">
+				<Original>Cette quête terminée, vous rapporte %1 XP</Original>
+                <French>Cette quête terminée, vous rapporte %1 XP</French>
+				<English>Cette quête terminée, vous rapporte %1 XP</English> <!-- A traduire -->
 			</Key>
-            <Key ID="STR_Quetes_map_description">
-				<Original>Bonjour et bienvenue sur le serveur Stargate Impact. C'est un MMORPG avec un mélange de MILSIM et de RP Life. Pour commencer à jouer, allez en ville et trouvez l'office du tourisme. il vous donneront une carte qui vous sera utile pour vous orienter !</Original>
-                <French>Bonjour et bienvenue sur le serveur Stargate Impact. C'est un MMORPG avec un mélange de MILSIM et de RP Life. Pour commencer à jouer, allez en ville et trouvez l'office du tourisme. il vous donneront une carte qui vous sera utile pour vous orienter !</French>
-				<English>Hello and welcome to Stargate Impact server. A brilliant mix between MMORPG, MILSIM and RP Life. To start playing, go to the city center and find tourist office, they will give you a map to make you able to find your way !</English>
+			<Key ID="STR_message_validation_quete">
+				<Original>Vous avez validé la quête '%1'</Original>
+                <French>Vous avez validé la quête '%1'</French>
+				<English>Vous avez validé la quête '%1'</English> <!-- A traduire -->
 			</Key>
-            <Key ID="STR_Quetes_map_objectif">
-				<Original>Trouvez l'office du tourisme !</Original>
-                <French>Trouvez l'office du tourisme !</French>
-				<English>Find tourist office !</English>
+			<Key ID="STR_message_invalidation_quete">
+				<Original>Vous n'avez pas validé la quête '%1'</Original>
+                <French>Vous n'avez pas validé la quête '%1'</French>
+				<English>Vous n'avez pas validé la quête '%1'</English> <!-- A traduire -->
 			</Key>
-            <Key ID="STR_Quetes_map_text_final">
-				<Original>Voilà votre carte...</Original>
-                <French>Voilà votre carte...</French>
-				<English>Here is your map ...</English>
+			<Key ID="STR_message_manque_items_quete_type_2">
+				<Original>Pour valider votre quête '%1', il vous manque des items</Original>
+                <French>Pour valider votre quête '%1', il vous manque des items</French>
+				<English>Pour valider votre quête '%1', il vous manque des items</English> <!-- A traduire -->
 			</Key>
 		</Container>
         <Container name="Autres_Messages">
