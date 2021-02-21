@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={34176.746,34.547073,16088.411};
-		dir[]={0.20628534,-0.49902776,0.84178549};
-		up[]={0.11879946,0.86648703,0.48478895};
-		aside[]={0.97137952,-1.5953483e-006,-0.23803622};
+		pos[]={34194.805,23.414225,16101.267};
+		dir[]={-0.14586793,-0.69736314,0.70185459};
+		up[]={-0.1419142,0.71661758,0.682823};
+		aside[]={0.97919524,-3.239431e-006,0.20351492};
 	};
 };
 binarizationWanted=0;
@@ -19269,10 +19269,9 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={34179.621,2.1464074,16119.764};
+				position[]={34179.621,2.3594074,16119.764};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="relique_1";
@@ -19280,6 +19279,7 @@ class Mission
 			};
 			id=1568;
 			type="Land_HumanSkull_F";
+			atlOffset=0.21300006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19539,16 +19539,40 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={34184.57,2.0026686,16119.847};
+				position[]={34184.57,2.3590136,16119.847};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="doc_1";
+				disableSimulation=1;
 			};
 			id=1597;
 			type="Leaflet_05_Old_F";
+			atlOffset=0.35634494;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item545
 		{
