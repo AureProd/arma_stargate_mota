@@ -112,7 +112,7 @@ switch (_objet select 4) do
 					if (_soif + (_objet select 9) < 100) then {
 						_soif = _soif + (_objet select 9);
 					} else {
-						if (_soif + (_objet select 9) > 100) then {
+						if (_soif >= 100) then {
 							_soif = 100;
 							
 							private _variablesPlayer = missionNamespace getVariable nomVarPlayerUID;
@@ -147,7 +147,7 @@ switch (_objet select 4) do
 					if (_soif + (_objet select 9) < 100) then {
 						_soif = _soif + (_objet select 9);
 					} else {
-						if (_soif + (_objet select 9) > 100) then {
+						if (_soif >= 100) then {
 							_soif = 100;
 							
 							private _variablesPlayer = missionNamespace getVariable nomVarPlayerUID;
@@ -321,7 +321,7 @@ switch (_objet select 4) do
 		_hndl2 ppEffectCommit 10;
 
 		[_hndl, _hndl2] spawn {
-			sleep 30;
+			sleep (60 * 3);
 
 			private _hndl = param [0];
 			private _hndl2 = param [1];

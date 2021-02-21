@@ -2,7 +2,7 @@
 private _listePlanetes = [];
 
 {
-	if ([(_x select 0), 1] call mission_fnc_has_planetes) then {
+	if ([(_x select 0)] call mission_fnc_has_planetes) then {
 		_listePlanetes pushBack _x;
 	};
 } forEach (getArray(missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));

@@ -7,14 +7,14 @@ private _listeDocuments = [];
 	};
 } forEach (getArray(missionConfigFile >> "docs_planetes" >> "documents" >> "liste"));
 
-private _liste = (findDisplay 60000) displayCtrl 60002;
+private _liste = (findDisplay 5000) displayCtrl 5001;
 private _index = lbCurSel _liste;
 
 if (_index != -1) then 
 {
 	private _document = _listeDocuments select _index;
 
-	closeDialog 1;
+	private _image_fond = (findDisplay 5000) displayCtrl 5002;
 
-	[(_document select 2)] call mission_fnc_interface_maps;
+	_image_fond ctrlSetText (_document select 2);
 };

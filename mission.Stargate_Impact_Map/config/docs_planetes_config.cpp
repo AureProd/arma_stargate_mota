@@ -4,14 +4,15 @@ class docs_planetes
 	class documents
     {
 		liste[] = { // id document / nom document / image document
-			
+			{1, "Map Tau'ry", "pictures\planetes\Terre.paa"},
+			{2, "Map Qa'al", "pictures\planetes\Qaal.paa"}
 		};
 	};
 	class planetes
 	{
-		liste[] = { // id planete / nom planete / image carte planete / id porte / id dhd / liste des logos pour porte (5 logos max)
-			{1, "Tau'ry", "pictures\planetes\Terre.paa", "porte_tauri", "dhd_tauri", {6, 30, 11, 19, 15, 37, 1}},
-			{82, "Qa'al", "pictures\planetes\Qaal.paa", "porte_qa_al", "dhd_qa_al", {20, 3, 16, 5, 31, 10, 25}},
+		liste[] = { // id planete / nom planete / numero doc map planete / id porte / id dhd / liste des logos pour porte (5 logos max)
+			{1, "Tau'ry", 1, "porte_tauri", "dhd_tauri", {6, 30, 11, 19, 15, 37, 1}},
+			{82, "Qa'al", 2, "porte_qa_al", "dhd_qa_al", {20, 3, 16, 5, 31, 10, 25}},
 		};
 
 		liste_logos[] = { // id logo / veleur pour porte SGI / valeur pour porte SGA / num logo DHD

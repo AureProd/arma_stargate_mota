@@ -77,6 +77,7 @@ else
 		case 3: { // quête type 3
 			[_x, 0] call mission_fnc_quete_type_3;	
 		};
+		case 4: {}; // quête type 4
 	};
 } forEach _tab_quetes;
 

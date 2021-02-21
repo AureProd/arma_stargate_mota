@@ -14,7 +14,7 @@ if (_index != -1) then {
 	switch (_indexTypeBdd) do {
 		case 0: { // planetes decouvertes
 			{
-				if ((_x select 0) in (["planete visite", _player] call mission_fnc_getBDD)) then {
+				if ([(_x select 0)] call mission_fnc_has_planetes) then {
 					_liste_planetes lbAdd (format ["%1", (_x select 1)]);
 				};
 			} forEach (getArray(missionConfigFile >> "docs_planetes" >> "planetes" >> "liste"));
@@ -85,6 +85,15 @@ if (_index != -1) then {
 					};
 				} forEach _liste_objets_config;
 			} forEach _inventaire_virtuel;
+		};
+		case 3: { // docs debloqués
+			{
+				if ([(_x select 0)] call mission_fnc_has_docs) then {
+					_liste_planetes lbAdd (format ["%1", (_x select 1)]);
+				};
+			} forEach (getArray(missionConfigFile >> "docs_planetes" >> "documents" >> "liste"));
+
+			_liste_planetes lbSetCurSel -1;
 		};
 	};
 };

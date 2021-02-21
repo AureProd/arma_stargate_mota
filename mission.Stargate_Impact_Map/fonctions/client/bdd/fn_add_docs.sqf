@@ -1,6 +1,5 @@
 
-// fonction name : mission_fnc_add_docs
-// parmettres : [numero 1 document, numero 2 document, numero 3 document, numero 4 document ...etc]
+// [numero 1 document, numero 2 document] call mission_fnc_add_docs
 
 private _nomVarPlayer = format ["variable_%1", getPlayerUID player]; // BDD player
 

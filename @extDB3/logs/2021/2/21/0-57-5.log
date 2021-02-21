@@ -1,0 +1,30 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.028
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 6 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[00:57:06:540634 +01:00] [Thread 6980] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[00:57:06:541620 +01:00] [Thread 6980] extDB3: SQL: Initialized: NULL = ""
+[01:04:55:729755 +01:00] [Thread 6980] extDB3: Already Connected to a Database
+[01:04:55:729820 +01:00] [Thread 6980] extDB3: Error Protocol Name Already Taken: 444
+[01:05:35:152650 +01:00] [Thread 6980] extDB3: Already Connected to a Database
+[01:05:35:152710 +01:00] [Thread 6980] extDB3: Error Protocol Name Already Taken: 444
+[01:06:25:574486 +01:00] [Thread 6980] extDB3: Already Connected to a Database
+[01:06:25:574556 +01:00] [Thread 6980] extDB3: Error Protocol Name Already Taken: 444

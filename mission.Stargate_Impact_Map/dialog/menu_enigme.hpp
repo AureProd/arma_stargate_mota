@@ -1,14 +1,12 @@
-class MyDialog
+class menu_enigme
 {
-	idd = -1;
-	
-	class ControlsBackground
-	{
-		
-	};
+	idd = 5000;
+	movingEnable = 0;
+    enableSimulation = 1;
+    duration = 999999;
 	class Controls
 	{
-		class Control1828159476
+		class image_fond
 		{
 			type = 0;
 			idc = -1;
@@ -17,7 +15,7 @@ class MyDialog
 			w = safeZoneW * 0.7625;
 			h = safeZoneH * 0.99;
 			style = 48;
-			text = "C:\Users\jbhue\Documents\Arma 3 - Other Profiles\AureProd\mpmissions\arma_stargate\mission.Stargate_Impact_Map\pictures\interfaces\menu_documents\menuenigme.png";
+			text = "pictures\interfaces\menu_documents\menuenigme.paa";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
@@ -53,12 +51,12 @@ class MyDialog
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
+			onButtonClick = "playSound 'button'; closeDialog 1;";
 		};
 		class liste_docs
 		{
 			type = 5;
-			idc = -1;
+			idc = 5001;
 			x = safeZoneX + safeZoneW * 0.65125;
 			y = safeZoneY + safeZoneH * 0.15;
 			w = safeZoneW * 0.210625;
@@ -82,34 +80,34 @@ class MyDialog
 				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
 				
 			};
-			
+			onLBSelChanged = "playSound 'button'; [] call mission_fnc_interface_docs_db_clicks;";
 		};
 		class image_doc
 		{
 			type = 0;
-			idc = -1;
+			idc = 5002;
 			x = safeZoneX + safeZoneW * 0.239375;
 			y = safeZoneY + safeZoneH * 0.55111112;
 			w = safeZoneW * 0.28;
 			h = safeZoneH * 0.36888889;
 			style = 48;
-			text = "C:\Users\jbhue\Documents\Arma 3 - Other Profiles\AureProd\mpmissions\arma_stargate\mission.Stargate_Impact_Map\pictures\planetes\terre.png";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 			
 		};
-		class image_doc_copy1
+		class image_enigme
 		{
 			type = 0;
-			idc = -1;
+			idc = 5003;
 			x = safeZoneX + safeZoneW * 0.24125;
 			y = safeZoneY + safeZoneH * 0.15;
 			w = safeZoneW * 0.279375;
 			h = safeZoneH * 0.37333334;
 			style = 48;
-			text = "C:\Users\jbhue\Documents\Arma 3 - Other Profiles\AureProd\mpmissions\arma_stargate\mission.Stargate_Impact_Map\pictures\planetes\terre.png";
+			text = "";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";

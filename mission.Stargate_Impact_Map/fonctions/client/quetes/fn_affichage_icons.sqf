@@ -62,6 +62,16 @@ addMissionEventHandler ["Draw3D",
 						};
 					};
 				};
+				case 4: { // quête type 4
+					if (((_x select 8) call mission_fnc_has_quetes_faites) and ((['level'] call mission_fnc_getBDD) >= (_x select 9)) and (!([(_x select 0)] call mission_fnc_has_quetes_actives)) and (!([(_x select 0)] call mission_fnc_has_quetes_faites))) then {
+						[(call compile (_x select 1)), "pictures\icon_quete\icon_quete_exclamation_violet.paa"] call _fn_add_icon;
+					} else {
+						if ([(_x select 0)] call mission_fnc_has_quetes_actives) then {
+							[(call compile (_x select 1)), "pictures\icon_quete\icon_quete_interrogation_violet.paa"] call _fn_add_icon;
+							[(call compile ((_x select 7) select 3)), "pictures\icon_quete\icon_quete_interrogation_violet.paa"] call _fn_add_icon;
+						};
+					};
+				};
 			};	
 		};
 	} forEach _config_quetes;

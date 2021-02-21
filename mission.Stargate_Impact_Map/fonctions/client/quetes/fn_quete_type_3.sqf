@@ -1,5 +1,5 @@
 
-// [tableau_quête, partie_code(0/1/2)] call mission_fnc_quete_type_2
+// [tableau_quête, partie_code(0/1/2)] call mission_fnc_quete_type_3
 
 private _tabQuete = param [0];
 private _partieCode = param [1];
@@ -30,7 +30,7 @@ switch (_partieCode) do {
 		[_tabQuete select 0] call mission_fnc_remove_quetes_actives;
 		[_tabQuete select 0] call mission_fnc_add_quetes_faites;
 
-		[_tabQuete select 5] call mission_fnc_giveQueteRecompence;
+		[_tabQuete] call mission_fnc_giveQueteRecompence;
 	};
 };
 

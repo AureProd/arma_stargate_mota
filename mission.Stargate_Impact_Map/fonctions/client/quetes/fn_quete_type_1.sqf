@@ -28,7 +28,7 @@ switch (_partieCode) do {
 			[_tabQuete select 0] call mission_fnc_remove_quetes_actives;
  			[_tabQuete select 0] call mission_fnc_add_quetes_faites;
 
-			[_tabQuete select 5] call mission_fnc_giveQueteRecompence;
+			[_tabQuete] call mission_fnc_giveQueteRecompence;
 		} else {
 			hint format [localize "STR_message_invalidation_quete", (_tabQuete select 2)]; // message invalidation quête
 		};

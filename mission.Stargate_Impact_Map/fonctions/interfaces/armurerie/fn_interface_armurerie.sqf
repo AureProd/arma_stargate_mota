@@ -17,5 +17,6 @@ else
 };
 
 bouton_A_OK_bis = 1;
+isMilitaire = param [0, 0]; // 0 = armes civil / 1 armes armée / 2 armes gendarme
 
 [] call mission_fnc_armurerie_bouton_armes;

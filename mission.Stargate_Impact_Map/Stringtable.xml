@@ -378,6 +378,16 @@
                 <French>Vous avez validé la quête '%1'</French>
 				<English>Vous avez validé la quête '%1'</English> <!-- A traduire -->
 			</Key>
+			<Key ID="STR_bonne_reponse_enigme_quete">
+				<Original>Avec cette bonne réponse, vous avez validé la quête '%1'</Original>
+                <French>Avec cette bonne réponse, vous avez validé la quête '%1'</French>
+				<English>Avec cette bonne réponse, vous avez validé la quête '%1'</English> <!-- A traduire -->
+			</Key>
+			<Key ID="STR_mauvaise_reponse_enigme">
+				<Original>La réponse est incorrect réessayer</Original>
+                <French>La réponse est incorrect réessayer</French>
+				<English>La réponse est incorrect réessayer</English> <!-- A traduire -->
+			</Key>
 			<Key ID="STR_message_invalidation_quete">
 				<Original>Vous n'avez pas validé la quête '%1'</Original>
                 <French>Vous n'avez pas validé la quête '%1'</French>
@@ -559,6 +569,16 @@
                 <French>Vous avez tué une chevre !!!</French>
 				<English>You killed a goat !!!</English>
 			</Key>
+			<Key ID="STR_Kill_poule">
+				<Original>Vous avez tué une poule !!!</Original>
+                <French>Vous avez tué une poule !!!</French>
+				<English>Vous avez tué une poule !!!</English> <!-- A traduire -->
+			</Key>
+			<Key ID="STR_Kill_lapin">
+				<Original>Vous avez tué un lapin !!!</Original>
+                <French>Vous avez tué un lapin !!!</French>
+				<English>Vous avez tué un lapin !!!</English> <!-- A traduire -->
+			</Key>
 		</Container>
         <Container name="Depeucage">
             <Key ID="STR_depeucer_add_action">
@@ -575,6 +595,16 @@
 				<Original>Voilà votre viande de chevre !!!</Original>
                 <French>Voilà votre viande de chevre !!!</French>
 				<English>You get goat meat !!!</English>
+			</Key>
+			<Key ID="STR_depeucer_poule">
+				<Original>Voilà votre viande de poule !!!</Original>
+                <French>Voilà votre viande de poule !!!</French>
+				<English>Voilà votre viande de poule !!!</English> <!-- A traduire -->
+			</Key>
+			<Key ID="STR_depeucer_lapin">
+				<Original>Voilà votre viande de lapin !!!</Original>
+                <French>Voilà votre viande de lapin !!!</French>
+				<English>Voilà votre viande de lapin !!!</English> <!-- A traduire -->
 			</Key>
             <Key ID="STR_depeucer_erreur_poid">
 				<Original>Votre inventaire est plein, vous ne pouvez pas prendre cette viande</Original>
@@ -798,6 +828,11 @@
 				<Original>Items</Original>
                 <French>Items</French>
 				<English>Items</English>
+			</Key>
+			<Key ID="STR_admin_docs">
+				<Original>Docs</Original>
+                <French>Docs</French>
+				<English>Docs</English>
 			</Key>
 			<Key ID="STR_admin_licences">
 				<Original>Licences</Original>

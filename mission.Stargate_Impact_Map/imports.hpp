@@ -22,6 +22,9 @@
 #include "dialog\interface_admin.hpp"
 #include "dialog\menu_garage.hpp"
 #include "dialog\menu_licences.hpp"
+#include "dialog\popup_enigme.hpp"
+#include "dialog\menu_enigme.hpp"
+#include "dialog\menu_docs.hpp"
 
 // Configs
 #include "config\mission_config.cpp"

@@ -118,6 +118,7 @@ class CfgFunctions
             class giveQueteRecompence {};
             class quete_type_2 {};
             class quete_type_3 {};
+            class quete_type_4 {};
         };
         class interfaces_docs
         {
@@ -148,7 +149,6 @@ class CfgFunctions
             class chargement {};
             class vendre_item {};
             class paiement_vente {};
-            class interface_maps {};
             class set_damage_player {};
             class get_player_with_uid {};
             class prison {};

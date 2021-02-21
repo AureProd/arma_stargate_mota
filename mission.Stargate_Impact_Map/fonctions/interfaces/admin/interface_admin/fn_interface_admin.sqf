@@ -78,6 +78,7 @@ lbClear _select_liste_bdd;
 _select_liste_bdd lbAdd (localize "STR_admin_titre_planetes_debloquees"); // 0
 _select_liste_bdd lbAdd (localize "STR_admin_licences"); // 1
 _select_liste_bdd lbAdd (localize "STR_admin_items"); // 2
+_select_liste_bdd lbAdd (localize "STR_admin_docs"); // 3
 
 _select_liste_bdd lbSetCurSel 0;
 

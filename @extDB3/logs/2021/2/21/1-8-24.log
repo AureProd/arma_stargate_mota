@@ -1,0 +1,126 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.028
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 6 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[01:08:25:575352 +01:00] [Thread 19340] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[01:08:25:575665 +01:00] [Thread 19340] extDB3: SQL: Initialized: NULL = ""
+[01:09:09:912172 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:09:09:912231 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:10:26:705429 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:10:26:705491 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:14:04:483036 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:14:04:483110 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:19:08:506285 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:19:08:506360 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:23:22:473004 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:23:22:473069 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:25:57:099670 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:25:57:099774 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:26:22:708233 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:26:22:708298 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:32:36:410252 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:32:36:410322 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:57:22:217081 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:57:22:217178 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[01:57:44:399343 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[01:57:44:399393 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:09:29:450044 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:09:29:450100 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:09:59:883990 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:09:59:884048 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:11:33:321744 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:11:33:321852 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:19:09:856382 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:19:09:856450 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:20:59:018757 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:20:59:018818 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:22:01:711126 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:22:01:711183 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:22:41:345638 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:22:41:345706 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:23:47:748280 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:23:47:748329 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:24:05:767494 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:24:05:767609 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:37:51:098307 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:37:51:098447 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:41:22:183702 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:41:22:183769 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:41:56:768998 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:41:56:769060 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:42:19:503380 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:42:19:503446 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:43:47:184176 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:43:47:184235 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:44:08:435246 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:44:08:435315 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:45:31:675412 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:45:31:675476 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:48:21:909628 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:48:21:909690 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[02:53:56:912764 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[02:53:56:912837 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[03:20:23:620311 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[03:20:23:620413 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:44:01:855771 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:44:01:855906 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:45:22:018183 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:45:22:018241 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:45:56:209685 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:45:56:209745 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:46:43:920702 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:46:43:920759 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:47:30:077751 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:47:30:077810 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:49:11:207603 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:49:11:207670 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:50:01:662234 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:50:01:662295 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:50:36:128169 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:50:36:128230 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[04:50:58:345220 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[04:50:58:345282 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:02:52:298413 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:02:52:298598 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:08:42:671419 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:08:42:671488 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:11:05:160700 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:11:05:160777 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:15:27:351435 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:15:27:351497 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:16:36:618954 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:16:36:619019 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:18:32:382408 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:18:32:382565 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:19:08:412887 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:19:08:437959 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:23:18:885229 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:23:18:885298 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:39:53:355256 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:39:53:355351 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:45:20:293192 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:45:20:293257 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:54:17:938285 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:54:17:938352 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:57:13:897984 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:57:13:898053 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444
+[17:59:41:307345 +01:00] [Thread 19340] extDB3: Already Connected to a Database
+[17:59:41:307407 +01:00] [Thread 19340] extDB3: Error Protocol Name Already Taken: 444

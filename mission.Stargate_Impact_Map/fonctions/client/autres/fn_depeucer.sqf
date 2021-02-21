@@ -23,40 +23,55 @@ player addAction [(localize "STR_depeucer_add_action"), {
 	private _liste_objets_config = getArray(missionConfigFile >> "stargate_items" >> "items" >> "tableau_items");
 
 	private _invVirtuelPlayer = ["inventaire virtuel"] call mission_fnc_getBDD;
+
+	private _indexViande = -1;
     
-	if (_race == "Sheep_random_F") then {
-		hint localize "STR_depeucer_mouton"; // id 22
+	switch (_race) do {
+		case "Sheep_random_F": {
+			hint localize "STR_depeucer_mouton"; // id 22
 
-		private _indexViande = _liste_objets_config findIf {
-			(_x select 0) == 22
+			_indexViande = _liste_objets_config findIf {
+				(_x select 0) == 22
+			};
 		};
+		case "Goat_random_F": {
+			hint localize "STR_depeucer_chevre"; // id 24
 
-		private _viande = _liste_objets_config select _indexViande;
-
-		private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
-
-		if (_return) then {
-			[_viande select 0] call mission_fnc_add_item;
-		} else {
-			hint localize "STR_depeucer_erreur_poid";
+			_indexViande = _liste_objets_config findIf {
+				(_x select 0) == 24
+			};
 		};
+		case "Hen_random_F": {
+			hint localize "STR_depeucer_poule"; // id 26
+
+			_indexViande = _liste_objets_config findIf {
+				(_x select 0) == 26
+			};
+		};
+		case "Cock_random_F": {
+			hint localize "STR_depeucer_poule"; // id 26
+
+			_indexViande = _liste_objets_config findIf {
+				(_x select 0) == 26
+			};
+		};
+		case "Rabbit_F": {
+			hint localize "STR_depeucer_lapin"; // id 28
+
+			_indexViande = _liste_objets_config findIf {
+				(_x select 0) == 28
+			};
+		};
+	};
+
+	private _viande = _liste_objets_config select _indexViande;
+
+	private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
+
+	if (_return) then {
+		[_viande select 0] call mission_fnc_add_item;
 	} else {
-		hint localize "STR_depeucer_chevre"; // id 24
-
-		private _indexViande = _liste_objets_config findIf {
-			(_x select 0) == 24
-		};
-
-		private _viande = _liste_objets_config select _indexViande;
-
-		private _return = [player, (_viande select 5)] call mission_fnc_calcul_poid;
-
-		if (_return) then 
-		{
-			[_viande select 0] call mission_fnc_add_item;
-		} else {
-			hint localize "STR_depeucer_erreur_poid";
-		};
+		hint localize "STR_depeucer_erreur_poid";
 	};
 
 	sleep 1;

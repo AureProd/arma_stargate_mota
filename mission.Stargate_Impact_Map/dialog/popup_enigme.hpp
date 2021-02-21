@@ -1,14 +1,12 @@
-class MyDialog
+class popup_enigme
 {
-	idd = -1;
-	
-	class ControlsBackground
-	{
-		
-	};
+	idd = 5000;
+	movingEnable = 0;
+    enableSimulation = 1;
+    duration = 999999;
 	class Controls
 	{
-		class Control1588669578
+		class image_fond
 		{
 			type = 0;
 			idc = -1;
@@ -17,23 +15,23 @@ class MyDialog
 			w = safeZoneW * 0.5625;
 			h = safeZoneH * 0.79444445;
 			style = 48;
-			text = "C:\Users\jbhue\Documents\Arma 3 - Other Profiles\AureProd\mpmissions\arma_stargate\mission.Stargate_Impact_Map\pictures\interfaces\autres\pop-up-vierge02.png";
+			text = "pictures\interfaces\autres\pop-up-vierge02.paa";
 			colorBackground[] = {0,0,0,0};
 			colorText[] = {1,1,1,1};
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
-			
+
 		};
 		class edit
 		{
 			type = 2;
-			idc = -1;
+			idc = 5003;
 			x = safeZoneX + safeZoneW * 0.49375;
 			y = safeZoneY + safeZoneH * 0.39555556;
 			w = safeZoneW * 0.2375;
 			h = safeZoneH * 0.13444445;
 			style = 16+0;
-			text = "réponse";
+			text = "";
 			autocomplete = "";
 			colorBackground[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
@@ -46,7 +44,7 @@ class MyDialog
 		class annuler
 		{
 			type = 1;
-			idc = -1;
+			idc = 5002;
 			x = safeZoneX + safeZoneW * 0.625;
 			y = safeZoneY + safeZoneH * 0.55888889;
 			w = safeZoneW * 0.079375;
@@ -55,7 +53,7 @@ class MyDialog
 			text = "";
 			borderSize = 0;
 			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {1,0,0,0.5};
+			colorBackgroundActive[] = {1,0,0,0.25};
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
@@ -72,12 +70,12 @@ class MyDialog
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
+			onButtonClick = "playSound 'button'; closeDialog 1;";
 		};
 		class valider
 		{
 			type = 1;
-			idc = -1;
+			idc = 5001;
 			x = safeZoneX + safeZoneW * 0.49875;
 			y = safeZoneY + safeZoneH * 0.55888889;
 			w = safeZoneW * 0.079375;
@@ -86,7 +84,7 @@ class MyDialog
 			text = "";
 			borderSize = 0;
 			colorBackground[] = {0,0,0,0};
-			colorBackgroundActive[] = {1,0,0,0.5};
+			colorBackgroundActive[] = {0,1,0,0.25};
 			colorBackgroundDisabled[] = {0,0,0,0};
 			colorBorder[] = {0,0,0,0};
 			colorDisabled[] = {0,0,0,0};
@@ -103,7 +101,7 @@ class MyDialog
 			soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1.0};
 			soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1.0};
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
-			
+			onButtonClick = "";
 		};
 		
 	};

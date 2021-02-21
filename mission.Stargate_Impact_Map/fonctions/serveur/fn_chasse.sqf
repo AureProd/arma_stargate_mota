@@ -1,5 +1,5 @@
 
-private _animalList = ["Sheep_random_F", "Goat_random_F"]; //,"Hen_random_F","Cock_random_F"];
+private _animalList = ["Sheep_random_F", "Goat_random_F", "Hen_random_F", "Rabbit_F"]; // ["Cock_random_F"]
 //private _maxAnimals = 10;
 
 // variable "animaux_morts" --> [liste_animaux_mort, race]

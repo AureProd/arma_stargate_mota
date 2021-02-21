@@ -22,14 +22,14 @@ if (!([_itemId, _itemCount, _player] call mission_fnc_has_item)) exitWith {
 };
 
 if ((_itemId == 2) or (_itemId == 4) or ((([_itemId] call _getItemWithId) select 4) == 7)) then {
-	for "_i" from 0 to _itemCount do {
+	for "_i" from 1 to _itemCount do {
 		private _inv = ["inventaire virtuel", _player] call mission_fnc_getBDD;
 		private _index = _inv findIf {(_x select 0) == _itemId};
 
 		[_itemId, false, _index, _player] call mission_fnc_supprime_item;
 	};
 } else {
-	for "_i" from 0 to _itemCount do {
+	for "_i" from 1 to _itemCount do {
 		[_itemId, true, 0, _player] call mission_fnc_supprime_item;
 	};
 }

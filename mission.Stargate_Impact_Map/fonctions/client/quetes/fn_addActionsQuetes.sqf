@@ -62,4 +62,18 @@ switch (_tab_quete select 6) do {
 
 		(call compile (_tab_quete select 1)) allowDamage false;
 	};	
+	case 4: { // quête type 4
+		[
+			(call compile (_tab_quete select 1)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["%2 and (%1 call mission_fnc_has_quetes_faites) and ((['level'] call mission_fnc_getBDD) >= %3) and (!([%4] call mission_fnc_has_quetes_actives)) and (!([%4] call mission_fnc_has_quetes_faites))", (_tab_quete select 8), _condition, (_tab_quete select 9), (_tab_quete select 0)], _tab_quete
+		] call _fn_addActions;
+		[
+			(call compile ((_tab_quete select 7) select 3)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), 0] call mission_fnc_quete_type_4}, format ["%2 and ([%1] call mission_fnc_has_quetes_actives)", (_tab_quete select 0), _condition], _tab_quete
+		] call _fn_addActions;
+		[
+			(call compile (_tab_quete select 1)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), 1] call mission_fnc_quete_type_4}, format ["%2 and ([%1] call mission_fnc_has_quetes_actives)", (_tab_quete select 0), _condition], _tab_quete
+		] call _fn_addActions;
+
+		(call compile (_tab_quete select 1)) allowDamage false;
+		(call compile ((_tab_quete select 7) select 3)) allowDamage false;
+	};
 };
