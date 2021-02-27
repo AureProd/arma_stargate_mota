@@ -61,19 +61,19 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 	};
 
 	if ((typeOf _porte) == "SGI_gate") then {
-		//_porte setObjectTexture [18, "video\horison_events.ogv"];
-		[_porte, [18, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		//_porte setObjectTexture [18, "videos\horison_events.ogv"];
+		[_porte, [18, "videos\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
 	} else {
-		//_porte setObjectTexture [9, "video\horison_events.ogv"];
-		[_porte, [9, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		//_porte setObjectTexture [9, "videos\horison_events.ogv"];
+		[_porte, [9, "videos\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
 	};
 
 	if ((typeOf _porteDistante) == "SGI_gate") then {
-		//_porteDistante setObjectTexture [18, "video\horison_events.ogv"];
-		[_porteDistante, [18, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		//_porteDistante setObjectTexture [18, "videos\horison_events.ogv"];
+		[_porteDistante, [18, "videos\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
 	} else {
-		//_porteDistante setObjectTexture [9, "video\horison_events.ogv"];
-		[_porteDistante, [9, "video\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
+		//_porteDistante setObjectTexture [9, "videos\horison_events.ogv"];
+		[_porteDistante, [9, "videos\horison_events.ogv"]] remoteExec ["setObjectTexture", 0];
 	};
 
 	// variable "isOpen" --> [true si ouverte, porte distante, is porte principale, nil, true si horizon ouvert]
@@ -86,8 +86,8 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 
 	while { (((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 0) and ((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 4)) } do {
 		if (missionNamespace getVariable ["skipPorteVarBis", true]) then {
-			["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] remoteExec ["BIS_fnc_playVideo", 0]; 
-			// ["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
+			["videos\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] remoteExec ["BIS_fnc_playVideo", 0]; 
+			// ["videos\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
 		};
 
 		sleep (60 * 4);

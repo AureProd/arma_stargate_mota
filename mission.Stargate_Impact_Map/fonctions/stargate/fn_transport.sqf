@@ -31,7 +31,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 
 	missionNamespace setVariable ["skipPorteVarBis", false];
 
-	["video\tunnel.ogv", [safeZoneX, safeZoneY, safeZoneW, safeZoneH], [1,1,1,1], "skipPorteVarBis"] spawn BIS_fnc_playVideo;
+	["videos\tunnel.ogv", [safeZoneX, safeZoneY, safeZoneW, safeZoneH], [1,1,1,1], "skipPorteVarBis"] spawn BIS_fnc_playVideo;
 
 	sleep 14;
 
@@ -90,7 +90,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 
 		missionNamespace setVariable ["skipPorteVarBis", true];
 
-		["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
+		["videos\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
 
 		sleep 5;
 
@@ -102,7 +102,7 @@ if (!((_porte getVariable ['isOpen', [false, nil, false, false, false]]) select 
 
 		missionNamespace setVariable ["skipPorteVarBis", true];
 
-		["video\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
+		["videos\horison_events.ogv", [10, 10], [1,1,1,1], "skipPorteVar", [0,0,0,0], false] spawn BIS_fnc_playVideo;
 
 		playSound "tp_joueur";
 
