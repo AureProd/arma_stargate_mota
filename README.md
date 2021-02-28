@@ -75,6 +75,9 @@ Mods :
 - [@map_stargate_impact](https://steamcommunity.com/sharedfiles/filedetails/?id=2128300311)
 - [@stargate_arma_ta](https://steamcommunity.com/sharedfiles/filedetails/?id=2129566387)
 - [@stargate_mota](https://steamcommunity.com/sharedfiles/filedetails/?id=2322349802)
+- [@mods_de_stargate_impact](https://steamcommunity.com/sharedfiles/filedetails/?id=2411185300)
+
+(Attention : sous linux le nom des pbo et des mods doit être en minuscule, sans chiffres et sans espaces).
 
 ### Génération des fichiers pbo de la mission
 
