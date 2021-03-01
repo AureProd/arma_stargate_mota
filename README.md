@@ -134,6 +134,8 @@ A l'aide de FileZilla :
 
 - copiez le mod @stargate_mota (télécharger précédement) dans le répertoire ```~/stargate/```
 
+- copiez le mod @mods_de_stargate_impact (télécharger précédement) dans le répertoire ```~/stargate/```
+
 - copiez les fichiers bikey présent dans les dossiers ```~/stargate/@CBA_A3/addons/```, ```~/stargate/@map_stargate_impact/addons/```, ```~/stargate/@stargate_arma_ta/addons/``` et ```~/stargate/@stargate_mota/addons/```, puis collez les dans le dossier ```~/stargate/keys/```
 
 - copiez dans le répertoire ```~/stargate/mpmissions/```, le fichier mission.Stargate_Impact_Map.pbo (générer précédement)
@@ -208,6 +210,8 @@ A l'aide de FileZilla :
 - copiez le mod @stargate_arma_ta (télécharger précédement) dans le répertoire ```~/stargate-dev/```
 
 - copiez le mod @stargate_mota (télécharger précédement) dans le répertoire ```~/stargate-dev/```
+
+- copiez le mod @mods_de_stargate_impact (télécharger précédement) dans le répertoire ```~/stargate-dev/```
 
 - copiez les fichiers bikey présent dans les dossiers ```~/stargate-dev/@CBA_A3/addons/```, ```~/stargate-dev/@map_stargate_impact/addons/```, ```~/stargate-dev/@stargate_arma_ta/addons/``` et ```~/stargate-dev/@stargate_mota/addons/```, puis collez les dans le dossier ```~/stargate-dev/keys/```
 
