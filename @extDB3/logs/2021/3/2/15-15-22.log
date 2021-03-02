@@ -32,3 +32,5 @@ extDB3: ...
 [15:19:25:278486 +01:00] [Thread 3520] extDB3: Error Protocol Name Already Taken: 444
 [15:23:43:448929 +01:00] [Thread 3520] extDB3: Already Connected to a Database
 [15:23:43:448986 +01:00] [Thread 3520] extDB3: Error Protocol Name Already Taken: 444
+[15:59:23:709539 +01:00] [Thread 3520] extDB3: Already Connected to a Database
+[15:59:23:709660 +01:00] [Thread 3520] extDB3: Error Protocol Name Already Taken: 444
