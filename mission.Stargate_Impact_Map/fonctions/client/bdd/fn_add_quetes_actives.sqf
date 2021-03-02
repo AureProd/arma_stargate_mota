@@ -4,7 +4,7 @@
 
 private _nomVarPlayer = format ["variable_%1", getPlayerUID player]; // BDD player
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, garage, vehicules player]
 private _variable = missionNamespace getVariable _nomVarPlayer;
 
 private _quetes_actives = _variable select 13;

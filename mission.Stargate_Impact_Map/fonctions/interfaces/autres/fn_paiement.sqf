@@ -1,7 +1,7 @@
 
 private _prix = param [0];
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite]
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 
 private _return = false;

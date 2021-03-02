@@ -5,7 +5,7 @@
 
 private _valeurs = [
     "classe", "race", "xp", "licences", "level", "vie", "faim", "soif", "inventaire virtuel",
-    "liste vies", "quetes faites", "quetes dispo", "planete visite", "quetes actives", "garage", "wl soldat", "documents"
+    "liste vies", "quetes faites", "planete visite", "quetes actives", "garage", "wl soldat", "documents"
 ];
 
 private _choix = param [0, "rien"];
@@ -38,7 +38,7 @@ switch (_indexChoix) do {
         };
     };
     case 2: { // xp
-        // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, quetes actives, garage]
+        // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite, quetes actives, quetes actives, garage]
         private _bddPlayer = missionNamespace getVariable _VarPlayerUID;
         private _xpPlayer = _bddPlayer select 2;
         private _xpPlayer_bis = _xpPlayer;
@@ -104,7 +104,7 @@ switch (_indexChoix) do {
         };
     };
     case 4: { // level
-        // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, quetes actives, garage]
+        // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite, quetes actives, quetes actives, garage]
         private _bddPlayer = missionNamespace getVariable _VarPlayerUID;
         private _levelPlayer = _bddPlayer select 4;
 

@@ -16,7 +16,7 @@ enableEnvironment [true, true];
 	1 = goauld
 	2 = tauri	
 */
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, garage, vehicules player]
 private _variable = missionNamespace getVariable nomVarPlayerUID;
 
 [] spawn mission_fnc_disable_vocal;

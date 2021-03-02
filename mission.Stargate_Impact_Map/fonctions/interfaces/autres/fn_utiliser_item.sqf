@@ -7,7 +7,7 @@ private _indexInventaire = param [1];
 
 private _isMenuMedical = param [2, false];
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, garage, vehicules player]
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 private _inventaireVirtuel = _playerBdd select 8;
 

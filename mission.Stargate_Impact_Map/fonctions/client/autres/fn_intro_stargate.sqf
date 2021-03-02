@@ -1,5 +1,5 @@
 
-// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, quetes actives, garage, white liste soldat, admin level, documents
+// params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, planete visite, quetes actives, garage, white liste soldat, admin level, documents
 // params --> s'est deja connecte, admin level
 private _isDejaConnecte = param [0];
 
@@ -18,13 +18,12 @@ if (!_isDejaConnecte) then
 	private _inv_virtuel = param [10];
 
 	private _quetes_faites = param [12];
-	private _quetes_dispo = param [13];
-	private _planete_visite = param [14];
-	private _quetes_actives = param [15];
-	private _garage = param [16];
-	private _whiteListeSoldat = param [17];
-	private _levelAdmin = param [18];
-	private _documents = param [19];
+	private _planete_visite = param [13];
+	private _quetes_actives = param [14];
+	private _garage = param [15];
+	private _whiteListeSoldat = param [16];
+	private _levelAdmin = param [17];
+	private _documents = param [18];
 
 	LEVELADMIN = _levelAdmin;
 
@@ -36,11 +35,11 @@ if (!_isDejaConnecte) then
 		_liste_vies set [0, _vie];
 	};
 
-	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives, garage, white liste soldat, documents]
+	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite, quetes actives, garage, white liste soldat, documents]
 	missionNamespace setVariable 
 	[
 		nomVarPlayerUID, 
-		[_classe, _race, _exp, _licences, _level, _vie, _faim, _soif, _inv_virtuel, _liste_vies, _quetes_faites, _quetes_dispo, _planete_visite, _quetes_actives, _garage, _whiteListeSoldat, _documents], 
+		[_classe, _race, _exp, _licences, _level, _vie, _faim, _soif, _inv_virtuel, _liste_vies, _quetes_faites, _planete_visite, _quetes_actives, _garage, _whiteListeSoldat, _documents], 
 		true
 	];
 

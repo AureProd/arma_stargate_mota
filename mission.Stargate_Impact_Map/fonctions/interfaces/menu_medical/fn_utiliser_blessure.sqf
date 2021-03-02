@@ -14,7 +14,7 @@ private _index = lbCurSel _liste_objets;
 
 if ((_index != -1) and (bouton_A_OK_bis != 1)) then 
 {
-	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
+	// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, garage, vehicules player]
 	private _variablesPlayer = missionNamespace getVariable nomVarPlayerUID;
 	private _vie = _variablesPlayer select 5;
 

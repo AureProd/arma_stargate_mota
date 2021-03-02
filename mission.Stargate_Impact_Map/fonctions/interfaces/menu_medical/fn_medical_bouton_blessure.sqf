@@ -13,7 +13,7 @@ _fond_bouton_nourriture ctrlSetBackgroundColor [0,0,0,0];
 
 lbClear _listbox_objets;
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, garage, vehicules player]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, garage, vehicules player]
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 private _inventaire_virtuel = _playerBdd select 8;
 

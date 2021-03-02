@@ -2,7 +2,7 @@
 createDialog "menu_journal_quetes_bis";
 waitUntil {dialog};
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite, quetes actives]
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 
 private _image_fond = (findDisplay 10000) displayCtrl 10001;

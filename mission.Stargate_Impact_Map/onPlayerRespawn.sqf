@@ -17,7 +17,7 @@ private _liste_vies = [100, 100, 100, 100, 100, 100, 100, 100];
 
 [[5, 100], [6, 100], [7, 100], [8, []], [9, _liste_vies]] call mission_fnc_modif_var_bdd;
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite, quetes actives]
 private _variable = missionNamespace getVariable nomVarPlayerUID;
 
 menu_y_ok = true;

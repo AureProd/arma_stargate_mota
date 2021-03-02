@@ -1,5 +1,5 @@
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite, quetes actives]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite, quetes actives]
 nomVarPlayerUID = format ["variable_%1", getPlayerUID player]; // BDD player
 
 LEVELADMIN = 0;
@@ -46,7 +46,7 @@ enableEnvironment [true, false];
 	TEST MISSION LOCAL :
 	
 	parametres pour fonction "mission_fnc_intro_stargate" 
-	|--> params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, liste quetes dispo, planete visite, quetes actives, garage, white liste soldat, admin level, documents
+	|--> params --> s'est deja connecte, classe, race, exp, licences, level, vie, faim, soif, inv reel, inv virtuel, position player, liste quetes faites, planete visite, quetes actives, garage, white liste soldat, admin level, documents
 	|--> params --> s'est deja connecte, admin level
 */
 //[true, 0] call mission_fnc_intro_stargate; // <-- test local nouveaux sur serveur

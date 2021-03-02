@@ -16,7 +16,7 @@ private _bar_poid = (findDisplay 3000) displayCtrl 3050;
 lbClear _listbox_objets;
 lbClear _listbox_joueurs;
 
-// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, quetes dispo, planete visite]
+// variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, planete visite]
 private _playerBdd = missionNamespace getVariable nomVarPlayerUID;
 private _inventaire_virtuel = _playerBdd select 8;
 

@@ -18,7 +18,6 @@ CREATE TABLE player
  p_inv_virtuel TEXT NOT NULL,
  p_position TEXT NOT NULL,
  p_quetes_faites TEXT NOT NULL,
- p_quetes_dispo TEXT NOT NULL,
  p_planete_visite TEXT NOT NULL,
  p_quetes_actives TEXT NOT NULL,
  p_garage TEXT NOT NULL,
