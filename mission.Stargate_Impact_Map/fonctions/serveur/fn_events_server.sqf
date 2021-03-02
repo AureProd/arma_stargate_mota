@@ -80,7 +80,7 @@ addMissionEventHandler ["HandleDisconnect", {
 		} forEach allPlayers; */
 
 		// UID player / name player / classes [classe, race] / exp / licences / level / vie / faim / soif / inv reel / inv virtuel / position player / liste quetes faites / planetes visités / quetes actives / garage / white liste soldat / documents
-		[_uid, _name, _classes, (_variable select 2), (_variable select 3), (_variable select 4), (_variable select 5), (_variable select 6), (_variable select 7), _inventaire_reel, _inventaire_virtuel, (getPos _unit), (_variable select 10), (_variable select 12), (_variable select 13), (_variable select 14), (_variable select 15), (_variable select 16)] remoteExec ["db_fnc_sauvegardeBdd", 2];	
+		[_uid, _name, _classes, (_variable select 2), (_variable select 3), (_variable select 4), (_variable select 5), (_variable select 6), (_variable select 7), _inventaire_reel, _inventaire_virtuel, (getPos _unit), (_variable select 10), (_variable select 11), (_variable select 12), (_variable select 13), (_variable select 14), (_variable select 15)] remoteExec ["db_fnc_sauvegardeBdd", 2];	
 	};
 	
 	//false;		

@@ -6,7 +6,7 @@ private _nomVarPlayer = format ["variable_%1", getPlayerUID player]; // BDD play
 
 private _variable = missionNamespace getVariable _nomVarPlayer;
 
-private _docs = _variable select 16;
+private _docs = _variable select 15;
 
 private _num_docs = _this;
 
@@ -17,4 +17,4 @@ private _num_docs = _this;
 	};
 } forEach _num_docs;
 
-[[16, _docs]] call mission_fnc_modif_var_bdd;
+[[15, _docs]] call mission_fnc_modif_var_bdd;
