@@ -33,7 +33,7 @@ dokey_down =
     _r
   };
 
-  if ((_this select 1)  == 57 and speed player >8) then 
+  if ((_this select 1)  == 57 and speed player > 8) then // touche : espace
   {
     if  (player == vehicle player  and player getvariable ["jump",true] and isTouchingGround player ) then 
     {

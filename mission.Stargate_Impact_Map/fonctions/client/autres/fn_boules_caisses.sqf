@@ -5,7 +5,7 @@ waituntil {!(IsNull (findDisplay 46))};
 
 (findDisplay 46) displayAddEventHandler ["KeyDown", 
 {
-	if ((_this select 1) == 59) then 
+	if ((_this select 1) == 59) then // touche : F1
 	{
 		private _temp = player getVariable "earplugs";
 

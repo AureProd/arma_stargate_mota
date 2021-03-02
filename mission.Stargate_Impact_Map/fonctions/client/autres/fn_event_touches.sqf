@@ -1,7 +1,7 @@
 
 (findDisplay 46) displayAddEventHandler ["KeyDown", 
 {
-	if (((_this select 1) == 21) and (alive player)) then 
+	if (((_this select 1) == 21) and (alive player)) then // touche : Y
 	{
 		if (menu_y_ok and !(player getVariable ["notInTransport", false])) then 
 		{
@@ -20,7 +20,7 @@
 		};
 	};
 
-	if (((_this select 1) == 22) and (alive player)) then 
+	if (((_this select 1) == 22) and (alive player)) then // touche : U
 	{
 		if (((vehicle player) == player) and ((cursorObject distance player) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID player))) then {
 			if (((locked cursorObject) == 0) or ((locked cursorObject) == 1)) then {
@@ -45,5 +45,10 @@
 				playSound "unlockCarSound";
 			};
 		};
+	};
+
+	if (((_this select 1) == 1) and (alive player)) then // touche : ECHAP
+	{
+		[] call mission_fnc_syns_data;
 	};
 }];

@@ -1,4 +1,6 @@
 
+// [] call mission_fnc_syns_data
+
 // variable "variable_<UID player>" --> [classe, race, exp, licences, level, vie, faim, soif, inventaire virtuel, liste vies, quetes faites, garage, vehicules player]
 private _variable_bis = missionNamespace getVariable nomVarPlayerUID;
 

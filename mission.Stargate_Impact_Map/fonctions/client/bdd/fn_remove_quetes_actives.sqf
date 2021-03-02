@@ -2,9 +2,7 @@
 // fonction name : mission_fnc_remove_quetes_actives
 // parmettres : [numero 1 quete, numero 2 quete, numero 3 quete, numero 4 quete ...etc]
 
-private _nomVarPlayer = format ["variable_%1", getPlayerUID player]; // BDD player
-
-private _variable = missionNamespace getVariable _nomVarPlayer;
+private _variable = missionNamespace getVariable nomVarPlayerUID;
 
 private _quetes_actives = _variable select 13;
 

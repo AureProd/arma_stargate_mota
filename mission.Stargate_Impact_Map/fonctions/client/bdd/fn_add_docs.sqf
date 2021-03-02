@@ -1,9 +1,7 @@
 
 // [numero 1 document, numero 2 document] call mission_fnc_add_docs
 
-private _nomVarPlayer = format ["variable_%1", getPlayerUID player]; // BDD player
-
-private _variable = missionNamespace getVariable _nomVarPlayer;
+private _variable = missionNamespace getVariable nomVarPlayerUID;
 
 private _docs = _variable select 15;
 

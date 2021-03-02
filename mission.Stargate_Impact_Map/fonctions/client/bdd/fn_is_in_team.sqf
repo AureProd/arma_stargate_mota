@@ -1,6 +1,5 @@
 
-// fonction name : mission_fnc_is_in_team
-// parmettres : [player uid]
+// [player uid] call mission_fnc_is_in_team
 
 private _playerUID = param [0, (getPlayerUID player)];
 

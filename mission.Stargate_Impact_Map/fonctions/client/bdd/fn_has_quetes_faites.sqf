@@ -1,9 +1,7 @@
 
 // [numero quete, numero quete, numero quete] call mission_fnc_has_quetes_faites
 
-private _nomVarPlayer = format ["variable_%1", getPlayerUID player]; // BDD player
-
-private _variable = missionNamespace getVariable _nomVarPlayer;
+private _variable = missionNamespace getVariable nomVarPlayerUID;
 
 private _quetes_faites = _variable select 10;
 

@@ -1,7 +1,7 @@
 
 
-// fonction name : mission_fnc_setBDD
-// parmettres : [choix, valeur]
+// [choix, valeur] call mission_fnc_setBDD
+// [choix, valeur] remoteExec ["mission_fnc_setBDD", player]
 
 private _valeurs = [
     "classe", "race", "xp", "licences", "level", "vie", "faim", "soif", "inventaire virtuel",
