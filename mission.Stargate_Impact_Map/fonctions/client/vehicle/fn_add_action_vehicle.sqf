@@ -29,7 +29,7 @@ private _addActions =
 	[false, cursorObject, false] call mission_fnc_fourriere;
 }, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (alive _this)"] call _addActions;
 
-[player, (localize "STR_lock_vehicle"), {
+/* [player, (localize "STR_lock_vehicle"), {
 	cursorObject lock true;
 }, "((vehicle _this) == _this) and ((cursorObject distance _this) < 5) and ((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 0) and (((cursorObject getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (((locked cursorObject) == 0) or ((locked cursorObject) == 1)) and (alive _this)"] call _addActions;
 
@@ -43,7 +43,7 @@ private _addActions =
 
 [player, (localize "STR_unlock_vehicle"), {
 	(vehicle (_this select 0)) lock false;
-}, "(((vehicle _this) getVariable ['imatriculation', [false, nil, nil]]) select 0) and ((((vehicle _this) getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (((locked (vehicle _this)) == 2) or ((locked (vehicle _this)) == 3)) and (alive _this)"] call _addActions;
+}, "(((vehicle _this) getVariable ['imatriculation', [false, nil, nil]]) select 0) and ((((vehicle _this) getVariable ['imatriculation', [false, nil, nil]]) select 1) == (getPlayerUID _this)) and (((locked (vehicle _this)) == 2) or ((locked (vehicle _this)) == 3)) and (alive _this)"] call _addActions; */
 
 
 

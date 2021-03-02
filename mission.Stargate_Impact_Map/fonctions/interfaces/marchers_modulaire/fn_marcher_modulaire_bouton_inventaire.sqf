@@ -24,7 +24,7 @@ lbClear _liste_objets;
 {
 	private _tab = _x;
 	{
-		if (((_tab select 0) == (_x select 0)) and ((_x select 4) == 10)) then
+		if (((_tab select 0) == (_x select 0)) and ((_x select 0) in (liste_joueurs_groupe select 1))) then
 		{
 			if (((_x select 0) == 2) or ((_x select 0) == 4) or ((_x select 4) == 7)) then 
 			{

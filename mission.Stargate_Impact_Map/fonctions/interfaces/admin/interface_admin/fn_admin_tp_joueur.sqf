@@ -9,11 +9,11 @@ if (((vehicle _joueur) != _joueur) or ((vehicle player) != player)) exitWith {
 
 switch (_choix) do {
 	case 1: { // TP joueur vers admin
-		private _pos = getPos player;
+		private _pos = getPosATL player;
 		_joueur setPos _pos;
 	};
 	case 2: { // TP admin vers joueur 
-		private _pos = getPos _joueur;
+		private _pos = getPosATL _joueur;
 		player setPos _pos;
 	};
 };

@@ -26,6 +26,9 @@ private _bar_xp = (findDisplay 3000) displayCtrl 3003;
 private _texte_xp = (findDisplay 3000) displayCtrl 3004;
 private _texte_xp_bar = (findDisplay 3000) displayCtrl 3018;
 
+private _texte_poid_bar = (findDisplay 3000) displayCtrl 3051;
+private _bar_poid = (findDisplay 3000) displayCtrl 3050;
+
 /*
 	A modifier dans le config
 	1 = licence archeologie
@@ -65,6 +68,11 @@ private _tableauLevels = getArray(missionConfigFile >> "stargate_xp" >> "xp" >> 
 		};
 	};
 } forEach _tableauLevels;
+
+private _poidMaxPlayer = (_variable select 4) + 40;
+private _poidInventairePlayer = [] call mission_fnc_getPoidInventaire;
+_bar_poid progressSetPosition (_poidInventairePlayer / _poidMaxPlayer);
+_texte_poid_bar ctrlSetText format ["%1 / %2 kg", _poidInventairePlayer, _poidMaxPlayer];
 
 _texte_xp ctrlSetText format [localize "STR_menu_y_level", (_variable select 4)];
 

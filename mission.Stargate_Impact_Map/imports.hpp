@@ -36,8 +36,3 @@
 #include "config\quetes_config.cpp"
 #include "config\docs_planetes_config.cpp"
 #include "config\vehicules_config.cpp"
-
-// FPS CTF 
-
-//Configs
-#include "config\fps_config.cpp"

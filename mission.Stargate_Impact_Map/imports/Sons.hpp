@@ -24,23 +24,19 @@ class CfgSounds
 		sound[] = {"sounds\sons\xp\lvl_up.ogg", 1, 1}; 
 		titles[] = {}; 
 	};
-
-	// FPS CTF
-	/*class capture_goauld 
-	{ 
-		name = "capture_goauld"; 
-		sound[] = {"", 5, 1}; 
-		titles[] = {}; 
-	};
-	class capture_tauri
-	{ 
-		name = "capture_tauri"; 
-		sound[] = {"", 5, 1}; 
-		titles[] = {}; 
-	};*/
 	class jump {
         name = "jump";
         sound[] = {"sons\jump.wav", 10, 1};
+        titles[] = {};
+    };
+	class lockCarSound {
+        name = "lockCarSound";
+        sound[] = {"sounds\sons\vehicules\carLock.ogg", 1.0, 1};
+        titles[] = {};
+    };
+    class unlockCarSound {
+        name = "unlockCarSound";
+        sound[] = {"sounds\sons\vehicules\carUnlock.ogg", 0.75, 1};
         titles[] = {};
     };
 	

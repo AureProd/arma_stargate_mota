@@ -236,6 +236,11 @@ private _addActions_bis =
 	(call compile _x) allowDamage false;
 } forEach (getArray(missionConfigFile >> "stargate_shops" >> "shops" >> "dealer_tauri"));
 
+{
+	[(call compile (_x select 0)), "pictures\addActions\popup_interaction_magasin.paa", {[((_this select 3) select 0), ((_this select 3) select 1)] call mission_fnc_interface_marcher_modulaire}, format ["(((missionNamespace getVariable nomVarPlayerUID) select 1) == %1) and (alive player)", (_x select 1)], [(_x select 2), (_x select 3)]] call _fn_addActions;
+	(call compile (_x select 0)) allowDamage false;
+} forEach (getArray(missionConfigFile >> "stargate" >> "achat_vente" >> "magasins"));
+
 // ---------------------------------------------------------------- 
 
 {

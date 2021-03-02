@@ -1028,6 +1028,11 @@
                 <French>Vous êtes mort car l'iris de la porte distante est fermée</French>
 				<English>You died because the Iris was closed</English>
 			</Key>
+			<Key ID="STR_mort_porte_refermee">
+				<Original>Vous êtes mort car la porte à été fermée pendant votre transport</Original>
+                <French>Vous êtes mort car la porte à été fermée pendant votre transport</French>
+				<English>Vous êtes mort car la porte à été fermée pendant votre transport</English> <!-- A traduire -->
+			</Key>
 			<Key ID="STR_porte_distante_deja_ouverte">
 				<Original>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</Original>
                 <French>La porte distante est déjà ouverte attendez qu'elle se referme avant de la réouvrir</French>

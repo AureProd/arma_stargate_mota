@@ -1,4 +1,4 @@
-version=53;
+version=54;
 class EditorData
 {
 	moveGridStep=1;
@@ -8,7 +8,7 @@ class EditorData
 	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=1606;
+		nextID=1608;
 	};
 	class MarkerIDProvider
 	{
@@ -16,13 +16,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={34194.805,23.414225,16101.267};
-		dir[]={-0.14586793,-0.69736314,0.70185459};
-		up[]={-0.1419142,0.71661758,0.682823};
-		aside[]={0.97919524,-3.239431e-006,0.20351492};
+		pos[]={34180.363,12.734648,16098.854};
+		dir[]={0.0040913536,-0.48463959,0.87471133};
+		up[]={0.0022661928,0.87470692,0.48464754};
+		aside[]={0.99999499,-1.7910497e-007,-0.0046768645};
 	};
 };
 binarizationWanted=0;
+sourceName="mission";
 addons[]=
 {
 	"A3_Structures_F_EPA_Civ_Camping",
@@ -423,7 +424,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=549;
+		items=550;
 		class Item0
 		{
 			dataType="Object";
@@ -12833,7 +12834,7 @@ class Mission
 			a=400;
 			b=200;
 			id=1249;
-			atlOffset=1.0669999;
+			atlOffset=0.80699992;
 		};
 		class Item320
 		{
@@ -12844,7 +12845,7 @@ class Mission
 			type="loc_SafetyZone";
 			colorName="ColorRed";
 			id=1250;
-			atlOffset=-0.01824975;
+			atlOffset=0.55500007;
 		};
 		class Item321
 		{
@@ -12942,6 +12943,7 @@ class Mission
 			text="SGC tauri";
 			type="flag_France";
 			id=1261;
+			atlOffset=-0.24000001;
 		};
 		class Item331
 		{
@@ -13017,17 +13019,17 @@ class Mission
 			text="carrière goauld";
 			type="flag_France";
 			id=1272;
-			atlOffset=0.00054836273;
+			atlOffset=-0.15884209;
 		};
 		class Item339
 		{
 			dataType="Marker";
 			position[]={39256.988,38.355999,38069.512};
 			name="marker_58";
-			text="double lacs goauld";
+			text="capitale";
 			type="flag_France";
 			id=1273;
-			atlOffset=-0.00026702881;
+			atlOffset=-0.56031036;
 		};
 		class Item340
 		{
@@ -20033,6 +20035,121 @@ class Mission
 			{
 			};
 			id=1604;
+		};
+		class Item549
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={34170.828,2.0014389,16117.037};
+						angles[]={0,2.9581759,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="marcher_modulaire";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
+						class Inventory
+						{
+						};
+					};
+					id=1607;
+					type="C_man_1";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1606;
 		};
 	};
 };

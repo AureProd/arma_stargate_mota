@@ -49,7 +49,7 @@ lbClear _liste_objets;
 		{
 			if ((_x select 6) == 0) then // verif si pas militaire
 			{
-				if (((_x select 4) == 7) or ((_x select 4) == 14)) then // verif si objet is outil
+				if ((_x select 4) == 7) then // verif si objet is outil
 				{
 					[_liste_objets, _playerBdd] call _fn_add_item_to_liste;
 				};
@@ -62,7 +62,7 @@ lbClear _liste_objets;
 		{
 			if ((_x select 6) == 0) then // verif si pas militaire
 			{
-				if (((_x select 4) == 7) or ((_x select 4) == 14)) then // verif si objet is outil
+				if ((_x select 4) == 7) then // verif si objet is outil
 				{
 					[_liste_objets, _playerBdd] call _fn_add_item_to_liste;
 				};

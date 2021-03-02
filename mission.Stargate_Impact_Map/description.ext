@@ -65,6 +65,5 @@ class CfgServer
 class RscTitles
 {
     #include "dialog\black_background.hpp"
-    #include "dialogues\interface_fps.hpp"
     #include "dialog\menu_chargement.hpp"
 };

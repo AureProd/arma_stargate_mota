@@ -14,15 +14,18 @@ private _partieCode = param [1];
 
 switch (_partieCode) do {
 	case 0: { // lancement quête
-		missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], false];
+		missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], 0];
 	};
 	case 1: { // addAction quête
-		hint ((_tabQuete select 7) select 0);
+		private _indexTab = param [2, 0];
+		private _tab = (_tabQuete select 7) select _indexTab;
 
-		missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], true];
+		hint (_tab select 0);
+
+		missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], (_indexTab + 1)];
 	};
 	case 2: { // fin quête 
-		if (missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], false]) then {
+		if ((missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], 0]) == (count (_tabQuete select 7))) then {
 			hint format [localize "STR_message_validation_quete", (_tabQuete select 2)]; // message validation quête
 
 			[_tabQuete select 0] call mission_fnc_remove_quetes_actives;

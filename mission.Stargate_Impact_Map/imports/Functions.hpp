@@ -154,6 +154,7 @@ class CfgFunctions
             class prison {};
             class amende {};
             class popup_ammende {};
+            class getPoidInventaire {};
         };
         class interfaces_garage
         {
@@ -232,6 +233,15 @@ class CfgFunctions
             class marcher_general_bouton_magasin {};
             class marcher_general_bouton_inventaire {};
             class marcher_general_bouton_acheter {};
+        };
+        class interfaces_marcher_modulaire
+        {
+            file = "fonctions\interfaces\marchers_modulaire";
+            class interface_marcher_modulaire {};
+            class marcher_modulaire_liste_objets {};
+            class marcher_modulaire_bouton_magasin {};
+            class marcher_modulaire_bouton_inventaire {};
+            class marcher_modulaire_bouton_acheter {};
         };
         class interfaces_boucherie
         {
@@ -324,29 +334,6 @@ class CfgFunctions
             class fourriere {};
             class delete_all_vehicles {};
             class repair_vehicules {};
-        };
-
-        // FPS CTF
-        class fonctions_capture_fps
-        {
-            file = "fonctions\fps\fonctions_capture";
-            class capture_drapeau {};
-            class change_flag_color {};
-            class add_fps_mode {}; // demarre le mode fps coté client --> fn_intro_stargate.sqf
-            class set_logo_flag {};
-            class son_notif {};
-            class interface_fps {};
-        };
-        class autre_fps
-        {
-            file = "fonctions\fps\autre";
-            class respawn_event {};
-            class elimination {};
-        };
-        class serveur_fps
-        {
-            file = "fonctions\fps\serveur";
-            class demarage_fps {}; // demarre le mode fps coté serveur --> initServer.sqf
         };
 
         //STARGATE

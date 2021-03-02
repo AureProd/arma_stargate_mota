@@ -33,14 +33,18 @@ switch (_tab_quete select 6) do {
 			(call compile (_tab_quete select 1)), "pictures\addActions\interaction_parler.paa", {[(_this select 3)] call mission_fnc_interface_journal_quetes}, format ["%2 and (%1 call mission_fnc_has_quetes_faites) and ((['level'] call mission_fnc_getBDD) >= %3) and (!([%4] call mission_fnc_has_quetes_actives)) and (!([%4] call mission_fnc_has_quetes_faites))", (_tab_quete select 8), _condition, (_tab_quete select 9), (_tab_quete select 0)], _tab_quete
 		] call _fn_addActions;
 		[
-			(call compile ((_tab_quete select 7) select 1)), format["%1", ((_tab_quete select 7) select 2)], {[(_this select 3), 1] call mission_fnc_quete_type_1}, format ["%2 and ([%1] call mission_fnc_has_quetes_actives) and (!(missionNamespace getVariable ['quete_%3_type_1_player_%4', false]))", (_tab_quete select 0), _condition, (_tab_quete select 0), getPlayerUID player], _tab_quete
-		] call _addActions_bis;
-		[
-			(call compile (_tab_quete select 1)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), 2] call mission_fnc_quete_type_1}, format ["%2 and ([%1] call mission_fnc_has_quetes_actives) and (missionNamespace getVariable ['quete_%3_type_1_player_%4', false])", (_tab_quete select 0), _condition, (_tab_quete select 0), getPlayerUID player], _tab_quete
+			(call compile (_tab_quete select 1)), "pictures\addActions\interaction_parler.paa", {[(_this select 3), 2] call mission_fnc_quete_type_1}, format ["%2 and ([%1] call mission_fnc_has_quetes_actives) and ((missionNamespace getVariable ['quete_%3_type_1_player_%4', 0]) == %5)", (_tab_quete select 0), _condition, (_tab_quete select 0), getPlayerUID player, (count (_tab_quete select 7))], _tab_quete
 		] call _fn_addActions;
 
+		{
+			[
+				(call compile (_x select 1)), format["%1", (_x select 2)], {[((_this select 3) select 0), 1, ((_this select 3) select 1)] call mission_fnc_quete_type_1}, format ["%2 and ([%1] call mission_fnc_has_quetes_actives) and ((missionNamespace getVariable ['quete_%3_type_1_player_%4', 0]) == %5)", (_tab_quete select 0), _condition, (_tab_quete select 0), getPlayerUID player, _forEachIndex], [_tab_quete, _forEachIndex]
+			] call _addActions_bis;
+			
+			(call compile (_x select 1)) allowDamage false;
+		} forEach (_tab_quete select 7);
+
 		(call compile (_tab_quete select 1)) allowDamage false;
-		(call compile ((_tab_quete select 7) select 1)) allowDamage false;
 	};		
 	case 2: { // quête type 2
 		[

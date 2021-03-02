@@ -73,4 +73,10 @@ class stargate
 			{"traitement_ble_tauri", 10, 54, 55, 1, $STR_ble_traitement_add_action, $STR_ble_traitement, $STR_ble_traiter, 1, 8, $STR_ble_traitement_impossible_sans_licence}
 		};
 	};
+	class achat_vente
+	{
+		magasins[] = { // [id_pnj_magasin, isTauri (1 goauld, 2 tauri), [id_item_achetable, id_item_achetable, id_item_achetable], [id_item_vendable, id_item_vendable, id_item_vendable]]
+			{"marcher_modulaire", 2, {1, 5, 23}, {1, 5}}
+		};
+	};
 };

@@ -19,12 +19,9 @@ if (_index != -1) then
 			{
 				if (((_x select 8) == 1) or ((_x select 8) == 2)) then // verif si objet for tauri
 				{
-					if ((_x select 6) == 0) then // verif si pas militaire
+					if ((_x select 0) in (liste_joueurs_groupe select 0)) then
 					{
-						if ((_x select 4) == 11) then // verif si objet is poisson
-						{
-							_tab pushBack _x;
-						};
+						_tab pushBack _x;
 					};
 				};
 			}
@@ -32,12 +29,9 @@ if (_index != -1) then
 			{
 				if (((_x select 8) == 0) or ((_x select 8) == 2)) then // verif si objet for goauld
 				{
-					if ((_x select 6) == 0) then // verif si pas militaire
+					if ((_x select 0) in (liste_joueurs_groupe select 0)) then
 					{
-						if ((_x select 4) == 11) then // verif si objet is poisson
-						{
-							_tab pushBack _x;
-						};
+						_tab pushBack _x;
 					};
 				};
 			};
@@ -57,26 +51,34 @@ if (_index != -1) then
 	private _objet = _tab select _index;
 
 	if (bouton_A_OK) then {
-		private _return = [player, (_objet select 5)] call mission_fnc_calcul_poid;
-
-		if (_return) then 
-		{
+		if ((_objet select 4) == 14) then {
 			private _paiement = [(_objet select 7)] call mission_fnc_paiement;
 			if (_paiement) then 
 			{
-				[(_objet select 0)] call mission_fnc_add_item;
+				call compile (_objet select 9);
 			};
-		}
-		else
-		{
-			hint localize "STR_inventaire_plein";
+		} else {
+			private _return = [player, (_objet select 5)] call mission_fnc_calcul_poid;
+
+			if (_return) then 
+			{
+				private _paiement = [(_objet select 7)] call mission_fnc_paiement;
+				if (_paiement) then 
+				{
+					[(_objet select 0)] call mission_fnc_add_item;
+				};
+			}
+			else
+			{
+				hint localize "STR_inventaire_plein";
+			};
 		};
 	} else {
-		if ((_objet select 4) == 10) then {
+		if ((_objet select 0) in (liste_joueurs_groupe select 1)) then {
 			[(_objet select 7)] call mission_fnc_paiement_vente;
 			private _reste = [(_objet select 0)] call mission_fnc_vendre_item;
 
-			[_reste] call mission_fnc_poissonerie_bouton_inventaire;
+			[_reste] call mission_fnc_marcher_modulaire_bouton_inventaire;
 		};
 	};
 };

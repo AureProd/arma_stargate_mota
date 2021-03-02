@@ -21,7 +21,7 @@ if (_index != -1) then
 				{
 					if ((_x select 6) == 0) then // verif si pas militaire
 					{
-						if (((_x select 4) == 7) or ((_x select 4) == 14)) then // verif si objet is outil
+						if ((_x select 4) == 7) then // verif si objet is outil
 						{
 							_tab pushBack _x;
 						};
@@ -34,7 +34,7 @@ if (_index != -1) then
 				{
 					if ((_x select 6) == 0) then // verif si pas militaire
 					{
-						if (((_x select 4) == 7) or ((_x select 4) == 14)) then // verif si objet is outil
+						if ((_x select 4) == 7) then // verif si objet is outil
 						{
 							_tab pushBack _x;
 						};
@@ -57,13 +57,7 @@ if (_index != -1) then
 	private _objet = _tab select _index;
 
 	if (bouton_A_OK) then {
-		if ((_objet select 4) == 14) then {
-			private _paiement = [(_objet select 7)] call mission_fnc_paiement;
-			if (_paiement) then 
-			{
-				call compile (_objet select 9);
-			};
-		} else {
+		if ((_objet select 4) == 7) then {
 			private _return = [player, (_objet select 5)] call mission_fnc_calcul_poid;
 
 			if (_return) then 

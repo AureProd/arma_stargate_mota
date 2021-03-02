@@ -47,12 +47,9 @@ lbClear _liste_objets;
 	{
 		if (((_x select 8) == 1) or ((_x select 8) == 2)) then // verif si objet for tauri
 		{
-			if ((_x select 6) == 0) then // verif si pas militaire
+			if ((_x select 0) in (liste_joueurs_groupe select 0)) then
 			{
-				if ((_x select 4) == 11) then // verif si objet is poisson
-				{
-					[_liste_objets, _playerBdd] call _fn_add_item_to_liste;
-				};
+				[_liste_objets, _playerBdd] call _fn_add_item_to_liste;
 			};
 		};
 	}
@@ -60,12 +57,9 @@ lbClear _liste_objets;
 	{
 		if (((_x select 8) == 0) or ((_x select 8) == 2)) then // verif si objet for goauld
 		{
-			if ((_x select 6) == 0) then // verif si pas militaire
+			if ((_x select 0) in (liste_joueurs_groupe select 0)) then 
 			{
-				if ((_x select 4) == 11) then // verif si objet is poisson
-				{
-					[_liste_objets, _playerBdd] call _fn_add_item_to_liste;
-				};
+				[_liste_objets, _playerBdd] call _fn_add_item_to_liste;
 			};
 		};
 	};

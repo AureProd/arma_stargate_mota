@@ -589,5 +589,38 @@ class menu_y
 			font = "PuristaMedium";
 			sizeEx = (((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1);
 		};
+		class bar_poid
+		{
+			type = 8;
+			idc = 3050;
+			x = safeZoneX + safeZoneW * 0.43375;
+			y = safeZoneY + safeZoneH * 0.71444445;
+			w = safeZoneW * 0.151875;
+			h = safeZoneH * 0.03111112;
+			style = 0;
+			colorBar[] = {0.6,0,0,0.5};
+			colorFrame[] = {0,0,0,0};
+			texture = "#(argb,8,8,3)color(1,1,1,1)";
+			tooltipColorBox[] = {0,0,0,0};
+			tooltipColorShade[] = {0,0,0,0};
+			tooltipColorText[] = {0,0,0,0};
+			
+		};
+		class text_bar_poid
+		{
+			type = 0;
+			idc = 3051;
+			x = safeZoneX + safeZoneW * 0.43375;
+			y = safeZoneY + safeZoneH * 0.71666667;
+			w = safeZoneW * 0.1525;
+			h = safeZoneH * 0.02222223;
+			style = 2;
+			text = "";
+			colorBackground[] = {0.0549,0,0,0};
+			colorText[] = {1,1,1,1};
+			font = "PuristaMedium";
+			sizeEx = (((((safezoneW/safezoneH) min 1.2)/1.2)/25)*1);
+			
+		};
 	};
 };

@@ -25,12 +25,9 @@ private _tab = [];
 		{
 			if (((_x select 8) == 1) or ((_x select 8) == 2)) then // verif si objet for tauri
 			{
-				if ((_x select 6) == 0) then // verif si pas militaire
+				if ((_x select 0) in (liste_joueurs_groupe select 0)) then
 				{
-					if ((_x select 4) == 11) then // verif si objet is poisson
-					{
-						_tab pushBack _x;
-					};
+					_tab pushBack _x;
 				};
 			};
 		}
@@ -38,12 +35,9 @@ private _tab = [];
 		{
 			if (((_x select 8) == 0) or ((_x select 8) == 2)) then // verif si objet for goauld
 			{
-				if ((_x select 6) == 0) then // verif si pas militaire
+				if ((_x select 0) in (liste_joueurs_groupe select 0)) then
 				{
-					if ((_x select 4) == 11) then // verif si objet is poisson
-					{
-						_tab pushBack _x;
-					};
+					_tab pushBack _x;
 				};
 			};
 		};
@@ -75,7 +69,7 @@ if (_index != -1) then
 			_liste_objets lbSetCurSel -1;
 		};
 	} else {
-		if ((_objet select 4) == 10) then {
+		if ((_objet select 0) in (liste_joueurs_groupe select 1)) then {
 			_bouton_acheter ctrlEnable true;
 		} else {
 			_bouton_acheter ctrlEnable false;

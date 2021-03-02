@@ -1,7 +1,7 @@
 
 private _liste_vehicules = (findDisplay 30000) displayCtrl 30001;
 
-if (isMilitaire == 3) then {
+if (isMilitaire == 2) then {
 	if (!([9] call mission_fnc_has_licence)) exitWith {
 		if ((lbCurSel _liste_vehicules) != -1) then {
 			_liste_vehicules lbSetCurSel -1;

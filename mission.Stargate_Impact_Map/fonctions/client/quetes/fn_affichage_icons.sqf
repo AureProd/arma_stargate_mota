@@ -36,11 +36,17 @@ addMissionEventHandler ["Draw3D",
 						[(call compile (_x select 1)), "pictures\icon_quete\icon_quete_exclamation_violet.paa"] call _fn_add_icon;
 					} else {
 						if ([(_x select 0)] call mission_fnc_has_quetes_actives) then {
-							if (missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_x select 0), (getPlayerUID player)], false]) then {
+							if ((missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_x select 0), (getPlayerUID player)], 0]) == (count (_x select 7))) then {
 								[(call compile (_x select 1)), "pictures\icon_quete\icon_quete_interrogation_violet.paa"] call _fn_add_icon;
 							} else {
-								[(call compile ((_x select 7) select 1)), "pictures\icon_quete\icon_quete_interrogation_violet.paa"] call _fn_add_icon;
-							};
+								private _tab = _x;
+
+								{
+									if ((missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_tab select 0), (getPlayerUID player)], 0]) == _forEachIndex) then {
+										[(call compile (_x select 1)), "pictures\icon_quete\icon_quete_interrogation_violet.paa"] call _fn_add_icon;
+									};
+								} forEach (_x select 7);
+							};	
 						};
 					};
 				};
