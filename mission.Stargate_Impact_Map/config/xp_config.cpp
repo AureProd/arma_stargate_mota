@@ -12,7 +12,7 @@ class stargate_xp
 	class xp
     {
         level_max = 60;
-		xp_max = 300000;
+		xp_max = 10000000;
 		tableau_levels[] = {
 			{2, 600}, // { level / exp }
 			{3, 900},

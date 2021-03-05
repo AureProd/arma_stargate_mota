@@ -76,7 +76,8 @@ class stargate
 	class achat_vente
 	{
 		magasins[] = { // [id_pnj_magasin, isTauri (1 goauld, 2 tauri), [id_item_achetable, id_item_achetable, id_item_achetable], [id_item_vendable, id_item_vendable, id_item_vendable]]
-			{"marcher_modulaire", 2, {1, 5, 23}, {1, 5}}
+			{"marcher_boulanger_tauri", 1, {55}, {55}},
+			{"marcher_boulanger_goauld", 2, {55}, {55}}
 		};
 	};
 };
