@@ -159,7 +159,7 @@ $ ctrl + C
 $ ctrl + D
 ```
 
-## Installation et lancement du serveur de développement
+## Installation du serveur de développement
 
 ### Installation du serveur de développement
 
