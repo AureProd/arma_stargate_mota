@@ -20,9 +20,19 @@ switch (_partieCode) do {
 		private _indexTab = param [2, 0];
 		private _tab = (_tabQuete select 7) select _indexTab;
 
-		hint (_tab select 0);
+		[_tab, _tabQuete, _indexTab] spawn {
+			private _tab = param [0];
+			private _tabQuete = param [1];
+			private _indexTab = param [2];
 
-		missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], (_indexTab + 1)];
+			if ((_tab select 3) == 1) then {
+				[false] call mission_fnc_chargement;
+			};
+
+			hint (_tab select 0);
+
+			missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], (_indexTab + 1)];
+		};
 	};
 	case 2: { // fin quête 
 		if ((missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], 0]) == (count (_tabQuete select 7))) then {
@@ -34,6 +44,35 @@ switch (_partieCode) do {
 			[_tabQuete] call mission_fnc_giveQueteRecompence;
 		} else {
 			hint format [localize "STR_message_invalidation_quete", (_tabQuete select 2)]; // message invalidation quête
+		};
+	};
+	case 3: {
+		private _indexTab = param [2, 0];
+		private _tab = (_tabQuete select 7) select _indexTab;
+
+		[_tab, _tabQuete, _indexTab] spawn {
+			private _tab = param [0];
+			private _tabQuete = param [1];
+			private _indexTab = param [2];
+
+			if ((_tab select 3) == 1) then {
+				[false] call mission_fnc_chargement;
+			};
+
+			hint (_tab select 0);
+
+			missionNamespace setVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], (_indexTab + 1)];
+
+			if ((missionNamespace getVariable [format ["quete_%1_type_1_player_%2", (_tabQuete select 0), (getPlayerUID player)], 0]) == (count (_tabQuete select 7))) then {
+				hint format [localize "STR_message_validation_quete", (_tabQuete select 2)]; // message validation quête
+
+				[_tabQuete select 0] call mission_fnc_remove_quetes_actives;
+				[_tabQuete select 0] call mission_fnc_add_quetes_faites;
+
+				[_tabQuete] call mission_fnc_giveQueteRecompence;
+			} else {
+				hint format [localize "STR_message_invalidation_quete", (_tabQuete select 2)]; // message invalidation quête
+			};
 		};
 	};
 };

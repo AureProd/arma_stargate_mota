@@ -11,11 +11,11 @@ private _image_fond = (findDisplay 60000) displayCtrl 60001;
 
 if ((_playerBdd select 1) == 1) then 
 {
-	_image_fond ctrlSetText "pictures\interfaces\menu_achats\marcher_general\menumagasin_goauld.paa";
+	_image_fond ctrlSetText "pictures\interfaces\menu_documents\menudoc_goauld.paa";
 } 
 else 
 {
-	_image_fond ctrlSetText "pictures\interfaces\menu_achats\marcher_general\menumagasin.paa";
+	_image_fond ctrlSetText "pictures\interfaces\menu_documents\menudoc.paa";
 };
 
 private _liste = (findDisplay 60000) displayCtrl 60002;

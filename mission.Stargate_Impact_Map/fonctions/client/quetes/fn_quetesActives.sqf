@@ -78,6 +78,12 @@ else
 			[_x, 0] call mission_fnc_quete_type_3;	
 		};
 		case 4: {}; // quête type 4
+		case 5: { // quête type 5
+			[_x, 0] call mission_fnc_quete_type_1;	
+		};
+		case 6: { // quête type 6
+			[_x, 2] call mission_fnc_quete_type_3;	
+		};
 	};
 } forEach _tab_quetes;
 

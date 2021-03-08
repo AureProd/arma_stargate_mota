@@ -22,6 +22,10 @@ switch (_partieCode) do {
 			} forEach ((_tabQuete select 7) select 0);
 
 			missionNamespace setVariable [format ["quete_%1_type_3_player_%2", (_tabQuete select 0), (getPlayerUID player)], true];
+
+			if (condition) then {
+				[(_this select 3), 1] call mission_fnc_quete_type_3
+			};
 		};
 	};
 	case 1: { // fin quête
@@ -31,6 +35,27 @@ switch (_partieCode) do {
 		[_tabQuete select 0] call mission_fnc_add_quetes_faites;
 
 		[_tabQuete] call mission_fnc_giveQueteRecompence;
+	};
+	case 2: {
+		missionNamespace setVariable [format ["quete_%1_type_3_player_%2", (_tabQuete select 0), (getPlayerUID player)], false];
+		
+		[_tabQuete] spawn {
+			private _tabQuete = param [0];
+
+			{
+				(call compile (_x select 0)) hideObject false;
+
+				waitUntil { ((player distance2D (call compile (_x select 0))) < ((_tabQuete select 7) select 1)) or (!([(_tabQuete select 0)] call mission_fnc_has_quetes_actives)) };
+
+				(call compile (_x select 0)) hideObject true;
+
+				hint (_x select 1);
+			} forEach ((_tabQuete select 7) select 0);
+
+			missionNamespace setVariable [format ["quete_%1_type_3_player_%2", (_tabQuete select 0), (getPlayerUID player)], true];
+
+			[_tabQuete, 1] call mission_fnc_quete_type_3;
+		};
 	};
 };
 
