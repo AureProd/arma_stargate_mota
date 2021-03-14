@@ -22,10 +22,6 @@ switch (_partieCode) do {
 			} forEach ((_tabQuete select 7) select 0);
 
 			missionNamespace setVariable [format ["quete_%1_type_3_player_%2", (_tabQuete select 0), (getPlayerUID player)], true];
-
-			if (condition) then {
-				[(_this select 3), 1] call mission_fnc_quete_type_3
-			};
 		};
 	};
 	case 1: { // fin quête

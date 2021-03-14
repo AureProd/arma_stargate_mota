@@ -8,22 +8,24 @@ addMissionEventHandler ["Draw3D",
 		private _image_bis = param [1];
 
 		private _pos = getPosATL _id;
-		private _posSaoul = getPosASL _id;
-		private _posBis = [_pos select 0, _pos select 1, (_pos select 2) + (((boundingBoxReal _id) select 1) select 2) + 0.4];
-		private _posTers = [_posSaoul select 0, _posSaoul select 1, (_posSaoul select 2) + (((boundingBoxReal _id) select 1) select 2) + 0.4];
+		//private _posSaoul = getPosASL _id;
+		private _posBis = [_pos select 0, _pos select 1, (_pos select 2) + (((boundingBoxReal _id) select 1) select 2) + 0.5];
+		//private _posTers = [_posSaoul select 0, _posSaoul select 1, (_posSaoul select 2) + ((boundingBoxReal _id) select 2)];
 
 		private _distance = ((eyePos player) distance2D _pos);
 
 		private _image = (getMissionPath _image_bis);
 
-		private _visibilite = [player, "VIEW", (vehicle player)] checkVisibility [(eyePos player), _posTers];
-
-		//drawIcon3D [_image, [1,1,1,1], _posBis, (25 / _distance), (25 / _distance), 1, "", 1, 1, "PuristaMedium", "right", false];		
-
-		if ((_visibilite > 0.7) and (_distance < 1500)) then 
-		{
-			drawIcon3D [_image, [1,1,1,1], _posBis, (25 / _distance), (25 / _distance), 1, "", 1, 1, "PuristaMedium", "right", false];	
+		if ((_posBis distance2D player) < 50) then {
+			drawIcon3D [_image, [1,1,1,1], _posBis, (50 / _distance), (50 / _distance), 1, "", 1, 1, "PuristaMedium", "right", false];	
 		};
+
+		// private _visibilite = [player, "VIEW", (vehicle player)] checkVisibility [(eyePos player), _posTers];
+
+		// if ((_visibilite > 0.7) and (_distance < 1500)) then 
+		// {
+		// 	drawIcon3D [_image, [1,1,1,1], _posBis, (25 / _distance), (25 / _distance), 1, "", 1, 1, "PuristaMedium", "right", false];	
+		// };
 	};
 
 	private _config_quetes = [] call mission_fnc_get_config_quetes;

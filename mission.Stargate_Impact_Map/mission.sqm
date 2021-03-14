@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=138;
+	toggles=10;
 	class ItemIDProvider
 	{
-		nextID=1660;
+		nextID=1663;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={38576.559,61.168606,16056.896};
-		dir[]={0.076739267,-0.66489226,0.74298686};
-		up[]={0.068309888,0.74693918,0.66137391};
-		aside[]={0.99470836,0,-0.10273828};
+		pos[]={38615.645,34.459145,16151.484};
+		dir[]={-0.7159819,-0.55220473,-0.42712972};
+		up[]={-0.47422877,0.83370847,-0.28290826};
+		aside[]={-0.51232493,-1.4901161e-008,0.85879159};
 	};
 };
 binarizationWanted=0;
-sourceName="missionofficiel";
+sourceName="mission";
 addons[]=
 {
 	"A3_Structures_F_EPA_Civ_Camping",
@@ -424,7 +424,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=575;
+		items=576;
 		class Item0
 		{
 			dataType="Object";
@@ -715,11 +715,11 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={38071.895,2.5788262,3303.053};
+				position[]={38071.895,2.8657415,3303.053};
 				angles[]={0,5.8660693,0};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 				name="artefact_02";
@@ -727,6 +727,7 @@ class Mission
 			};
 			id=20;
 			type="Land_PalmTotem_03_F";
+			atlOffset=0.2869153;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20168,7 +20169,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={38065.836,2.0014389,3326.5271};
-						angles[]={0,3.3023336,0};
+						angles[]={0,3.3023376,0};
 					};
 					side="Civilian";
 					flags=7;
@@ -20176,6 +20177,7 @@ class Mission
 					{
 						name="quete01_tauri_arch00";
 						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1631;
 					type="C_man_1";
@@ -20238,7 +20240,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=3;
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -20288,20 +20309,42 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={38069.793,2.1610901,3282.5654};
-						angles[]={0,5.7889719,0};
+						position[]={38069.793,2.1614389,3282.5649};
+						angles[]={0,5.7889776,0};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						name="quete01_tauri_arch01";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
 					};
 					id=1646;
 					type="C_man_hunter_1_F";
+					atlOffset=0.00034880638;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -20320,7 +20363,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -20339,7 +20382,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=2;
+						class Attribute3
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=4;
 					};
 				};
 			};
@@ -20347,6 +20409,7 @@ class Mission
 			{
 			};
 			id=1634;
+			atlOffset=0.00034880638;
 		};
 		class Item553
 		{
@@ -20536,6 +20599,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
+						name="quete01_goauld_arch00";
 					};
 					id=1648;
 					type="sga_commoner_hat";
@@ -20585,7 +20649,6 @@ class Mission
 			};
 			class Attributes
 			{
-				name="quete01_goauld_arch00";
 			};
 			id=1647;
 		};
@@ -20799,6 +20862,98 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item575
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={37894.785,2.405282,3240.9724};
+						angles[]={0,0.88036436,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="quete01_tauri_arch02";
+						disableSimulation=1;
+					};
+					id=1661;
+					type="C_man_polo_5_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1660;
 		};
 	};
 };
