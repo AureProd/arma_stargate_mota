@@ -2,9 +2,7 @@
 // fonction name : mission_fnc_add_garage
 // parmettres : [numero 1 vehicule, numero 2 vehicule, numero 3 vehicule, numero 4 vehicule ...etc]
 
-private _variable = missionNamespace getVariable nomVarPlayerUID;
-
-private _garage = _variable select 14;
+private _garage = ["garage"] call mission_fnc_getBDD;
 
 private _num_vehicules = _this;
 
