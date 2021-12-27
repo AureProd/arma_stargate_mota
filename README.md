@@ -28,11 +28,8 @@ A ne pas faire si MySQL server est déjà installé
 ```
 $ sudo apt update
 $ sudo apt upgrade
-$ sudo apt install mysql-server
+$ sudo apt install mariadb-server
 $ sudo mysql_secure_installation
-$ mysql -u root -p
-$ CREATE USER '<USERNAME>'@'%' IDENTIFIED BY '<PASSWORD>';
-$ GRANT ALL PRIVILEGES ON *.* TO '<USERNAME>'@'%' WITH GRANT OPTION;
 ```
 
 ### Création des bases de données
@@ -51,10 +48,29 @@ A ne pas faire si Steam est déjà installé
 $ useradd -m -s /bin/bash <USERNAME>
 $ su <USERNAME>
 $ mkdir ~/steam && cd ~/steam
-$ curl -sqL "https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz" | tar zxvf -
-$ chmod +x steamcmd.sh
-$ ./steamcmd.sh
 ```
+
+Tutorial pour installer steamcmd to debian 11 : 
+
+![Lien du tutorial](https://user-images.githubusercontent.com/71317162/147419945-fd15c23f-a3a9-4102-8835-4df2afc4e447.png)
+
+Tutorial pour installer steamcmd to debian 11 : 
+
+![Lien du tutorial](https://user-images.githubusercontent.com/71317162/147419895-7bab3d87-bacf-4ac1-bbff-ea1c71e9e326.png)
+
+```
+$ chmod +x steamcmd
+$ ./steamcmd
+```
+
+Puis installez ces librairy pour liés la bdd au serveurs
+
+```
+$ apt-get install libtbb2:i386
+$ apt-get install libtbb2
+```
+
+Puis utilisez les scritps pour initialiser et update les serveurs arma
 
 ## Récupération des fichiers de la mission
 
@@ -64,7 +80,7 @@ $ ./steamcmd.sh
 $ git clone git@github.com:HuetJB/arma_stargate.git
 ```
 
-### Récupération des mods de la mission (sur votre PC)
+### Récupération des mods de la mission
 
 Abonnées vous à ces mods sur le workshop de steam (vous devez posséder Arma 3 pour qu'ils se téléchargent) et une fois qu'ils sont téléchargés, vous les trouvezrez dans le fichier ```Arma3/!Workshop/``` 
 
