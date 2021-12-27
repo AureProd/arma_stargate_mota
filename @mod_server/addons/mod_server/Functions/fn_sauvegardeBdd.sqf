@@ -45,7 +45,7 @@ private _queryResult = [_query, 2] call db_fnc_asyncCall;
 
 if ((count _queryResult) < 1) then
 {
-	private _query1 = format ["INSERT INTO player (p_id, p_uid, p_name, p_classe, p_race, p_exp, p_licence, p_level, p_vie, p_faim, p_soif, p_inv_reel, p_inv_virtuel, p_position, p_quetes_faites, p_planete_visite, p_quetes_actives, p_garage, p_white_liste_soldat, p_documents) VALUES ('', '%1', '%2', %3, %4, %5, '%6', %7, %8, %9, %10, '%11', '%12', '%13', '%14', '%15', '%16', '%17', '%18', %19)", _steamUID, _namePlayer, _classes select 0, _classes select 1, _exp, _licences, _level, _vie, _faim, _soif, _inv_reel, _inv_virtuel, _pos_player, _quetes_faites, _planete_visite, _quetes_actives, _garage, _whiteListeSoldat, _documents];
+	private _query1 = format ["INSERT INTO player (p_uid, p_name, p_classe, p_race, p_exp, p_licence, p_level, p_vie, p_faim, p_soif, p_inv_reel, p_inv_virtuel, p_position, p_quetes_faites, p_planete_visite, p_quetes_actives, p_garage, p_white_liste_soldat, p_documents) VALUES ('%1', '%2', %3, %4, %5, '%6', %7, %8, %9, %10, '%11', '%12', '%13', '%14', '%15', '%16', '%17', '%18', %19)", _steamUID, _namePlayer, _classes select 0, _classes select 1, _exp, _licences, _level, _vie, _faim, _soif, _inv_reel, _inv_virtuel, _pos_player, _quetes_faites, _planete_visite, _quetes_actives, _garage, _whiteListeSoldat, _documents];
 	[_query1, 1] call db_fnc_asyncCall;
 	diag_log format ["Le joueur %1 a ete créé en BDD (UID: %2)", _namePlayer, _steamUID];
 };
