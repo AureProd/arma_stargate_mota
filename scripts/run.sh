@@ -174,6 +174,7 @@ echo -e "${YELLOW}Copying mission files in server folder${RESET}"
 # copy server mods to server
 rm -rf $SERVER_PATH/server/@extDB3
 cp -r $PROJECT_PATH/@extDB3 $SERVER_PATH/server/@extDB3
+mkdir $SERVER_PATH/server/@extDB3/logs
 
 sed -i "s/<BDD_URL>/mysql-$INSTANCE_NAME/g" $SERVER_PATH/server/@extDB3/extdb3-conf.ini
 sed -i "s/<BDD_PORT>/3306/g" $SERVER_PATH/server/@extDB3/extdb3-conf.ini

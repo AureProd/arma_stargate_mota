@@ -10,8 +10,10 @@ services:
     restart: always
     ports:
       - "${SERVER_PORT}:${SERVER_PORT}"
+      - "${SERVER_PORT}:${SERVER_PORT}/udp"
     volumes:
       - ./build/server:/server:rw
+      - /server/@extDB3/logs
     entrypoint: /bin/sh -c
     command: 
       - |
