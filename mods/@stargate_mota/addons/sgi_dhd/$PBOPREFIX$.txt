@@ -1,6 +1,0 @@
-//<'sgi_dhd.pbo' properties via Mikero's dos tools, dll version 7.96>
-prefix=sgi_dhd;
-Mikero=DePbo.dll.7.96;
-version=20122212;
-//PboType=Arma Addon;
-//</properties>

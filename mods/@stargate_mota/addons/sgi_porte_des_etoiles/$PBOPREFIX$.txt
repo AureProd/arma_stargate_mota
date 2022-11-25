@@ -1,6 +1,0 @@
-//<'sgi_porte_des_etoiles.pbo' properties via Mikero's dos tools, dll version 7.96>
-prefix=sgi_porte_des_etoiles;
-Mikero=DePbo.dll.7.96;
-version=20121820;
-//PboType=Arma Addon;
-//</properties>

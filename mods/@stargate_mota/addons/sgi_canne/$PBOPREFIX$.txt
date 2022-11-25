@@ -1,4 +1,0 @@
-//<'sgi_canne.pbo' properties via Mikero's dos tools, dll version 7.96>
-prefix=sgi_canne;
-//PboType=Arma Addon;
-//</properties>
