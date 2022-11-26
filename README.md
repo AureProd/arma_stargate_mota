@@ -1,4 +1,4 @@
-# Mission Stargate de la team MOTA
+# Mission Stargate of MOTA team
 
 ## Initialisation
 
