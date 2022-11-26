@@ -143,7 +143,14 @@ mv $SERVER_PATH/server/@mods_stargate_impact/addons/SGI_Structure.pbo $SERVER_PA
 mv $SERVER_PATH/server/@mods_stargate_impact/addons/SGI_Structure.pbo.TA_mysterfreez.bisign $SERVER_PATH/server/@mods_stargate_impact/addons/sgi_structure.pbo.TA_mysterfreez.bisign
 
 # copy mods keys to server
+# remove all keys except one 'a3.bikey'
+mkdir $SERVER_PATH/tmp
+mv $SERVER_PATH/server/keys/a3.bikey $SERVER_PATH/tmp/a3.bikey
+
 rm -rf $SERVER_PATH/server/keys/*
+
+mv $SERVER_PATH/tmp/a3.bikey $SERVER_PATH/server/keys/a3.bikey
+rm -rf $SERVER_PATH/tmp
 
 cp $SERVER_PATH/server/@cba_a3/keys/* $SERVER_PATH/server/keys/
 cp $SERVER_PATH/server/@map_stargate_impact/keys/* $SERVER_PATH/server/keys/
