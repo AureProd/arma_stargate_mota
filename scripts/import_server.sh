@@ -22,7 +22,7 @@ echo "${YELLOW}Starting of container use for get arma3 server files (id: ${conta
 docker exec -it $container_id steamcmd \
     +force_install_dir /server \
     +login $2 $3 \
-    +app_update 233780 \
+    +app_update 233780 validate \
     +quit
 
 docker rm -f $container_id
