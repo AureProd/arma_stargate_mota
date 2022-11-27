@@ -31,7 +31,6 @@ docker exec -it $container_id steamcmd \
 
 docker rm -f $container_id
 
-user=$(id -u -n)
-sudo chown -R $user:$user $1/mods
+sudo chown -R $USER:$USER $1/mods
 
 echo "${GREEN}\nArma3 mod get with succes, output folder: '$1/mods'${RESET}"
