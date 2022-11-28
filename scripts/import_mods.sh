@@ -22,11 +22,11 @@ echo "${YELLOW}Starting of container use for get arma3 mod (id: ${container_id})
 docker exec -it $container_id steamcmd \
     +force_install_dir /mods \
     +login $2 $3 \
-    +workshop_download_item 107410 450814997 validate \
-    +workshop_download_item 107410 2128300311 validate \
-    +workshop_download_item 107410 2129566387 validate \
-    +workshop_download_item 107410 2322349802 validate \
-    +workshop_download_item 107410 2411185300 validate \
+    +workshop_download_item 107410 450814997 \
+    +workshop_download_item 107410 2128300311 \
+    +workshop_download_item 107410 2129566387 \
+    +workshop_download_item 107410 2322349802 \
+    +workshop_download_item 107410 2411185300 \
     +quit
 
 docker rm -f $container_id
