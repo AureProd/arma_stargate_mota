@@ -193,8 +193,7 @@ rm -rf $SERVER_PATH/server/@mod_server
 cp -r $PROJECT_PATH/@mod_server $SERVER_PATH/server/@mod_server
 rm -rf $SERVER_PATH/server/@mod_server/addons/*
 
-cp $PROJECT_PATH/autre/basic.cfg $SERVER_PATH/server/
-cp $PROJECT_PATH/autre/server.cfg $SERVER_PATH/server/
+cp $PROJECT_PATH/autre/server.cfg $SERVER_PATH/server/server.cfg
 
 # replace informations in server.cfg
 sed -i "s/<SERVER_DESCRIPTION>/$SERVER_DESCRIPTION/g" $SERVER_PATH/server/server.cfg
