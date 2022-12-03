@@ -244,7 +244,7 @@ echo -e "${YELLOW}Create starting script${RESET}"
 # create server starter script
 rm -rf $SERVER_PATH/server/run.sh
 
-echo -e "./arma3server_x64 -port=$SERVER_PORT -autoinit -config=server.cfg -cfg=basic.cfg -name=$INSTANCE_NAME -mod=@cba_a3\;@map_stargate_impact\;@stargate_arma_ta\;@stargate_mota\;@mods_stargate_impact -servermod=@mod_server\;@extDB3" > $SERVER_PATH/server/run.sh
+echo -e "./arma3server_x64 -port=$SERVER_PORT -autoinit -config=server.cfg -name=$INSTANCE_NAME -mod=@cba_a3\;@map_stargate_impact\;@stargate_arma_ta\;@stargate_mota\;@mods_stargate_impact -servermod=@mod_server\;@extDB3" > $SERVER_PATH/server/run.sh
 
 chmod +x $SERVER_PATH/server/run.sh
 
