@@ -9,8 +9,7 @@ services:
     container_name: arma-${INSTANCE_NAME}
     restart: always
     ports:
-      - "${SERVER_PORT}:${SERVER_PORT}"
-      - "${SERVER_PORT}:${SERVER_PORT}/udp"
+      - "${SERVER_PORT_START}-${SERVER_PORT_END}:${SERVER_PORT_START}-${SERVER_PORT_END}/udp"
     volumes:
       - ./build/server:/server:rw
       - /server/@extDB3/logs

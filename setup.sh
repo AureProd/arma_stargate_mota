@@ -24,7 +24,7 @@ echo "${YELLOW}What is the name of this instance${RESET}"
 read INSTANCE_NAME
 
 echo "${YELLOW}What is the port of the server${RESET}"
-read SERVER_PORT
+read SERVER_PORT_START
 
 echo "${YELLOW}What is the number of players of the server${RESET}"
 read SERVER_MAX_PLAYERS
@@ -38,8 +38,12 @@ cp .env.example .env
 sed -i "s/STEAM_LOGIN=.*/STEAM_LOGIN=$STEAM_LOGIN/g" .env
 sed -i "s/STEAM_PASSWORD=.*/STEAM_PASSWORD=$STEAM_PASSWORD/g" .env
 sed -i "s/INSTANCE_NAME=.*/INSTANCE_NAME=$INSTANCE_NAME/g" .env
-sed -i "s/SERVER_PORT=.*/SERVER_PORT=$SERVER_PORT/g" .env
 sed -i "s/SERVER_MAX_PLAYERS=.*/SERVER_MAX_PLAYERS=$SERVER_MAX_PLAYERS/g" .env
+
+SERVER_PORT_END=$(($SERVER_PORT_START + 4))
+
+sed -i "s/SERVER_PORT_START=.*/SERVER_PORT_START=$SERVER_PORT_START/g" .env
+sed -i "s/SERVER_PORT_END=.*/SERVER_PORT_END=$SERVER_PORT_END/g" .env
 
 # generate server passwords
 sed -i "s/SERVER_ADMIN_PASSWORD=.*/SERVER_ADMIN_PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 30 | head -n 1)/g" .env

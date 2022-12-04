@@ -37,7 +37,7 @@ else
     STEAM_LOGIN=$(grep "STEAM_LOGIN" .env | cut -d '=' -f2)
     STEAM_PASSWORD=$(grep "STEAM_PASSWORD" .env | cut -d '=' -f2)
     INSTANCE_NAME=$(grep "INSTANCE_NAME" .env | cut -d '=' -f2)
-    SERVER_PORT=$(grep "SERVER_PORT" .env | cut -d '=' -f2)
+    SERVER_PORT_START=$(grep "SERVER_PORT_START" .env | cut -d '=' -f2)
     SERVER_MAX_PLAYERS=$(grep "SERVER_MAX_PLAYERS" .env | cut -d '=' -f2)
     SERVER_DESCRIPTION=$(grep "SERVER_DESCRIPTION" .env | cut -d '=' -f2)
     SERVER_ADMIN_PASSWORD=$(grep "SERVER_ADMIN_PASSWORD" .env | cut -d '=' -f2)
@@ -244,7 +244,7 @@ echo -e "${YELLOW}Create starting script${RESET}"
 # create server starter script
 rm -rf $SERVER_PATH/server/run.sh
 
-echo -e "./arma3server_x64 -port=$SERVER_PORT -autoinit -config=server.cfg -name=$INSTANCE_NAME -mod=@cba_a3\;@map_stargate_impact\;@stargate_arma_ta\;@stargate_mota\;@mods_stargate_impact -servermod=@mod_server\;@extDB3" > $SERVER_PATH/server/run.sh
+echo -e "./arma3server_x64 -port=$SERVER_PORT_START -autoinit -config=server.cfg -name=$INSTANCE_NAME -mod=@cba_a3\;@map_stargate_impact\;@stargate_arma_ta\;@stargate_mota\;@mods_stargate_impact -servermod=@mod_server\;@extDB3" > $SERVER_PATH/server/run.sh
 
 chmod +x $SERVER_PATH/server/run.sh
 
