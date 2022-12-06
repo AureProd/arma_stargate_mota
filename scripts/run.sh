@@ -165,11 +165,11 @@ if [ -z "$(docker images -q depbo:latest 2> /dev/null)" ]; then
     # build docker image depbo:latest
     cd $PARENT_PATH
 
-    git clone git@github.com:HuetJB/linux_depbo_tools.git depbo
+    git clone https://github.com/HuetJB/linux_depbo_tools.git depbo
 
     cd depbo
 
-    docker build -t depbo:latest .
+    ./setup.sh
 
     cd $PROJECT_PATH
 
