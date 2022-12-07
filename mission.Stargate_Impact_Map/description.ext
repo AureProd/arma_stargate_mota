@@ -1,0 +1,100 @@
+
+#include "imports.hpp"
+
+onLoadName = "";
+overviewTextLocked = "";
+author="Mysterfreez / AureProd";
+dev = "Mysterfreez / AureProd";
+overviewText="";
+loadScreen="";
+onLoadIntro = "";
+respawnOnStart = -1;
+
+// réapparition
+respawn = "INSTANT";
+respawnDelay = 0;
+respawnDialog = false;
+
+// ignorer l'écran de sélection de rôle
+skipLobby = 1;
+
+// désactiver iA
+disabledAI = 1;
+
+ // desactive les cannaux vocaux
+disableChannels[] = {1, 2, 4};
+
+// affichage des HUD
+showHUD[] = {1, 1, 1, 1, 1, 0, 0, 1, 1, 1};
+
+class Header
+{
+	gameType = RPG; // Game type
+	minPlayers =  0; // minimum number of players
+	maxPlayers = 30; // maximum number of players
+};
+
+class CfgDebriefing 
+{
+    class player_not_white_list
+    {
+        title = $STR_white_liste_titre;
+        subtitle = $STR_white_liste_sous_titre;
+        description = $STR_white_liste_description;
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+    class kick_player
+    {
+        title = $STR_kick_titre;
+        subtitle = $STR_kick_sous_titre;
+        description = $STR_kick_description;
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+};
+
+class CfgServer 
+{
+    DebugMode = 0; // Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
+    HeadlessSupport = 0; // Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
+};
+
+class RscTitles
+{
+    #include "dialogs\others\black_background.hpp"
+    #include "dialogs\others\loading_interface.hpp"
+};
+
+class CfgNotifications
+{
+    class notif_max_level
+    {
+        title = "%1";
+        iconPicture = "\A3\ui_f\data\map\markers\military\warning_CA.paa";
+        color[] = {1,1,1,1};
+        description = "%2";
+        duration = 10;
+        priority = 5;
+    };
+    class notif_level
+    {
+        title = "%1";
+        iconPicture = "\A3\ui_f\data\map\markers\military\warning_CA.paa";
+        color[] = {1,1,1,1};
+        description = "%2";
+        duration = 10;
+        priority = 3;
+    };
+    class notif_xp
+    {
+        title = "%1";
+        iconPicture = "\A3\ui_f\data\map\markers\military\warning_CA.paa";
+        color[] = {1,1,1,1};
+        description = "%2";
+        duration = 2;
+        priority = 1;
+    };
+};
