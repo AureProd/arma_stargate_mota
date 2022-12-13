@@ -30,7 +30,7 @@ showHUD[] = {1, 1, 1, 1, 1, 0, 0, 1, 1, 1};
 class Header
 {
 	gameType = RPG; // Game type
-	minPlayers =  0; // minimum number of players
+	minPlayers =  1; // minimum number of players
 	maxPlayers = 30; // maximum number of players
 };
 

@@ -5,8 +5,6 @@ GREEN="\e[1;32m"
 YELLOW="\e[1;33m"
 RESET="\e[0m"
 
-echo -e "${YELLOW}Creating arma3 server of instance : '$INSTANCE_NAME'${RESET}"
-
 # get project folder path
 PROJECT_PATH=$(readlink -f $0)
 PROJECT_PATH=$(echo $PROJECT_PATH | sed 's/\/[^\/]*$//')
@@ -48,13 +46,15 @@ else
     BDD_DATABASE=$(grep "BDD_DATABASE" .env | cut -d '=' -f2)
 fi
 
+echo -e "${YELLOW}Creating arma3 server of instance : '$INSTANCE_NAME'${RESET}"
+
 if [ -d $SERVER_PATH/mods ]; then
     NEED_MODS_UPDATE=false
 
     # check if arguments contains update_mods
     if [[ " $@ " =~ " update_mods " ]]; then
         NEED_MODS_UPDATE=true
-    elif [[ " $@ " =~ " no_update_server " ]]; then
+    elif [[ " $@ " =~ " no_update_mods " ]]; then
         NEED_SERVER_UPDATE=false
     else 
         echo -e "${YELLOW}Do you want update mods ? [y/n]${RESET}"

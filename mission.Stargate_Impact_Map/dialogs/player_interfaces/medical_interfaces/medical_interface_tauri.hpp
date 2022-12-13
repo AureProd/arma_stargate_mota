@@ -320,7 +320,7 @@ class medical_interface_tauri
 			soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1.0};
 			onButtonClick = "playSound 'button'; [5] call mission_fnc_utiliser_blessure;";
 		};
-		class left_leg_logo
+		class left_leg_logo_button
 		{
 			type = 1;
 			idc = 10916;

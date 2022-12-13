@@ -29,6 +29,10 @@ fi
 if [ -d $PROJECT_PATH/build/server ]; then
     if [[ " $@ " =~ " no_update " ]]; then
         echo -e "${YELLOW}Files are not updated${RESET}"
+    elif [[ " $@ " =~ " update_dev " ]]; then
+        echo -e "${YELLOW}Update files for dev...${RESET}"
+
+        $PROJECT_PATH/scripts/run.sh no_update_mods no_update_server
     else
         echo -e "${YELLOW}Do you want update files ? [y/n]${RESET}"
         read NEED_UPDATE_INPUT

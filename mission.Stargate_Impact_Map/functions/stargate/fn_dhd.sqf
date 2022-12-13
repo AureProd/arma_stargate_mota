@@ -1,10 +1,9 @@
 // mission_fnc_dhd_controller
-// parameters = [gate, callback_function, remote_gate]
+// parameters = [gate, remote_gate]
 
 // get the gate props and the remote gate props and the callback function from the parameters
 private _gate = param [0];
 private _remote_gate = param [1];
-private _callback_function = param [2];
 
 // get planets and address logos from the config file 'planets_config'
 private _planets = (getArray (missionConfigFile >> "planets" >> "gates" >> "planets"));
@@ -88,5 +87,3 @@ sleep 0.5;
 [_dhd, [12, "\SGI_DHD\Rvmat\sgi_dhd.rvmat"]] remoteExec ["setObjectMaterial", 0];
 
 sleep 0.5;
-
-_this call _callback_function; // TODO: change that

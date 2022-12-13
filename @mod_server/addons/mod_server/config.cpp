@@ -2,7 +2,7 @@
 class DefaultEventhandlers;
 class CfgPatches
 {
-    class 1700_server 
+    class mod_server 
     {
         units[] = {};
         weapons[] = {};
@@ -14,23 +14,23 @@ class CfgPatches
 
 class CfgFunctions 
 {
-    class MySQL_Database 
+    class db_functions 
     {
         tag = "db";
         
-        class MySQL
+        class database
         {
-            file = "\mod_server\Functions";
-            class init {};
-            class asyncCall {};
-            class isDejaConnecte {};
-            class sauvegardeBdd {};
+            file = "\mod_server\functions";
+            class fn_init {};
+            class fn_bbd_call {};
+            class fn_get_player {};
+            class fn_save_player {};
         };
-        class convertions
+        class conversions
         {
-            file = "\mod_server\Functions\convert";
-            class mresArray {}; // _array = [_array] call db_fnc_mresArray;
-            class mresToArray {}; // _array = [_array] call db_fnc_mresToArray;
+            file = "\mod_server\functions\conversions";
+            class fn_array_to_string {}; // _string = [_array] call db_fnc_array_to_string;
+            class fn_string_to_array {}; // _array = [_string] call db_fnc_string_to_array;
         };
     };
 };
