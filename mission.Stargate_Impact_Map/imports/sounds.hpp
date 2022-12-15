@@ -29,10 +29,10 @@ class CfgSounds
         sound[] = {"sounds\player\player_jump.wav", 10, 1};
         titles[] = {};
     };
-	class joueur_tp  
+	class player_tp  
 	{ 
-		name = "joueur_tp"; 
-		sound[] = {"sounds\player\joueur_tp.ogg", 1, 1}; 
+		name = "player_tp"; 
+		sound[] = {"sounds\player\player_tp.ogg", 1, 1}; 
 		titles[] = {}; 
 	};
 	class player_damage 
@@ -65,46 +65,46 @@ class CfgSounds
 		sound[] = {"sounds\gate\open_iris.ogg", 1, 1}; 
 		titles[] = {}; 
 	};
-	class gate_open  
+	class open_gate  
 	{ 
-		name = "gate_open"; 
-		sound[] = {"sounds\gate\gate_open.ogg", 1, 1}; 
+		name = "open_gate"; 
+		sound[] = {"sounds\gate\open_gate.ogg", 1, 1}; 
 		titles[] = {}; 
 	};
-	class gate_close
+	class close_gate
 	{ 
-		name = "gate_close"; 
-		sound[] = {"sounds\gate\gate_close.ogg", 1, 1}; 
+		name = "close_gate"; 
+		sound[] = {"sounds\gate\close_gate.ogg", 1, 1}; 
 		titles[] = {}; 
 	};
-	class gate_ring  
+	class rotate_gate_ring
 	{ 
-		name = "gate_ring"; 
-		sound[] = {"sounds\gate\gate_ring.ogg", 10, 1}; 
+		name = "rotate_gate_ring"; 
+		sound[] = {"sounds\gate\rotate_gate_ring.ogg", 10, 1}; 
 		titles[] = {}; 
 	};
-	class gate_stop  
+	class stop_gate  
 	{ 
-		name = "gate_stop"; 
-		sound[] = {"sounds\gate\gate_stop.ogg", 50, 1}; 
+		name = "stop_gate"; 
+		sound[] = {"sounds\gate\stop_gate.ogg", 50, 1}; 
 		titles[] = {}; 
 	};
-	class chevron_goauld_lock  
+	class lock_chevron_goauld
 	{ 
-		name = "chevron_goauld_lock"; 
-		sound[] = {"sounds\gate\chevron_goauld_lock.ogg", 20, 1}; 
+		name = "lock_chevron_goauld"; 
+		sound[] = {"sounds\gate\lock_chevron_goauld.ogg", 20, 1}; 
 		titles[] = {}; 
 	};
-	class chevron_tauri_lock  
+	class lock_chevron_tauri  
 	{ 
-		name = "chevron_tauri_lock"; 
-		sound[] = {"sounds\gate\chevron_tauri_lock.ogg", 20, 1}; 
+		name = "lock_chevron_tauri"; 
+		sound[] = {"sounds\gate\lock_chevron_tauri.ogg", 20, 1}; 
 		titles[] = {}; 
 	};
-	class dhd_middle_button
+	class push_dhd_middle_button
 	{ 
-		name = "dhd_middle_button"; 
-		sound[] = {"sounds\dhd\dhd_middle_button.ogg", 20, 1}; 
+		name = "push_dhd_middle_button"; 
+		sound[] = {"sounds\dhd\push_dhd_middle_button.ogg", 20, 1}; 
 		titles[] = {}; 
 	};
 	class dhd_1  

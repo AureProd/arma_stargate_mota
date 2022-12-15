@@ -1,5 +1,5 @@
-// mission_fnc_create_light
-// parameters = [gate]
+// sg_fnc_create_light
+// params = [gate]
 
 // get gate props from parameters
 private _gate = param [0];

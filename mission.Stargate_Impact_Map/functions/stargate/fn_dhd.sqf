@@ -1,5 +1,5 @@
-// mission_fnc_dhd_controller
-// parameters = [gate, remote_gate]
+// sg_fnc_dhd_controller
+// params = [gate, remote_gate]
 
 // get the gate props and the remote gate props and the callback function from the parameters
 private _gate = param [0];

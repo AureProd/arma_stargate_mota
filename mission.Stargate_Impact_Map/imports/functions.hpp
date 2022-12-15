@@ -10,6 +10,9 @@ class CfgFunctions
             file = "functions\stargate";
             class create_light {};
             class dhd {};
+            class stargate {};
+            class transport_detection {};
+            class transport {};
         };
     };
 };
