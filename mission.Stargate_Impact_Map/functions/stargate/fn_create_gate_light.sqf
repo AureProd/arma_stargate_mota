@@ -1,4 +1,5 @@
-// sg_fnc_create_light
+// sg_fnc_create_gate_light
+// this function creates a light at the gate event horizon
 // params = [gate]
 
 // get gate props from parameters

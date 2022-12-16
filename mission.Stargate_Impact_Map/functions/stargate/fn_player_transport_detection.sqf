@@ -1,4 +1,5 @@
-// sg_fnc_transport_detection
+// sg_fnc_player_transport_detection
+// this function is used to detect if the player is in a gate and teleport him in the gate
 // params = [gate]
 
 private _gate = param [0];
@@ -14,10 +15,10 @@ while {true} do {
 
 		private _boolean_return = false;
 
-		if ((_gate getVariable ['is_open_gate', false]) and ((_porte animationPhase 'anim_iris1') == 0)) then {
+		if ((_gate getVariable ['is_open_gate', false]) and ((_gate animationPhase 'anim_iris1') == 0)) then {
 			// calculate the location of the player relative to the gate for determining if the player is in the gate
-			if ((((getDir _porte) > 315) or ((getDir _porte) <= 45)) or (((getDir _porte) > 135) and ((getDir _porte) <= 225))) then { // if the gate is facing north or south
-				if (((getDir _porte) > 315) or ((getDir _porte) <= 45)) then { // if the gate is facing north
+			if ((((getDir _gate) > 315) or ((getDir _gate) <= 45)) or (((getDir _gate) > 135) and ((getDir _gate) <= 225))) then { // if the gate is facing north or south
+				if (((getDir _gate) > 315) or ((getDir _gate) <= 45)) then { // if the gate is facing north
 					if ((_player_x_location < (_gate_x_location + 3)) and (_player_x_location > (_gate_x_location - 3)) and (_player_y_location > (_gate_y_location - 0.9)) and (_player_y_location < (_gate_y_location + 0.1))) then {
 						_boolean_return = true; // if the player is in the gate
 					};
@@ -29,7 +30,7 @@ while {true} do {
 				};
 			} 
 			else { // if the gate is facing east or west
-				if (((getDir _porte) > 45) and ((getDir _porte) <= 135)) then { // if the gate is facing east
+				if (((getDir _gate) > 45) and ((getDir _gate) <= 135)) then { // if the gate is facing east
 					if ((_player_x_location > (_gate_x_location - 0.9)) and (_player_x_location < (_gate_x_location + 0.1)) and (_player_y_location < (_gate_y_location + 3) and (_player_y_location > (_gate_y_location - 3)))) then {
 						_boolean_return = true; // if the player is in the gate
 					};
@@ -48,9 +49,9 @@ while {true} do {
 	if (!(player getVariable ["is_in_gate_transport", false])) then {
 		player setVariable ["is_in_gate_transport", true, true];
 
-		[_porte, ["player_tp", 50]] remoteExec ["say3D", 0]; // play the sound of the player teleporting in the gate in for all players
+		[_gate, ["player_tp", 50]] remoteExec ["say3D", 0]; // play the sound of the player teleporting in the gate in for all players
 
-		[_porte, player] call sg_fnc_transport; // teleport the player in the gate
+		[_gate, player] call sg_fnc_player_transport; // teleport the player in the gate
 	};
 
 	sleep 0.5; // wait 0.5 seconds

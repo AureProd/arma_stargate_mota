@@ -1,4 +1,5 @@
-// sg_fnc_transport
+// sg_fnc_player_transport
+// this function is called when player enter in a gate and transport him to the other gate with a video during the transport
 // params = [gate, player]
 
 private _gate = param [0];
