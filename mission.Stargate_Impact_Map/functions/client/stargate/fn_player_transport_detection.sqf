@@ -46,12 +46,8 @@ while {true} do {
 		_boolean_return;
 	};
 
-	if (!(player getVariable ["is_in_gate_transport", false])) then {
-		player setVariable ["is_in_gate_transport", true, true];
-
-		[_gate, ["player_tp", 50]] remoteExec ["say3D", 0]; // play the sound of the player teleporting in the gate in for all players
-
-		[_gate, player] call sg_fnc_player_transport; // teleport the player in the gate
+	if (!is_in_gate_transport) then { // if the player is not already in the gate
+		[_gate] call sg_fnc_player_transport; // teleport the player in the gate
 	};
 
 	sleep 0.5; // wait 0.5 seconds

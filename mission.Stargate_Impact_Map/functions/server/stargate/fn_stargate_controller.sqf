@@ -3,13 +3,14 @@
 // params = [gate, remote gate]
 
 private _gate = param [0];
-private _remote_gate = param [1, nil];
+private _remote_gate = param [1, objNull];
 
-if (isNil "_gate") throw "Undefined local gate in parameters";
-if (isNil "_remote_gate") then {
-	_remote_gate = (_gate getVariable ['remote_gate', nil]); // define remote gate if is not define in parameters
+[_gate] call sg_fnc_check_gate; // check if the gate is valid
 
-	if (isNil "_remote_gate") throw "Undefined remote gate in parameters and from local gate variable";
+if (isNull _remote_gate) then {
+	_remote_gate = (_gate getVariable ['remote_gate', objNull]); // define remote gate if is not define in parameters
+
+	[_remote_gate] call sg_fnc_check_gate; // check if the remote gate is valid
 };
 
 // get planets and address logos from the config file 'planets_config'
@@ -161,7 +162,7 @@ else { // if the local gate or the remote gate are open or in the initialization
 		// reset all variables of the local gate
 		_gate setVariable ["is_in_setup_gate", false, true];
 		_gate setVariable ['is_open_gate', false, true];
-		_gate setVariable ['remote_gate', nil, true];
+		_gate setVariable ['remote_gate', objNull, true];
 		_gate setVariable ['is_entry_gate', false, true];
 
 		hint localize "STR_porte_distante_deja_ouverte"; // print text for explain to player why the gate cant open
@@ -266,13 +267,13 @@ else { // if the local gate or the remote gate are open or in the initialization
 		// reset all variables of the local gate
 		_gate setVariable ["is_in_setup_gate", false, true];
 		_gate setVariable ['is_open_gate', false, true];
-		_gate setVariable ['remote_gate', nil, true];
+		_gate setVariable ['remote_gate', objNull, true];
 		_gate setVariable ['is_entry_gate', false, true];
 
 		// reset all variables of the remote gate
 		_remote_gate setVariable ["is_in_setup_gate", false, true];
 		_remote_gate setVariable ['is_open_gate', false, true];
-		_remote_gate setVariable ['remote_gate', nil, true];
+		_remote_gate setVariable ['remote_gate', objNull, true];
 		_remote_gate setVariable ['is_entry_gate', false, true];
 	};
 };

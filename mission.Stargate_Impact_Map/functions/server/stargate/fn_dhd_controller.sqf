@@ -15,7 +15,9 @@ if (isNil "_address_logos_list") exitWith {hint "Undefined address logos list in
 
 // check parameters is valid
 if ((count _address_logos_list) != 7) exitWith {hint "Address logos list must have 6 elements"};
-if ((typeOf _dhd) != "SGI_dhd") throw "Undefined dhd in parameters";
+
+// stop the script execution if the dhd is not a SGI_dhd
+if ((typeOf _dhd) != "SGI_dhd") exitWith {};
 
 _gate setVariable ["isOpen", [false, nil, false, true, false], true]; // TODO: change that
 

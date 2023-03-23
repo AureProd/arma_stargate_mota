@@ -4,12 +4,23 @@ class planets
 	class documents
     {
 		liste[] = { // document id / document name / document picture
-			{1, "Map Tau'ry", "pictures\planets\terre.paa"},
+			{1, "Map Tau'ry", "pictures\planets\earth.paa"},
 			{2, "Map Qa'al", "pictures\planets\qaal.paa"}
 		};
 	};
 	class gates
 	{
+		valid_gates_objects[] = { // list of gates objects valid for the mission (object name list)
+			"SGI_porte_des_etoiles",
+			"SGI_porte_des_etoiles_iris",
+			"SGI_gate"
+		};
+
+		valid_dhd_objects[] = { // list of dhd objects valid for the mission (object name list)
+			"SGI_dhd",
+			"sga_sgc_gate_computer"
+		};
+
 		planets[] = { // planet id / planet name / number of planet document / gate id / id dhd / list of gates address logos (max 5 logos)
 			{1, "Tau'ry", 1, "porte_tauri", "dhd_tauri", {6, 30, 11, 19, 15, 37, 1}},
 			{82, "Qa'al", 2, "porte_qa_al", "dhd_qa_al", {20, 3, 16, 5, 31, 10, 25}},

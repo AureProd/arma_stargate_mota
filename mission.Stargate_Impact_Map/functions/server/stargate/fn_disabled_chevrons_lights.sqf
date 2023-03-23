@@ -1,8 +1,10 @@
 // sg_fnc_disabled_chevrons_lights
-// this function is used to enable/disable chevron lights on the gate
-// params = [gate, enabled]
+// this function is used to disable chevron lights on the gate
+// params = [gate]
 
 private _gate = param [0];
+
+[_gate] call sg_fnc_check_gate;
 
 if ((typeOf _gate) == "SGI_gate") then { // if the gate is the tauri gate
 	[_gate, [1, "#(rgb,8,8,3)color(0.05,0,0,1)"]] remoteExec ["setObjectTexture", 0];
