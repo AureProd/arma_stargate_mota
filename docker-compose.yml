@@ -1,53 +1,60 @@
-version: '3'
- 
 services:
   arma:
-    build: 
-      context: ./autre/arma
-      dockerfile: Dockerfile
-    image: stargate:arma
-    container_name: arma-${INSTANCE_NAME}
+    image: arma:latest
     restart: always
-    ports:
-      - "${SERVER_PORT_START}-${SERVER_PORT_END}:${SERVER_PORT_START}-${SERVER_PORT_END}/udp"
-    volumes:
-      - ./build/server:/server:rw
-      - /server/@extDB3/logs
-    entrypoint: /bin/sh -c
-    command: 
-      - |
-        cd /server
-        sh run.sh
-    depends_on:
-      - mysql
-
-  mysql:
-    build: 
-      context: ./autre/database
-      dockerfile: Dockerfile
-    image: stargate:mysql
-    container_name: mysql-${INSTANCE_NAME}
     environment:
-      MARIADB_ROOT_PASSWORD: ${BDD_ROOT_PASSWORD}
-      MARIADB_DATABASE: ${BDD_DATABASE}
-      MARIADB_USER: ${BDD_USERNAME}
-      MARIADB_PASSWORD: ${BDD_PASSWORD}
+      STEAM_USER: aureprod
+      STEAM_PASSWORD: XJKDsqDXnfy7wHtphx4xV6xR2CyVRp
+      ADMIN_PASSWORD: JCpLNmNvyZVTQHwVcsOVscpgLxT0n7
+      ARMA_PARAMS: -autoinit
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+      MYSQL_DATABASE: stargate
+      MYSQL_USER: superadmin
+      MYSQL_PASSWORD: pivOg1HULmj04zbnb0qXURmT0c9Oci
+    ports:
+      - 2302-2306:2302-2306/udp
     volumes:
-      - mysql:/var/lib/mysql
-    restart: always
+      - ./build:/server
+      - ./mission.Stargate_Impact_Map:/configs/mpmissions/mission.Stargate_Impact_Map
+      - ./@mod_server:/configs/servermods/@mod_server
+      - ./configs/mods.json:/configs/mods.json
+      - ./configs/server.cfg:/configs/server.cfg
     depends_on:
-      - phpmyadmin
+      - db
+    networks:
+      - default
+
+  db:
+    image: mariadb:10.3.35
+    restart: always
+    volumes:
+      - db:/var/lib/mysql
+      - ./configs/database.sql:/docker-entrypoint-initdb.d/database.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: KMybsPjyV4Cqx1VWLJZLWPS2cvS9bX
+      MYSQL_DATABASE: stargate
+      MYSQL_USER: superadmin
+      MYSQL_PASSWORD: pivOg1HULmj04zbnb0qXURmT0c9Oci
+    networks:
+      - default
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:5
-    container_name: phpmyadmin-${INSTANCE_NAME}
+    image: phpmyadmin:latest
     environment:
-      PMA_HOST: mysql-${INSTANCE_NAME}
+      TZ: Europe/Paris
+      PMA_HOST: db
       PMA_PORT: 3306
     restart: always
+    depends_on:
+      - db
+    networks:
+      - default
     ports:
-      - "${PMA_PORT}:80"
+      - "8045:80"
 
 volumes:
-  mysql:
-    name: ${INSTANCE_NAME}-mysql
+  db:
+
+networks:
+  default:
